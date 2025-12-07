@@ -1,0 +1,48 @@
+{
+    "version": 2,
+    "name": "回声象牙塔 QR（251203）",
+    "disableSend": false,
+    "placeBeforeInput": false,
+    "injectInput": false,
+    "color": "rgba(0, 0, 0, 0)",
+    "onlyBorderColor": false,
+    "qrList": [
+        {
+            "id": 2,
+            "showLabel": false,
+            "label": "📜总结指令",
+            "title": "",
+            "message": "/echo  title=注意 severity=warning 需要提前保存输入框已输入的内容，否则会被覆盖 ||\n\n/buttons labels=[\"📚总结全文\", \"📖总结本章\",\"🫥隐藏楼层\", \"👀取消隐藏\"] 📜总结指令 |\n/setvar key=option ||\n\n/if left=option rule=eq right=\"\" {: /flushvar option | /abort :} ||\n\n/if left=option rule=eq right=\"🫥隐藏楼层\" {:\n/input okButton=\"确定\" cancelButton=\"取消\" 输入要隐藏的楼层范围（例如：0-10），一般保留最近的5-10楼 |\n/if left={{pipe}} right=\"\" rule=neq {: /hide {{pipe}} | /echo 已隐藏 {{pipe}} :} {::} |\n/flushvar option |\n/abort |\n:} ||\n\n/if left=option rule=eq right=\"👀取消隐藏\" {:\n/input okButton=\"确定\" cancelButton=\"取消\" 输入要取消隐藏的楼层范围（例如：0-10）最近的5-10楼一般是不隐藏的 |\n/if left={{pipe}} right=\"\" rule=neq {: /unhide {{pipe}} | /echo 已取消隐藏 :} {::} |\n/flushvar option |\n/abort |\n:} ||\n\n/if left=option rule=eq right=\"📚总结全文\" {: /setvar key=final_message \"【期末总结-全文】\n<!-- request:中止所有与故事创作相关的构思与输出，请按照[总结格式]回顾并总结迄今为止的全部故事内容；如前文已有其他期末总结，需要将总结内容一起合并 -->\" :} ||\n/if left=option rule=eq right=\"📖总结本章\" {: /setvar key=final_message \"【期末总结-本章】\n<!-- request:中止所有与故事创作相关的构思与输出，请按照[总结格式]格式回顾并总结当前章节发生的故事内容。 -->\" :} ||\n\n/setinput {{getvar::final_message}} ||\n\n/flushvar option ||\n/flushvar final_message ||",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        },
+        {
+            "id": 4,
+            "showLabel": false,
+            "label": "🍭快速要求",
+            "title": "",
+            "message": "/echo title=注意 severity=warning 需要提前保存输入框已输入的内容，否则会被覆盖 ||\n/input 🍬请输入你的提示内容！(不需要可点取消) |\n/setvar key=order {{pipe}} ||\n\n/buttons labels=[\"🌟更新表格\", \"🎪小剧场提醒\", \"📟状态栏提醒\", \"📱手机格式\", \"🚫禁止跳楼层\", \"🐌慢速叙事\", \"🔍重扫规则\", \"🖌️自定义\"] 🍭快速要求 |\n/setvar key=option ||\n\n/if left=option rule=eq right=\"\" {: /echo 未选择指令！ || /flushvar order | /flushvar option | /abort || :} ||\n\n/if left=option rule=eq right=\"🌟更新表格\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 请完整更新表格里的信息，包括时间、角色信息、当前事件等 -->\" :} ||\n/if left=option rule=eq right=\"🎪小剧场提醒\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 请记得输出文末的snow小剧场格式，保证数量、题材正确，且不重复上一回合内容 -->\" :} ||\n/if left=option rule=eq right=\"📟状态栏提醒\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 请读取世界书或角色描述，正确输出角色状态栏 -->\" :} ||\n/if left=option rule=eq right=\"📱手机格式\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 请读取世界书，正确生成手机格式 -->\" :} ||\n/if left=option rule=eq right=\"🚫禁止跳楼层\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 请根据最新的{{user}}回复以及楼层来继续创作故事，禁止跳跃回复 -->\" :} ||\n/if left=option rule=eq right=\"🐌慢速叙事\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 禁止快速发展剧情。请启用显微镜视角，大幅放慢叙事进度，聚焦于当下的感官细节与微观互动，拒绝时间跳跃 -->\" :} ||\n/if left=option rule=eq right=\"🔍重扫规则\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} 重新扫描当前【抢话/转述】开关状态。严格判明是否允许代理user行动，并立即纠正任何越权或遗漏转述的行为 -->\" :} ||\n/if left=option rule=eq right=\"🖌️自定义\" {: /setvar key=final_message \"<!-- Request: {{getvar::order}} -->\" :} ||\n\n/setinput {{getvar::final_message}} ||\n\n/echo 🎉指令已生成到输入框，请检查！ ||\n\n/flushvar order ||\n/flushvar option ||\n/flushvar final_message ||",
+            "contextList": [],
+            "preventAutoExecute": true,
+            "isHidden": false,
+            "executeOnStartup": false,
+            "executeOnUser": false,
+            "executeOnAi": false,
+            "executeOnChatChange": false,
+            "executeOnGroupMemberDraft": false,
+            "executeOnNewChat": false,
+            "executeBeforeGeneration": false,
+            "automationId": ""
+        }
+    ],
+    "idIndex": 4
+}
