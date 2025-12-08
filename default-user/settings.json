@@ -2523,7 +2523,7 @@
             "promptType": "raw"
         },
         "connectionManager": {
-            "selectedProfile": "ada2df4e-8f72-4e3f-bd2b-b39c8068a134",
+            "selectedProfile": "2077db32-f9df-44f3-a81d-52a1c0096677",
             "profiles": [
                 {
                     "id": "96f0cb47-af45-4f96-9f2f-3681d9920d0b",
@@ -4741,8 +4741,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 718,
-                "LAST_RECEIVE_CHARS": 932,
+                "LAST_RECEIVE_TOKENS": 4942,
+                "LAST_RECEIVE_CHARS": 14457,
                 "LAST_SEND_TOKENS": 47856,
                 "LAST_SEND_CHARS": 74064,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -9241,8 +9241,8 @@
         "openrouter_providers": [],
         "openrouter_allow_fallbacks": true,
         "openrouter_middleout": "on",
-        "reverse_proxy": "",
-        "chat_completion_source": "custom",
+        "reverse_proxy": "http://127.0.0.1:8889",
+        "chat_completion_source": "makersuite",
         "max_context_unlocked": true,
         "show_external_models": false,
         "proxy_password": "",
@@ -9291,8 +9291,8 @@
         }
     ],
     "selected_proxy": {
-        "name": "None",
-        "url": "",
+        "name": "AIStudio反代",
+        "url": "http://127.0.0.1:8889",
         "password": ""
     }
 }
