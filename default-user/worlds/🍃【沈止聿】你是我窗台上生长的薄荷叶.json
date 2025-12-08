@@ -153,6 +153,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "2": {
@@ -312,6 +317,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "4": {
@@ -976,7 +986,7 @@
             "addMemo": true,
             "order": 100,
             "position": 4,
-            "disable": true,
+            "disable": false,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": false,
@@ -1037,6 +1047,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "13": {
@@ -1114,6 +1129,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "14": {
@@ -1549,6 +1569,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "19": {
@@ -1790,6 +1815,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "22": {
@@ -1963,6 +1993,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "24": {
@@ -2046,6 +2081,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "25": {
@@ -2123,6 +2163,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "26": {
@@ -2362,6 +2407,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "29": {
@@ -2439,6 +2489,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "30": {
@@ -2516,6 +2571,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         }
     },
