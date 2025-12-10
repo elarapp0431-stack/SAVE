@@ -446,7 +446,7 @@
         {
             "identifier": "fc0956fb-e26d-4e02-98e7-840e35c8203b",
             "name": "🎟️秋水笔记",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -459,7 +459,7 @@
         {
             "identifier": "117aaa45-8fbe-469e-bd2b-c6ec3fb98471",
             "name": "🎟️古雅清逸",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1898,7 +1898,7 @@
         {
             "identifier": "0231b536-0317-4e16-9187-4df852db84da",
             "name": "🎁自白之塔",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 3,
             "injection_order": 998,
@@ -1924,7 +1924,7 @@
         {
             "identifier": "a023a4d8-77dc-4745-b633-8ccacc927c35",
             "name": "🎁阅读之塔",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 3,
             "injection_order": 966,
@@ -2732,11 +2732,11 @@
                 },
                 {
                     "identifier": "fc0956fb-e26d-4e02-98e7-840e35c8203b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "117aaa45-8fbe-469e-bd2b-c6ec3fb98471",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "79a556e2-fa2f-4973-8754-c5a0c8337c25",
@@ -3428,5 +3428,22 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1
+    "n": 1,
+    "extensions": {
+        "regexBindings": {
+            "exclusive": [
+                "f300ff90-2f50-41c1-be71-78b8bed98451",
+                "f52bbc63-ae1a-461b-8d3a-66632b643e0e",
+                "429dbe1d-ef08-407e-b731-cd1ed9c3204b",
+                "12675bb4-60f9-4cf6-b97a-1d5f354fc1cb",
+                "58598443-86ba-42a4-9985-02dcd4588d3c",
+                "0476bd4a-c0a2-4e05-9d8b-be5c8ae439d3",
+                "03ce4f9f-acb0-477b-a815-4c915a17c6ee",
+                "45447228-350c-44c2-80e0-b0ad12f9a0b9",
+                "f19bcb41-dea6-4e2c-a5ee-9ba199fa5cc2",
+                "97bdd080-eded-47ef-ac62-47308018cb41",
+                "58182132-e0fd-4bbd-ba62-247e074911ed"
+            ]
+        }
+    }
 }
