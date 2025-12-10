@@ -4750,8 +4750,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 20266,
-                "LAST_RECEIVE_CHARS": 49775,
+                "LAST_RECEIVE_TOKENS": 44006,
+                "LAST_RECEIVE_CHARS": 125878,
                 "LAST_SEND_TOKENS": 30373,
                 "LAST_SEND_CHARS": 46078,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
