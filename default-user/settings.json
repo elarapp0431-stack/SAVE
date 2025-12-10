@@ -119,11 +119,10 @@
         "AlertWI_沈止聿1.png": "true",
         "AlertRegex_沈止聿1.png": "true"
     },
-    "currentVersion": "1.13.1",
+    "currentVersion": "1.13.4",
     "username": "陆世凝",
     "active_character": "戚斟雪.png",
     "active_group": null,
-    "preset_settings": "gui",
     "user_avatar": "1765341312646-.png",
     "amount_gen": 150,
     "max_context": 7808,
@@ -478,8 +477,7 @@
             "last_input_sequence": "",
             "sequences_as_stop_strings": true,
             "story_string_prefix": "",
-            "story_string_suffix": "",
-            "names_force_groups": true
+            "story_string_suffix": ""
         },
         "context": {
             "preset": "Default",
@@ -493,8 +491,11 @@
             "story_string_depth": 1,
             "story_string_role": 0
         },
+        "instruct_derived": false,
         "context_derived": false,
         "context_size_derived": false,
+        "model_templates_mappings": {},
+        "chat_template_hash": "",
         "sysprompt": {
             "enabled": true,
             "name": "Neutral - Chat",
@@ -687,9 +688,6 @@
         "external_media_forbidden_overrides": [],
         "pin_styles": true,
         "click_to_edit": false,
-        "instruct_derived": false,
-        "model_templates_mappings": {},
-        "chat_template_hash": "",
         "ui_mode": 1,
         "auto_sort_tags": false,
         "selectSamplers": {
@@ -4461,6 +4459,7 @@
                 "promptOnly": false
             }
         ],
+        "regex_presets": [],
         "character_allowed_regex": [
             "快穿攻略系统.png",
             "快穿系统06.png",
@@ -4768,7 +4767,6 @@
             "folders": {},
             "sort": "dateAsc"
         },
-        "regex_presets": [],
         "cfg": {
             "global": {
                 "guidance_scale": 1,
@@ -4801,6 +4799,9 @@
                     "setList": []
                 },
                 "萧谴写卡助手版_V4.5.1.png": {
+                    "setList": []
+                },
+                "戚斟雪.png": {
                     "setList": []
                 }
             }
@@ -5935,6 +5936,7 @@
             4
         ],
         "logit_bias": [],
+        "extensions": {},
         "phrase_rep_pen": "very_light"
     },
     "kai_settings": {
@@ -5963,7 +5965,9 @@
         "mirostat_eta": 0.1,
         "use_default_badwordsids": false,
         "grammar": "",
-        "seed": -1
+        "seed": -1,
+        "preset_settings": "gui",
+        "extensions": {}
     },
     "oai_settings": {
         "preset_settings_openai": "【MoM】【象牙塔】象牙塔 1.0.0 Ver @电波系（251203）",
@@ -9374,18 +9378,24 @@
         "cohere_model": "command",
         "perplexity_model": "sonar-pro",
         "groq_model": "qwen-2.5-32b",
+        "electronhub_model": "gpt-4o-mini",
         "nanogpt_model": "gpt-4o-mini",
-        "zerooneai_model": "yi-large",
         "deepseek_model": "deepseek-chat",
         "aimlapi_model": "gpt-4o-mini-2024-07-18",
         "xai_model": "grok-3-beta",
         "pollinations_model": "openai",
+        "cometapi_model": "gpt-4o",
+        "moonshot_model": "kimi-latest",
+        "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+        "azure_base_url": "",
+        "azure_deployment_name": "",
+        "azure_api_version": "2024-02-15-preview",
+        "azure_openai_model": "",
         "custom_model": "gemini-3-pro-preview",
         "custom_url": "https://mcxbx.daybreakhk.com/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
-        "windowai_model": "",
         "openrouter_model": "OR_Website",
         "openrouter_use_fallback": false,
         "openrouter_group_models": false,
@@ -9396,7 +9406,6 @@
         "reverse_proxy": "",
         "chat_completion_source": "custom",
         "max_context_unlocked": true,
-        "api_url_scale": "",
         "show_external_models": false,
         "proxy_password": "",
         "assistant_prefill": "",
@@ -9406,7 +9415,6 @@
         "vertexai_auth_mode": "express",
         "vertexai_region": "us-central1",
         "vertexai_express_project_id": "",
-        "use_alt_scale": false,
         "squash_system_messages": false,
         "image_inlining": false,
         "inline_image_quality": "auto",
@@ -9423,7 +9431,8 @@
         "request_images": false,
         "seed": -1,
         "n": 1,
-        "bind_preset_to_connection": false
+        "bind_preset_to_connection": false,
+        "extensions": {}
     },
     "background": {
         "name": "2222.png",
