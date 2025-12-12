@@ -1844,7 +1844,7 @@
             "addMemo": true,
             "order": 100,
             "position": 4,
-            "disable": true,
+            "disable": false,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": false,
@@ -1932,7 +1932,7 @@
             "addMemo": true,
             "order": 100,
             "position": 4,
-            "disable": true,
+            "disable": false,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": false,
@@ -2489,11 +2489,6 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
-            },
-            "characterFilter": {
-                "isExclude": false,
-                "names": [],
-                "tags": []
             }
         },
         "30": {
@@ -2571,11 +2566,6 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
-            },
-            "characterFilter": {
-                "isExclude": false,
-                "names": [],
-                "tags": []
             }
         }
     },
