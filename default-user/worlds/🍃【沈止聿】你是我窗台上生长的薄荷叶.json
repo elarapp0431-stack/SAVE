@@ -336,7 +336,7 @@
             "addMemo": true,
             "order": 98,
             "position": 0,
-            "disable": false,
+            "disable": true,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": false,
@@ -479,6 +479,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "6": {
@@ -878,6 +883,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "11": {
@@ -1037,6 +1047,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "13": {
@@ -1890,6 +1905,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "23": {
@@ -2143,6 +2163,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "26": {
@@ -2302,6 +2327,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "28": {
@@ -2459,6 +2489,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "30": {
@@ -2536,6 +2571,11 @@
                 "triggers": [],
                 "outlet_name": "",
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         }
     },

@@ -5009,8 +5009,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 5899,
-                "LAST_RECEIVE_CHARS": 18660,
+                "LAST_RECEIVE_TOKENS": 2308,
+                "LAST_RECEIVE_CHARS": 3077,
                 "LAST_SEND_TOKENS": 18796,
                 "LAST_SEND_CHARS": 31966,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -9556,7 +9556,7 @@
         "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
         "new_example_chat_prompt": "[Example Chat]",
         "continue_nudge_prompt": "从上一次的末尾继续",
-        "bias_preset_selected": "Default (none)",
+        "bias_preset_selected": "Anti-bond",
         "bias_presets": {
             "Anti-bond": [
                 {
