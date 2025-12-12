@@ -225,7 +225,7 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "{{//❗总设置❗}}{{trim}}\n{{setvar::输出语言::简体中文}}\n{{setvar::摘要语言::日语}}\n{{setvar::正文总字数要求::800字}}\n{{setvar::对白比例::，成稿对白比例≈40%}}\n{{setvar::预设性向分类::}}\n\n{{//❗压缩模式设置❗}}{{trim}}\n{{setvar::单段草稿字数要求（压缩）::30~50字}}\n{{setvar::段落数量（压缩）::10个以上}}\n\n{{//❗扩写模式设置❗}}{{trim}}\n{{setvar::单段草稿字数要求（扩写）::70字}}\n{{setvar::段落数量（扩写）::6个以上}}\n\n{{trim}}",
+            "content": "{{//❗总设置❗}}{{trim}}\n{{setvar::输出语言::简体中文}}\n{{setvar::摘要语言::日语}}\n{{setvar::正文总字数要求::1800字}}\n{{setvar::对白比例::，成稿对白比例≈20%}}\n{{setvar::预设性向分类::}}\n\n{{//❗压缩模式设置❗}}{{trim}}\n{{setvar::单段草稿字数要求（压缩）::30~50字}}\n{{setvar::段落数量（压缩）::10个以上}}\n\n{{//❗扩写模式设置❗}}{{trim}}\n{{setvar::单段草稿字数要求（扩写）::70字}}\n{{setvar::段落数量（扩写）::6个以上}}\n\n{{trim}}",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -548,7 +548,7 @@
         {
             "identifier": "72cd4f89-0aba-4af4-9675-8fdcfaa69730",
             "name": "🔸心理描写",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -574,7 +574,7 @@
         {
             "identifier": "ab3179b7-327e-40a8-ab59-31566c09a01b",
             "name": "🔹氛围渲染",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1276,7 +1276,7 @@
         {
             "identifier": "f221b7a1-69bb-4e5e-b9db-e2aab364ccaa",
             "name": "▎user第二人称",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1289,7 +1289,7 @@
         {
             "identifier": "68106bdf-775c-4df9-990b-d5367748fbf8",
             "name": "▎user第三人称",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1367,7 +1367,7 @@
         {
             "identifier": "962f4941-fd6e-4faf-9f78-b011949218e6",
             "name": "🪛微抢话·代入感",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1393,7 +1393,7 @@
         {
             "identifier": "4da3a900-2be7-4089-8dab-3c0949049672",
             "name": "🪛防抢话·禁一切",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -2293,7 +2293,7 @@
                 },
                 {
                     "identifier": "72cd4f89-0aba-4af4-9675-8fdcfaa69730",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "e77b4b47-b4a0-414e-a3e3-a5491800d17a",
@@ -2301,7 +2301,7 @@
                 },
                 {
                     "identifier": "ab3179b7-327e-40a8-ab59-31566c09a01b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "c8d2432f-5755-4c25-b83f-d1c472a8b10a",
@@ -2517,11 +2517,11 @@
                 },
                 {
                     "identifier": "f221b7a1-69bb-4e5e-b9db-e2aab364ccaa",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "68106bdf-775c-4df9-990b-d5367748fbf8",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "b4c2e6b1-bcee-473f-8ef7-9a220a0cd350",
@@ -2545,7 +2545,7 @@
                 },
                 {
                     "identifier": "962f4941-fd6e-4faf-9f78-b011949218e6",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "afb70dcd-4124-431c-aba7-19296270df2d",
@@ -2553,7 +2553,7 @@
                 },
                 {
                     "identifier": "4da3a900-2be7-4089-8dab-3c0949049672",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9fe7e992-db31-4cd3-89fa-73a785780309",
