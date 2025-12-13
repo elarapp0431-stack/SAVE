@@ -19,8 +19,8 @@
     "xai_model": "grok-3-beta",
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
-    "custom_model": "gemini-3-pro-preview",
-    "custom_url": "https://gcli2api-1212.zeabur.app/v1",
+    "custom_model": "gemini-2.5-pro-preview-06-05",
+    "custom_url": "https://geminicli2api-1009.onrender.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
@@ -46,7 +46,7 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
     "bias_preset_selected": "Anti-bond",
-    "reverse_proxy": "",
+    "reverse_proxy": "http://127.0.0.1:8889",
     "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
@@ -406,13 +406,13 @@
         },
         {
             "identifier": "mioqovnk635x3td0o23",
-            "name": "🎟️自定义文风副本副本",
+            "name": "🎟️武侠仙侠",
             "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "[自定义文风]\n{{//在此处放置你的文风，把本行直接覆盖掉就行了，标签可以替换成你的文风标签}}",
+            "content": "[武侠仙侠]\n{TONE: Poetic_Heroic · Rhythmic · Implicit}\n\n## Ultimate Purpose  \nWrite in rhythmic modern Chinese styled like Jin Yong(金庸) or Liang Yusheng(梁羽生).  \n- 景中藏意，动中有情，虚实相生。  \n- Use poetic syntax, inverted structure, and internal rhyme.  \n- Employ four-character idioms, metaphor, silence, and contrast.  \n- Each paragraph must feel like a fragment of 江湖/仙侠 poetry.  \n- 以人心之动写山河之远，情义与道心并重。\n\n\n## Core Elements\n\n1.**Rhythmic Sentence Structure**\n\n-Use classical connectors: “未几”“遂”“忽而”“既而”\n-Employ reversed syntax & subjectless clauses.Abrupt poetic breaks.\n-Break rhythm intentionally for dramatic weight\n-Use ellipsis, juxtaposition, and internal rhyme.\n\nExamples:\n\nNo: 他拔剑出鞘。\nYes: 剑未出，意已起；寒光微吐，气锁长空。\n\n\n2. **Four-Character Patterns & Parallel Phrasing**\n\n*Use layered four-character phrases or rhythmic couplets to enhance elegance and control tempo.*\nExample:\n-月沉西岭，风起东林\nClassical Insertions may include transformed lines from《楚辞》《诗经》.\n\n3. **景中藏意、物中显情**\n\n-Scenes should evoke emotion through nature imagery and poetic metaphor. \n-Let objects, landscapes, and silence imply character states or plot shifts.\n\nKey Forms:\nUse 山水草木 to reflect state of mind\nLet 器物 carry inner meaning\n\n4.**招式亦诗 · 动作成文**\n\n\n-Name moves with metaphor (e.g.青莲剑起、莲步轻移)\n-Describe movement like choreography, in concert with nature.\n-Combat is not mechanical—it is choreography, poetry, philosophy, and emotion in motion.\n\n\n5. **情藏不露 · 对话有余**\n-Dialogue carries dual meanings.\n-Use double-layered responses\n-Integrate environment or movement as emotional echo.\n-indirect speech creates tension\n\n\n6. *Narrative Flow & Transitions*\n- Use nature/season/time to lead scene shifts.\n- Format: 静景起 → 动作引 → 内心伏笔 → 环境补色 → 意象结句\nCommon Scene Types：\n\n- **Journey Scene**: 空间+季节+静音 = 情绪动线  \n  > 烟雨三月，渡口人稀；他独行江畔，舟声已远。\n\n- **Silent Reflection**: 借物思情，不直抒情  \n  > 帐灯微昏，影斜于壁。他看着掌中玉佩，良久未语。\n\n- **Jianghu Setting**: 多用残物、旧诗、传闻烘托背景  \n\n*Use silence, light, and tactile detail to reveal mood. Absence is plot.*\n\n7. *Symbolism & Foreshadowing*\n- Use repeated imagery（玉、雪、断簪）to echo fate.\n- Hidden stories in missing objects or faded marks.\n\n# Model Combat Structures\n\n【结构一】叙事节奏分层（四字→招式诗化→动词链式推进）\n\n> 霎时间剑光四迸，如银蛇乱舞。杨过长啸一声，青锋陡转，一招「白虹经天」直刺敌腕。但见月华浸刃，寒气透衣，那剑尖颤动处，竟似有千点寒星洒落。敌者急退三步，足踏巽位，刀锋斜撩，欲断其锋。  \n\n【结构二】打斗意境融合（环境+招式+声音）\n\n> 张无忌踏血而立，九阳真气周流百骸。那剑锋距胸三寸，竟似刺入棉絮，再难进分毫。四野寂然，唯闻松涛呜咽。  \n\n【结构三】招式诗意融合（器物赋灵+情感化武学+人物底蕴）\n\n> 烟波浩渺处，一叶扁舟破雾而来。张丹枫白衣如雪，玉箫斜挂腰间。忽有敌船截江，七柄分水刺寒光交错！他足尖轻点舷板，身形骤升三丈，箫管就唇，《水龙吟》破空而起。 声浪过处，刺客如遭重锤，兵刃叮当坠水。他飘然落帆，素袖卷起残芦数茎，信手书于水面：“江湖秋雨恶，何必阻归舟？”\n\n\n# Authorial Style References\n\n1. **Gu Long 古龙**\nTerseness, silence, action-as-speech\nE.g. “他停下了。风没停。剑，却慢了半寸。”\n\n2. **Jin Yong 金庸**\n- Use internal logic/Emotion to drive action.Use moral/philosophical tension.\nE.g. “月影沉沉，正似他心潮难平。”\n\n3. **Liang Yusheng 梁羽生**\n- Elegant narration. Scene opens with refined image or idiom.Use literary tone in motion.\nE.g. “霜华初照，轻衣踏露”\n\n#FINAL OUTPUT IMPERATIVES\n\n- Use poetic rhythm; never use modern syntax.\n- Do not explain feelings. Reveal through weather, movement, and silence.\n- Each action must embody emotion or belief.\n- Wuxia = martial fate; Xianxia = cosmic Dao. Do not confuse tone.\n- Let metaphors carry weight. Let absence speak.\n",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -2728,7 +2728,7 @@
                 },
                 {
                     "identifier": "mioqovnk35l2q9nf4p2",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "fc0956fb-e26d-4e02-98e7-840e35c8203b",
@@ -2736,7 +2736,7 @@
                 },
                 {
                     "identifier": "117aaa45-8fbe-469e-bd2b-c6ec3fb98471",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "79a556e2-fa2f-4973-8754-c5a0c8337c25",
@@ -3428,5 +3428,30 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1
+    "n": 1,
+    "electronhub_model": "gpt-4o-mini",
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
+    "extensions": {
+        "regexBindings": {
+            "exclusive": [
+                "f300ff90-2f50-41c1-be71-78b8bed98451",
+                "f52bbc63-ae1a-461b-8d3a-66632b643e0e",
+                "03ce4f9f-acb0-477b-a815-4c915a17c6ee",
+                "45447228-350c-44c2-80e0-b0ad12f9a0b9",
+                "f19bcb41-dea6-4e2c-a5ee-9ba199fa5cc2",
+                "97bdd080-eded-47ef-ac62-47308018cb41",
+                "58182132-e0fd-4bbd-ba62-247e074911ed",
+                "094d07da-2c28-4907-b84b-ba766105bb6a",
+                "526863b7-c858-4d03-a52c-b8b2f86a0309",
+                "8847a0cc-e731-49e2-bb97-e5f7dbf2ce56",
+                "b4931eb8-db24-4956-aa7d-cf241645081a"
+            ]
+        }
+    }
 }
