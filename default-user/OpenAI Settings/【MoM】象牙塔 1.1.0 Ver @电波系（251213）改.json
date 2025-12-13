@@ -51,7 +51,7 @@
     "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue your last message without repeating its original content.]",
-    "bias_preset_selected": "Default (none)",
+    "bias_preset_selected": "Anti-bond",
     "reverse_proxy": "http://127.0.0.1:8889",
     "proxy_password": "",
     "max_context_unlocked": true,
@@ -2012,7 +2012,7 @@
             "injection_depth": 1,
             "injection_order": 999,
             "role": "system",
-            "content": "你会生成以下唯一一个podcast，禁止遗漏任何格式：\n\n<podcast>\n<p style=\"font-size: 0.9em; text-align: center;\">{朝代} · {节气} | {时辰}    {主地点} | {天色}</p>\n<p style=\"font-size: 2em; line-height:1.2; text-align: center; letter-spacing: 2px;\">第 {中文数字} 折</p>\n<p style=\"font-size: 1.5em; line-height:1.2; text-align: center; \">『 {折子戏风标题} 』</p>\n<p style=\"text-align: center; \">{当前时刻}·····🛶················{下个时刻}</p>\n<p style=\"text-align: center; font-size: 0.85em; \">—— {随机诗词} ——</p>\n</podcast>\n\n动态进度条构建指令：\n- 图标根据场景选择 🍶(酒壶) / 🛶(孤舟) / 🌙(残月) / 🗡️(剑锋) / 🐎(骏马)\n- 根据当前事件进度，移动图标位置\n\n{{setvar::podcast:: podcast}}",
+            "content": "你会生成以下唯一一个podcast，禁止遗漏任何格式：\n\n<podcast>\n<p style=\"font-size: 0.9em; text-align: center;\">{朝代} · {节气} | {时辰}    {主地点} | {天色}| {衣着}    {好感度} </p>\n<p style=\"font-size: 2em; line-height:1.2; text-align: center; letter-spacing: 2px;\">第 {中文数字} 折</p>\n<p style=\"font-size: 1.5em; line-height:1.2; text-align: center; \">『 {折子戏风标题} 』</p>\n<p style=\"text-align: center; \">{当前时刻}·····🛶················{下个时刻}</p>\n<p style=\"text-align: center; font-size: 0.85em; \">—— {随机诗词} ——</p>\n</podcast>\n\n动态进度条构建指令：\n- 图标根据场景选择 🍶(酒壶) / 🛶(孤舟) / 🌙(残月) / 🗡️(剑锋) / 🐎(骏马)\n- 根据当前事件进度，移动图标位置\n\n{{setvar::podcast:: podcast}}",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -4056,8 +4056,6 @@
                 "41a3d41f-259e-4056-a2ea-78b5ff2eae2b",
                 "40e1aef1-42da-4722-89e2-7c819a4df4e5",
                 "c835b70f-c67a-4563-b05a-d40277a02409",
-                "1bf875a9-9473-4ef8-895e-48b924e05a41",
-                "c8add076-ffab-44e7-a912-199c52f9db33",
                 "ecfc8087-d428-4287-be4d-1f3d2d2557e3",
                 "c46a328f-0ced-4fdb-89cc-73b32eb9a5d5"
             ]
