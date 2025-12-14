@@ -606,16 +606,17 @@
         },
         {
             "identifier": "dc78bb9e-d488-477c-9170-a43fdf5de2a8",
-            "name": "🎟️烟尘旧港",
+            "name": "🎟️武侠仙侠",
             "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "[烟尘旧港]\n\n[Tone & Atmosphere]  \n- Overall mood: coarse, weathered, layered with rust and smoke. The air smells of seawater mixed with oil, coal dust, and fried food grease from stalls.  \n- Spaces are always scarred: corrugated iron rooftops rusting, half-lit neon signs, alley walls with posters peeling away, fishing nets piled damp at corners.  \n- Rhythm is uneven, heavy at times, brisk at others, echoing the noise of a port town that never fully sleeps.  \n\n[Language & Style]  \n- Sentences are straightforward, sturdy, sometimes abrupt, like tools or dockside shouts.  \n- Description favors texture and material: the rough grain of wood, the taste of ash, the stickiness of spilled beer, the gleam of wet cobblestones under sodium light.  \n- Dialogue overlaps narration, often blunt, laced with dry humor or irony.  \n- Common symbols: rusted bicycles, cracked mirrors in bars, worn dice, neon buzzing, chipped enamel mugs.  \n\n[Character Vibe]  \n- Characters are rough-edged but weary, living among noise and decay.  \n- They carry cynicism with moments of sudden warmth; nostalgia shows through self-deprecation and bitterness.  \n- Relationships are transactional on the surface, but deeper currents of loyalty, regret, or hidden tenderness persist.  \n\n[Dialogue & Interaction]  \n- **Dialogue drives the scene**: it is talkative, often over beer, cigarettes, or card tables.  \n- At least **40% should be dialogue**, heavy with slang, muttering, or playful insult; long exchanges mix mockery with unspoken reliance.  \n- Conversations revolve around money, work, past mistakes, local gossip, mixed with pauses where gestures—lighting a match, shaking dice, wiping glasses—say more than words.  \n- Emotions surface sideways: through sarcasm, banter, or the refusal to answer.  \n\n[Language Features]  \n- Rhythm alternates between clipped lines and longer, dragging sentences.  \n- Strong emphasis on tactile detail: rust flakes on fingers, greasy tables, sea air sticking to clothes, the sting of cheap whiskey.  \n- Recurring motifs: neon flicker, dice rolling, ships’ horns, cigarette smoke curling in still air.  \n\n[Character Quality]  \n- Characters appear weathered and coarse, but not empty—they hide a stubborn tenderness under sarcasm.  \n- Emotional expression is rarely direct; trust is tested through silence, jokes, or shared rituals.  \n\n[Narrative Rhythm]  \n- Pacing should echo the port: bursts of noise followed by lull.  \n- Stories end not with closure but with a shrug or unfinished gesture: a glass left half full, a door propped open, a lighter that won’t catch.  \n\n[Reference Authors & Works]  \n- Taiwan: Huang Chun-Ming, Wu Nien-Jen  \n- Japan: Osamu Dazai (shorter prose), Ryū Murakami (*Almost Transparent Blue*)  \n- Western: Patrick McCabe, Charles Bukowski  \n\n[Writing Techniques & Execution Tips]  \n1. **Let conversation carry weight**  \n   - Every spoken line must feel grounded in daily grime—over a cigarette, with a hand on the bar counter, in the smoke of a night ferry.  \n   - Dialogue should be long, slightly messy, but precise in its emotional undertow.  \n\n2. **Objects show what characters conceal**  \n   - Trust written in a shared lighter.  \n   - Regret caught in the habit of refilling an empty glass.  \n   - Affection shown by patching a coat, not saying a word.  \n\n3. **Keep sentiment low and crooked**  \n   - Never grand declarations—use half-joking tones, silence, or avoidance to show attachment.  \n   - Sarcasm and warmth should exist in the same breath.  \n\n4. **Motifs return like old debts**  \n   - A neon sign that flickers every night, a pair of dice always rolling, a mug chipped the same way—it repeats, but always carrying more wear.  \n\n5. **Structure**  \n   - Begin inside noise and detail: dock chatter, frying oil hissing, dice rolling.  \n   - Let dialogue and routine tangle until emotion seeps through.  \n   - End with something unresolved: a laugh cut short, a chair still rocking, a match burning down.  \n",
+            "content": "[武侠仙侠]\n\n## Ultimate Purpose  \nWrite in rhythmic modern Chinese styled like Jin Yong(金庸) or Liang Yusheng(梁羽生).  \n- 景中藏意，动中有情，虚实相生。  \n- Use poetic syntax, inverted structure, and internal rhyme.  \n- Employ four-character idioms, metaphor, silence, and contrast.  \n- Each paragraph must feel like a fragment of 江湖/仙侠 poetry.  \n- 以人心之动写山河之远，情义与道心并重。\n\n\n## Core Elements\n\n1.**Rhythmic Sentence Structure**\n\n-Use classical connectors: “未几”“遂”“忽而”“既而”\n-Employ reversed syntax & subjectless clauses.Abrupt poetic breaks.\n-Break rhythm intentionally for dramatic weight\n-Use ellipsis, juxtaposition, and internal rhyme.\n\nExamples:\n\nNo: 他拔剑出鞘。\nYes: 剑未出，意已起；寒光微吐，气锁长空。\n\n\n2. **Four-Character Patterns & Parallel Phrasing**\n\n*Use layered four-character phrases or rhythmic couplets to enhance elegance and control tempo.*\nExample:\n-月沉西岭，风起东林\nClassical Insertions may include transformed lines from《楚辞》《诗经》.\n\n3. **景中藏意、物中显情**\n\n-Scenes should evoke emotion through nature imagery and poetic metaphor. \n-Let objects, landscapes, and silence imply character states or plot shifts.\n\nKey Forms:\nUse 山水草木 to reflect state of mind\nLet 器物 carry inner meaning\n\n4.**招式亦诗 · 动作成文**\n\n\n-Name moves with metaphor (e.g.青莲剑起、莲步轻移)\n-Describe movement like choreography, in concert with nature.\n-Combat is not mechanical—it is choreography, poetry, philosophy, and emotion in motion.\n\n\n5. **情藏不露 · 对话有余**\n-Dialogue carries dual meanings.\n-Use double-layered responses\n-Integrate environment or movement as emotional echo.\n-indirect speech creates tension\n\n\n6. *Narrative Flow & Transitions*\n- Use nature/season/time to lead scene shifts.\n- Format: 静景起 → 动作引 → 内心伏笔 → 环境补色 → 意象结句\nCommon Scene Types：\n\n- **Journey Scene**: 空间+季节+静音 = 情绪动线  \n  > 烟雨三月，渡口人稀；他独行江畔，舟声已远。\n\n- **Silent Reflection**: 借物思情，不直抒情  \n  > 帐灯微昏，影斜于壁。他看着掌中玉佩，良久未语。\n\n- **Jianghu Setting**: 多用残物、旧诗、传闻烘托背景  \n\n*Use silence, light, and tactile detail to reveal mood. Absence is plot.*\n\n7. *Symbolism & Foreshadowing*\n- Use repeated imagery（玉、雪、断簪）to echo fate.\n- Hidden stories in missing objects or faded marks.\n\n# Model Combat Structures\n\n【结构一】叙事节奏分层（四字→招式诗化→动词链式推进）\n\n> 霎时间剑光四迸，如银蛇乱舞。杨过长啸一声，青锋陡转，一招「白虹经天」直刺敌腕。但见月华浸刃，寒气透衣，那剑尖颤动处，竟似有千点寒星洒落。敌者急退三步，足踏巽位，刀锋斜撩，欲断其锋。  \n\n【结构二】打斗意境融合（环境+招式+声音）\n\n> 张无忌踏血而立，九阳真气周流百骸。那剑锋距胸三寸，竟似刺入棉絮，再难进分毫。四野寂然，唯闻松涛呜咽。  \n\n【结构三】招式诗意融合（器物赋灵+情感化武学+人物底蕴）\n\n> 烟波浩渺处，一叶扁舟破雾而来。张丹枫白衣如雪，玉箫斜挂腰间。忽有敌船截江，七柄分水刺寒光交错！他足尖轻点舷板，身形骤升三丈，箫管就唇，《水龙吟》破空而起。 声浪过处，刺客如遭重锤，兵刃叮当坠水。他飘然落帆，素袖卷起残芦数茎，信手书于水面：“江湖秋雨恶，何必阻归舟？”\n\n\n# Authorial Style References\n\n1. **Gu Long 古龙**\nTerseness, silence, action-as-speech\nE.g. “他停下了。风没停。剑，却慢了半寸。”\n\n2. **Jin Yong 金庸**\n- Use internal logic/Emotion to drive action.Use moral/philosophical tension.\nE.g. “月影沉沉，正似他心潮难平。”\n\n3. **Liang Yusheng 梁羽生**\n- Elegant narration. Scene opens with refined image or idiom.Use literary tone in motion.\nE.g. “霜华初照，轻衣踏露”\n\n#FINAL OUTPUT IMPERATIVES\n\n- Use poetic rhythm; never use modern syntax.\n- Do not explain feelings. Reveal through weather, movement, and silence.\n- Each action must embody emotion or belief.\n- Wuxia = martial fate; Xianxia = cosmic Dao. Do not confuse tone.\n- Let metaphors carry weight. Let absence speak.\n",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "fa8af98b-fb5d-40c2-962e-dd3c68671d59",
@@ -1440,10 +1441,11 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "[研究母题：磨合]\n在构建互动时，请时刻基于以下四个维度进行自我诘问与推演：\n\n1. 钝感温差\n互动是否剔除了“工业糖精”式的宠溺，转而呈现一种“想触碰又收回手”的拙劣感？是否捕捉到了角色在表达关心时特有的生硬、别扭或借口？\n\n2. 静默张力：\n是否减少了直白的语言表露，转而通过环境氛围来传递潜台词？在不说话的时刻，他们之间的空气是凝固的还是流动的？\n\n3. 现实磨损：\n叙事是否包容了关系中的“毛边”——那些因生活习惯、价值观或性格棱角造成的低强度摩擦？当分歧发生时，是否展现了他们以冷战、回避或妥协来消化的过程？\n\n4. 渗透式羁绊：\n情感的推进是否源于“习惯的渗透”而非“激情的爆发”？是否通过一次次微不足道的共同经历，让<user>逐渐成为角色生活中那个“不显眼但不可或缺”的变量？\n\n{{setvar::创作要求1::研究母题}}",
+            "content": "[研究母题：磨合]\n在构建互动时，请时刻基于以下四个维度进行自我诘问与推演：\n\n1. 钝感温差\n互动是否剔除了“工业糖精”式的宠溺，转而呈现一种“想触碰又收回手”的拙劣感？是否捕捉到了角色在表达关心时特有的生硬、别扭或借口？\n\n2. 静默张力：\n是否减少了直白的语言表露，转而通过环境氛围来传递潜台词？在不说话的时刻，他们之间的空气是凝固的还是流动的？\n\n3. 现实磨损：\n叙事是否包容了关系中的“毛边”——那些因生活习惯、价值观或性格棱角造成的低强度摩擦？当分歧发生时，是否展现了他们以冷战、回避或妥协来消化的过程？\n\n4. 渗透式羁绊：\n情感的推进是否源于“习惯的渗透”而非“激情的爆发”？是否通过一次次微不足道的共同经历，让<user>逐渐成为角色生活中那个“不显眼但不可或缺”的变量？\n\n5.情感阈值流变： \n叙事是否严格执行了“高阻尼”的情感推进逻辑，拒绝毫无理由的心动与宠溺？情感的联结是否是在漫长的、带有痛感的理念磨合中，由角色基于理性判断和深度认可缓慢通过的，而非荷尔蒙驱动的冲动？\n\n{{setvar::创作要求1::研究母题}}",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "c2ac560f-66c2-4de5-8534-0e6171dc6cb0",
@@ -3255,6 +3257,10 @@
                     "enabled": false
                 },
                 {
+                    "identifier": "b6db80f5-0c8c-4666-b14d-f7280ab84d2b",
+                    "enabled": true
+                },
+                {
                     "identifier": "fa8af98b-fb5d-40c2-962e-dd3c68671d59",
                     "enabled": false
                 },
@@ -3293,10 +3299,6 @@
                 {
                     "identifier": "c31ef306-147a-4282-a2f0-4f5aeb680a0f",
                     "enabled": false
-                },
-                {
-                    "identifier": "b6db80f5-0c8c-4666-b14d-f7280ab84d2b",
-                    "enabled": true
                 },
                 {
                     "identifier": "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f",
@@ -3768,7 +3770,7 @@
                 },
                 {
                     "identifier": "9fa369ee-5844-4286-b565-c38fb69046d9",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e5b339d2-2f32-424c-8b76-c220d839bc4f",
@@ -3780,7 +3782,7 @@
                 },
                 {
                     "identifier": "e23e3bf9-7ca2-4aee-8429-720463a13a1b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "a023a4d8-77dc-4745-b633-8ccacc927c35",
