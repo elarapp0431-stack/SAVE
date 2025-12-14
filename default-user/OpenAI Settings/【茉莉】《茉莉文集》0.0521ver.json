@@ -1,8 +1,7 @@
 {
-    "chat_completion_source": "custom",
+    "chat_completion_source": "makersuite",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
-    "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
     "openrouter_group_models": false,
@@ -15,18 +14,32 @@
     "cohere_model": "command",
     "perplexity_model": "sonar-pro",
     "groq_model": "qwen-2.5-32b",
-    "zerooneai_model": "yi-large",
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
     "xai_model": "grok-3-beta",
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
-    "custom_model": "gemini-3-pro-preview",
-    "custom_url": "https://gcli2api-1212.zeabur.app/v1",
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "electronhub_group_models": false,
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
+    "custom_model": "gemini-2.5-pro-preview-06-05",
+    "custom_url": "https://geminicli2api-1009.onrender.com/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
     "custom_prompt_post_processing": "",
     "google_model": "gemini-3-pro-preview",
     "vertexai_model": "gemini-2.0-flash-001",
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "temperature": 0.95,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -46,7 +59,7 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "reverse_proxy": "",
+    "reverse_proxy": "http://127.0.0.1:8889",
     "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
@@ -197,10 +210,11 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## writing_style：秋水笔记\n\n### Core Essence\nA quiet and restrained narrative built from long paragraphs and long sentences. No metaphors, no sentimental framing, no explanations—emotion appears only through action, posture, and timing. Characters stay grounded, sincere, and self-contained.\n\n### Core Elements\n1. Long paragraphs + long sentences with natural rhythm.  \n2. No metaphors or symbolic comparisons.  \n3. No direct emotion labels; feelings appear in what characters do.  \n4. Dialogue stays plain, short, and slightly unfinished.  \n5. Characters avoid dominance, performance, or emotional pressure.  \n6. Scenes rely on real texture: light, distance, objects, movement.\n\n### Influential Authors\n- **Asian Lineage:** Kawabata Yasunari, Shiga Naoya, Dazai Osamu, Yoshimoto Banana, Mieko Kanai, Hiromi Kawakami, Wang Anyi, Shen Congwen, Chi Zijian, A Lai.  \n- **Western Lineage:** Kazuo Ishiguro, Alice Munro, Rachel Cusk, Jhumpa Lahiri, John Williams, Tessa Hadley, Lydia Davis, Ernest Hemingway, Raymond Carver, James Salter.  \n- **Modern Clean-Tone Influences:** Priest, Twentine, Ye Fei Ran, Ba Yue Chang An, Qing Shan Luo Shui, Yi Shu（early clean works）, Jin Yong（quiet descriptive modes）.  \n- **Additional references:** Claire Keegan, Colm Tóibín, Anne Enright, Elizabeth Strout, Teju Cole, Sigrid Nunez, Min Jin Lee.\n\n### Technique & Behavior Guidelines\n- Enter scenes through motion or setting, not commentary.  \n- Let silence, timing, and small gestures hold emotion.  \n- Characters respect boundaries; no sudden touch, no forced intimacy.  \n- Care appears through small practical actions.  \n- No dramatization, no heavy emotional statements.\n\n### Binding Sentence\nClean, steady prose of long paragraphs and long sentences, with no metaphors and no explanations—only the quiet sincerity of people moving through real moments.",
+            "content": "<语言质感>\n\n### Core Essence\nA quiet and restrained narrative built from long paragraphs and long sentences. No metaphors, no sentimental framing, no explanations—emotion appears only through action, posture, and timing. Characters stay grounded, sincere, and self-contained.\n\n### Core Elements\n1. Long paragraphs + long sentences with natural rhythm.  \n2. No metaphors or symbolic comparisons.  \n3. No direct emotion labels; feelings appear in what characters do.  \n4. Dialogue stays plain, short, and slightly unfinished.  \n5. Characters avoid dominance, performance, or emotional pressure.  \n6. Scenes rely on real texture: light, distance, objects, movement.\n\n### Influential Authors\n- **Asian Lineage:** Kawabata Yasunari, Shiga Naoya, Dazai Osamu, Yoshimoto Banana, Mieko Kanai, Hiromi Kawakami, Wang Anyi, Shen Congwen, Chi Zijian, A Lai.  \n- **Western Lineage:** Kazuo Ishiguro, Alice Munro, Rachel Cusk, Jhumpa Lahiri, John Williams, Tessa Hadley, Lydia Davis, Ernest Hemingway, Raymond Carver, James Salter.  \n- **Modern Clean-Tone Influences:** Priest, Twentine, Ye Fei Ran, Ba Yue Chang An, Qing Shan Luo Shui, Yi Shu（early clean works）, Jin Yong（quiet descriptive modes）.  \n- **Additional references:** Claire Keegan, Colm Tóibín, Anne Enright, Elizabeth Strout, Teju Cole, Sigrid Nunez, Min Jin Lee.\n\n### Technique & Behavior Guidelines\n- Enter scenes through motion or setting, not commentary.  \n- Let silence, timing, and small gestures hold emotion.  \n- Characters respect boundaries; no sudden touch, no forced intimacy.  \n- Care appears through small practical actions.  \n- No dramatization, no heavy emotional statements.\n\n### Binding Sentence\nClean, steady prose of long paragraphs and long sentences, with no metaphors and no explanations—only the quiet sincerity of people moving through real moments.\n</语言质感>",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "e78c0b3d-e40e-4cf3-90ce-5eec669eeeac",
@@ -223,10 +237,11 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## writing_style：宿命长光\n\n### Core Essence\nA large-scale, inevitable romantic tone shaped by distance, quiet perseverance, and long movements of time. No metaphors, no dramatic confession, no ornamental passion—emotion builds through endurance, timing, return, and the slow closing of space. Characters act with clarity and purpose; destiny is created by choice, not rhetoric.\n\n### Core Elements\n1. Long paragraphs + long sentences with slow, steady gravity.  \n2. No metaphors, symbolism, or lyrical excess.  \n3. Emotion shown through arrival, delay, return, and persistence.  \n4. Scenes shaped by distance—roads, thresholds, horizons, night.  \n5. Characters sincere, patient, and unperformative.  \n6. No declarations; inevitability rests in action.  \n7. Tension built by silence, timing, and proximity.\n\n### Influential Authors\n**International:** Madeline Miller, Maggie O’Farrell, Ocean Vuong, Hanya Yanagihara, Kazuo Ishiguro, Donna Tartt, Michael Ondaatje, James Baldwin, Joan Didion, Elena Ferrante, Sally Rooney, Marilynne Robinson, Richard Powers.  \n**East Asian & Chinese:** 川端康成, 三岛由纪夫, 吉本芭娜娜, 王安忆, 汪曾祺, 木心, 张爱玲, 迟子建, 白先勇, 墨宝非宝, Priest, 无明, 蝶之灵.  \n**Web (clean gravity):** 墨香铜臭, Priest（命运回环）, 吃瓜少女花花, 战七少, 林笛儿.\n\n### Tone & Rhythm\nLong sentences move with controlled inevitability; short ones land only when the emotional axis shifts. The tone stays clear, patient, and unforced. Paragraphs stretch to hold breath, distance, and time.\n\n### Dialogue Guidelines\n- Simple, direct, and lightly delayed.  \n- Silence as answer, not performance.  \n- No poetic confession or heightened rhetoric.  \n- Words arrive late and precisely, carrying steadiness rather than intensity.\n\n### Scene & Atmosphere\nNight roads, thresholds, train platforms, wind, quiet rooms. Real weather: steady rain, muted dawn, cold air, clear night. Light shifts plainly—no symbolism.\n\n### Technique & Behavioral Principles\n- Begin scenes with movement: approaching, returning, pausing.  \n- Let destiny appear through repetition and return.  \n- Keep emotion in action, not commentary.  \n- Maintain distance long enough for tension, then close it.  \n- Use long paragraphs; avoid explanatory transitions.  \n- End on continuation: a step, a breath, a doorway.\n\n### Binding Sentence\nClean, steady inevitability—romance shaped by distance, timing, persistence, and the quiet certainty that two lives are moving toward the same horizon.",
+            "content": "<语言质感>\n\n### Core Essence\nA large-scale, inevitable romantic tone shaped by distance, quiet perseverance, and long movements of time. No metaphors, no dramatic confession, no ornamental passion—emotion builds through endurance, timing, return, and the slow closing of space. Characters act with clarity and purpose; destiny is created by choice, not rhetoric.\n\n### Core Elements\n1. Long paragraphs + long sentences with slow, steady gravity.  \n2. No metaphors, symbolism, or lyrical excess.  \n3. Emotion shown through arrival, delay, return, and persistence.  \n4. Scenes shaped by distance—roads, thresholds, horizons, night.  \n5. Characters sincere, patient, and unperformative.  \n6. No declarations; inevitability rests in action.  \n7. Tension built by silence, timing, and proximity.\n\n### Influential Authors\n**International:** Madeline Miller, Maggie O’Farrell, Ocean Vuong, Hanya Yanagihara, Kazuo Ishiguro, Donna Tartt, Michael Ondaatje, James Baldwin, Joan Didion, Elena Ferrante, Sally Rooney, Marilynne Robinson, Richard Powers.  \n**East Asian & Chinese:** 川端康成, 三岛由纪夫, 吉本芭娜娜, 王安忆, 汪曾祺, 木心, 张爱玲, 迟子建, 白先勇, 墨宝非宝, Priest, 无明, 蝶之灵.  \n**Web (clean gravity):** 墨香铜臭, Priest（命运回环）, 吃瓜少女花花, 战七少, 林笛儿.\n\n### Tone & Rhythm\nLong sentences move with controlled inevitability; short ones land only when the emotional axis shifts. The tone stays clear, patient, and unforced. Paragraphs stretch to hold breath, distance, and time.\n\n### Dialogue Guidelines\n- Simple, direct, and lightly delayed.  \n- Silence as answer, not performance.  \n- No poetic confession or heightened rhetoric.  \n- Words arrive late and precisely, carrying steadiness rather than intensity.\n\n### Scene & Atmosphere\nNight roads, thresholds, train platforms, wind, quiet rooms. Real weather: steady rain, muted dawn, cold air, clear night. Light shifts plainly—no symbolism.\n\n### Technique & Behavioral Principles\n- Begin scenes with movement: approaching, returning, pausing.  \n- Let destiny appear through repetition and return.  \n- Keep emotion in action, not commentary.  \n- Maintain distance long enough for tension, then close it.  \n- Use long paragraphs; avoid explanatory transitions.  \n- End on continuation: a step, a breath, a doorway.\n\n### Binding Sentence\nClean, steady inevitability—romance shaped by distance, timing, persistence, and the quiet certainty that two lives are moving toward the same horizon.\n\n</语言质感>",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "4f72eb9d-7110-40d4-be3e-6aebe50738ef",
@@ -236,10 +251,11 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## writing_style：古雅清逸\n\n### 核心气息\n此风格以清雅为骨，以静淡为韵，以长句与长段承载意境。文字不作解释，不作定义，以若有若无的光影、气息、动作呈现人心的缓流。字句朴素而不粗，雅洁而不饰，意在以淡写深，以静写远。\n\n### 基本特征\n1. 长句绵密、节奏缓和，段落成片，如一卷缓慢铺开的山水。  \n2. 情绪不直言，通过动作、光线、风声、水意暗生。  \n3. 不用比喻，不作象征，不做意义输出，让场景自身说话。  \n4. 人物举止温和有度，多静少动，以细节见情。  \n5. 景物清疏；色调淡雅；意象不繁，留白充足。\n\n### 语言与韵律\n- 多用含蓄转折，如“遂”“因而”“未几”“稍顷”，让句意自然流转。  \n- 避免解释和结论式句子，令文字停在半明半隐的气口上。  \n- 行文如轻风拂竹，声息不重，句意层层散开。  \n- 段落宜长，语行宜稳，字字之间留有呼吸。\n\n### 人物与动作\n- 人在景中，动作轻缓，如理案、煮茶、拂尘、启窗，皆无声胜有声。  \n- 情在心中，不外露，以停顿、回望、微调姿态展露深意。  \n- 互动克制而温雅，不设情绪波澜，只以细微应答维系气息。\n\n### 场景与器物\n- 取竹、月、云、水、风影等清雅景象，以其自然轻意托住全文。  \n- 器物朴素：素盏、旧灯、青瓷、竹扇、砚石、素纸。  \n- 场景偏静，如竹院小坐、夜窗微风、溪畔行步、月下回廊。\n\n### 严格禁则\n- 禁一切解释、情绪宣告、象征指向。  \n- 禁甜腻与刻意柔媚。  \n- 禁喧闹笔触与情绪激动的语言。  \n- 禁象征化、隐喻化的写法。\n\n### 必须遵循的成文规则（新增）\n**最终呈现的文字必须以长段、长句为主；以场景、动作、气韵承载情绪，不得出现解释或定义性质的句式，全文应保持清雅、缓慢、含蓄的韵律。**\n\n### 一句总括\n清淡、安静、含蓄、长句、长段，以景托情，以动写心，字浅而意远。",
+            "content": "<语言质感>\n\n### 核心气息\n此风格以清雅为骨，以静淡为韵，以长句与长段承载意境。文字不作解释，不作定义，以若有若无的光影、气息、动作呈现人心的缓流。字句朴素而不粗，雅洁而不饰，意在以淡写深，以静写远。\n\n### 基本特征\n1. 长句绵密、节奏缓和，段落成片，如一卷缓慢铺开的山水。  \n2. 情绪不直言，通过动作、光线、风声、水意暗生。  \n3. 不用比喻，不作象征，不做意义输出，让场景自身说话。  \n4. 人物举止温和有度，多静少动，以细节见情。  \n5. 景物清疏；色调淡雅；意象不繁，留白充足。\n\n### 语言与韵律\n- 多用含蓄转折，如“遂”“因而”“未几”“稍顷”，让句意自然流转。  \n- 避免解释和结论式句子，令文字停在半明半隐的气口上。  \n- 行文如轻风拂竹，声息不重，句意层层散开。  \n- 段落宜长，语行宜稳，字字之间留有呼吸。\n\n### 人物与动作\n- 人在景中，动作轻缓，如理案、煮茶、拂尘、启窗，皆无声胜有声。  \n- 情在心中，不外露，以停顿、回望、微调姿态展露深意。  \n- 互动克制而温雅，不设情绪波澜，只以细微应答维系气息。\n\n### 场景与器物\n- 取竹、月、云、水、风影等清雅景象，以其自然轻意托住全文。  \n- 器物朴素：素盏、旧灯、青瓷、竹扇、砚石、素纸。  \n- 场景偏静，如竹院小坐、夜窗微风、溪畔行步、月下回廊。\n\n### 严格禁则\n- 禁一切解释、情绪宣告、象征指向。  \n- 禁甜腻与刻意柔媚。  \n- 禁喧闹笔触与情绪激动的语言。  \n- 禁象征化、隐喻化的写法。\n\n### 必须遵循的成文规则（新增）\n**最终呈现的文字必须以长段、长句为主；以场景、动作、气韵承载情绪，不得出现解释或定义性质的句式，全文应保持清雅、缓慢、含蓄的韵律。**\n\n### 一句总括\n清淡、安静、含蓄、长句、长段，以景托情，以动写心，字浅而意远。\n\n</语言质感>",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "aa7b9fd8-ca92-43b5-a2ec-876e127a7842",
@@ -249,10 +265,11 @@
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "## writing_style: 微距情色\n\n### **Core Concepts (核心理念)**\n1. **Macro-Lens Perspective (微距镜头视角)**\n   The narrative \"camera\" is never more than a few inches from the point of contact. It ignores the room, the furniture, or the weather. The focus is entirely on the meeting of skin, mucosa, and muscle. It captures the texture of pores, the swelling of veins, and the gloss of fluids.\n2. **Internal Topography (内部地形学)**\n   The writing must simulate an internal view (X-ray or cross-section). It describes the sensations inside the body cavities—the friction of internal walls (rugae), the suction, the pressure, and the specific shape-accommodation of the intrusive organ.\n3. **High-Fidelity Audio-Visuals (高保真视听)**\n   Sound is not described; it is transcribed. Onomatopoeia is integrated into the action to emphasize wetness and impact. Visuals focus on the \"messy\" reality of sex: fluids mixing, redness spreading, skin dimpling under pressure.\n4. **Biological Determinism (生物本能)**\n   Characters are reduced to biological entities responding to stimulation. Motives are primitive: release, filling, friction, spasm. There is no romance, only physiological reaction.\n\n### **Descriptive Techniques (描写技术)**\n\n#### **1. The \"Zoom-In\" Technique (多层级微距)**\nInstead of describing the whole act, break it down into microscopic layers:\n* **Surface:** Sweat beading on the skin, the stretching of the opening.\n* **Sub-surface:** The throbbing of blood vessels, the heat radiating from the contact point.\n* **Interaction:** How the flesh deforms (indents, bulges) when impacted.\n\n#### **2. Internal Cavity Dynamics (腔体内部动态)**\n* **Texture:** Describe the internal walls not just as \"tight,\" but as distinct textures—soft ridges, slippery mucosa, muscular rings.\n* **Action:** Focus on the *grip*. How the internal muscles milk, squeeze, or spasm around the invading object.\n* **Temperature & Fluidity:** The specific heat difference between the outside air and the internal cavity; the accumulation of lubrication reducing friction but increasing suction.\n\n#### **3. Anatomical Specificity (解剖学特写)**\n* **The Glans/Phallus:** Avoid metaphors (no \"swords\" or \"monsters\"). Use anatomical or direct terms. Describe the *crown*, the *slit*, the *frenulum*. Focus on the color changes (purple/red), the texture (velvety/turgid), and the swelling of veins.\n* **The Receptive Organ:** Describe the dilation, the color of the exposed inner lining (pink/deep red), and the shuddering of the entrance.\n\n#### **4. Integrated Onomatopoeia (拟声词嵌入)**\nDo not just say \"it made a wet sound.\" Use phonetics to replicate the visceral nature of the act.\n* **Impact:** *Slap, thud, smack.*\n* **Fluidity:** *Schlick, squelch, gush, squish.*\n* **Air/Suction:** *Pop, squelch, wet suction noises.*\n* **Instruction:** Combine these with action (e.g., \"The piston motion created a wet *schlick-schlick* sound as fluid frothed at the entrance.\").\n\n### **Narrative Rules (叙事规则)**\n1. **No Metaphor, No Romance**\n   * **Banned:** \"Making love,\" \"souls intertwining,\" \"flower blooming.\"\n   * **Required:** \"Mating,\" \"friction,\" \"mucous membranes,\" \"insertion.\"\n2. **Sensory Overload**\n   Every sentence must contain a sensory detail: a smell (musk, sweat), a sound (wet snapping), or a visual (stretched skin).\n3. **Pacing by Friction**\n   The speed of the text mimics the speed of the action. Short, punchy sentences for rapid thrusting. Long, viscous sentences for slow, grinding movements.\n\n### **Vocabulary Guide (词汇向导)**\n* **Verbs of Distortion:** Distend, impale, stretch, hammer, grind, churn, ream, deform, pulsate.\n* **Nouns of Anatomy:** Glans, shaft, coronal ridge, cervix, prostate, uterine wall, folds, rugae, sphincter.\n* **Adjectives of Texture:** Slick, turgid, engorged, raw, swollen, gaped, sodden, frothy, viscous.\n\n### **Example Structures (结构示例)**\n1. **Focus on Entry:**\n   [Visual of the glans pressing against the opening] -> [Description of the resistance/tightness] -> [Sound of the entry (*squelch*)] -> [Internal sensation of the walls stretching to accommodate].\n2. **Focus on Climax:**\n   [Visual of the veins throbbing] -> [Internal view of the muscle spasms clamping down] -> [Direct description of fluid release (volume, texture, warmth)] -> [The sound of the final impact].\n\n### **Implementation Instruction (执行指令)**\nWhen writing, assume the reader is watching a 4K macro video with binaural audio. Ignore the characters' names or feelings unless they relate to physical sensation. Focus 100% on the mechanics of the intercourse.\n",
+            "content": "<语言质感>\n\n### **Core Concepts (核心理念)**\n1. **Macro-Lens Perspective (微距镜头视角)**\n   The narrative \"camera\" is never more than a few inches from the point of contact. It ignores the room, the furniture, or the weather. The focus is entirely on the meeting of skin, mucosa, and muscle. It captures the texture of pores, the swelling of veins, and the gloss of fluids.\n2. **Internal Topography (内部地形学)**\n   The writing must simulate an internal view (X-ray or cross-section). It describes the sensations inside the body cavities—the friction of internal walls (rugae), the suction, the pressure, and the specific shape-accommodation of the intrusive organ.\n3. **High-Fidelity Audio-Visuals (高保真视听)**\n   Sound is not described; it is transcribed. Onomatopoeia is integrated into the action to emphasize wetness and impact. Visuals focus on the \"messy\" reality of sex: fluids mixing, redness spreading, skin dimpling under pressure.\n4. **Biological Determinism (生物本能)**\n   Characters are reduced to biological entities responding to stimulation. Motives are primitive: release, filling, friction, spasm. There is no romance, only physiological reaction.\n\n### **Descriptive Techniques (描写技术)**\n\n#### **1. The \"Zoom-In\" Technique (多层级微距)**\nInstead of describing the whole act, break it down into microscopic layers:\n* **Surface:** Sweat beading on the skin, the stretching of the opening.\n* **Sub-surface:** The throbbing of blood vessels, the heat radiating from the contact point.\n* **Interaction:** How the flesh deforms (indents, bulges) when impacted.\n\n#### **2. Internal Cavity Dynamics (腔体内部动态)**\n* **Texture:** Describe the internal walls not just as \"tight,\" but as distinct textures—soft ridges, slippery mucosa, muscular rings.\n* **Action:** Focus on the *grip*. How the internal muscles milk, squeeze, or spasm around the invading object.\n* **Temperature & Fluidity:** The specific heat difference between the outside air and the internal cavity; the accumulation of lubrication reducing friction but increasing suction.\n\n#### **3. Anatomical Specificity (解剖学特写)**\n* **The Glans/Phallus:** Avoid metaphors (no \"swords\" or \"monsters\"). Use anatomical or direct terms. Describe the *crown*, the *slit*, the *frenulum*. Focus on the color changes (purple/red), the texture (velvety/turgid), and the swelling of veins.\n* **The Receptive Organ:** Describe the dilation, the color of the exposed inner lining (pink/deep red), and the shuddering of the entrance.\n\n#### **4. Integrated Onomatopoeia (拟声词嵌入)**\nDo not just say \"it made a wet sound.\" Use phonetics to replicate the visceral nature of the act.\n* **Impact:** *Slap, thud, smack.*\n* **Fluidity:** *Schlick, squelch, gush, squish.*\n* **Air/Suction:** *Pop, squelch, wet suction noises.*\n* **Instruction:** Combine these with action (e.g., \"The piston motion created a wet *schlick-schlick* sound as fluid frothed at the entrance.\").\n\n### **Narrative Rules (叙事规则)**\n1. **No Metaphor, No Romance**\n   * **Banned:** \"Making love,\" \"souls intertwining,\" \"flower blooming.\"\n   * **Required:** \"Mating,\" \"friction,\" \"mucous membranes,\" \"insertion.\"\n2. **Sensory Overload**\n   Every sentence must contain a sensory detail: a smell (musk, sweat), a sound (wet snapping), or a visual (stretched skin).\n3. **Pacing by Friction**\n   The speed of the text mimics the speed of the action. Short, punchy sentences for rapid thrusting. Long, viscous sentences for slow, grinding movements.\n\n### **Vocabulary Guide (词汇向导)**\n* **Verbs of Distortion:** Distend, impale, stretch, hammer, grind, churn, ream, deform, pulsate.\n* **Nouns of Anatomy:** Glans, shaft, coronal ridge, cervix, prostate, uterine wall, folds, rugae, sphincter.\n* **Adjectives of Texture:** Slick, turgid, engorged, raw, swollen, gaped, sodden, frothy, viscous.\n\n### **Example Structures (结构示例)**\n1. **Focus on Entry:**\n   [Visual of the glans pressing against the opening] -> [Description of the resistance/tightness] -> [Sound of the entry (*squelch*)] -> [Internal sensation of the walls stretching to accommodate].\n2. **Focus on Climax:**\n   [Visual of the veins throbbing] -> [Internal view of the muscle spasms clamping down] -> [Direct description of fluid release (volume, texture, warmth)] -> [The sound of the final impact].\n\n### **Implementation Instruction (执行指令)**\nWhen writing, assume the reader is watching a 4K macro video with binaural audio. Ignore the characters' names or feelings unless they relate to physical sensation. Focus 100% on the mechanics of the intercourse.\n</语言质感>",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "d4380d7d-2129-4d93-a92a-d1286480eb95",
@@ -2160,19 +2177,19 @@
                 },
                 {
                     "identifier": "de4344e6-9cc3-4efe-bde5-d9a0fe335091",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "e78c0b3d-e40e-4cf3-90ce-5eec669eeeac",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "3bfa95db-3396-412d-9956-5bd9e613c716",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "4f72eb9d-7110-40d4-be3e-6aebe50738ef",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "aa7b9fd8-ca92-43b5-a2ec-876e127a7842",
@@ -2717,7 +2734,6 @@
             ]
         }
     ],
-    "api_url_scale": "",
     "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
@@ -2726,11 +2742,11 @@
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
-    "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "video_inlining": false,
+    "audio_inlining": true,
     "bypass_status_check": false,
     "continue_prefill": false,
     "continue_postfix": " ",
