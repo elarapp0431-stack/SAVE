@@ -36,5 +36,6 @@
     "reduced_motion": true,
     "compact_input_area": true,
     "show_swipe_num_all_messages": true,
-    "click_to_edit": false
+    "click_to_edit": false,
+    "media_display": "list"
 }
