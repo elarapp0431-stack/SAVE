@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "LNavOpened": "false",
-        "NavOpened": "true",
+        "NavOpened": "false",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}},\"3090278210222208\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
@@ -128,7 +128,7 @@
     },
     "currentVersion": "1.14.0",
     "username": "颜世凝",
-    "active_character": "流霞帖.png",
+    "active_character": "应不染.png",
     "active_group": null,
     "user_avatar": "1759541606718-.png",
     "amount_gen": 150,
@@ -424,7 +424,7 @@
         "movingUIState": {},
         "movingUIPreset": "Default",
         "noShadows": true,
-        "theme": "୨୧BalletDream（Rose）",
+        "theme": "不见山",
         "gestures": false,
         "auto_swipe": false,
         "auto_swipe_minimum_length": 0,
@@ -2571,9 +2571,10 @@
                 {
                     "id": "2077db32-f9df-44f3-a81d-52a1c0096677",
                     "mode": "cc",
-                    "exclude": [],
+                    "exclude": [
+                        "preset"
+                    ],
                     "api": "google",
-                    "preset": "【MoM】【象牙塔】象牙塔 1.0.0 Ver @电波系（251203）",
                     "api-url": "https://ff.sillydream.top/v1",
                     "model": "deepseek/deepseek-v3.1",
                     "proxy": "AIStudio反代",
@@ -5065,8 +5066,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 86,
-                "LAST_RECEIVE_CHARS": 99,
+                "LAST_RECEIVE_TOKENS": 710,
+                "LAST_RECEIVE_CHARS": 949,
                 "LAST_SEND_TOKENS": 95682,
                 "LAST_SEND_CHARS": 139211,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -5109,6 +5110,9 @@
             },
             "characterConfigs": {
                 "流霞帖.png": {
+                    "setList": []
+                },
+                "应不染.png": {
                     "setList": []
                 }
             }
