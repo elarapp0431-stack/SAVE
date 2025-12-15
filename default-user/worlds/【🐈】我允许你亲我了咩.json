@@ -73,11 +73,6 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            },
-            "characterFilter": {
-                "isExclude": false,
-                "names": [],
-                "tags": []
             }
         },
         "1": {
@@ -970,6 +965,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "11": {
@@ -1055,6 +1055,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "12": {
@@ -1324,6 +1329,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "16": {
@@ -1949,6 +1959,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "24": {
@@ -2127,6 +2142,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "26": {
@@ -2221,7 +2241,7 @@
             "addMemo": true,
             "order": 310,
             "position": 2,
-            "disable": false,
+            "disable": true,
             "ignoreBudget": false,
             "excludeRecursion": false,
             "preventRecursion": true,
@@ -2282,6 +2302,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "28": {
@@ -2512,6 +2537,11 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         }
     },
