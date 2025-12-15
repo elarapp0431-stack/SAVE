@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "NavOpened": "false",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}},\"3090278210222208\":{\"fieldsWarned\":{}}}}",
@@ -5069,8 +5069,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 10936,
-                "LAST_RECEIVE_CHARS": 32554,
+                "LAST_RECEIVE_TOKENS": 11530,
+                "LAST_RECEIVE_CHARS": 37330,
                 "LAST_SEND_TOKENS": 32011,
                 "LAST_SEND_CHARS": 50348,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -8578,11 +8578,10 @@
                 "injection_depth": 0,
                 "injection_order": 999,
                 "role": "system",
-                "content": "你需要生成以<branches></branches>包裹的选项分支，每个选项限制在100字内:\n\n<details>\n<summary>𓋫 𓏴𓏴 𓏵‧₊🎮剧情分支₊‧𓏵 𓏴𓏴 𓋫</summary>\n<branches>\n（每行填充一个选项，一共6个）\n</branches>\n</details>\n\n说明:\n- 选项分支需紧跟正文接续，不可时间跨度过大，尽可能地完整以方便剧情衔接\n- 选项要包含完整的user视角的对话+动作指导\n- 行动和说话的主体必须是<user>，采用第三人称“{{user}}”（不受`user人称`影响）\n- 选项各涵盖推进故事、切换场景、跳转时间、发展亲密、突然转折、转入NSFW等不同方面，互不干扰\n- 选项不需要加序号、项目符号等\n- 当`双语对话`开启，选项内对话需符合格式\n\n{{setvar::branches::剧情选项}}",
+                "content": ">>> 选项分支`<branches>`规范\n\n<branches>\n<details><summary>🩻剧情分支</summary>\n（每行填充一个选项，一共6个）\n\n</details>\n</branches>\n说明:\n- 行动和说话的主体必须是<USER>，采用第三人称，写明<USER>姓名(也就是为user提供6种扮演路线)，可以带有时间跨度，注意不要ooc\n---\n{{setvar::branches::\n选项\n}}",
                 "system_prompt": false,
                 "marker": false,
-                "forbid_overrides": false,
-                "injection_trigger": []
+                "forbid_overrides": false
             },
             {
                 "identifier": "6d4c01e6-a181-4e21-99cc-8e7d8ab67661",
