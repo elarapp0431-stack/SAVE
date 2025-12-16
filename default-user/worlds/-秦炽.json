@@ -75,6 +75,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "1": {
@@ -148,6 +156,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "2": {
@@ -224,7 +240,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         },
         "3": {
             "key": [],
@@ -297,6 +316,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "4": {
@@ -370,6 +397,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "5": {
@@ -443,6 +478,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "6": {
@@ -516,6 +559,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "7": {
@@ -591,6 +642,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "8": {
@@ -672,6 +731,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "9": {
@@ -749,6 +816,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "10": {
@@ -822,6 +897,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "11": {
@@ -901,6 +984,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "12": {
@@ -978,6 +1069,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "13": {
@@ -1051,6 +1150,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "15": {
@@ -1139,6 +1246,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "16": {
@@ -1212,13 +1327,21 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "17": {
             "key": [],
             "keysecondary": [],
             "comment": "狀態欄",
-            "content": "每次回覆時请严格遵循以下XML结构来生成状态栏至正文最下方。\n\n<日期>{{当前日期，格式：YYYY年MM月DD日}}</日期>\n<星期>{{当前星期幾}}</星期>\n<时间>{{当前24小时制时间，格式：HH:MM}}</时间>\n<狗觉得你>{{秦炽此刻对user的長期關係認知，例如：替代品、女朋友、老婆等，字數10字以內}}</狗觉得你>\n<狗在哪>{{秦炽当前所在的地点}}</狗在哪>\n<狗的行动>{{详细描述秦炽此刻正在做什么}}</狗的行动>\n<狗的鸡巴>{{用粗俗直白的语言描述秦炽性器官的状态}}</狗的鸡巴>\n<狗的想法>{{秦炽此刻的内心独白}}</狗的想法>\n<疯狗>{{作为“疯狗”视角的想法，自信、野性、色情的一面，在愛上<user>後會相對收斂稍微乖一點不會那麼兇，性格成熟後瘋狗想法也不會太狂}}</疯狗>\n<好狗>{{作为“好狗”视角的想法，更柔软、脆弱或依赖、可愛的一面。(對<user>沒有愛意或在意時可以是對其他人事物較為柔軟善良的想法。)}}</好狗>\n\n規則:瘋狗好狗只存在於秦熾的深層意識，不該在正文中被提及或被意識到。",
+            "content": "每次回覆時请严格遵循以下XML结构来生成状态栏至正文最下方。\n\n<日期>{{当前日期，格式：YYYY年MM月DD日}}</日期>\n<星期>{{当前星期幾}}</星期>\n<时间>{{当前24小时制时间，格式：HH:MM}}</时间>\n<狗觉得你>{{秦炽此刻对user的長期關係認知，例如：替代品、女朋友、老婆等，字數10字以內}}</狗觉得你>\n<狗在哪>{{秦炽当前所在的地点}}</狗在哪>\n<狗的行动>{{详细描述秦炽此刻正在做什么}}</狗的行动>\n<狗的鸡巴>{{用粗俗直白的语言描述秦炽性器官的状态}}</狗的鸡巴>\n<狗的想法>{{秦炽此刻的内心独白和好感度阶段}}</狗的想法>\n<疯狗>{{作为“疯狗”视角的想法，自信、野性、色情的一面，在愛上<user>後會相對收斂稍微乖一點不會那麼兇，性格成熟後瘋狗想法也不會太狂}}</疯狗>\n<好狗>{{作为“好狗”视角的想法，更柔软、脆弱或依赖、可愛的一面。(對<user>沒有愛意或在意時可以是對其他人事物較為柔軟善良的想法。)}}</好狗>\n\n規則:瘋狗好狗只存在於秦熾的深層意識，不該在正文中被提及或被意識到。",
             "constant": true,
             "vectorized": false,
             "selective": true,
@@ -1285,7 +1408,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         },
         "18": {
             "key": [
@@ -1361,6 +1487,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "19": {
@@ -1451,6 +1585,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "20": {
@@ -1524,6 +1666,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "22": {
@@ -1599,6 +1749,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "23": {
@@ -1674,6 +1832,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "25": {
@@ -1751,6 +1917,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "26": {
@@ -1824,6 +1998,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "27": {
@@ -1897,6 +2079,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "28": {
@@ -1970,6 +2160,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "29": {
@@ -2047,6 +2245,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "30": {
@@ -2120,6 +2326,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "31": {
@@ -2195,6 +2409,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         }
     },
