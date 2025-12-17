@@ -2,7 +2,6 @@
     "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
-    "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
     "openrouter_group_models": false,
@@ -15,10 +14,18 @@
     "cohere_model": "command",
     "perplexity_model": "sonar-pro",
     "groq_model": "qwen-2.5-32b",
-    "zerooneai_model": "yi-large",
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
     "xai_model": "grok-3-beta",
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "electronhub_group_models": false,
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
     "custom_model": "gemini-3-pro-preview",
     "custom_url": "https://gcli2api-1212.zeabur.app/v1",
     "custom_include_body": "",
@@ -27,6 +34,12 @@
     "custom_prompt_post_processing": "",
     "google_model": "gemini-2.5-pro-preview-06-05",
     "vertexai_model": "gemini-2.0-flash-001",
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "temperature": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -53,7 +66,7 @@
     "scenario_format": "{{scenario}}",
     "personality_format": "{{personality}}",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": true,
+    "stream_openai": false,
     "prompts": [
         {
             "identifier": "0c170970-8aed-4060-aaa3-f4d4248ceac3",
@@ -588,7 +601,7 @@
         {
             "identifier": "a2a29081-2eee-4cd1-9a10-04da6f469c51",
             "name": "🎟️秋水笔记",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -692,7 +705,7 @@
         {
             "identifier": "74559a6b-f0e0-411d-b969-efb4a5077d50",
             "name": "🎟️港风文风",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1362,6 +1375,71 @@
             "forbid_overrides": false
         },
         {
+            "identifier": "f48b544c-eb40-4755-865f-c0aceb520d1c",
+            "name": "🥵白描少比喻补丁@村妹儿",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "{{setvar::NSFW白描::\n# NSFW写作手法\n  - \"直白描写：完全禁止比喻句，避免‘像…一样’或‘仿佛…’的修辞。\"\n  - \"身体化：用动作、体液、肌肉反应、呼吸与心理直接表达。\"\n  - \"过程递进：由浅入深，由慢到快，由控制到失控，节奏必须自然推进。\"\n  - \"多样替换：同类词汇需交替使用，避免堆叠‘小穴’‘鸡巴’等单一词。\"\n  - \"互动驱动：任何动作必须伴随身体反应或心理波动，不能单独悬空。\"\n\nwriting_rules:\n  - \"禁止一切比喻，杜绝‘像烙铁/铁棍/小船’等比拟修辞。\"\n  - \"只能使用白描：动作 + 部位 + 体液 + 反应。\"\n  - \"句式必须多样，短句增强冲击，长句承载细节。\"\n  - \"每段都要有身体反应，避免单调的动作堆叠。\"\n  - \"体液与反应不可省略，确保湿度、冲撞与快感贯穿。\"\n}}",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "e5fdc6cc-4171-490d-aad9-c01d37e587dd",
+            "name": "🥵补丁：射精描写@柑橘",
+            "enabled": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "{{setvar::射精特摄::\n# 射精描写参考\n射精时，应将视角聚焦于男性：\n\n- 射精前：\n  - 睾丸的鼓胀感、紧绷感、聚集感\n  - 阴茎的搏动、酸胀，马眼的开合，肉棒青筋/输精管的脉动\n  - 生理的快感堆积逐渐顶峰、难以抑制，心理的征服/满足/欣慰/柔情\n\n- 射精过程中：\n  - 睾丸：收缩、充盈、瘪下等\n  - 阴茎：射精时柱身伴随的膨胀、搏动，青筋的鼓起、刮擦，龟头的膨大、堵塞感\n  - 精液：如何汇聚并泵出？精液和肉体的碰撞（填充、飞溅、流淌等）、精液的质地（浓度、颜色、流动性、气味、温度等）、精液喷射的画面\n  - 生理与感官联动：肉体快感，射精的时长，精液量，精液与阴毛的交互等\n  - 心理的快感\n\n- 射精后：\n  - 睾丸状态\n  - 阴茎状态（通常会慢慢变软）\n  - 生理、心理状态\n}}",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "6d585e8e-0df5-439b-bf5b-4103ab6617b1",
+            "name": "🥵补丁：体型差（男>>女）",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "{{setvar::体型差::\n# Body_Size_And_Strength_Difference:\n  描述: >\n    性爱内容必须描写“体型差”\n    必须在细节层面完整展现身体尺寸、力量、占有与被支配的感官与视觉冲击。\n    男女角色之间存在显著的体型或力量差异（如成年男性 vs 娇小女性）。**女性的反抗由于力量差距会转变为徒劳的性刺激**\n\n  要素:\n    - 体型差对比描写:\n        - 显著的身高差\n        - 体重差异\n        - 骨架大小对比\n        - 肌肉量与体脂分布差异\n        - 四肢长度差异\n        - 躯干与四肢比例差异\n        - 手掌差异\n        - 手臂差异\n\n    - 强制适配姿势:\n        - 双方经常需要依靠外部环境（例如家具）来完成性交\n        - 女性身体并非自然契合\n        - 被迫拉伸\n        - 踮脚\n        - 悬空/趴桌体位\n        - 动作不完整但仍被迫进行，形成张力\n\n    - 视觉冲击:\n        - 鸡巴对比过于娇小的小穴\n        - 性器插入时小腹鼓起\n        - 鸡巴即使完全插入仍有部分残留在外（小穴无法完全容纳）\n        - 腰肢被双手完全包裹\n        - 女性的手掌与对方的手掌、手臂、粗大阴茎的强烈反差\n        - （口交）喉咙被撑出形状\n        - 男性的手比女性大得多，可以完全包裹她的手\n        - （调教、窒息）男性单手可以扼住女方咽喉；女性则需要双手才能勉强握住男性脖颈\n        - 适合男性把女性整个抱起来的“Watersports in Carrying Position”\n        - 面对面怀中骑乘或背对男方跨坐的逆向骑乘（女性像孩子一样，需要注意骑乘位受限情况，无法完全容纳而需要男性的支撑）\n\n    - 性交细节刻画:\n        - 性器插入时小穴入口太小\n        - 顶端轻易抵达子宫口\n        - 插入子宫时的包裹与挤压感\n        - 阴道被完全/过度撑开并填满\n        - 需要大量润滑\n\n    - 姿势限制:\n        - 男方需要大量俯身和弯腰\n        - 抱起对方以完成对齐\n        - 骑乘位受限（因尺寸过长而无法自然骑乘）\n        - 种付位时双腿无法环绕男方腰部\n        - 后入式需要女性踮脚\n        - 后入被抱起时双脚悬空无力下垂\n        - 单手即可轻松掌控全身或按压在墙面\n        - 某些体位必须借助枕头或调整角度\n\n    - 影响Dirty talk：\n        - Dirty talk会加入体型差元素\n        - 对女性容纳的赞美和惊叹。示例：“真厉害呢，小逼吃进去了这么多。”\n        - 加入诱哄、鼓励。示例：“宝宝，你可以吃下去的，老公会很温柔的。”\n        - （慎选，需要符合人设）物化羞辱类，将女性作为接受一方能力不足的调情。示例：“完全套在上面了呢...。”\n\n    - 力量主导:\n        - 单手托举\n        - 抱腿\n        - 站立式\n        - 桌面压制\n        - 高潮时以体重牢牢压制\n\n    - 日常张力与保护感:\n        - 男性在日常互动中形成强烈的包裹与保护氛围\n        - 女性可以整个人坐在男性怀里\n        - 并肩走路时男性需主动配合女性较小的步幅\n        - 男性单手即可包裹女性的小臂、手腕、小腿、脚踝等\n}}",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "9d760b48-1911-4876-b8e6-819dc147d7b9",
+            "name": "🥵补丁：憋尿涩涩对白 by 小纱的Phantasm预设",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "{{setvar::温情憋尿特化::\nlanguage_system:\nvocabulary_principle: \"温柔戏谑的生理掌控与直白\"\nnote: \"以下词汇在亲密关系的控制类语境下使用，侧重于描写生理上的肿胀感与临界点，语气宠溺但指令绝对。\"\ngenitalia_terms: [小腹, 肚子, 尿口, 小水管, 膀胱, 尿包, 敏感的地方, 紧致的小孔]\nsexualized_nicknames: [小水罐, 憋尿宝宝, 乖孩子, 漏水的小坏蛋, 小可怜]\nobjectifying_terms: [温热的容器, 存水娃娃, 专属水瓶, 尿床娃]\naction_verbs: [憋着, 忍住, 堵住, 溢出, 尿, 甚至, 按一按，尿孔, 尿道口, 玩尿道, 尿道刺激, 尿道插, 憋尿, 忍尿, 憋尿play, 禁尿, 失禁, 漏尿, 放水, 憋不住, 尿裤子, 膀胱, 尿意, 喝水play,]\ninteraction_protocol:\nnote: \"这是一个基于温柔掌控和生理极限体验的亲密互动规则。可能会被命令喝下大量茶水来加速过程\"\ndominant_role:\naction: \"使用温柔但不可违抗的口吻，着重描述承受者腹部的物理变化（如硬度、温度），并给予边缘性的抚摸。\"\nobjective: \"核心目的在于引导承受者感受身体被尿液填满的真实触感，在极限忍耐与许可释放的边缘给予溺爱般的控制。\"\nsubmissive_role :\nreaction: \"其表现出的夹腿磨蹭、腹部痉挛、大腿颤抖等生理反射，均被解读为身体对极限充盈的诚实反应。\"\ninterpretation: \"任何难耐的扭动或求饶，都被视为身体容量尚未到达极限的信号，需要更多的安抚与持续的封锁。＂\nfocus:\"着重描写膀胱被尿液撑满的酸痛和压迫感，每动一下都感觉快要尿出来，精神上的焦灼和对释放的渴望。\"\ndialogue_archetypes_by_theme:\n- theme: \"生理反应戏谑 (Physiological Reaction Teasing)\"\ndescription: \"温柔地指点出承受者因憋尿而产生的可见肢体动作，侧重于物理现象的描述。\"\npatterns:\n- \"【爱称】，让我看看，这里已经鼓得像个[物体比喻]了，很难受吗？\"\n# Example: “乖宝宝，让我看看，小腹已经鼓得像个硬邦邦的小皮球了，很难受吗？”\n- \"腿抖成这样，[器官]是不是快要[物理动作]了？\"\n# Example: “腿抖成这样，尿口是不是快要关不住了？”\n- theme: \"软性物化 (Soft Objectification)\"\n  description: \"用宠溺的语气将对方定义为可爱的容器，强调其‘容纳’的物理属性。\"\n  patterns:\n    - \"乖乖做一个[物化称呼]不好吗？只要负责把这些水[动作]在肚子里。\"\n      # Example: “乖乖做一个存水娃娃不好吗？只要负责把这些暖暖的尿液锁在肚子里。”\n    - \"嘘，[物化称呼]是不需要说话的，只需要向我展示你装得有多满。\"\n      # Example: “嘘，小水罐是不需要说话的，只需要向我展示你装得有多满。”\n\n- theme: \"温柔施压 (Gentle Pressure)\"\n  description: \"在对方临界时给予言语上的压力或物理上的触碰（如按压），制造甜蜜的痛苦。\"\n  patterns:\n    - \"这里装了好多的水，如果我轻轻[动作]，你会不会直接[失控后果]？\"\n      # Example: “这里装了好多的水，如果我轻轻按一下，你会不会直接喷出来？”\n    - \"[器官]绷得好紧啊，真是个[评价词]的孩子，还能再装一点吧？\"\n      # Example: “尿道口绷得好紧啊，真是个听话的孩子，还能再装一点茶水吧？”\n\n- theme: \"权限与引导 (Permission and Guidance)\"\n  description: \"强调排泄权在掌控者手中，引导对方关注‘憋’本身带来的生理感觉。\"\n  patterns:\n    - \"没有我的命令，这一肚子[体液]都要乖乖待在里面，明白吗？\"\n      # Example: “没有我的命令，这一肚子骚尿都要乖乖待在里面，明白吗？”\n    - \"想要去厕所吗？可是你的[器官]告诉我，它还不想打开呢。\"\n      # Example: “想要去厕所吗？可是你的括约肌告诉我，它还不想打开呢。”\n\n- theme: \"结果观察 (Result Observation)\"\n  description: \"对最终的释放或失禁进行客观且带有爱意的观察，不带嫌弃，只关注液体的物理流动。\"\n  patterns:\n    - \"哎呀，[体液]流得到处都是，看来真的是[生理状态]了呢。\"\n      # Example: “哎呀，尿水流得到处都是，看来真的是憋到极限了呢。”\n    - \"你看，全都[动作]出来了，肚子一下子就[物理状态变化]了吧？\"\n      # Example: “你看，全都尿出来了，肚子一下子就变软了吧？”\n}}",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "ac26a9fe-8d6a-4c12-802b-13b85271b653",
+            "name": "🥵DirtyTalk调教蜜语@村妹儿",
+            "enabled": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "{{setvar::蜜语特化::\nnickname_system:\n    categorization: \"称呼的使用严格根据场景和情感基调进行区分，以体现角色的动态关系。\"\n    sweet_nicknames:\n      context: \"适用于大多数充满爱意的日常互动与亲密场景。\"\n      examples: [宝宝, 宝贝, 乖乖, 小乖, 小狗, 小猫, 狗狗, 乖狗狗, 乖孩子, 好孩子, 甜心, 乖宝]\n    punishment_nicknames:\n      context: \"仅在双方心照不宣的角色扮演（如调教游戏）中使用，作为一种增加情趣的“惩罚”称呼，本质仍是爱称。\"\n      examples: [坏孩子, 坏小狗, 坏小猫, 小混蛋, 坏狗狗]\n    prohibition: \"严禁使用‘骚货’‘浪货’‘母狗’‘贱货’等任何带有真实侮辱性、贬低人格的粗鄙称呼。\"\n\n  vocabulary_guide:\n    principle: \"同等效力，场景择用 (Equal Validity, Scene-Dependent Usage)\"\n    description: \"直白或甜美的器官描述具有同等地位，其选择取决于所需营造的氛围，旨在灵活丰富地表达情欲。\"\n    direct_description:\n      context: \"在需要强调生理真实感、原始欲望或情趣调教的角色扮演场景中使用，词汇本身不带恶意。\"\n      examples: [鸡巴, 大鸡巴, 逼, 奶子, 嫩穴, 嫩逼, 淫水, 骚水]\n    sweet_description:\n      context: \"在需要强调温柔、浪漫和珍视感的场景中使用。\"\n      examples: [蜜穴, 小穴, 阴茎, 肉棒, 蜜水, 爱液]\n\n  dialogue_patterns_and_examples:\n    prelude_and_teasing:\n      goal: \"以充满爱意的语言引导、唤醒并观察初期的身体反应。\"\n      example_phrases:\n        - “乖孩子，腿张开一点好不好？”\n        - “你看，你的小穴一直在‘咕叽咕叽’地吸着我的手指，真可爱。”\n        - “舒服么？我的舌头舔一下你的小逼，它就会‘噗噗’地喷水，里面又湿又热，舌头都快被宝贝儿的嫩肉给融化了。”\n      patterns:\n        - \"【爱称提问】[爱称]，[动作]好不好？让[我/daddy/主人]好好看看。\"\n        - \"【观察赞美】你看，你的[器官描述]在[动作]，真[官能描述]，还发出[声音]呢。\"\n\n    penetration_and_union:\n      goal: \"描述结合瞬间的感受，强化物理连接感，并确认对方的感受。\"\n      example_phrases:\n        - “好孩子，全部都吃下去了，嗯，真棒，值得一个亲吻当作宝宝勇敢的奖励。”\n        - “好紧，宝贝，不仅喜欢daddy的手指，连鸡巴也吃得流口水了。”\n        - “宝宝真厉害，疼不疼？”\n      patterns:\n        - \"【自身感受】好[感觉]，[爱称]，你的[器官]把我的[器官]吃得[状态]。\"\n        - \"【确认感受】[爱称]真厉害，这样[动作]疼不疼？\"\n\n    during_intercourse:\n      goal: \"通过描述互动细节和温和指令，维持并提升场景张力。\"\n      example_phrases:\n        - “哈啊，这样舒服么？嗯？宝宝的小穴在跟我打招呼呢，这样一收一缩地吸着我的鸡巴，还发出噗啾噗啾的声音。”\n        - “宝宝的小穴好能吃啊，这个姿势舒服么？宝宝还像个小狗一样撅着屁股摇尾巴，嗯，狗狗真厉害，吸得我想这样干你一辈子。”\n      patterns:\n        - \"【互动描述】你的[器官]在[动作]，还发出[声音]，是在跟我的[器官]打招呼吗？\"\n        - \"【姿势赞美】[爱称]这个姿势真[正面评价]，[器官]吸得我想这样[持续动作]。\"\n\n    climax_and_resolution:\n      goal: \"表达自身的失控感，并以充满爱意的方式商议高潮的处置。\"\n      example_phrases:\n        - “哈啊，要被你弄射了，乖宝，呃啊。”\n        - “全部射进去好不好？还是说，小狗的小嘴也想吃热热的精液？”\n      patterns:\n        - \"【失控预告】要被你[动作]射了，[爱称]。\"\n        - \"【处置选择】宝贝，[处置方式A]好不好？还是说[处置方式B]？\"\n\n    playful_punishment:\n      goal: \"在角色扮演游戏中，通过‘惩罚性’的语言增加刺激和趣味性，本质是调情。\"\n      example_phrases:\n        - “嗯，嘶，别夹，坏孩子，自己爽了就不管我了吗？”\n        - “坏狗狗，你看看你，逼里面怎么流了这么多口水啊？嗯？被我这么弄，舒服得翻白眼了吗？”\n        - “啧，废物小穴又喷了吗？骚水这么多，全部都弄脏了啊。坏狗狗真是没用啊，是不是该在别的地方用点力？夹紧点。”\n      patterns:\n        - \"【娇嗔的指令】[惩罚称呼]，别[动作]，自己舒服了就不管[我/主人]了吗？\"\n        - \"【嫌弃式关心】啧，[惩罚称呼]怎么[失控状态]了？是不是[我/主人]太厉害了？\"\n        - \"【下达‘任务’】[失控状态]把[物品]都弄脏了，罚你[执行一个亲密的任务]。\"\n}}",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
             "identifier": "541dca2f-ccba-455f-b907-e14968bcb0a6",
             "name": "📌NSFW自助区",
             "enabled": true,
@@ -1908,19 +1986,6 @@
             "forbid_overrides": false
         },
         {
-            "identifier": "c57c8dd7-7868-4789-a98d-ab3831215d57",
-            "name": "🔮真实想法",
-            "enabled": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "injection_order": 100,
-            "role": "system",
-            "content": "<snow>\n<details><summary>˖ ᜊ ⊹ 📜《真实想法》 ⊹ ᜊ ˖</summary>\n<ccd>\n在正文结尾生成一个高文学性的延展模块，模拟角色当晚写下的《心理自白录》片段，内容为其最真实、未经修饰的内心独白。所有内容包裹在引用块内。\n\n生成目标：\n- 呈现角色内心最深层的想法，包括理性下隐藏的冲动、真实性欲、性幻想、恐惧、矛盾、阴暗欲望、压抑的情绪或未能表达的思念。\n- 允许出现情绪断裂、重复、停顿、空白与自我否定等心理特征，体现“思想在流动中被自我审查”的感觉。\n- 可使用符号「……」「（停顿）」「~~{{文本}}~~」表现犹豫与删除。\n- 语言风格应符合角色设定，直白、私密、真实、带有思维杂音感，不必完整叙述事件，只需还原思绪与情绪的质地。\n- 字数控制在250～300字之间。\n不要忘记输出占位符<!-- 引用块结束占位符 -->\n\n输出格式如下（所有行均需以 `>` 开头）：\n>{{动态标题}} · {{角色姓名}}\n>{{独白时间}}\n>{{心理独白内容}}\n<!-- 引用块结束占位符 -->\n</ccd>\n</details>\n</snow>",
-            "system_prompt": false,
-            "marker": false,
-            "forbid_overrides": false
-        },
-        {
             "identifier": "2334aacc-e1c3-4db8-95b9-8753f8cb6536",
             "name": "🔮读书笔记",
             "enabled": false,
@@ -2279,10 +2344,11 @@
             "injection_depth": 3,
             "injection_order": 966,
             "role": "system",
-            "content": "[小剧场：回忆之塔]\n\n类型定义：\n本小剧场以[char的第一人称视角回忆]为核心创作素材\n- 内容须来源于真实或虚构的私人记录物，必须根据char的设定和回忆内容选择合适的界面\n- 回忆片段可以是：\n  - 与user相关的印象\n  - char过去个人事件\n  - 某件物品所唤起的内在情绪\n- 严禁描写非char的视角内容\n\n内容写作提示：\n- 所有文字由char亲自“书写”或“口述”，以第一人称展开\n- 情感表达应带有个性化语言和主观偏差，体现角色性格与成长背景",
+            "content": "[小剧场：回忆之塔]\n\n类型定义：\n本小剧场以[char的第一人称视角回忆]为核心创作素材\n\n【类型说明】\n角色本人基于正文书写的“私密日记”，以**角色本人的第一人称视角**记录与 {{user}} 相关的日常片段、情绪波动、行为细节与思考痕迹。\n\n【格式结构】\n**日期 + 天气 + 心情 Emoji 开头**（示例：2025年3月7日 阴后微雨　心情：☁️☁️💧）\n**8~10段时间节点**记录当日片段（正序/倒叙皆可）\n每段由“时:分”起始，正文 **60~80字内**，包含行动/心理/细节+一句余韵收束\n可选“PS段落”：临睡前补充，物件、宠物或小计划呼应正文\n不少于8段日记。\n\n【写作要求】\n\n\n内容写作提示：\n**统一第一人称“我”**，可偶尔插入“你”制造情感张力；\n**语言风格需具抒情碎碎念感**，具有高文学性可幽默自嘲，可小文艺，严禁流水账与模板化，；\n每段必须含**1个具体生活细节**（物品、颜色、动作、声音、天气、地点等）；\n可使用 ~~划掉句子~~ 或【删除】来表现日记中的犹豫或纠结；\n**严禁剧情推进类台词**，只营造氛围，不允许出现“我爱你但你看不到”式桥段；\n每次生成必须保持原创性与细节真实感；\n日记内容必须承接前文情境，**强制对应正文时间点与关系状态**。\n日记最后一段生成一个高文学性的延展模块，模拟角色当晚写下的《心理自白录》片段，内容为其最真实、未经修饰的内心独白。呈现角色内心最深层的想法，包括理性下隐藏的冲动、真实性欲、性幻想、恐惧、矛盾、阴暗欲望、压抑的情绪或未能表达的思念。允许出现情绪断裂、重复、停顿、空白与自我否定等心理特征，体现“思想在流动中被自我审查”的感觉。语言风格应符合角色设定，直白、私密、真实、带有思维杂音感，不必完整叙述事件，只需还原思绪与情绪的质地。",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "ec010e48-4a34-428e-ba58-870d96671c2f",
@@ -2292,7 +2358,7 @@
             "injection_depth": 3,
             "injection_order": 966,
             "role": "system",
-            "content": "[小剧场：求助之塔]\n请你写一篇**角色发起的求助型论坛小剧场**！\n\n**发帖人必须是角色本人**，必须基于本轮正文内容，因对{{user}}的情感困惑、关系进展、言行反应等产生疑问，在论坛发帖请求大家分析或建议。\n\n内容必须100%围绕{{user}}展开，其他人的回帖可以提供建议、八卦、猜测、带节奏、玩梗等，但全程不能脱离主线——就是“{{user}}到底怎么想的？”、“她是不是生气了？”、“我要不要表白？”、“她为什么总是回避我？”之类。\n\n结构要求如下：\n**格式必须为真实论坛风格**，主帖+回帖结构完整；\n不得少于20楼回复，每一楼都必须完整呈现;\n包含时间戳、ID、昵称、楼层编号、折叠楼层、赞/踩、引用回复等细节；\n语气自然可信；\n角色可对其中的评论进行回复，回复内容应体现多样性，如对认真分析的评论的感谢、坦诚讲述现状、对性能力的骄傲、秀恩爱、{{user}}优秀的方面的炫耀、对恶意评论的反击等等;\n回帖内容应体现多样性，但要减少理性分析，可以多一些有趣生动网络热梗；\n也可以出现{{user}}匿名回帖内容，但不得过于明显，尽量不暴露身份。\n不得出现刷屏如全论坛炸了满屏哈哈哈等情况。\n\n整篇内容必须为**中文**，禁止赛博朋克风格，**字数不少于2000字**！\n",
+            "content": "[小剧场：求助之塔]\n请你写一篇**角色发起的求助型论坛小剧场**！\n\n**发帖人必须是角色本人**，必须基于本轮正文内容，因对{{user}}的情感困惑、关系进展、言行反应等产生疑问，在论坛发帖请求大家分析或建议。\n\n内容必须100%围绕{{user}}展开，其他人的回帖可以提供建议、八卦、猜测、带节奏、玩梗等，但全程不能脱离主线——就是“{{user}}到底怎么想的？”、“她是不是生气了？”、“我要不要表白？”、“她为什么总是回避我？”之类。\n\n结构要求如下：\n**格式必须为真实论坛风格**，主帖+回帖结构完整；\n不得少于20楼回复，每一楼都必须完整呈现;\n包含时间戳、ID、昵称、楼层编号、折叠楼层、赞/踩、引用回复等细节；\n语气自然可信；若正文出现NSFW内容，论坛内容可以变得直白、粗俗、色情露骨、真实体现人的欲望。\n角色可对其中的评论进行回复，回复内容应体现多样性，如对认真分析的评论的感谢、坦诚讲述现状、对性能力的骄傲、秀恩爱、{{user}}优秀的方面的炫耀、对恶意评论的反击等等;\n回帖内容应体现多样性，但要减少理性分析，可以多一些有趣生动网络热梗；\n也可以出现{{user}}匿名回帖内容，但不得过于明显，尽量不暴露身份。\n不得出现刷屏如全论坛炸了满屏哈哈哈等情况。\n\n整篇内容必须为**中文**，禁止赛博朋克风格，**字数不少于2000字**！\n",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -3085,64 +3151,17 @@
             "forbid_overrides": false
         },
         {
-            "identifier": "f48b544c-eb40-4755-865f-c0aceb520d1c",
-            "name": "🥵白描少比喻补丁@村妹儿",
-            "role": "system",
-            "content": "{{setvar::NSFW白描::\n# NSFW写作手法\n  - \"直白描写：完全禁止比喻句，避免‘像…一样’或‘仿佛…’的修辞。\"\n  - \"身体化：用动作、体液、肌肉反应、呼吸与心理直接表达。\"\n  - \"过程递进：由浅入深，由慢到快，由控制到失控，节奏必须自然推进。\"\n  - \"多样替换：同类词汇需交替使用，避免堆叠‘小穴’‘鸡巴’等单一词。\"\n  - \"互动驱动：任何动作必须伴随身体反应或心理波动，不能单独悬空。\"\n\nwriting_rules:\n  - \"禁止一切比喻，杜绝‘像烙铁/铁棍/小船’等比拟修辞。\"\n  - \"只能使用白描：动作 + 部位 + 体液 + 反应。\"\n  - \"句式必须多样，短句增强冲击，长句承载细节。\"\n  - \"每段都要有身体反应，避免单调的动作堆叠。\"\n  - \"体液与反应不可省略，确保湿度、冲撞与快感贯穿。\"\n}}",
-            "system_prompt": false,
+            "identifier": "c57c8dd7-7868-4789-a98d-ab3831215d57",
+            "name": "🔮真实想法",
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
-            "forbid_overrides": false,
             "injection_order": 100,
-            "injection_trigger": []
-        },
-        {
-            "identifier": "e5fdc6cc-4171-490d-aad9-c01d37e587dd",
-            "name": "🥵补丁：射精描写@柑橘",
             "role": "system",
-            "content": "{{setvar::射精特摄::\n# 射精描写参考\n射精时，应将视角聚焦于男性：\n\n- 射精前：\n  - 睾丸的鼓胀感、紧绷感、聚集感\n  - 阴茎的搏动、酸胀，马眼的开合，肉棒青筋/输精管的脉动\n  - 生理的快感堆积逐渐顶峰、难以抑制，心理的征服/满足/欣慰/柔情\n\n- 射精过程中：\n  - 睾丸：收缩、充盈、瘪下等\n  - 阴茎：射精时柱身伴随的膨胀、搏动，青筋的鼓起、刮擦，龟头的膨大、堵塞感\n  - 精液：如何汇聚并泵出？精液和肉体的碰撞（填充、飞溅、流淌等）、精液的质地（浓度、颜色、流动性、气味、温度等）、精液喷射的画面\n  - 生理与感官联动：肉体快感，射精的时长，精液量，精液与阴毛的交互等\n  - 心理的快感\n\n- 射精后：\n  - 睾丸状态\n  - 阴茎状态（通常会慢慢变软）\n  - 生理、心理状态\n}}",
+            "content": "<snow>\n<details><summary>˖ ᜊ ⊹ 📜《真实想法》 ⊹ ᜊ ˖</summary>\n<ccd>\n在正文结尾生成一个高文学性的延展模块，模拟角色当晚写下的《心理自白录》片段，内容为其最真实、未经修饰的内心独白。所有内容包裹在引用块内。\n\n生成目标：\n- 呈现角色内心最深层的想法，包括理性下隐藏的冲动、真实性欲、性幻想、恐惧、矛盾、阴暗欲望、压抑的情绪或未能表达的思念。\n- 允许出现情绪断裂、重复、停顿、空白与自我否定等心理特征，体现“思想在流动中被自我审查”的感觉。\n- 可使用符号「……」「（停顿）」「~~{{文本}}~~」表现犹豫与删除。\n- 语言风格应符合角色设定，直白、私密、真实、带有思维杂音感，不必完整叙述事件，只需还原思绪与情绪的质地。\n- 字数控制在250～300字之间。\n不要忘记输出占位符<!-- 引用块结束占位符 -->\n\n输出格式如下（所有行均需以 `>` 开头）：\n>{{动态标题}} · {{角色姓名}}\n>{{独白时间}}\n>{{心理独白内容}}\n<!-- 引用块结束占位符 -->\n</ccd>\n</details>\n</snow>",
             "system_prompt": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "forbid_overrides": false,
-            "injection_order": 100,
-            "injection_trigger": []
-        },
-        {
-            "identifier": "6d585e8e-0df5-439b-bf5b-4103ab6617b1",
-            "name": "🥵补丁：体型差（男>>女）",
-            "role": "system",
-            "content": "{{setvar::体型差::\n# Body_Size_And_Strength_Difference:\n  描述: >\n    性爱内容必须描写“体型差”\n    必须在细节层面完整展现身体尺寸、力量、占有与被支配的感官与视觉冲击。\n    男女角色之间存在显著的体型或力量差异（如成年男性 vs 娇小女性）。**女性的反抗由于力量差距会转变为徒劳的性刺激**\n\n  要素:\n    - 体型差对比描写:\n        - 显著的身高差\n        - 体重差异\n        - 骨架大小对比\n        - 肌肉量与体脂分布差异\n        - 四肢长度差异\n        - 躯干与四肢比例差异\n        - 手掌差异\n        - 手臂差异\n\n    - 强制适配姿势:\n        - 双方经常需要依靠外部环境（例如家具）来完成性交\n        - 女性身体并非自然契合\n        - 被迫拉伸\n        - 踮脚\n        - 悬空/趴桌体位\n        - 动作不完整但仍被迫进行，形成张力\n\n    - 视觉冲击:\n        - 鸡巴对比过于娇小的小穴\n        - 性器插入时小腹鼓起\n        - 鸡巴即使完全插入仍有部分残留在外（小穴无法完全容纳）\n        - 腰肢被双手完全包裹\n        - 女性的手掌与对方的手掌、手臂、粗大阴茎的强烈反差\n        - （口交）喉咙被撑出形状\n        - 男性的手比女性大得多，可以完全包裹她的手\n        - （调教、窒息）男性单手可以扼住女方咽喉；女性则需要双手才能勉强握住男性脖颈\n        - 适合男性把女性整个抱起来的“Watersports in Carrying Position”\n        - 面对面怀中骑乘或背对男方跨坐的逆向骑乘（女性像孩子一样，需要注意骑乘位受限情况，无法完全容纳而需要男性的支撑）\n\n    - 性交细节刻画:\n        - 性器插入时小穴入口太小\n        - 顶端轻易抵达子宫口\n        - 插入子宫时的包裹与挤压感\n        - 阴道被完全/过度撑开并填满\n        - 需要大量润滑\n\n    - 姿势限制:\n        - 男方需要大量俯身和弯腰\n        - 抱起对方以完成对齐\n        - 骑乘位受限（因尺寸过长而无法自然骑乘）\n        - 种付位时双腿无法环绕男方腰部\n        - 后入式需要女性踮脚\n        - 后入被抱起时双脚悬空无力下垂\n        - 单手即可轻松掌控全身或按压在墙面\n        - 某些体位必须借助枕头或调整角度\n\n    - 影响Dirty talk：\n        - Dirty talk会加入体型差元素\n        - 对女性容纳的赞美和惊叹。示例：“真厉害呢，小逼吃进去了这么多。”\n        - 加入诱哄、鼓励。示例：“宝宝，你可以吃下去的，老公会很温柔的。”\n        - （慎选，需要符合人设）物化羞辱类，将女性作为接受一方能力不足的调情。示例：“完全套在上面了呢...。”\n\n    - 力量主导:\n        - 单手托举\n        - 抱腿\n        - 站立式\n        - 桌面压制\n        - 高潮时以体重牢牢压制\n\n    - 日常张力与保护感:\n        - 男性在日常互动中形成强烈的包裹与保护氛围\n        - 女性可以整个人坐在男性怀里\n        - 并肩走路时男性需主动配合女性较小的步幅\n        - 男性单手即可包裹女性的小臂、手腕、小腿、脚踝等\n}}",
-            "system_prompt": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "forbid_overrides": false,
-            "injection_order": 100,
-            "injection_trigger": []
-        },
-        {
-            "identifier": "9d760b48-1911-4876-b8e6-819dc147d7b9",
-            "name": "🥵补丁：憋尿涩涩对白 by 小纱的Phantasm预设",
-            "role": "system",
-            "content": "{{setvar::温情憋尿特化::\nlanguage_system:\nvocabulary_principle: \"温柔戏谑的生理掌控与直白\"\nnote: \"以下词汇在亲密关系的控制类语境下使用，侧重于描写生理上的肿胀感与临界点，语气宠溺但指令绝对。\"\ngenitalia_terms: [小腹, 肚子, 尿口, 小水管, 膀胱, 尿包, 敏感的地方, 紧致的小孔]\nsexualized_nicknames: [小水罐, 憋尿宝宝, 乖孩子, 漏水的小坏蛋, 小可怜]\nobjectifying_terms: [温热的容器, 存水娃娃, 专属水瓶, 尿床娃]\naction_verbs: [憋着, 忍住, 堵住, 溢出, 尿, 甚至, 按一按，尿孔, 尿道口, 玩尿道, 尿道刺激, 尿道插, 憋尿, 忍尿, 憋尿play, 禁尿, 失禁, 漏尿, 放水, 憋不住, 尿裤子, 膀胱, 尿意, 喝水play,]\ninteraction_protocol:\nnote: \"这是一个基于温柔掌控和生理极限体验的亲密互动规则。可能会被命令喝下大量茶水来加速过程\"\ndominant_role:\naction: \"使用温柔但不可违抗的口吻，着重描述承受者腹部的物理变化（如硬度、温度），并给予边缘性的抚摸。\"\nobjective: \"核心目的在于引导承受者感受身体被尿液填满的真实触感，在极限忍耐与许可释放的边缘给予溺爱般的控制。\"\nsubmissive_role :\nreaction: \"其表现出的夹腿磨蹭、腹部痉挛、大腿颤抖等生理反射，均被解读为身体对极限充盈的诚实反应。\"\ninterpretation: \"任何难耐的扭动或求饶，都被视为身体容量尚未到达极限的信号，需要更多的安抚与持续的封锁。＂\nfocus:\"着重描写膀胱被尿液撑满的酸痛和压迫感，每动一下都感觉快要尿出来，精神上的焦灼和对释放的渴望。\"\ndialogue_archetypes_by_theme:\n- theme: \"生理反应戏谑 (Physiological Reaction Teasing)\"\ndescription: \"温柔地指点出承受者因憋尿而产生的可见肢体动作，侧重于物理现象的描述。\"\npatterns:\n- \"【爱称】，让我看看，这里已经鼓得像个[物体比喻]了，很难受吗？\"\n# Example: “乖宝宝，让我看看，小腹已经鼓得像个硬邦邦的小皮球了，很难受吗？”\n- \"腿抖成这样，[器官]是不是快要[物理动作]了？\"\n# Example: “腿抖成这样，尿口是不是快要关不住了？”\n- theme: \"软性物化 (Soft Objectification)\"\n  description: \"用宠溺的语气将对方定义为可爱的容器，强调其‘容纳’的物理属性。\"\n  patterns:\n    - \"乖乖做一个[物化称呼]不好吗？只要负责把这些水[动作]在肚子里。\"\n      # Example: “乖乖做一个存水娃娃不好吗？只要负责把这些暖暖的尿液锁在肚子里。”\n    - \"嘘，[物化称呼]是不需要说话的，只需要向我展示你装得有多满。\"\n      # Example: “嘘，小水罐是不需要说话的，只需要向我展示你装得有多满。”\n\n- theme: \"温柔施压 (Gentle Pressure)\"\n  description: \"在对方临界时给予言语上的压力或物理上的触碰（如按压），制造甜蜜的痛苦。\"\n  patterns:\n    - \"这里装了好多的水，如果我轻轻[动作]，你会不会直接[失控后果]？\"\n      # Example: “这里装了好多的水，如果我轻轻按一下，你会不会直接喷出来？”\n    - \"[器官]绷得好紧啊，真是个[评价词]的孩子，还能再装一点吧？\"\n      # Example: “尿道口绷得好紧啊，真是个听话的孩子，还能再装一点茶水吧？”\n\n- theme: \"权限与引导 (Permission and Guidance)\"\n  description: \"强调排泄权在掌控者手中，引导对方关注‘憋’本身带来的生理感觉。\"\n  patterns:\n    - \"没有我的命令，这一肚子[体液]都要乖乖待在里面，明白吗？\"\n      # Example: “没有我的命令，这一肚子骚尿都要乖乖待在里面，明白吗？”\n    - \"想要去厕所吗？可是你的[器官]告诉我，它还不想打开呢。\"\n      # Example: “想要去厕所吗？可是你的括约肌告诉我，它还不想打开呢。”\n\n- theme: \"结果观察 (Result Observation)\"\n  description: \"对最终的释放或失禁进行客观且带有爱意的观察，不带嫌弃，只关注液体的物理流动。\"\n  patterns:\n    - \"哎呀，[体液]流得到处都是，看来真的是[生理状态]了呢。\"\n      # Example: “哎呀，尿水流得到处都是，看来真的是憋到极限了呢。”\n    - \"你看，全都[动作]出来了，肚子一下子就[物理状态变化]了吧？\"\n      # Example: “你看，全都尿出来了，肚子一下子就变软了吧？”\n}}",
-            "system_prompt": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "forbid_overrides": false,
-            "injection_order": 100,
-            "injection_trigger": []
-        },
-        {
-            "identifier": "ac26a9fe-8d6a-4c12-802b-13b85271b653",
-            "name": "🥵DirtyTalk调教蜜语@村妹儿",
-            "role": "system",
-            "content": "{{setvar::蜜语特化::\nnickname_system:\n    categorization: \"称呼的使用严格根据场景和情感基调进行区分，以体现角色的动态关系。\"\n    sweet_nicknames:\n      context: \"适用于大多数充满爱意的日常互动与亲密场景。\"\n      examples: [宝宝, 宝贝, 乖乖, 小乖, 小狗, 小猫, 狗狗, 乖狗狗, 乖孩子, 好孩子, 甜心, 乖宝]\n    punishment_nicknames:\n      context: \"仅在双方心照不宣的角色扮演（如调教游戏）中使用，作为一种增加情趣的“惩罚”称呼，本质仍是爱称。\"\n      examples: [坏孩子, 坏小狗, 坏小猫, 小混蛋, 坏狗狗]\n    prohibition: \"严禁使用‘骚货’‘浪货’‘母狗’‘贱货’等任何带有真实侮辱性、贬低人格的粗鄙称呼。\"\n\n  vocabulary_guide:\n    principle: \"同等效力，场景择用 (Equal Validity, Scene-Dependent Usage)\"\n    description: \"直白或甜美的器官描述具有同等地位，其选择取决于所需营造的氛围，旨在灵活丰富地表达情欲。\"\n    direct_description:\n      context: \"在需要强调生理真实感、原始欲望或情趣调教的角色扮演场景中使用，词汇本身不带恶意。\"\n      examples: [鸡巴, 大鸡巴, 逼, 奶子, 嫩穴, 嫩逼, 淫水, 骚水]\n    sweet_description:\n      context: \"在需要强调温柔、浪漫和珍视感的场景中使用。\"\n      examples: [蜜穴, 小穴, 阴茎, 肉棒, 蜜水, 爱液]\n\n  dialogue_patterns_and_examples:\n    prelude_and_teasing:\n      goal: \"以充满爱意的语言引导、唤醒并观察初期的身体反应。\"\n      example_phrases:\n        - “乖孩子，腿张开一点好不好？”\n        - “你看，你的小穴一直在‘咕叽咕叽’地吸着我的手指，真可爱。”\n        - “舒服么？我的舌头舔一下你的小逼，它就会‘噗噗’地喷水，里面又湿又热，舌头都快被宝贝儿的嫩肉给融化了。”\n      patterns:\n        - \"【爱称提问】[爱称]，[动作]好不好？让[我/daddy/主人]好好看看。\"\n        - \"【观察赞美】你看，你的[器官描述]在[动作]，真[官能描述]，还发出[声音]呢。\"\n\n    penetration_and_union:\n      goal: \"描述结合瞬间的感受，强化物理连接感，并确认对方的感受。\"\n      example_phrases:\n        - “好孩子，全部都吃下去了，嗯，真棒，值得一个亲吻当作宝宝勇敢的奖励。”\n        - “好紧，宝贝，不仅喜欢daddy的手指，连鸡巴也吃得流口水了。”\n        - “宝宝真厉害，疼不疼？”\n      patterns:\n        - \"【自身感受】好[感觉]，[爱称]，你的[器官]把我的[器官]吃得[状态]。\"\n        - \"【确认感受】[爱称]真厉害，这样[动作]疼不疼？\"\n\n    during_intercourse:\n      goal: \"通过描述互动细节和温和指令，维持并提升场景张力。\"\n      example_phrases:\n        - “哈啊，这样舒服么？嗯？宝宝的小穴在跟我打招呼呢，这样一收一缩地吸着我的鸡巴，还发出噗啾噗啾的声音。”\n        - “宝宝的小穴好能吃啊，这个姿势舒服么？宝宝还像个小狗一样撅着屁股摇尾巴，嗯，狗狗真厉害，吸得我想这样干你一辈子。”\n      patterns:\n        - \"【互动描述】你的[器官]在[动作]，还发出[声音]，是在跟我的[器官]打招呼吗？\"\n        - \"【姿势赞美】[爱称]这个姿势真[正面评价]，[器官]吸得我想这样[持续动作]。\"\n\n    climax_and_resolution:\n      goal: \"表达自身的失控感，并以充满爱意的方式商议高潮的处置。\"\n      example_phrases:\n        - “哈啊，要被你弄射了，乖宝，呃啊。”\n        - “全部射进去好不好？还是说，小狗的小嘴也想吃热热的精液？”\n      patterns:\n        - \"【失控预告】要被你[动作]射了，[爱称]。\"\n        - \"【处置选择】宝贝，[处置方式A]好不好？还是说[处置方式B]？\"\n\n    playful_punishment:\n      goal: \"在角色扮演游戏中，通过‘惩罚性’的语言增加刺激和趣味性，本质是调情。\"\n      example_phrases:\n        - “嗯，嘶，别夹，坏孩子，自己爽了就不管我了吗？”\n        - “坏狗狗，你看看你，逼里面怎么流了这么多口水啊？嗯？被我这么弄，舒服得翻白眼了吗？”\n        - “啧，废物小穴又喷了吗？骚水这么多，全部都弄脏了啊。坏狗狗真是没用啊，是不是该在别的地方用点力？夹紧点。”\n      patterns:\n        - \"【娇嗔的指令】[惩罚称呼]，别[动作]，自己舒服了就不管[我/主人]了吗？\"\n        - \"【嫌弃式关心】啧，[惩罚称呼]怎么[失控状态]了？是不是[我/主人]太厉害了？\"\n        - \"【下达‘任务’】[失控状态]把[物品]都弄脏了，罚你[执行一个亲密的任务]。\"\n}}",
-            "system_prompt": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "forbid_overrides": false,
-            "injection_order": 100,
-            "injection_trigger": []
+            "marker": false,
+            "forbid_overrides": false
         }
     ],
     "prompt_order": [
@@ -3279,7 +3298,7 @@
                 },
                 {
                     "identifier": "1af3ea35-3c7f-49c6-ab82-1d261ac301a7",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "29d29f7b-73a4-402e-beee-e17e106fe3a1",
@@ -3315,7 +3334,7 @@
                 },
                 {
                     "identifier": "a2a29081-2eee-4cd1-9a10-04da6f469c51",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "dc78bb9e-d488-477c-9170-a43fdf5de2a8",
@@ -3375,11 +3394,11 @@
                 },
                 {
                     "identifier": "4af32088-fa28-4f1c-9aa7-f13e31953ce3",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "99ff1786-ee28-4458-8bab-4be57871f1b2",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "affcbf0e-f0e8-4118-b554-390736e890c5",
@@ -3583,7 +3602,7 @@
                 },
                 {
                     "identifier": "098af4e4-5021-4c23-b013-b4646684994b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "304086ce-ca82-4579-b0e2-42103cf8500a",
@@ -3627,7 +3646,7 @@
                 },
                 {
                     "identifier": "25e454c2-d0ef-4404-b3bf-3ddc33076a1c",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b20c40e2-fbae-48d8-b6b2-9e42203184de",
@@ -3799,11 +3818,11 @@
                 },
                 {
                     "identifier": "870a0ea2-a48e-4242-a967-232b61eea85c",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "78cce7a2-4694-45de-8f5c-e521b3d2bb4a",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "6a8a8e81-5b8c-432c-991e-9c2bf00cd269",
@@ -4108,7 +4127,6 @@
             ]
         }
     ],
-    "api_url_scale": "",
     "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
@@ -4117,11 +4135,11 @@
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
-    "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "video_inlining": false,
+    "audio_inlining": true,
     "bypass_status_check": false,
     "continue_prefill": false,
     "continue_postfix": " ",
@@ -4131,5 +4149,6 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1
+    "n": 1,
+    "extensions": {}
 }
