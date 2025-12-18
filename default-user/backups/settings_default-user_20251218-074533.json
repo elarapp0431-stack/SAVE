@@ -5072,8 +5072,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 48689,
-                "LAST_RECEIVE_CHARS": 136524,
+                "LAST_RECEIVE_TOKENS": 139,
+                "LAST_RECEIVE_CHARS": 178,
                 "LAST_SEND_TOKENS": 53593,
                 "LAST_SEND_CHARS": 83377,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -6678,7 +6678,7 @@
         "min_p_openai": 0,
         "top_a_openai": 0,
         "repetition_penalty_openai": 1,
-        "stream_openai": true,
+        "stream_openai": false,
         "openai_max_context": 2000000,
         "openai_max_tokens": 30000,
         "wrap_in_quotes": false,
@@ -10791,8 +10791,8 @@
         "aimlapi_model": "gpt-4o-mini-2024-07-18",
         "xai_model": "grok-3-beta",
         "pollinations_model": "openai",
-        "custom_model": "gemini-3-pro-preview-high",
-        "custom_url": "https://sb.mcxbx.xyz/v1",
+        "custom_model": "gemini-3-pro-preview",
+        "custom_url": "https://gcli2api-1212.zeabur.app/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
@@ -10837,8 +10837,8 @@
         "bind_preset_to_connection": false
     },
     "background": {
-        "name": "1000016690.jpg",
-        "url": "url(\"backgrounds/1000016690.jpg\")",
+        "name": "Camera_XHS_17351262467321040g2sg316r2ekprk4ag5pa5qt3j8g8nrr5imeo.jpg",
+        "url": "url(\"backgrounds/Camera_XHS_17351262467321040g2sg316r2ekprk4ag5pa5qt3j8g8nrr5imeo.jpg\")",
         "fitting": "classic",
         "animation": false
     },
