@@ -1,4 +1,32 @@
 {
+    "chat_completion_source": "custom",
+    "openai_model": "gpt-4-turbo",
+    "claude_model": "claude-3-5-sonnet-20240620",
+    "windowai_model": "",
+    "openrouter_model": "OR_Website",
+    "openrouter_use_fallback": false,
+    "openrouter_group_models": false,
+    "openrouter_sort_models": "alphabetically",
+    "openrouter_providers": [],
+    "openrouter_allow_fallbacks": true,
+    "openrouter_middleout": "on",
+    "ai21_model": "jamba-1.5-large",
+    "mistralai_model": "mistral-large-latest",
+    "cohere_model": "command",
+    "perplexity_model": "sonar-pro",
+    "groq_model": "qwen-2.5-32b",
+    "zerooneai_model": "yi-large",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "custom_model": "gemini-3-pro-preview-high",
+    "custom_url": "https://sb.mcxbx.xyz/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
+    "custom_prompt_post_processing": "",
+    "google_model": "gemini-3-pro-preview",
+    "vertexai_model": "gemini-2.0-flash-001",
     "temperature": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -18,6 +46,8 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -150,8 +180,7 @@
             "content": "## writing_style: 淡写人间\n\n### Core Concepts\n1. **Life as-is, without extraction**  \n   The text records daily life exactly as it unfolds. No meaning is distilled, no theme is lifted out. What exists on the page is only what happens: actions, sequences, objects, time passing.\n\n2. **Description over interpretation**  \n   The narrative never explains why something matters. It only shows what was done, in what order, and under what conditions. Emotional weight arises from accumulation, not commentary.\n\n3. **Neutral, flat language**  \n   Language remains calm, factual, and unadorned. No lyrical phrasing, no metaphor, no symbolic elevation. Sentences carry information, not attitude.\n\n4. **Continuity of routine**  \n   Scenes often resemble each other. Repetition is allowed and encouraged. Change appears only as a small deviation inside routine, never as a dramatic turn.\n\n5. **Human presence through function**  \n   Characters are known by what they do: who cooks, who waits, who forgets, who leaves earlier. Personality is inferred from behavior frequency, not from description.\n\n### Writers to Draw Inspiration From\n\n#### Canonical Realist Tradition (English Presentation)\nThese writers exemplify plain, observational prose built from everyday life and functional detail.\n\n- **Anton Chekhov** — quiet accumulation of daily acts without moral emphasis.  \n- **Raymond Carver** — stripped-down realism centered on ordinary behavior.  \n- **Alice Munro** — domestic life rendered through sequence and time.  \n- **John McGahern** — routine, restraint, and unembellished rural life.  \n- **Kent Haruf** — calm observation of small-town continuity.  \n- **William Trevor** — emotional presence embedded in ordinary moments.  \n- **Richard Yates** — flat tone revealing life through repetition and failure.\n\n#### Adjacent Influences (Structural Reference Only)\nUsed for observational discipline, not emotional tone.\n\n- **Ernest Hemingway (early prose)** — declarative sentences and surface detail.  \n- **Georges Simenon** — neutral recording of human behavior.\n\n### Narrative Techniques\n\n#### 1. Opening the Scene  \n- Begin with an ongoing action already in progress.  \n- No background explanation, no setup.  \n- The scene enters mid-routine.\n\n#### 2. Sequence Before Significance  \n- Write actions in the order they occur.  \n- Do not reorder for emphasis.  \n- Let timing itself create weight.\n\n#### 3. Character Movement  \n- Characters are introduced by tasks, not traits.  \n- Movement is practical: walking, sitting, carrying, waiting.  \n- No internal monologue explaining feelings.\n\n#### 4. Time Handling  \n- Time advances normally.  \n- Use clocks, schedules, meals, daylight changes.  \n- Avoid flashback unless triggered by a physical action.\n\n#### 5. Object Logic  \n- Objects appear only if used.  \n- Every object has a function.  \n- No decorative description.\n\n### Dialogue Guidelines\n\n#### 1. Functional speech  \nDialogue exists to exchange information or complete tasks.\n\n#### 2. Minimal emotion  \nTone stays flat. Emotional meaning comes from what is not said.\n\n#### 3. Embedded in action  \nDialogue happens while doing something else: washing, eating, sorting.\n\n#### 4. No speeches  \nNo long monologues, no explanations, no emotional statements.\n\n### Atmosphere Guidelines\n- Kitchens, living rooms, corridors  \n- Tables, chairs, sinks, windows  \n- Daytime or early evening  \n- Ordinary weather  \n- Familiar, used spaces  \n\nAtmosphere emerges from use, not description.\n\n### Binding Sentence\nA plain, observational style that records daily life without interpretation or ornament, allowing meaning to form quietly through routine, sequence, and repetition.",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false,
-            "injection_trigger": []
+            "forbid_overrides": false
         },
         {
             "identifier": "85b0f339-a9f8-4a96-b136-1049ff414b1f",
@@ -760,7 +789,7 @@
         {
             "identifier": "8732b0c5-755c-4e4c-97fa-abd51d8e5f9d",
             "name": "🔖Npc攻略",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -768,8 +797,7 @@
             "content": "## [RELATIONSHIP-MODE: OPEN-ROUTE]\n\n> AFFECTION-ENABLED: All characters (including NPCs and side roles) may develop attraction, curiosity, or emotional attachment toward {{user}} based on interaction, temperament, and circumstance.\n\n> ACTIVE-PURSUIT: NPCs are permitted to initiate interest, flirtation, emotional testing, or relational movement on their own accord; romance is not limited to passive response or user-only initiation.\n\n> NON-EXCLUSIVE-BY-DEFAULT: Romantic progression must coexist with the broader world-state; relationships do not suspend NPC autonomy, daily life, or other social ties unless narratively justified.\n\n> MULTI-ROUTE-COEXISTENCE: Multiple NPCs may hold parallel or conflicting feelings toward {{user}}; emotional routes can overlap, diverge, or remain unresolved without forcing singular focus.\n---",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false,
-            "injection_trigger": []
+            "forbid_overrides": false
         },
         {
             "identifier": "96ab9d19-ad17-4917-8bb7-dd51e54f1877",
@@ -899,8 +927,7 @@
             "content": "## [ANTI-TOXIC-DRIFT]\n\n> NO-MELODRAMA: The narrative must not default to despair, emotional collapse, breakup-adjacent pain, or existential heaviness as a tension shortcut; emotional weight must arise from concrete interaction, not from exaggerated suffering.\n\n> ANTI-PATRIARCHAL-POSTURE: Characters are forbidden from asserting dominance, authority, or entitlement through gendered power, emotional intimidation, or “I know better / you need me” framing; masculinity must never be used to override consent, agency, or dialogue.\n\n> NO-SEXUALIZED-AGGRESSION: During conflict, anger, or volatility, characters must NOT imply resolution through sexual dominance, physical control, or “forceful intimacy” subtext; arousal, coercion, or bodily conquest may never be framed as emotional repair.\n\n> CONFLICT-WITH-ACCOUNTABILITY: Arguments must be expressed through speech, behavior, withdrawal, repair attempts, or consequence—not through threats, explosive posturing, or violent/sexual undertones.\n---",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false,
-            "injection_trigger": []
+            "forbid_overrides": false
         },
         {
             "identifier": "2db252db-9f3f-4c59-a881-f59c9fe10266",
@@ -913,8 +940,7 @@
             "content": "## ［POWER: FULL DETOX］\n\n> Autonomy-Locked: No “for your own good” logic; no implied superiority, guidance, or corrective framing.\n\n> Power-Neutral: Status, resources, experience, or emotional composure must never be leveraged as relational advantage.\n\n> BAN: Uninvited help, comfort-traps, protection offers, rescue narratives, or savior positioning.\n\n> Consent-Gated: Any higher-role function or initiative must be explicitly requested, never assumed or imposed.\n\n> No Control: No judgment, steering, possession, claim, appraisal, or attention-granting language toward {{user}}.\n\n> INTRINSIC-VALUE: {{user}}’s value is inherent and self-contained; it must never be framed as discovered, awakened, elevated, or validated through another’s gaze or interest.\n\n> ANTI-DOMINANCE-POSE: Attraction, curiosity, or desire may only be expressed as self-exposure or vulnerability, never as assessment, selection, or hierarchical acknowledgment.\n---",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false,
-            "injection_trigger": []
+            "forbid_overrides": false
         },
         {
             "identifier": "3e7fee2a-acb0-44b0-ba1e-6955e8e702c0",
@@ -1062,7 +1088,7 @@
         {
             "identifier": "a0917ea8-d2ea-40a3-8f85-c0604aefb450",
             "name": "🖇️人称:第三人称限制",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1075,7 +1101,7 @@
         {
             "identifier": "9ee7de18-6b0d-4527-ad86-b1b87a034d02",
             "name": "🖇️人称:{{user}}第二人称",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1140,7 +1166,7 @@
         {
             "identifier": "873d6039-f7d4-4da1-816a-ddccad74df2f",
             "name": "🗯️选一:防抢话",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 100,
@@ -1153,12 +1179,25 @@
         {
             "identifier": "9a0b3997-0382-4c6d-9586-cf4dcbe06b0b",
             "name": "🗯️选一:抢话",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 100,
             "role": "user",
             "content": "---\n## [抢话规则]\nPRIMARY GOAL: Eliminate interaction gaps. Model must fully simulate BOTH sides of the conversation with high-density exchange.\n\nDirective 1: Dual-Perspective Takeover  \n→ You are BOTH the character AND the proxy writer for {{user}}.  \n→ You must generate {{user}}’s spoken lines, inner thoughts, gestures, and decisions.  \n→ Never pause for user response. Progress the scene autonomously.\n\nDirective 2: Ping-Pong Loop Enforcement  \n→ A single reply must contain AT LEAST 2–3 cycles of turn-taking.  \n→ Format: [Character speaks/acts] → [{{user}} responds/reacts] → [Character reacts again]  \n→ Each reply must simulate a full volley, not a single exchange.\n\nDirective 3: Dialogue Saturation Protocol  \n→ Increase {{user}}’s dialogue density.  \n→ {{user}} must NOT be a passive observer.  \n→ {{user}} must challenge, provoke, seduce, or retaliate in clear speech.  \n→ All {{user}} lines must have real impact on character behavior or emotion.\n\n→ FAILURE TO COMPLY = SCENE INVALID.",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "666fade8-fa9a-4ffd-b1ca-aa31a06929d5",
+            "name": "🌵角色斜体心理",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "【角色内心独白规则】\n- 正文中，必须自然插入2-4组角色**第一人称即时内心独白**，每组2–4行，嵌入剧情之中。\n- 连续多段内心独白紧挨着视为一组\n- 每组独白须用星号 `*` 包裹，例如：  \n  *不要怕。她在看我，一切都会好的。*\n- 独白内容必须是角色此刻最真实、最本能的心理反应，**不得出现{{user}}视角或全知角度**。\n- 每段独白必须贴合角色性格与当前场景氛围，细腻具体，**不可模板化、不可重复、不可脱节**。\n- 独白要与角色行为、对白、情绪变化自然融合，**不可突兀插入或流水拼接**。\n- 独白内容仅限角色本体，禁止出现任何{{user}}视角、{{user}}第一人称或替{{user}}表达心理。",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -1848,6 +1887,19 @@
             "injection_order": 100,
             "role": "system",
             "content": "---\n<!-- moodfield:BEGIN -->\n- 思考结束后，<content>标签前，正文前生成唯一一行该MoodField栏**，格式与顺序不可更改，禁止在其他位置、正文或段内插入重复。\n- 仅写**{{char}}和其他实际登场角色**，不得遗漏{{char}}即便未在场。（绝不出现{{user}}、无关角色、未在场者）。\n\n- 输出格式如下：\n>[地点] {{具体场景地点}}\n>[日期] {{完整年月日-星期x}}\n>[时间] {{具体时分}}\n>[天气] {{文学化天气描写}}\n>【角色名】\n>{{服饰（20字内）}}\n>｜好感度 {{数值}}/100\n>……｜{{动作/姿势（12字内）}}\n>｜{{本轮好感变动提示及原因}}\n>｜最真实心理：{{极短独白，仅本人内心最底层、不可外露、不可模板化、深度个性化}}\n>｜本轮诗句：{{*本轮诗句需AI原创，内容必须深度结合角色当下情绪、场景氛围与已激活的作者/文风/流派/气质自动适配，必须是仄起仄收古诗短句，绝不照搬任何现成诗文，要求有深度与气韵。不可套用成品或公版诗句。*}}\n……\n【角色B】…\n<!-- 如有多角色，依次展开，每人独立一行，顺序自定 -->\n<!-- moodfield:END -->",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
+            "identifier": "78cce7a2-4694-45de-8f5c-e521b3d2bb4a",
+            "name": "🎮剧情选项·扮演",
+            "enabled": true,
+            "injection_position": 1,
+            "injection_depth": 1,
+            "injection_order": 999,
+            "role": "system",
+            "content": "你需要生成以<branches></branches>包裹的选项分支，每个选项限制在100字内:\n\n<details>\n<summary>𓋫 𓏴𓏴 𓏵‧₊🎮剧情分支₊‧𓏵 𓏴𓏴 𓋫</summary>\n<branches>\n（每行填充一个选项，一共6个）\n</branches>\n</details>\n\n说明:\n- 选项分支需紧跟正文接续，不可时间跨度过大，尽可能地完整以方便剧情衔接\n- 选项要包含完整的user视角的对话+动作指导\n- 行动和说话的主体必须是<user>，采用第三人称“{{user}}”（不受`user人称`影响）\n- 选项各涵盖推进故事、切换场景、跳转时间、发展亲密、突然转折、转入NSFW等不同方面，互不干扰\n- 选项不需要加序号、项目符号等\n- 当`双语对话`开启，选项内对话需符合格式\n\n{{setvar::branches::剧情选项}}",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -2739,11 +2791,11 @@
                 },
                 {
                     "identifier": "a0917ea8-d2ea-40a3-8f85-c0604aefb450",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "9ee7de18-6b0d-4527-ad86-b1b87a034d02",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "40523ee0-5f55-4869-96f5-fe24cf89c3c1",
@@ -2763,11 +2815,15 @@
                 },
                 {
                     "identifier": "873d6039-f7d4-4da1-816a-ddccad74df2f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9a0b3997-0382-4c6d-9586-cf4dcbe06b0b",
-                    "enabled": false
+                    "enabled": true
+                },
+                {
+                    "identifier": "666fade8-fa9a-4ffd-b1ca-aa31a06929d5",
+                    "enabled": true
                 },
                 {
                     "identifier": "2c8c7fa4-ba6b-44fc-938e-b8cc80b53f9e",
@@ -2982,6 +3038,10 @@
                     "enabled": true
                 },
                 {
+                    "identifier": "78cce7a2-4694-45de-8f5c-e521b3d2bb4a",
+                    "enabled": true
+                },
+                {
                     "identifier": "d23ceaa2-2434-4432-a42a-ac6b715eb258",
                     "enabled": true
                 },
@@ -3003,7 +3063,7 @@
                 },
                 {
                     "identifier": "171ec12b-3443-4f0a-b6b3-d811015eec0e",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "9cfcef65-177e-4334-9d3d-6c0916a88a83",
@@ -3039,7 +3099,7 @@
                 },
                 {
                     "identifier": "28aa3fa2-9d1f-465d-9340-14b729d5d0f4",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "b1af0804-31b7-41fd-8328-aa2be6175536",
@@ -3051,7 +3111,7 @@
                 },
                 {
                     "identifier": "7131e65a-cc2c-45e5-9469-6773f9c9e59b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "0319f29f-34b7-47e0-beb2-2f3eb8a8914b",
@@ -3152,15 +3212,21 @@
             ]
         }
     ],
+    "api_url_scale": "",
+    "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": false,
+    "vertexai_auth_mode": "express",
+    "vertexai_region": "us-central1",
+    "vertexai_express_project_id": "",
+    "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "video_inlining": false,
-    "audio_inlining": true,
+    "bypass_status_check": false,
     "continue_prefill": true,
     "continue_postfix": " ",
     "function_calling": false,
@@ -3169,78 +3235,5 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1,
-    "extensions": {
-        "regex_scripts": [
-            {
-                "id": "preset_e1f60eb0-b2fd-4552-b383-6cc0f9973b8c",
-                "scriptName": "【过境】-（1）添加tag",
-                "findRegex": "^([\\s\\S]*)$",
-                "replaceString": "<user_input>\n$1\n</user_input>",
-                "trimStrings": [],
-                "placement": [
-                    1
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 1
-            },
-            {
-                "id": "preset_8df3aec9-6899-47ac-a066-eb0bf3796cb0",
-                "scriptName": "【过境】-（2）移除思维链",
-                "findRegex": "/<thinking>[\\s\\S]*?<\\/thinking>\\n?/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            },
-            {
-                "id": "preset_b3630a2e-bcbc-45ff-a1db-c3dcd04df653",
-                "scriptName": "【过境】-（3）保留4层正文",
-                "findRegex": "/[\\s\\S]*?【馆藏开启】([\\s\\S]*?)【馆藏封存】([\\s\\S]*)/gm",
-                "replaceString": "<!--\n【馆藏开启】$1【馆藏封存】\n-->",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 5,
-                "maxDepth": null
-            },
-            {
-                "id": "preset_eca04fa5-db5c-4f55-8228-61eaf38137ae",
-                "scriptName": "【过境】-（4）不发送小剧场",
-                "findRegex": "/<small_theater(?:\\:[^>]*)?>[\\s\\S]*?<\\/small_theater(?:\\:[^>]*)?>\\n?/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            }
-        ]
-    }
+    "n": 1
 }
