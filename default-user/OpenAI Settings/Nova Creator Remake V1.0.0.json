@@ -1,8 +1,7 @@
 {
-    "chat_completion_source": "custom",
+    "chat_completion_source": "makersuite",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
-    "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
     "openrouter_group_models": false,
@@ -15,14 +14,32 @@
     "cohere_model": "command",
     "perplexity_model": "sonar-pro",
     "groq_model": "qwen-2.5-32b",
-    "zerooneai_model": "yi-large",
-    "custom_model": "gemini-2.5-pro",
-    "custom_url": "https://gemini.sillydream.top/v1",
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "electronhub_group_models": false,
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
+    "custom_model": "gemini-3-pro-preview-high",
+    "custom_url": "https://sb.mcxbx.xyz/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
     "custom_prompt_post_processing": "",
-    "google_model": "gemini-pro",
+    "google_model": "gemini-3-pro-preview",
+    "vertexai_model": "gemini-2.0-flash-001",
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "temperature": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -42,7 +59,7 @@
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Anti-bond",
-    "reverse_proxy": "",
+    "reverse_proxy": "http://127.0.0.1:8889",
     "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
@@ -545,7 +562,7 @@
                 },
                 {
                     "identifier": "7",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "8",
@@ -553,7 +570,7 @@
                 },
                 {
                     "identifier": "9",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "10",
@@ -618,16 +635,19 @@
             ]
         }
     ],
-    "api_url_scale": "",
     "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": false,
-    "use_alt_scale": false,
+    "vertexai_auth_mode": "express",
+    "vertexai_region": "us-central1",
+    "vertexai_express_project_id": "",
     "squash_system_messages": true,
     "image_inlining": false,
     "inline_image_quality": "auto",
+    "video_inlining": false,
+    "audio_inlining": true,
     "bypass_status_check": false,
     "continue_prefill": false,
     "continue_postfix": "",
@@ -637,5 +657,6 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1
+    "n": 1,
+    "extensions": {}
 }
