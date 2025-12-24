@@ -2339,7 +2339,7 @@
         {
             "identifier": "9fa369ee-5844-4286-b565-c38fb69046d9",
             "name": "🎁军师之塔",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 3,
             "injection_order": 966,
@@ -2365,7 +2365,7 @@
         {
             "identifier": "ec010e48-4a34-428e-ba58-870d96671c2f",
             "name": "🎁求助之塔",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 3,
             "injection_order": 966,
@@ -2482,7 +2482,7 @@
         {
             "identifier": "68a90fd4-9c0a-407d-bfcd-95c34d769349",
             "name": "🎁推特之塔",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 3,
             "injection_order": 966,
@@ -4169,19 +4169,20 @@
     "extensions": {
         "regexBindings": {
             "exclusive": [
-                "52539d3f-0b26-4c25-af63-eb1a0eb2202e",
-                "4ab537c6-0cbf-4f3e-9d88-d77ecc3fd2f4",
-                "62644cfe-ff6d-4298-8935-90ea044ad22e",
-                "5bd02dfb-b92b-449a-a0f7-ed40a62af584",
-                "16cb56ee-ea03-406f-9f67-d7724642ac65",
-                "265478d7-eebe-4cd1-bbd7-eb2e151adf1a",
-                "4c248eb1-2a9d-4b03-994f-28cabcc85c48",
-                "41a3d41f-259e-4056-a2ea-78b5ff2eae2b",
-                "655a9fc9-31f1-434e-bf66-06000373fb65",
-                "c835b70f-c67a-4563-b05a-d40277a02409",
-                "c8add076-ffab-44e7-a912-199c52f9db33",
-                "ecfc8087-d428-4287-be4d-1f3d2d2557e3",
-                "c46a328f-0ced-4fdb-89cc-73b32eb9a5d5"
+                "869a05a9-3cfd-4234-9b75-648a3b0f9d45",
+                "430df7f8-c923-4dce-98bc-2ef4a0169b6d",
+                "2ccad244-1a09-4de3-b560-32c0e66b7dd1",
+                "f20c497e-f856-4655-924b-332d2219b1fc",
+                "35a0b221-3947-4eb8-98aa-cc23501736eb",
+                "69376ce6-de02-4dbc-a25b-7637f2a82b01",
+                "0cf28b1d-fab9-4d2e-99f4-589ece535880",
+                "9c8b1aee-2938-44d6-9c78-0fad60504e83",
+                "6a9d71f6-fb26-4b86-a9ce-9eb50ee3efaf",
+                "f5da372a-6e53-4544-afee-7572fd223667",
+                "6b8e033b-877d-4aae-b4f7-363d0500c0df",
+                "c3ef2000-836e-4637-a710-c4f0d48749ff",
+                "b350c151-a61d-4cc4-b7a2-482f545ff42b",
+                "17ffdfe0-bdc4-4b45-a341-9c9312d17f62"
             ]
         }
     }
