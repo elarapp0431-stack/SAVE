@@ -5136,8 +5136,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 130,
-                "LAST_RECEIVE_CHARS": 173,
+                "LAST_RECEIVE_TOKENS": 1570,
+                "LAST_RECEIVE_CHARS": 2071,
                 "LAST_SEND_TOKENS": 49143,
                 "LAST_SEND_CHARS": 79338,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -10827,7 +10827,7 @@
         "azure_deployment_name": "",
         "azure_api_version": "2024-02-15-preview",
         "azure_openai_model": "",
-        "custom_model": "gemini-3-pro-preview-high",
+        "custom_model": "gemini-3-flash-preview",
         "custom_url": "https://sb.mcxbx.xyz/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
