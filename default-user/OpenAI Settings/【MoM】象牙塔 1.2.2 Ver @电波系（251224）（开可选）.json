@@ -2,6 +2,7 @@
     "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
+    "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
     "openrouter_group_models": false,
@@ -14,18 +15,10 @@
     "cohere_model": "command",
     "perplexity_model": "sonar-pro",
     "groq_model": "qwen-2.5-32b",
-    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
+    "zerooneai_model": "yi-large",
     "xai_model": "grok-3-beta",
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
-    "electronhub_model": "gpt-4o-mini",
-    "electronhub_sort_models": "alphabetically",
-    "electronhub_group_models": false,
-    "moonshot_model": "kimi-latest",
-    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
-    "cometapi_model": "gpt-4o",
-    "zai_model": "glm-4.6",
-    "zai_endpoint": "common",
     "custom_model": "gemini-3-pro-preview-high",
     "custom_url": "https://sb.mcxbx.xyz/v1",
     "custom_include_body": "",
@@ -34,12 +27,6 @@
     "custom_prompt_post_processing": "",
     "google_model": "gemini-3-pro-preview",
     "vertexai_model": "gemini-2.0-flash-001",
-    "nanogpt_model": "gpt-4o-mini",
-    "deepseek_model": "deepseek-chat",
-    "azure_base_url": "",
-    "azure_deployment_name": "",
-    "azure_api_version": "2024-02-15-preview",
-    "azure_openai_model": "",
     "temperature": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -2906,7 +2893,7 @@
             "order": [
                 {
                     "identifier": "0c170970-8aed-4060-aaa3-f4d4248ceac3",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "f2a9199b-920d-4b6a-8d72-78f70d9c0db9",
@@ -3566,7 +3553,7 @@
                 },
                 {
                     "identifier": "ec010e48-4a34-428e-ba58-870d96671c2f",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "68a90fd4-9c0a-407d-bfcd-95c34d769349",
@@ -3779,6 +3766,7 @@
             ]
         }
     ],
+    "api_url_scale": "",
     "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
@@ -3787,11 +3775,11 @@
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
+    "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "video_inlining": false,
-    "audio_inlining": true,
     "bypass_status_check": false,
     "continue_prefill": false,
     "continue_postfix": " ",
@@ -3801,31 +3789,5 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1,
-    "extensions": {
-        "regexBindings": {
-            "exclusive": [
-                "52d24c99-da4f-42be-a579-54f4c2ee7d1d",
-                "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                "b2324bca-882e-4fa8-bef4-a88159de2983",
-                "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                "531a102e-2dcd-456d-bc53-498d6fd1864b",
-                "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                "8b9765ac-73e4-4834-aeec-5c4cf3344223",
-                "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                "f63e4d3f-acb8-45a4-92c9-da71594f88a6"
-            ]
-        }
-    },
-    "windowai_model": "",
-    "zerooneai_model": "yi-large",
-    "api_url_scale": "",
-    "use_alt_scale": false
+    "n": 1
 }
