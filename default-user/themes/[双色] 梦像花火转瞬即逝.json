@@ -12,7 +12,7 @@
     "shadow_color": "rgba(108, 131, 157, 0.3)",
     "shadow_width": 0,
     "border_color": "rgba(207, 207, 207, 0.03)",
-    "font_scale": 0.91,
+    "font_scale": 1.15,
     "fast_ui_mode": true,
     "waifuMode": false,
     "avatar_style": 2,
@@ -36,6 +36,5 @@
     "reduced_motion": true,
     "compact_input_area": true,
     "show_swipe_num_all_messages": false,
-    "click_to_edit": false,
-    "media_display": "list"
+    "click_to_edit": false
 }
