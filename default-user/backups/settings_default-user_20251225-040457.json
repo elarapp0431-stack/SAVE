@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "true",
+        "LNavOpened": "false",
         "NavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}},\"3090278210222208\":{\"fieldsWarned\":{}}}}",
@@ -4660,8 +4660,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 1862,
-                "LAST_RECEIVE_CHARS": 2592,
+                "LAST_RECEIVE_TOKENS": 92,
+                "LAST_RECEIVE_CHARS": 128,
                 "LAST_SEND_TOKENS": 38506,
                 "LAST_SEND_CHARS": 60936,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
@@ -9088,7 +9088,7 @@
                 "order": [
                     {
                         "identifier": "0c170970-8aed-4060-aaa3-f4d4248ceac3",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "f2a9199b-920d-4b6a-8d72-78f70d9c0db9",
