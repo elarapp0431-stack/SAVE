@@ -4532,6 +4532,25 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 1
+            },
+            {
+                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
+                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
+                "replaceString": "",
+                "trimStrings": [],
+                "placement": [
+                    1,
+                    2,
+                    6
+                ],
+                "disabled": false,
+                "markdownOnly": false,
+                "promptOnly": true,
+                "runOnEdit": false,
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -4836,8 +4855,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 49835,
-                "LAST_RECEIVE_CHARS": 143253,
+                "LAST_RECEIVE_TOKENS": 41,
+                "LAST_RECEIVE_CHARS": 53,
                 "LAST_SEND_TOKENS": 50887,
                 "LAST_SEND_CHARS": 79001,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
