@@ -1,4 +1,32 @@
 {
+    "chat_completion_source": "custom",
+    "openai_model": "gpt-4-turbo",
+    "claude_model": "claude-3-5-sonnet-20240620",
+    "windowai_model": "",
+    "openrouter_model": "OR_Website",
+    "openrouter_use_fallback": false,
+    "openrouter_group_models": false,
+    "openrouter_sort_models": "alphabetically",
+    "openrouter_providers": [],
+    "openrouter_allow_fallbacks": true,
+    "openrouter_middleout": "on",
+    "ai21_model": "jamba-1.5-large",
+    "mistralai_model": "mistral-large-latest",
+    "cohere_model": "command",
+    "perplexity_model": "sonar-pro",
+    "groq_model": "qwen-2.5-32b",
+    "zerooneai_model": "yi-large",
+    "xai_model": "grok-3-beta",
+    "pollinations_model": "openai",
+    "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "custom_model": "gemini-3-pro-preview-high",
+    "custom_url": "https://sb.mcxbx.xyz/v1",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
+    "custom_prompt_post_processing": "",
+    "google_model": "gemini-3-pro-preview",
+    "vertexai_model": "gemini-2.0-flash-001",
     "temperature": 1,
     "frequency_penalty": 0.3,
     "presence_penalty": 0.3,
@@ -17,7 +45,9 @@
     "new_group_chat_prompt": "[Start a new group chat. Group members: {{group}}]",
     "new_example_chat_prompt": "[Example Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
-    "bias_preset_selected": "Default (none)",
+    "bias_preset_selected": "Anti-bond",
+    "reverse_proxy": "",
+    "proxy_password": "",
     "max_context_unlocked": true,
     "wi_format": "{0}",
     "scenario_format": "{{scenario}}",
@@ -2440,15 +2470,21 @@
             ]
         }
     ],
+    "api_url_scale": "",
+    "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
     "claude_use_sysprompt": false,
     "use_makersuite_sysprompt": false,
+    "vertexai_auth_mode": "express",
+    "vertexai_region": "us-central1",
+    "vertexai_express_project_id": "",
+    "use_alt_scale": false,
     "squash_system_messages": true,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "video_inlining": false,
-    "audio_inlining": true,
+    "bypass_status_check": false,
     "continue_prefill": true,
     "continue_postfix": " ",
     "function_calling": false,
@@ -2457,158 +2493,5 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1,
-    "extensions": {
-        "regex_scripts": [
-            {
-                "id": "preset_e1f60eb0-b2fd-4552-b383-6cc0f9973b8c",
-                "scriptName": "【过境】-（1）添加tag",
-                "findRegex": "^([\\s\\S]*)$",
-                "replaceString": "<user_input>\n$1\n</user_input>",
-                "trimStrings": [],
-                "placement": [
-                    1
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": 1
-            },
-            {
-                "id": "preset_8df3aec9-6899-47ac-a066-eb0bf3796cb0",
-                "scriptName": "【过境】-（2）移除思维链",
-                "findRegex": "/<thinking>[\\s\\S]*?<\\/thinking>\\n?/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": true,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 1,
-                "maxDepth": null
-            },
-            {
-                "id": "preset_b3630a2e-bcbc-45ff-a1db-c3dcd04df653",
-                "scriptName": "【过境】-（3）保留4层正文",
-                "findRegex": "/[\\s\\S]*?【馆藏开启】([\\s\\S]*?)【馆藏封存】([\\s\\S]*)/gm",
-                "replaceString": "<!--\n【馆藏开启】$1【馆藏封存】\n-->",
-                "trimStrings": [],
-                "placement": [
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": 5,
-                "maxDepth": null
-            },
-            {
-                "id": "preset_eca04fa5-db5c-4f55-8228-61eaf38137ae",
-                "scriptName": "【过境】-（4）不发送小剧场",
-                "findRegex": "/<small_theater(?:\\:[^>]*)?>[\\s\\S]*?<\\/small_theater(?:\\:[^>]*)?>\\n?/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": true,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
-            }
-        ],
-        "regexBindings": {
-            "version": 2,
-            "bound": [
-                {
-                    "id": "f63e4d3f-acb8-45a4-92c9-da71594f88a6",
-                    "enabled": true
-                },
-                {
-                    "id": "4322eecb-94c4-4b8d-a727-535f2e283d8b",
-                    "enabled": true
-                },
-                {
-                    "id": "fb9f02b8-c582-4ae7-9246-b877c5790e08",
-                    "enabled": true
-                },
-                {
-                    "id": "27b286e7-0985-44e1-a118-0121370bc77e",
-                    "enabled": true
-                },
-                {
-                    "id": "17b4727c-baee-4191-bdc8-0516ed7ca57d",
-                    "enabled": true
-                }
-            ],
-            "exclusive": [
-                "f63e4d3f-acb8-45a4-92c9-da71594f88a6",
-                "4322eecb-94c4-4b8d-a727-535f2e283d8b",
-                "fb9f02b8-c582-4ae7-9246-b877c5790e08",
-                "27b286e7-0985-44e1-a118-0121370bc77e",
-                "17b4727c-baee-4191-bdc8-0516ed7ca57d"
-            ]
-        }
-    },
-    "chat_completion_source": "custom",
-    "openai_model": "gpt-4-turbo",
-    "claude_model": "claude-3-5-sonnet-20240620",
-    "openrouter_model": "OR_Website",
-    "openrouter_use_fallback": false,
-    "openrouter_group_models": false,
-    "openrouter_sort_models": "alphabetically",
-    "openrouter_providers": [],
-    "openrouter_allow_fallbacks": true,
-    "openrouter_middleout": "on",
-    "ai21_model": "jamba-1.5-large",
-    "mistralai_model": "mistral-large-latest",
-    "cohere_model": "command",
-    "perplexity_model": "sonar-pro",
-    "groq_model": "qwen-2.5-32b",
-    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
-    "xai_model": "grok-3-beta",
-    "pollinations_model": "openai",
-    "aimlapi_model": "gpt-4o-mini-2024-07-18",
-    "electronhub_model": "gpt-4o-mini",
-    "electronhub_sort_models": "alphabetically",
-    "electronhub_group_models": false,
-    "moonshot_model": "kimi-latest",
-    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
-    "cometapi_model": "gpt-4o",
-    "zai_model": "glm-4.6",
-    "zai_endpoint": "common",
-    "custom_model": "claude-opus-4-5-20251101",
-    "custom_url": "https://api.nobbb.site/v1",
-    "custom_include_body": "",
-    "custom_exclude_body": "",
-    "custom_include_headers": "",
-    "custom_prompt_post_processing": "",
-    "google_model": "gemini-3-pro-preview",
-    "vertexai_model": "gemini-2.0-flash-001",
-    "nanogpt_model": "gpt-4o-mini",
-    "deepseek_model": "deepseek-chat",
-    "azure_base_url": "",
-    "azure_deployment_name": "",
-    "azure_api_version": "2024-02-15-preview",
-    "azure_openai_model": "",
-    "reverse_proxy": "",
-    "proxy_password": "",
-    "show_external_models": false,
-    "vertexai_auth_mode": "express",
-    "vertexai_region": "us-central1",
-    "vertexai_express_project_id": "",
-    "bypass_status_check": false
+    "n": 1
 }
