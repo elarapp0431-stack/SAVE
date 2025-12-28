@@ -2,9 +2,9 @@
     "name": "[遥]你是我唯一的专辑",
     "blur_strength": 0,
     "main_text_color": "rgba(255, 251, 251, 1)",
-    "italics_text_color": "rgba(86, 86, 86, 1)",
+    "italics_text_color": "rgba(156, 165, 188, 1)",
     "underline_text_color": "rgba(116, 116, 116, 1)",
-    "quote_text_color": "rgba(187, 187, 187, 1)",
+    "quote_text_color": "rgba(160, 215, 202, 1)",
     "blur_tint_color": "rgba(0, 0, 0, 1)",
     "chat_tint_color": "rgba(75, 119, 170, 0.01)",
     "user_mes_blur_tint_color": "rgba(0, 0, 0, 1)",
@@ -12,7 +12,7 @@
     "shadow_color": "rgba(140, 140, 140, 0.3)",
     "shadow_width": 0,
     "border_color": "rgba(207, 207, 207, 0.03)",
-    "font_scale": 0.91,
+    "font_scale": 1.05,
     "fast_ui_mode": true,
     "waifuMode": false,
     "avatar_style": 2,
@@ -36,6 +36,5 @@
     "reduced_motion": true,
     "compact_input_area": true,
     "show_swipe_num_all_messages": false,
-    "click_to_edit": false,
-    "media_display": "list"
+    "click_to_edit": false
 }
