@@ -2,9 +2,9 @@
     "name": "[尾巴镇] 片场小记",
     "blur_strength": 0,
     "main_text_color": "rgba(232, 232, 232, 1)",
-    "italics_text_color": "rgba(199, 199, 199, 1)",
+    "italics_text_color": "rgba(165, 195, 200, 1)",
     "underline_text_color": "rgba(117, 117, 117, 1)",
-    "quote_text_color": "rgba(226, 226, 226, 0.52)",
+    "quote_text_color": "rgba(193, 239, 216, 0.75)",
     "blur_tint_color": "rgba(43, 43, 43, 1)",
     "chat_tint_color": "rgba(255, 255, 255, 0)",
     "user_mes_blur_tint_color": "rgba(69, 69, 69, 0)",
@@ -12,7 +12,7 @@
     "shadow_color": "rgba(192, 195, 195, 0.22)",
     "shadow_width": 0,
     "border_color": "rgba(235, 233, 232, 0)",
-    "font_scale": 0.9,
+    "font_scale": 1.1,
     "fast_ui_mode": false,
     "waifuMode": false,
     "avatar_style": 2,
@@ -36,5 +36,6 @@
     "reduced_motion": false,
     "compact_input_area": true,
     "show_swipe_num_all_messages": false,
-    "click_to_edit": false
+    "click_to_edit": false,
+    "media_display": "list"
 }
