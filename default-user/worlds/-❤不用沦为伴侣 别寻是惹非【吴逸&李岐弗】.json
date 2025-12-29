@@ -12,7 +12,7 @@
             "addMemo": true,
             "order": 200,
             "position": 1,
-            "disable": false,
+            "disable": true,
             "excludeRecursion": false,
             "preventRecursion": false,
             "matchPersonaDescription": false,
@@ -33,7 +33,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -71,7 +71,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         },
         "1": {
             "key": [],
@@ -106,7 +109,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -144,6 +147,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "2": {
@@ -217,6 +228,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "3": {
@@ -252,7 +271,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -290,7 +309,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         },
         "4": {
             "key": [],
@@ -325,7 +347,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -363,6 +385,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "5": {
@@ -398,7 +428,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -436,7 +466,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         },
         "6": {
             "key": [],
@@ -509,6 +542,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "7": {
@@ -544,7 +585,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -582,7 +623,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         },
         "8": {
             "key": [],
@@ -617,7 +661,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -655,6 +699,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "9": {
@@ -690,7 +742,7 @@
             "matchWholeWords": null,
             "useGroupScoring": false,
             "automationId": "",
-            "role": 0,
+            "role": null,
             "sticky": 0,
             "cooldown": 0,
             "delay": 0,
@@ -728,6 +780,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "10": {
@@ -801,6 +861,14 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": [],
+            "characterFilter": {
+                "isExclude": false,
+                "names": [],
+                "tags": []
             }
         },
         "11": {
@@ -874,7 +942,10 @@
                 "match_creator_notes": false,
                 "triggers": [],
                 "ignore_budget": false
-            }
+            },
+            "ignoreBudget": false,
+            "outletName": "",
+            "triggers": []
         }
     },
     "originalData": {

@@ -405,10 +405,10 @@
         "smooth_streaming_speed": 80,
         "stream_fade_in": false,
         "fast_ui_mode": false,
-        "avatar_style": 0,
-        "chat_display": 1,
-        "toastr_position": "toast-top-center",
-        "chat_width": 50,
+        "avatar_style": 2,
+        "chat_display": 0,
+        "toastr_position": "toast-top-right",
+        "chat_width": 58,
         "never_resize_avatars": false,
         "show_card_avatar_urls": false,
         "play_message_sound": true,
@@ -418,26 +418,26 @@
         "sort_field": "create_date",
         "sort_order": "desc",
         "sort_rule": null,
-        "font_scale": 1,
-        "blur_strength": 15,
-        "shadow_width": 1,
-        "main_text_color": "rgba(0, 26, 91, 1)",
-        "italics_text_color": "rgba(111, 148, 205, 1)",
-        "underline_text_color": "rgba(46, 89, 167, 1)",
-        "quote_text_color": "rgba(91, 106, 154, 0.96)",
-        "blur_tint_color": "rgba(237, 240, 255, 1)",
-        "chat_tint_color": "rgba(255, 255, 255, 0)",
-        "user_mes_blur_tint_color": "rgba(255, 255, 255, 0.97)",
-        "bot_mes_blur_tint_color": "rgba(255, 255, 255, 0.97)",
-        "shadow_color": "rgba(255, 255, 255, 1)",
-        "border_color": "rgba(255, 255, 255, 0)",
-        "custom_css": "/*\n * SillyTavern Custom UI Theme：蓝夜byleviathan\n * 感谢：络络老师的思维链美化\n * 二改请标明出处，禁止二传\n */\n\n/* ===== 全局字体（存在字体冲突可删除下列代码） ===== */\n@import url(\"https://fontsapi.zeoseven.com/309/main/result.css\");\n\nbody, button, input, textarea, code {\n    font-family: \"KingHwaOldSong\"!important;\n    font-weight: normal;\n    /* font-feature-settings: \"hwid\"; 启用等宽变化字形 */\n}\n\n/* === 基础设置=== */\n\nbody.bubblechat .mes {\n    padding: 0px;\n    border-radius: 0px;\n}\n\n.mes_block {\n    position: relative;\n    padding: 0; \n    overflow: hidden;\n}\n\n/* === 伪元素创建消息气泡头部 === */\n\n.mes_block::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 350px;\n    background-image: url('https://files.catbox.moe/orqk2j.png');\n    mask-image: radial-gradient(white 60%, transparent 90%);\n    background-size: cover;\n    background-position: center;\n    background-repeat: no-repeat;\n    opacity: 0.9;\n    z-index: 0; \n}\n\n/* === 调整头像位置和样式=== */\n\n/* 头像容器的定位和层级 */\n.mes .avatar {\n    position: absolute;\n    top: 75px;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 100px; \n    height: 100px;\n    border-radius: 50%;\n    z-index: 3; \n    border: none;\n    background: transparent;\n    box-shadow: none;\n}\n\n\n.mes .avatar img {\n    border: none !important;\n    box-shadow: none !important;\n    width: 100%;\n    height: 100%;\n    mask-image: radial-gradient(circle,white 40%, transparent 100%);\n}\n\n.mes .avatar::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    border-radius: 50%;\n    box-shadow: inset 0 0 16px 13px rgba(255, 255, 255, 1);\n    z-index: 4; \n    pointer-events: none;\n}\n\n.mes .avatar::after {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    border-radius: 50%;\n    box-shadow: 0 0 20px 17px rgba(255, 255, 255, 1);\n    z-index: 2; \n}\n\n\n/* --- .mes .ch_name 改造 --- */\n.mes .ch_name {\n    position: relative;\n    z-index: 2;\n    margin-top: 270px;\n    margin-bottom: 10px;\n    text-align: left;\n    border-radius: 0; \n    display: flex;\n    justify-content: space-between; \n    align-items: center; \n    padding: 6px 12px;\n    text-shadow: none;\n}\n\n/* --- 用户名和时间戳 --- */\n.mes .ch_name > .flex-container {\n    display: flex;\n    align-items: baseline; \n    gap: 30px;\n}\n\n/* 用户名样式 */\n.mes .ch_name .name_text {\n    background: linear-gradient(270deg, rgba(0, 0, 128, 0.75) 0%, rgba(0, 0, 128, 0.4) 100%);\n    padding: 2px 5px;\n    color: #E0E8F0; \n    font-weight: 500; \n    font-size: 1em;\n}\n\n/* 时间戳样式 */\n.mes .timestamp {\n    background: linear-gradient(270deg, rgba(0, 0, 128, 0.85) 0%, rgba(0, 0, 128, 0.6) 100%);\n    padding: 2px 5px;\n    color: #aeb8c5; \n    font-size: 0.75em;\n    font-weight: 300; \n}\n\n\n/* --- 按钮容器--- */\n.mes .mes_buttons {\n    position: relative;\n    right: 40px;\n    display: flex;\n    align-items: center;\n\n    background-color: rgba(255, 255, 255, 0.1); \n    backdrop-filter: blur(5px); \n    -webkit-backdrop-filter: blur(5px); \n    border-radius: 0;\n    padding: 2px 6px;\n}\n\n.mes .mes_buttons .mes_button {\n    margin: 0 3px; \n    font-size: 0.9em; \n    color: #dbe2ea; \n    transition: color 0.2s ease-in-out;\n}\n\n.mes .mes_buttons .mes_button:hover {\n    color: #ffffff; \n}\n\n.mes .mes_text {\n    margin-top: 70px;\n    padding: 0 15px 15px 15px;\n}\n\n.mes {\n    margin-bottom: 20px;\n}\n\n\n/* --- 元信息通用基础样式 --- */\n.mes .mesIDDisplay,\n.mes .tokenCounterDisplay,\n.mes .mes_timer {\n    position: absolute !important; \n    z-index: 3;\n\n    background-color: rgba(59, 46, 126, 0.8); \n    color: #e0e8f0; \n    padding: 3px 8px; \n    font-size: 11px;\n    font-weight: 400; \n    border-radius: 0; \n    text-shadow: none; \n}\n\n\n/* --- 分别定义 --- */\n\n.mes .mesIDDisplay {\n    top: 100px;\n    left: 125px;\n    border-left: 2px solid rgba(174, 184, 197, 0.8);\n}\n\n.mes .tokenCounterDisplay {\n    top: 120px;\n    right: 100px;\n    border-right: 2px solid rgba(174, 184, 197, 0.8);\n}\n\n.mes .mes_timer {\n    top: 180px;\n    left: 180px;\n    border-bottom: 2px solid rgba(174, 184, 197, 0.8);\n}\n\n\n.mes_block {\n    \n    background-color: #efefef;\n    border: 1px solid rgba(68, 108, 207, 0.4);\n    border-radius: 0;\n    overflow: hidden;\n    background-image:\n        radial-gradient(circle at 15% 95%, rgba(47, 128, 228, 0.3), transparent 40%),\n\n        radial-gradient(circle at 80% 45%, rgba(10, 50, 137, 0.3), transparent 55%),\n        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.4), transparent 25%);\n    background-repeat: no-repeat;\n}\n\n\n.mes_block::after {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    background-image: url('https://files.catbox.moe/hv1cq1.png');\n    background-repeat: repeat;\n    opacity: 0.2; \n    pointer-events: none;\n    z-index: 0;\n}\n\n\n:root {\n    --light-theme-bg: #f9f9ff; \n    --light-ui-bg: rgba(240, 242, 250, 0.85); \n    --light-border-color: rgba(190, 200, 225, 0.7); \n    --light-shadow-color: rgba(170, 185, 215, 0.15); \n    --light-text-primary: #5b6a9a; \n    --light-text-hover: #8d9de1; \n    --light-text-hover-rgb: 141, 157, 225;\n    --scrollbar-thumb-color: #9FB1D6; \n    --scrollbar-thumb-color-rgb: 159, 177, 214; \n}\n\n\n#top-bar {\n    background: #EDF0FF;\n    backdrop-filter: blur(10px);\n    -webkit-backdrop-filter: blur(10px);\n    border-bottom: 1px solid var(--light-border-color);\n    box-shadow: 0 2px 20px var(--light-shadow-color);\n}\n\n#top-bar .drawer .drawer-icon {\n    color: var(--light-text-primary);\n    transition: all 0.25s ease-out;\n}\n\n\n/* --- 图标 --- */\n.drawer-icon {\n    font-size: 12px !important;\n    color: #19325f !important;\n    line-height: calc(var(--mainFontSize) * 2.1);\n    width: calc(var(--mainFontSize) * 2.1);\n    height: calc(var(--mainFontSize) * 2.1);\n    display: inline-block;\n    vertical-align: middle;\n    position: relative;\n}\n\n.drawer-icon {\n    opacity: 1 !important;\n    font-size: calc(var(--icon-size) * 1.1);\n    text-shadow: none !important;\n    transition: color 0.2s ease, transform 0.2s ease;\n}\n\n\n/* --- 全局滚动条 --- */\n::-webkit-scrollbar {\n    width: 8px;\n    height: 8px;\n}\n::-webkit-scrollbar-track {\n    background-color: transparent;\n}\n::-webkit-scrollbar-thumb {\n    border-radius: 4px;\n    \n    background-image: linear-gradient(\n        135deg,\n        var(--scrollbar-thumb-color) 0%, \n        hsla(from var(--scrollbar-thumb-color) h s 90% / 0.9) 100%\n    );\n    border: 1px solid rgba(255, 255, 255, 0.6);\n    box-shadow: 0 0 12px -2px rgba(var(--scrollbar-thumb-color-rgb), 0.5);\n    \n    transition: all 0.2s ease-in-out;\n}\n\n/* --- 悬停在滑块上 --- */\n::-webkit-scrollbar-thumb:hover {\n    background-image: linear-gradient(\n        135deg,\n        var(--scrollbar-thumb-color) 0%, \n        hsla(from var(--scrollbar-thumb-color) h s 95% / 1) 100%\n    );\n    box-shadow: 0 0 16px -2px rgba(var(--scrollbar-thumb-color-rgb), 0.7);\n}\n\n/* --- 兼容Firefox --- */\n* {\n    scrollbar-width: thin;\n    scrollbar-color: var(--scrollbar-thumb-color) transparent;\n}\n\n\n/* --- 输入区 --- */\n#form_sheld {\n    background: linear-gradient(to top, rgba(var(--light-text-hover-rgb), 0.03), transparent 50%), var(--light-ui-bg);\n    backdrop-filter: blur(12px);\n    -webkit-backdrop-filter: blur(12px);\n    box-shadow: \n        inset 0 1px 1px rgba(255, 255, 255, 0.7), \n        0 -8px 32px -4px var(--light-shadow-color); \n    border-radius: 12px;\n    padding: 5px 5px!important;\n    transition: all 0.3s ease-in-out;\n}\n\n\n#send_form {\n    background-color: rgba(245, 247, 255, 0.9);\n    border-radius: 12px;\n    border: 1px solid var(--light-border-color);\n    box-shadow: inset 0 4px 6px var(--light-shadow-color);\n    transition: box-shadow 0.3s ease, border-color 0.3s ease;\n}\n\n/* --- 文本输入框 --- */\n#send_textarea {\n    background-color: transparent;\n    border: none;\n    color: var(--light-text-primary);\n    resize: none;\n}\n\n#send_textarea::placeholder {\n    color: var(--light-text-primary);\n    opacity: 0.5;\n    font-style: normal;\n    transition: opacity 0.3s ease;\n}\n\n\n#send_form .file_attached {\n    display: flex;\n    align-items: center;\n    gap: 10px;\n    background-color: rgba(var(--light-text-hover-rgb), 0.08);\n    border-radius: 8px;\n    color: var(--light-text-primary);\n    margin: 8px;\n    padding: 8px 12px;\n    box-shadow: 0 1px 3px var(--light-shadow-color);\n}\n\n/* --- 输入选框 --- */\n.text_pole,\ninput[type=\"text\"],\ninput[type=\"number\"],\ntextarea,\nselect {\n    -webkit-appearance: none;\n    -moz-appearance: none;\n    appearance: none;\n    outline: none;\n    width: 100%;\n    padding: 5px 5px; \n    background-color: rgba(245, 247, 255, 0.7); \n    border: 1px solid var(--light-border-color);\n    border-radius: 10px; \n    box-shadow: \n        inset 0 7px 5px var(--light-shadow-color), \n        0 5px 7px var(--light-shadow-color); \n    transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;\n}\n\n.text_pole:hover,\ninput[type=\"text\"]:hover,\ninput[type=\"number\"]:hover,\ntextarea:hover,\nselect:hover {\n    border-color: rgba(var(--light-text-hover-rgb), 0.7);\n    background-color: rgba(250, 252, 255, 0.8);\n}\n\n.text_pole:focus,\ninput[type=\"text\"]:focus,\ninput[type=\"number\"]:focus,\ntextarea:focus,\nselect:focus {\n    border-color: var(--light-text-hover);\n    box-shadow: \n        inset 0 9px 7px var(--light-shadow-color), \n        0 0 0 3px rgba(var(--light-text-hover-rgb), 0.2); \n}\n\n\nselect {\n    padding-right: 40px; \n    background-image: url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235b6a9a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E\");\n    background-repeat: no-repeat;\n    background-position: right 12px center;\n    background-size: 18px;\n    cursor: pointer;\n}\n\n\n#extensions_settings .inline-drawer-toggle.inline-drawer-header,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header,\n.inline-drawer-header,\n#user-settings-block h4,\n.standoutHeader {\n   \n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    width: 100%;\n    margin-bottom: 7px;\n    padding: 5px 0; \n\n    color: var(--light-text-primary);\n    font-weight: 600; \n    letter-spacing: 0.5px; \n\n    border-bottom: 1px solid;\n    border-image-slice: 1;\n    border-image-source: linear-gradient(\n        to right, \n        transparent 0%, \n        var(--light-border-color) 50%, \n        transparent 100%\n    );\n    background: none;\n    border-top: none;\n    border-left: none;\n    border-right: none;\n}\n\n.inline-drawer-header {\n    cursor: pointer;\n    transition: background-color 0.3s ease;\n    margin-bottom: 0; \n    padding: 10px 5px; \n    border-radius: 8px;\n}\n\n.inline-drawer-header:hover {\n    background-color: rgba(var(--light-text-hover-rgb), 0.07);\n}\n#user-settings-block h4 {\n    margin-top: 15px;\n    margin-bottom: 8px;\n}\n\n/* --- 面板选框 --- */\n\ninput[type=\"checkbox\"],\ninput[type=\"radio\"] {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 1.1em;\n    height: 1.1em;\n    border: 1px solid var(--light-border-color);\n    background-color: rgba(255, 255, 255, 0.6);\n    box-shadow: inset 0 1px 3px var(--light-shadow-color);\n    transform: translateY(-0.075em);\n    display: inline-grid;\n    place-content: center;\n    \n    margin: 0;\n    margin-right: 8px; \n    cursor: pointer;\n    transition: all 0.2s ease;\n}\n\ninput[type=\"checkbox\"]::before,\ninput[type=\"radio\"]::before {\n    content: '';\n    \n    transform: scale(0);\n    transition: 0.12s transform ease-in-out;\n   \n    box-shadow: inset 1em 1em var(--light-text-hover);\n}\n\ninput[type=\"checkbox\"] {\n    border-radius: 5px; \n}\n\ninput[type=\"checkbox\"]::before {\n    width: 0.65em;\n    height: 0.65em;\n    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);\n}\n\ninput[type=\"radio\"] {\n    border-radius: 50%; \n}\n\ninput[type=\"radio\"]::before {\n    width: 0.5em;\n    height: 0.5em;\n    border-radius: 50%;\n}\n\ninput[type=\"checkbox\"]:checked,\ninput[type=\"radio\"]:checked {\n    border-color: var(--light-text-hover);\n    background-color: rgba(var(--light-text-hover-rgb), 0.1);\n}\n\ninput[type=\"checkbox\"]:checked::before,\ninput[type=\"radio\"]:checked::before {\n    transform: scale(1);\n}\n\n/* --- 按钮 --- */\n.menu_button,\n.api_button,\n#dialogue_popup_ok, \n#dialogue_popup_cancel, \n.popup-button \n{\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    padding: 2px 6px;\n    gap: 8px; \n\n    background-color: rgba(var(--light-text-hover-rgb), 0.08); \n    border: 1px solid var(--light-border-color);\n    border-radius: 10px; \n    box-shadow: \n        0 2px 4px var(--light-shadow-color), \n        inset 0 1px 1px rgba(255, 255, 255, 0.7); \n\n    color: var(--light-text-primary);\n   \n    cursor: pointer;\n    outline: none;\n  \n    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);\n}\n\n/* --- 悬停 --- */\n.menu_button:hover,\n.api_button:hover,\n#dialogue_popup_ok:hover,\n#dialogue_popup_cancel:hover,\n.popup-button:hover {\n    background-color: rgba(var(--light-text-hover-rgb), 0.15);\n    border-color: var(--light-text-hover);\n    \n    color: var(--light-text-hover);\n    transform: translateY(-2px);\n    box-shadow: \n        0 4px 10px rgba(var(--light-text-hover-rgb), 0.2),\n        inset 0 1px 1px rgba(255, 255, 255, 0.7);\n}\n\n/* --- 按下 --- */\n.menu_button:active,\n.api_button:active,\n#dialogue_popup_ok:active,\n#dialogue_popup_cancel:active,\n.popup-button:active {\n    background-color: rgba(var(--light-text-hover-rgb), 0.2);\n    transform: translateY(1px);\n    box-shadow: inset 0 2px 4px var(--light-shadow-color);\n    transition: all 0.05s ease;\n}\n\n/* --- 特殊按钮 --- */\n.red_button, .redWarningBG {\n    background-color: rgba(255, 100, 130, 0.1)!important;\n    border-color: rgba(255, 100, 130, 0.4)!important;\n    color: #d85c78!important;\n}\n\n.red_button:hover, .redWarningBG:hover {\n    background-color: rgba(255, 100, 130, 0.2)!important;\n    border-color: #d85c78!important;\n    color: #e2496d!important;\n    box-shadow: \n        0 4px 10px rgba(255, 100, 130, 0.25),\n        inset 0 1px 1px rgba(255, 255, 255, 0.7);\n}\n\n\n/* --- 滑轨 --- */\n.neo-range-slider,\ninput[type=\"range\"] {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 100%;\n    height: 6px; /* 轨道的厚度 */\n    background: transparent; \n    outline: none;\n    cursor: pointer;\n    box-shadow: inset 0 1px 3px var(--light-shadow-color);\n    background-color: rgba(var(--light-text-hover-rgb), 0.1); \n    border-radius: 3px; \n}\n\n\ninput[type=\"range\"]::-webkit-slider-thumb {\n    -webkit-appearance: none; \n    height: 12px;\n    width: 12px;\n    margin-top: -3px; \n   \n    background-image: radial-gradient(circle at 50% 35%, \n        #ffffff 0%, \n        rgba(255, 255, 255, 0.7) 60%, \n        rgba(var(--scrollbar-thumb-color-rgb), 0.4) 100%\n    ); \n    \n    border-radius: 50%; \n    \n    box-shadow: 0 0 0 3px rgba(var(--scrollbar-thumb-color-rgb), 0.2);\n    \n    transition: all 0.2s ease;\n}\n\ninput[type=\"range\"]::-moz-range-thumb {\n    height: 18px;\n    width: 18px;\n    border: none; \n    background-image: radial-gradient(circle at 50% 35%, \n        #ffffff 0%, \n        rgba(255, 255, 255, 0.7) 60%, \n        rgba(var(--scrollbar-thumb-color-rgb), 0.4) 100%\n    );\n    border-radius: 50%;\n    box-shadow: 0 0 0 3px rgba(var(--scrollbar-thumb-color-rgb), 0.2);\n    cursor: pointer;\n}\n\n\n.drawer-content, \n#right-nav-panel,\n#WorldInfo, \n#Backgrounds, \n#user-settings-block, \n#character_popup, \n#dialogue_popup,\n.popup,\n.modal-dialog,\n#advanced_char_def,\n.dropdown-menu,\n#form_role_play,\n#lorebook-popup\n{\n    background-image: url('https://files.catbox.moe/pdu4nh.png') !important;\n    background-color: rgba(255, 255, 255, 0.6) !important;  \n    background-blend-mode: normal;  \n    background-size: cover;\n    background-position: center center;\n    border-radius: 0.3125rem; /* 5px */\n    border: none;\n    box-shadow: none !important;\n}\n\n/* --- 预设区 --- */\n#completion_prompt_manager #completion_prompt_manager_list li.completion_prompt_manager_prompt {\n    align-items: center;\n    padding: 0.5em;\n    border: 2px solid var(--light-border-color);\n    border-radius: 15px;\n}\n\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_name .prompt-manager-inspect-action {\n    color: var(--light-text-primary);\n    cursor: pointer;\n}\n\n#completion_prompt_manager .completion_prompt_manager_header {\n    color: var(--light-text-primary);\n}\n\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name, #completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name .prompt-manager-inspect-action {\n    color: #AAA9A9;\n}\n\n\n/* --- 文本 --- */\nh1, h2, h3 {\n    line-height: 1.4; \n    text-shadow: 0 2px 15px var(--light-shadow-color); \n}\n\nh1 {\n    position: relative; \n    text-align: center; \n    letter-spacing: 2px; \n    padding-bottom: 15px; \n    margin: 2.5em 0; \n}\n\nh1::after {\n    content: '';\n    position: absolute;\n    bottom: 0;\n    left: 50%; \n    \n    width: 80px; \n    height: 2px; \n    background: linear-gradient(to right, \n        transparent 0%, \n        var(--light-text-hover) 50%, \n        transparent 100%\n    );\n   \n    transform: translateX(-50%) scaleX(0);\n    transform-origin: center;\n    opacity: 0;\n   \n    animation: draw-line 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;\n    animation-delay: 0.3s; \n}\n\n@keyframes draw-line {\n    to {\n        transform: translateX(-50%) scaleX(1);\n        opacity: 1;\n    }\n}\n\n\nh2 {\n    position: relative;\n    padding-left: 20px; \n    letter-spacing: 1px;\n    margin: 2em 0 1em;\n}\n\nh2::before {\n    content: '';\n    position: absolute;\n    left: 0;\n    top: 50%; \n    transform: translateY(-50%);\n    \n    width: 4px;\n    height: 70%; \n    background-color: var(--light-text-hover);\n    border-radius: 2px;\n    box-shadow: 0 0 8px rgba(var(--light-text-hover-rgb), 0.5);\n}\n\n\nh3 {\n    position: relative;\n    letter-spacing: 0.5px;\n    margin: 1.5em 0 0.8em;\n    padding-bottom: 5px;\n    border-bottom: 1px solid var(--light-border-color);\n}\n\n\n.mes_text blockquote {\n    position: relative; \n    padding: 12px 20px; \n    margin: 1em 0; \n    background-color: rgba(var(--light-text-hover-rgb), 0.04); \n    border: none; \n    border-radius: 8px; \n    font-style: italic; \n    opacity: 0.9; \n}\n\n.mes_text blockquote::before {\n    content: '';\n    position: absolute;\n    left: 8px; \n    top: 10px;\n    bottom: 10px;\n    width: 3px;\n    background-color: var(--light-text-hover);\n    border-radius: 1.5px;\n    box-shadow: 0 0 8px rgba(var(--light-text-hover-rgb), 0.6);\n}\n\n\n.mes_text q {\n    quotes: none; \n    font-style: normal; \n    padding: 0.1em 0.1em; \n    border-radius: 6px; \n    background: radial-gradient(\n        ellipse at center, \n        #EDF0FF 50%,      \n        transparent 95%    \n    ) \n    center / 100% 70% no-repeat; \n    transition: all 0.3s ease;\n}\n\n\n.mes_text b, .mes_text strong {\n    color: #7182c2; \n    text-shadow: 0 0 10px rgba(var(--light-text-hover-rgb), 0.1);\n}\n\n.mes_text i, .mes_text em {\n    font-style: italic;\n    position: relative;\n    padding: 0 3px;\n    border-radius: 3px;\n    background: linear-gradient(\n        to top,\n        rgba(var(--light-text-hover-rgb), 0.2) 0%, \n        rgba(var(--light-text-hover-rgb), 0.2) 40%, \n        transparent 40.1%\n    );\n    transition: all 0.2s ease-in-out;\n}\n\n.mes_text i:hover, .mes_text em:hover {\n    background: linear-gradient(\n        to top,\n        rgba(var(--light-text-hover-rgb), 0.3) 0%, \n        rgba(var(--light-text-hover-rgb), 0.3) 40%, \n        transparent 40.1%\n    );\n}\n\n.mes_text u {\n    text-decoration: none;\n    border-bottom: 1px dotted var(--light-border-color);\n    padding-bottom: 1px;\n}\n\n.mes_text s, .mes_text del {\n    color: rgba(91, 106, 154, 0.7); \n    text-decoration: none;\n    background-image: url('data:image/svg+xml;utf8,<svg preserveAspectRatio=\"none\" viewBox=\"0 0 100 10\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M0,5 C25,10 75,0 100,5\" stroke=\"%238d9de1\" stroke-width=\"1.5\" fill=\"none\" /></svg>');\n    background-repeat: repeat-x;\n    background-size: 8px 8px;\n    background-position: 0 center;\n}\n\n\n.mes_text :not(pre) > code {\n    background-color: rgba(var(--light-text-hover-rgb), 0.08); \n    border: 1px solid var(--light-border-color);\n    border-radius: 6px; \n    padding: 0.15em 0.5em; \n    margin: 0 0.1em;\n    color: var(--light-text-primary); \n    font-size: 0.9em; \n    text-shadow: none; \n    box-shadow: 0 1px 2px var(--light-shadow-color); \n}\n\n\n.mes_text pre {\n    background: var(--light-ui-bg); \n    border: 1px solid rgba(255, 255, 255, 0.7); \n    border-radius: 12px;\n    \n    padding: 8px; \n    margin: 1.5em 0;\n    \n    backdrop-filter: blur(5px); \n    box-shadow: 0 4px 12px var(--light-shadow-color); \n    overflow: hidden; \n}\n\n.mes_text pre code {\n    display: block;\n    background-color: rgba(var(--light-theme-bg-rgb), 0.8); \n    border-radius: 8px; \n    padding: 15px;\n    \n    box-shadow: inset 2px 2px 5px var(--light-shadow-color),\n                inset -2px -2px 5px rgba(255, 255, 255, 0.9);\n    color: var(--light-text-primary);\n}\n\n/* --- 思考框 --- */\n\ndetails.mes_reasoning_details {\n    width: 50%;\n    margin: 10px 10px;\n    border-radius: 20px; \n    overflow: hidden;\n    position: relative;\n    padding: 0 !important;\n    border: 1px solid rgba(173, 203, 239, 0.3); \n    box-shadow: 0 8px 32px rgba(65, 105, 155, 0.15); \n    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);\n    z-index: 3;\n    background-color: rgba(220, 230, 255, 0.1); \n    backdrop-filter: blur(16px); \n    -webkit-backdrop-filter: blur(16px);\n}\n\ndetails.mes_reasoning_details::before {\n    content: '';\n    position: absolute;\n    top: 0;\n    left: 0;\n    right: 0;\n    bottom: 0;\n    background-image: url('https://files.catbox.moe/pdu4nh.png');\n    background-size: cover;\n    background-position: center;\n    background-attachment: fixed; \n    z-index: -1;\n    transition: transform 0.3s ease;\n    opacity: 0.9; \n}\n\n\ndetails.mes_reasoning_details > summary.mes_reasoning_summary {\n    padding: 0 5px !important; \n    list-style: none;\n    cursor: pointer;\n    outline: none;\n    user-select: none;\n    display: flex;\n    align-items: center;\n    position: relative;\n    background-color: rgba(210, 225, 250, 0.2); \n    border-bottom: 1px solid rgba(173, 203, 239, 0.25); \n    transition: background-color 0.2s ease;\n    height: 44px; \n}\n\ndetails.mes_reasoning_details > summary.mes_reasoning_summary:hover {\n    background-color: rgba(210, 225, 250, 0.3) !important;\n}\n\ndetails.mes_reasoning_details[open] > summary.mes_reasoning_summary {\n    border-radius: 20px 20px 0 0; \n    border-bottom: none; \n}\n\ndetails.mes_reasoning_details .mes_reasoning_header_title {\n    font-weight: 500;\n    letter-spacing: 0.05em;\n    text-shadow: 0 1px 4px rgba(20, 30, 70, 0.5); \n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n    padding: 0 !important;\n}\n\ndetails.mes_reasoning_details .mes_reasoning_arrow,\ndetails.mes_reasoning_details .mes_button,\ndetails.mes_reasoning_details .menu_button {\n    color: #C0D0FF; \n    text-shadow: 0 1px 2px rgba(20, 30, 70, 0.3);\n    transition: all 0.2s ease-in-out;\n}\n\n\ndetails.mes_reasoning_details .mes_reasoning_actions {\n    padding-right: 5px; \n}\n\ndetails.mes_reasoning_details .mes_reasoning {\n    max-height: 300px;\n    overflow-y: auto;\n    padding: 20px 25px;\n    line-height: 1.7;\n    background-color: rgba(210, 225, 250, 0.1); \n    color: #A8B8D8; \n    animation: mes_reasoning_smooth_expand 0.4s cubic-bezier(0.25, 1, 0.5, 1) forwards;\n}\n\ndetails.mes_reasoning_details .mes_reasoning::-webkit-scrollbar {\n    width: 5px; \n}\ndetails.mes_reasoning_details .mes_reasoning::-webkit-scrollbar-track {\n    background: transparent;\n}\ndetails.mes_reasoning_details .mes_reasoning::-webkit-scrollbar-thumb {\n    background-color: rgba(150, 170, 210, 0.4); \n    border-radius: 5px;\n}\ndetails.mes_reasoning_details .mes_reasoning::-webkit-scrollbar-thumb:hover {\n    background-color: rgba(150, 170, 210, 0.6);\n}\ndetails.mes_reasoning_details .mes_reasoning {\n    scrollbar-width: thin;\n    scrollbar-color: rgba(150, 170, 210, 0.4) transparent;\n}\n\ndetails.mes_reasoning_details[data-state=\"thinking\"] .mes_reasoning_summary::after,\ndetails.mes_reasoning_details[data-state=\"done\"] .mes_reasoning_summary::after {\n    background: linear-gradient(\n        90deg,\n        transparent 20%,\n        rgba(220, 235, 255, 0.05) 35%,\n        rgba(220, 235, 255, 0.15) 50%,\n        rgba(220, 235, 255, 0.05) 65%,\n        transparent 80%\n    ); \n}\n\n@keyframes mes_reasoning_smooth_expand {\n    0% { opacity: 0; transform: translateY(-8px) scale(0.98); }\n    40% { opacity: 0.8; }\n    100% { opacity: 1; transform: translateY(0) scale(1); }\n}\n\n@keyframes mes_reasoning_material_completion {\n    0% { transform: translateX(-100%); opacity: 0; }\n    10% { opacity: 0.4; }\n    30% { opacity: 0.8; }\n    70% { opacity: 0.8; }\n    95% { opacity: 0.4; }\n    100% { transform: translateX(100%); opacity: 0; }\n}\n\n@keyframes mes_reasoning_shimmer {\n    0% { transform: translateX(-100%); opacity: 0.8; }\n    50% { opacity: 1; }\n    100% { transform: translateX(50%); opacity: 0.8; }\n}\n\ndetails.mes_reasoning_details > summary.mes_reasoning_summary::-webkit-details-marker,\ndetails.mes_reasoning_details > summary.mes_reasoning_summary::marker { display: none; }\ndetails.mes_reasoning_details[open] .thinking-icon { transform: scale(1.05); }\ndetails.mes_reasoning_details .flex-container,\ndetails.mes_reasoning_details .mes_reasoning_header_block,\ndetails.mes_reasoning_details .mes_reasoning_header,\ndetails.mes_reasoning_details .mes_reasoning_summary *,\ndetails.mes_reasoning_details .mes_reasoning_header_block *,\ndetails.mes_reasoning_details .mes_reasoning_header * { background: transparent !important; border: none !important; box-shadow: none !important; }\ndetails.mes_reasoning_details .fa-solid { line-height: 1; display: inline-flex; align-items: center; justify-content: center; }\n\ndetails.mes_reasoning_details {\n    margin-top: 50px !important;\n}\ndetails.mes_reasoning_details {\n    margin-bottom: -50px !important;\n}\n\n#chat {\n    backdrop-filter: 0!important; \n    -webkit-backdrop-filter: 0!important;\n   \n}\n\n/* ===== 移动端适配(!!自调整区) ===== */\n@media (max-width: 768px) {\n\n    ::-webkit-scrollbar {\n        \n    }\n    * {\n        \n    }\n\n    /* === .mes 核心元素定位调整 === */\n\n    /* --- 消息气泡头部背景 --- */\n    .mes_block::before {\n        /* 根据需要调整头部背景的高度 */\n        height: 180px;\n    }\n\n    /* --- 头像容器 --- */\n    .mes .avatar {\n        /* 调整头像的位置和大小 */\n        top: 30px;\n        width: 80px;\n        height: 80px;\n    }\n\n    /* --- 消息ID --- */\n    .mes .mesIDDisplay {\n        top: 60px;\n        left: 40px;\n        font-size: 12px;\n    }\n\n    /* --- Token计数器 --- */\n    .mes .tokenCounterDisplay {\n        top: 90px;\n        right: 40px;\n        font-size: 12px;\n    }\n\n    /* --- 消息计时器 --- */\n    .mes .mes_timer {\n        top: 100px;\n        left: 70px;\n        font-size: 12px;\n    }\n\n    /* --- 角色名称区域 --- */\n    .mes .ch_name {\n        /* 调整与上方头像的间距，如果你调整了.mes_block::before，那么这个也要跟着动 */\n        margin-top: 130px;\n        font-size: 12px;\n    }\n    \n    /* --- 消息按钮 --- */\n    .mes .mes_buttons {\n        /* 调整按钮组的位置 */\n        right: 20px;\n    }\n\n    /* --- 消息文本区域 --- */\n    .mes .mes_text {\n        /* 调整文本与上方元素的间距 */\n        margin-top: 30px;\n    }\n\n\n    /* --- 思维链 --- */\n    details.mes_reasoning_details {\n        /* 调整思维链的上下边距 */\n        margin-top: 30px!important;\n        margin-bottom: -30px!important;\n        \n    }\n    \n   \n}",
+        "font_scale": 1.05,
+        "blur_strength": 0,
+        "shadow_width": 4,
+        "main_text_color": "rgba(213, 188, 164, 1)",
+        "italics_text_color": "rgba(155, 176, 152, 1)",
+        "underline_text_color": "rgba(127, 127, 127, 1)",
+        "quote_text_color": "rgba(216, 161, 97, 1)",
+        "blur_tint_color": "rgba(0, 0, 0, 0.87)",
+        "chat_tint_color": "rgba(140, 120, 128, 0)",
+        "user_mes_blur_tint_color": "rgba(0, 0, 0, 0)",
+        "bot_mes_blur_tint_color": "rgba(255, 255, 255, 0)",
+        "shadow_color": "rgba(255, 221, 133, 0.4)",
+        "border_color": "rgba(0, 0, 0, 0)",
+        "custom_css": "/*【港城实录】作者：易碎蝶\n①本美化免费发布于尾巴镇，禁止二传二改。\n②部分代码用到了其他老师分享的，有标注~\n③仅限于在正规渠道由本人发布后下载获取，一切其他方式获得皆视为二传，抓到必究*/\n\n/* ====== 全局字体====== */\n@import url(\"https://fontsapi.zeoseven.com/646/main/result.css\");\n\nbody {\n    font-family: \"XiangcuiDengcusong\";\n    font-weight: normal;\n}\n\n/*———————— 顶栏 ————————*/\n#top-bar {\n    position: fixed !important;  \n    overflow: visible !important;\n    background: none !important;\n    border: 0 !important;\n    box-shadow: none !important;\n    pointer-events: none;\n    width: 100vw;  /*宽度*/\n    height: 77px;  \n    top: 0;\n    left: 0;\n}\n\n#top-bar::before {\n    content: \"\";\n    position: fixed;\n    background:  url(\"https://iili.io/fVAHSEb.png\") no-repeat center / cover;  \n    \n    /*⭕️顶栏核心 */\n    top: 0px;\n    left: 0px;\n    right: 0px;\n    bottom: 38px;/*⭕️只有这里需要改*/\n\n   \n    z-index: 5;\n    pointer-events: auto;\n    \n    transform: none !important;\n    animation: none !important;\n}\n\n\n\n\n/* ⭕️顶栏装饰层 */\n#top-bar::after {\n    content: \"\";\n    position: fixed;\n    background: url(\"\") no-repeat center / contain;\n    width: 190px;\n    height: 200px;\n    top: 20px;\n    right: -40px;\n    z-index: 6;\n    pointer-events: none;\n    transform-origin: top center;\n}\n\n\n\n\n\n\n/* —————面板背景———— */\n.drawer-content {\n background-image: url('https://iili.io/fVutk0B.png'); /* 面板背景 */\n  background-size: cover; \n  background-position: center; \n  background-repeat: no-repeat; \n  background-attachment: fixed; \n}\n/*移除面板圆角@曹语涵*/\n.drawer-content {\n  border-radius: 0;\n}\n.drawer-content {\n  border-top-left-radius: 0;\n  border-top-right-radius: 0;\n}\n\n/* ===== ⭕️楼层箭头、计数器核心 ===== */\n.fa-chevron-right:before,\n.fa-chevron-left:before,\n.fa-arrow-right:before {\n  content: \"\" !important;\n  display: none !important; \n}\n\n.fa-chevron-left,\n.fa-chevron-right {\n  display: inline-block;\n  width: 20px;\n  height: 20px; \n  min-width: 0;\n  opacity: 1 !important; \n  background: center/contain no-repeat;\n}\n\n.fa-chevron-left {\n  background-image: url('https://iili.io/fVutNiQ.png'); /* 左 */\n  margin-bottom: -1px; \npadding: 0px 0px 0;\n}\n.fa-chevron-right {\n  background-image: url('https://iili.io/fVutNiQ.png'); /* 右 */\n  top: 50% !important;\n  left: 0% !important;\n  transform: translate(-90%, -90%) !important;\n  z-index: 9999 !important;\n}\n/* ===== 楼层计数器样式 ===== */\n.swipes-counter {\n  font-size: 9px;\n  font-weight: 540;\n  opacity: 0.4 !important;\n  color: #B57331 !important;\n}\n.swipes-counter {\n  position: absolute;\n  top: -13px;\n  right: 40px;\n  z-index: 9999;\n  pointer-events: none;\n}\n\n/* ==============================================\n🦋气泡拼接开始🦋 *==============================================*/\n\n/* 🍃上层装饰层、拼接气泡顶部 */\n.mes::before {\n  content: \"\";\n  position: absolute;\n  top: -2px; /* 【上下】(负值向上) */\n  left: -0px; /* 【左右】 */\n  width: 400px; /* 【宽度/大小】 */\n  height: 530px; /* 【高度/大小】 */\n  background-image: url('https://iili.io/fVut1lS.png'); \n  background-size: contain; \n  background-repeat: no-repeat; \n  z-index: -2; \n  pointer-events: none; \n}\n\n\n/* 🍃 中层气泡*/\n .mes {\n   z-index: -3;\n  max-width: 400px;/*【🍃宽度】*/\n  width: 100%;/*【👁宽度，一般调整第一个就行，没效果再调整这个】*/\n  margin: 70px auto 40px;/*【AI和用户的气泡距离⭕️第一个是调整最早的消息与顶部的距离防止顶部超过屏幕】*/\n  border-radius: 0px;\n  background: url('https://iili.io/fVut0f2.png') repeat-y; \n  background-size: 100% auto; \n  background-attachment: local; \n  transition: transform 0.2s ease; \n  transform-origin: top center;\n  position: relative;\n  overflow: visible;\n  box-shadow: none !important; \n}\n/* 🍃下层装饰层、拼接气泡尾部 */\n.mes::after {\n  content: \"\";\n  position: absolute;\n  bottom: -30px; /* 【上下】(负值向下) */\n  right: -0px; /* 下层装饰层【左右】 */\n  width: 400px; /* 【宽度/大小】 */\n  height: 71px; /* 【高度/大小👁会影响最新消息的底部留白，不可调太高，宽度拉不动再调高一点】 */\n  background-image: url('https://iili.io/fVutYxf.png'); \nbackground-size: contain; \n  background-repeat: no-repeat;\n  z-index: -4; \n  pointer-events: none; \n}\n\n/*——————🍃文本边距——————*/\n\n .mes_text,\n.mes_reasoning {\n    font-weight: 400; \n    line-height: 1.7; /* 行高 */\n    text-align: justify; \n    text-justify: inter-word; \n    overflow-wrap: anywhere;\n    hyphens: auto; \n    \n    /* 优化后的间距系统 */\n    --top-padding: 12rem;    /* 顶部 */\n    --bottom-padding: 3rem; /* 底部 */\n    --left-padding: 0rem;  /* 左侧 */\n    --right-padding: 0.6rem; /* 右侧 */\n    \n    padding: var(--top-padding) var(--right-padding) var(--bottom-padding) var(--left-padding);\n    max-width: 100ch;\n    margin: 0 auto; \n    \n    /* 高级排版增强 */\n    font-kerning: normal; \n    letter-spacing: 0.01em; \n    text-rendering: optimizeLegibility; \n}\n\n.mes_reasoning::first-letter {\n    initial-letter: 2;\n    font-weight: 600;\n    margin-right: 0.5em;\n}\n\n/* ==============================================\n🦋气泡拼接结束🍃头像美化开始============================================== */\n\n\n/*⭕️头像框*/\n.mesAvatarWrapper {\n  position: absolute;\n  top: -147px;\n  left: 48.9%;\n  transform: translateX(-50%);\n  z-index: -1;\n  width: 70px;  \n  height: 70px; \n  overflow: visible; \n}\n\n/* ⭕️头像框位置与大小调整核心 */\n.mesAvatarWrapper::after {\n  content: \"\";\n  position: absolute;\n  top: 65%;/* 【上下】 */\n  left: 99%;/* 【左右】 */\n  width: 270%;  /* 【框宽度】 */\n  height: 200%; /* 【框高度】 */\n  display: block;\n  \n  /* ⭕️头像框链接放置处 */\n  background-image: url('https://iili.io/fVutaV4.png');/*←🍃*/\n  background-size: 100% 100%;\n  background-repeat: no-repeat;\n  background-position: center;\n  transform: translate(-50%, -50%);\n  z-index: 1; \n  \n}\n\n.mesAvatarWrapper img {\n  position: relative;\n  z-index: -1; \n}\n\n/* ⭕️头像位置 */\n.mesAvatarWrapper {\n  position: absolute;\n  top: -18px;           /* 【负值向上】 */\n  left: 17%;            /* 【头像左右】 */\n  transform: translateX(-50%);\n  z-index: -1;\n    filter: \n    saturate(1) !important;\n}\n\n/* ⭕️头像尺寸*/\n.mesAvatarWrapper .avatar {\n  /* 🍃头像尺寸 */\n  width: 120px;           /* 宽度 */\n  height: 90px;          /* 高度 */\n  transform: rotate(-7deg); /* 旋转 */\n}\n.mesAvatarWrapper .avatar img {\n  width: 100%;\n  height: 100%;\n  object-fit: cover;\n}\n\n/* ⭕user设置页面/角色选择头像美化⭕*/\n/*收藏头像黄圈隐藏、名字颜色修改@Little YE*/\n.character_select.is_fav .avatar {\n  outline: none !important;\n}\n.character_select.is_fav .ch_name {\n  color: #BED69F !important;\n}\n.avatar img {\n    border: 0px solid white; /* 头像描边 */\n    box-shadow: \n        inset -2px -2px 4px rgba(156, 169, 111, 0), \n        3px 3px 5px rgba(127, 127, 127, 0.1);\nfilter: sepia(0.3) hue-rotate(-10deg) saturate(1.2) contrast(1.0) brightness(1.05);\n  position: relative;\n}\n/* user */\n.avatar-container {\n    position: relative; \n    border-radius: 10px;\n    background: rgba(156, 169, 111, 0); \nborder: 0px solid #ffffff;\n    color: #F4E1CE;\n    box-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(0, 0, 0,0);\n    filter: \n    saturate(1) !important;\n}\n\n\n.avatar-container::after {\n    content: '';\n    position: absolute;\n    top: 8px;\n    right: 24px;\n    width: 90px; \n    height: 90px; \n    background: url('https://iili.io/fVutwWx.png') center/cover no-repeat; \n    transform: translate(30%, -30%); \n}\n.avatar-container {\n  position: relative;\n  overflow: visible !important;\n}\n/* char */\n.bogus_folder_select,\n.character_select {\n    position: relative;\nborder-radius: 10px;\n    margin-bottom: 0px;\n    background: rgba(156, 169, 111, 0); \nborder: 0px solid #ffffff;\n    color: #F4E1CE;\n    box-shadow: \n    inset -3px -3px 5px rgba(0, 0, 0,0),\n    4px 4px 5px rgba(0, 0, 0,0);\n    filter: \n    saturate(1) !important;\n}\n\n.bogus_folder_select::after,\n.character_select::after {\n}\nbogus_folder_select,\n.character_select {\n  position: relative;\n  overflow: visible !important;\n}\n\n/* ==============================================\n🦋头像美化结束🍃文字效果美化开始============================================== */\n\n/* === 设置选项=== */\nsmall {\n  color: #FFE8C9 !important;\n  opacity: 1;\n}\n.toggle-description {\n    color: #FFE8C9;\n}\n#completion_prompt_manager .completion_prompt_manager_header div {\n    color: #FFE8C9; /*字符*/\n}\n\n.fa-solid::before, .fa-regular::before {\n    vertical-align: middle;\n    text-align: center;\n}\n\n.right_menu_button {\n    padding: 0px;\n    filter: none;\n    color: #FFE8C9 !important; /* 更新文字颜色 */\n}\n\n/* === 预设区文字颜色 === */\n/* 选中 */\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_name .prompt-manager-inspect-action {\n  color: #D8904B;\n}\n\n/* 未选 */\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name, \n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name .prompt-manager-inspect-action {\n  color: #B39C87;\n}\n\n/* 星号等标识颜色*/\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt .completion_prompt_manager_prompt_name .fa-solid {\n    color: #94795F;\n}\n\n/* 代码块 */\ncode, pre {\n  background: url('') center/cover, #171717 !important; /* 背景 */\n  color: #C6B497 !important; \n  border: 0px solid #ffffff !important; \n  box-shadow: \n    inset 0px 3px 3px rgba(127, 127, 127,0),\n    0px 2px 0px rgba(255, 147, 0,0);\n  border-radius: 0px !important; \nline-height: 1.5; \n}\n\n\ncode, pre {\n  position: relative;\n  overflow: visible !important;\n}\n/* 引用气泡 */\n.mes_text q {\n  background: #171717 !important; \nborder: 0px solid #ffffff !important;\nbox-shadow: \n    inset -2px -2px 5px rgba(127, 127, 127,0),\n    2px 2px 5px rgba(0, 0, 0, 1);\n  border-radius: 0px !important;\n  font-weight: 300;\n}\n\n\n/* 引用区块 */\n.mes_text blockquote, \n.mes_reasoning blockquote {\n  border-left: 2px solid #9A6B39 !important; \n  background: url('') center/cover, #171717; /* 背景 */\n  color: #C6B18C !important; \n  box-shadow: \n    inset -3px 3px 5px rgba(0, 0, 0,0.04),\n    4px 4px 5px rgba(0, 0, 0,0.08);\n  border-radius: 0px !important; \n  \n}\n/* 斜体 */\nem, i {\n  background: linear-gradient(to bottom, \n    rgba(255, 255, 255, 0) 93%, \n    rgba(98, 115, 65, 0.8) 93%) !important; \n}\n/* ==============================================\n🦋文字效果美化结束🍃零碎美化开始============================================== */\n\n/*—— 🍃楼层 ——*/\n\n\n.mes .mesIDDisplay {\n    position: fixed;\n    top: 19.5px;\n    left: 142px;                    /* 从左侧开始定位 */\n  transform: none;            /* 移除所有变换效果 */\n    z-index: 2;\n    margin-top: 0px;\n    text-align: left;           /* 文字左对齐 */\n    width: auto;                /* 宽度自适应内容 */\n    white-space: nowrap;        /* 防止文字换行 */\n    padding: 0 10px;            /* 添加左右内边距 */\n    display: inline-flex; \n    align-items: center;  \n    gap: 2px;            /* 【左右文字间距】 */\n    \n    cursor: default;\n    opacity: 1;\n    font-size: calc(var(--mainFontSize) * 0.65);\n    font-weight: 300;\n    color: #B57331;      /* 【颜料🎨】【主文字颜色】 */\n}\n\n\n/* 左侧文字 */\n.mes .mesIDDisplay::before {\n    content: var(--left-text, \"\"); /* 【左侧文字内容】 */\n    white-space: nowrap;  \n    color: var(--left-color, #bcbcbc); /* 【颜料🎨】【左侧文字颜色】 */\n    font-weight: 300;\n}\n\n/* 右侧文字 */\n.mes .mesIDDisplay::after {\n    content: var(--right-text, \"\"); /* 【右侧文字内容】 */\n    white-space: nowrap;  \n    color: var(--right-color, #bcbcbc); /* 【颜料🎨】【右侧文字颜色】 */\n    font-weight: 300;\n}\n\n/*—— 🍃基础信息【时间戳、角色昵称等】 ——*/\n\n/* ⭕️消息文字上边距留白核心调整 */\n.mes_block {\n  position: relative;\n  margin-top: -120px;  \n  overflow: visible;\n}\n\n/* ⭕️角色名称核心调整 */\n.mes_block .ch_name {\ncolor: #B57331 !important;\n  position: relative;\n  top:209px; /* 上下 */\n  left: -9px;\n  max-width: calc(100% - 105px); \n  min-height: 0px;\n  z-index: 10; \n font-size: 0.70em;\n  font-weight: 400;\n  letter-spacing: 0.9px;\nwhite-space: nowrap;\n}\n\n\n\n/* 时间戳颜色 */\n.timestamp {\n  color: #B57331 !important; \n  opacity: 1 !important; \n}\n\n\n/* ⭕️时间戳核心调整 */\n.timestamp {\n  position: absolute;\n  top: 29px;                /* 上下 */\n  left: 149px;                /* 左右 */\n  width: 300%; \n  font-size: 7px;            /* 字体大小 */\n  font-weight: 400;          /* 字体粗细 */\n  transform: rotate(0deg);   /* 旋转 */\n  white-space: nowrap;\n}\n\n/* 左侧文字 */\n.timestamp::before {\n  content: \"\";       /*左侧文字 */\n font-size: 1em;\n  color: #A2A2A2;            /* 左侧文字颜色 */\n  display: inline;\n  padding-right: 0px;        /* 右侧间距（分隔时间戳） */\n  pointer-events: none;\n}\n\n/* 右侧文字 */\n.timestamp::after {\n  content: \"\";       /* 右侧文字 */\nfont-size: 1em;\n  color: #A2A2A2;            /* 右侧文字颜色 */\n  display: inline;\n  padding-left: 0px;         /* 左侧间距（分隔时间戳） */\n  pointer-events: none;\n}\n\n\n/* ⭕️编辑按钮核心调整 */\n.mes_buttons {\n  position: relative;\n  top: -35px; /*上下*/\n  left: 125px;/*左右*/\n  z-index: 30;\n  padding: 20px; \n  min-height: 36px;\n  box-sizing: border-box;\n  transform: rotate(0deg); /* 旋转 */\n}\n\n.mes_edit_buttons {\n    display: none;\n    flex-direction: row;\n    column-gap: 5px;\n    float: right;\n    cursor: pointer;\n    padding-bottom: 5px;\n    filter: none; /*移除阴影*/\n    transition: 0.3s ease-in-out;\n    \n    /* ⭕编辑菜单位置核心调整⭕ */\n    position: relative;\n    top: 40px;  /* 负数上移 | 正数下移  */\n    right: -60px;   /* 负数右移 | 正数左移  */\n\n  transform: rotate(0deg); /* 旋转 */\n}\n.mes_edit_down.menu_button.fa-solid.fa-chevron-down.interactable.disabled {\n    filter: none !important;\n}\n.mes_button, .extraMesButtons>div {\ncursor: pointer;\n    transition: opacity 0.2s ease-in-out;\n    filter: drop-shadow(0px 0px 0px #000000) !important;\n    /* ⭕设置省略号菜单颜色 */\n    color: #B57331 !important;\nopacity: 0.5 !important; \n}\n\n\n/*—— 计时器&字符——*/\n.mes {\n  position: relative; \n}\n\n.mes .mes_timer,\n.mes .tokenCounterDisplay {\n  position: fixed; \n  z-index: 3; \n  cursor: default;\nopacity: 1;/*透明度*/\n  white-space: nowrap; \n  font-size: calc(var(--mainFontSize) * 0.65);/*文字大小*/\n  font-weight: 300;/*文字粗细*/\n  padding: 0;\n  top: var(--element-top, 240px);\n  left: var(--element-left, 50%);\n  transform: translateX(var(--element-translate, -50%));\n}\n\n\n/* === ⭕️计时器核心 === */\n.mes .mes_timer {\n  --element-top: var(--timer-top, 23px); /*【🍃计时器上下】*/\n  --timer-left: 245px; /* 🍃计时器左右 */\n  --timer-translate: 0; \n  text-align: left; \n  left: var(--timer-left);\n  transform: translate(var(--timer-translate), -50%);\n\n  /* 文字内容控制 */\n  --timer-prefix: \"\"; /* 【🍃前缀】 */\n  --timer-suffix: \"\"; /* 【🍃后缀】 */\n  \n  --timer-main-color: #B57331; /* 【🍃计时器颜色】 */\n  --timer-prefix-color: #bcbcbc; /* 【🍃前缀颜色】 */\n  --timer-suffix-color: #bcbcbc; /* 【🍃后缀颜色】 */\n  \n  color: var(--timer-main-color);\n}\n\n/* 计时器文字控制 */\n.mes .mes_timer::before {\n  content: var(--timer-prefix); /* 前缀文字 */\n  color: var(--timer-prefix-color);\n  padding-right: 0px;\n}\n.mes .mes_timer::after {\n  content: var(--timer-suffix); /* 后缀文字 */\n  color: var(--timer-suffix-color);\n  padding-left: 0px;\n}\n\n/* === 字符计数器单独设置 === */\n.mes .tokenCounterDisplay {\n  text-align: left;\n  --element-top: var(--counter-top, 19.5px); /* 【🍃字符计数器上下】 */\n  --element-left: var(--counter-left, 284%); /* 【🍃字符计数器左右】 */\n  --element-translate: var(--counter-translate, -0%); \n  \n  --counter-prefix: \"\"; /* 【🍃前缀】 */\n  --counter-suffix: \"\"; /* 【🍃后缀】 */\n\n  --counter-main-color: #B57331; /* 【🍃计数器颜色】 */\n    --counter-prefix-color: #bcbcbc; /* 【🍃前缀颜色】 */\n  --counter-suffix-color: #bcbcbc; /* 【🍃后缀颜色】 */\n  color: var(--counter-main-color);\n\n}\n\n.mes .tokenCounterDisplay::before {\n  content: var(--counter-prefix); /* 前缀文字 */\n  color: var(--counter-prefix-color);\n  padding-right: 0px;\n}\n.mes .tokenCounterDisplay::after {\n  content: var(--counter-suffix); /* 后缀文字 */\n  color: var(--counter-suffix-color);\n  padding-left: 0px;\n}\n/*—— ⭕️外显思维链 ——*/\n.mes_reasoning_header::before {\n  content: \"\";\n  position: absolute;\n  top: 0%;\n  left: -0px;\n  transform: translateY(-50%);\n  width: 25px;\n  height: 25px;\n  background-image: url(''); \n  background-size: contain;\n  background-repeat: no-repeat;\n  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0));\n  transition: all 0.3s ease;\n  z-index: 1;\n}\n.mes_reasoning_header {\n  position: absolute;\n  z-index: 9999;\n  top: 108px;\n  left: 85%;\n  transform: translateX(-50%);\n  cursor: pointer;\n  user-select: none;\n  font-size: calc(var(--mainFontSize) * 0.75);\n  transition: all 0.3s ease;\n  padding: 0px 10px 0px 10px;\n  background:\nurl('') center/cover, #151311 !important; /* 白色背景 */\n  border: 0px solid #ffffff;\n  border-radius: 0px;\n  box-shadow: \n    inset 0px 2px 0px rgba(0, 0, 0,0.05),\n    1px 1px 4px rgba(0, 0, 0, 0.2);\n  color: #000000;\n}\n\n.mes_reasoning_header:hover {\n  transform: translateX(-50%) translateY(2px);\n  opacity: 0.5;\n  background: #151311; \n}\n\n.mes_reasoning_header_title {\n  position: relative;\n  display: inline-block;\n  top: 0px;\n  left: -0px;\n  color: #AC8C66; \n  font-weight: 300;\n}\n\n.mes_reasoning {\n  position: relative;\n  top: -190px;\n  display: block;\n  margin: 355px 0px -370px 20px;\n  \n  color: #AC8C66;\n  background: url('') center/cover, #151311 !important; /* 白色背景 */\n  border: 0px solid #ffffff;\n  box-shadow: \n    inset 0px 2px 5px rgba(0, 0, 0, 0),\n    0px 0px 5px rgba(0, 0, 0,0.15);\n  padding: 15px;\n  line-height: 1.6;\n  border-radius: 20px;\n  \n  background-image: none;\n  background-size: cover;\n  background-position: center;\n}\n\n.mes_reasoning_header_title {\n  /* 隐藏原始文本 */\n  font-size: 0; \n  color: transparent; \n}\n/* 隐藏箭头@hr */\n.mes_reasoning_arrow {\n    display: none !important;\n}\n.mes_reasoning_header_title::before {\n  /*⭕️思维链文字diy */\n  content: \"港城小记\";\n  font-size: 8px; /* 字号 */\n  color: #B17F38;\n  font-weight: 500; \n}\n\n/*—— 分割线 ——*/\nhr {\n    all: unset !important; \n    display: block !important;\n    visibility: visible !important;\n    background-image: none !important; \n    height: auto !important; \n    min-height: unset !important;\n    margin: 0 !important;\n    opacity: 1 !important;\n    position: relative;\n}\nhr::after {\n    content: \"\" !important;\n    display: block !important;\n    background-image: var(--divider-image, url(\"https://iili.io/fVutMJ9.png\")) !important; /* 👁分割线图片 */\n    background-repeat: no-repeat !important;\n    background-position: var(--divider-position, center) !important;\n    background-size: var(--divider-size, auto 100%) !important; \n    height: var(--divider-heig9ht, 30px) !important; /* 大小 */\n    width: var(--divider-width, 100%) !important; /* 宽 */\n    margin: var(--divider-margin, 0px 0) !important; /* 边距 */\n    opacity: var(--divider-opacity, 1) !important; /* 透明度控制 */\n}\n\n\n/*—— 输入框提示词编辑（感谢墨千尾老师） ——*/\n\n#nonQRFormItems {\n    position: relative;\n}\n#send_textarea::placeholder {\n    color: transparent !important;\n    text-shadow: none !important; \n}\n#nonQRFormItems:has(#send_textarea:placeholder-shown)::before {\n    content: \"“  恨  海  情  天  ”\";\n    color: #AC8C66; /* 颜色 */\n    position: absolute;\n    top: 43%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    \n    font-style: normal;\n    font-size: 0.4em;\n    pointer-events: none;\n    z-index: 10;\n    white-space: nowrap;\n    text-overflow: ellipsis;\n    overflow: hidden;\n    max-width: calc(100% - 30px);\n}\n\n\n\n\n\n/* ==============================================\n🦋零碎美化结束🍃图标替换开始\n============================================== */\n.drawer-icon:not(.openIcon) { \n  opacity: 0 !important; \n}\n\n#quickPersonaCaret {\n    display: none !important;/*隐藏user热切换倒三角*/\n}\n/* ===== 顶栏图标组 ===== */\n/* @墨千尾*/\n.drawer-icon.fa-fw::before {\n    content: '' !important;\n    font-size: 0 !important;\n}\n.drawer-icon.fa-fw {\n    width: 25px; /* 调整图标宽度 */\n    height: 25px; /* 调整图标高度 */\n    background-size: contain;\n  margin-bottom: 10px; \n    background-repeat: no-repeat;\n    background-position: center;\n    transition: transform 0.3s ease;\n}\n.drawer-icon.fa-fw:hover {\n    transform: scale(1.5);\ntransform: translateY(-0px);\n}\n\n#ai-config-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#sys-settings-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#advanced-formatting-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#WI-SP-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#user-settings-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#backgrounds-drawer-toggle .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }/*新版本酒馆背景按钮*/\n\n#logo_block .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }/*旧版本酒馆背景按钮*/\n#extensions-settings-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#table_database_settings_drawer .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#persona-management-button .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n#rightNavHolder .drawer-icon { background-image: url('https://iili.io/fVutNiQ.png'); }\n\n\n/* ===== 消息编辑图标组 ===== */\n\n/* 铅笔 */\n.fa-pencil-alt::before, .fa-pencil::before {\n  display: none !important;\n}\n.fa-pencil-alt, .fa-pencil {\n  background: url('https://iili.io/fVutWOu.png') no-repeat center/contain !important;\n  width: 30px !important;\n  hei0ght: 30px !important;\n  display: inline-block;\n  vertical-align: middle;\n  opacity: 1 !important; \n  transition: opacity 0.3s ease !important; \n}\n\n/* 省略号 */\n.fa-ellipsis-h::before, .fa-ellipsis::before {\n  display: none !important;\n}\n.fa-ellipsis-h, .fa-ellipsis {\n  background: url('https://iili.io/fVutWOu.png') no-repeat center/contain !important;\n  width: 30px !important;\n  height: 30px !important;\n  display: inline-block;\n  vertical-align: middle;\n  opacity: 1 !important;\n  transition: opacity 0.3s ease !important; \n}\n\n.fa-pencil-alt:hover, \n.fa-pencil:hover, \n.fa-ellipsis-h:hover, \n.fa-ellipsis:hover {\n  opacity: 1 !important;\n}\n/* ===== 内联抽屉图标组 ===== */\n.inline-drawer-icon::before {\n  display: none !important;\n}\n.inline-drawer-icon {\n  background: url('https://iili.io/fVutNiQ.png') no-repeat center/30px 26px !important;\n  width: 40px !important;\n  height: 40px !important;\n  margin: 0 px !important;  \n  vertical-align: -2px !important;\n  filter: none; \n}\n\n/* ===== 输入框图标组 ===== */\n/* 菜单 */\n#options_button::before {\n  display: none !important;\n}\n#options_button {\n  background: url('https://iili.io/fVutWOu.png') no-repeat center/30px 30px !important;\n  width: 40px !important;\n  height: 40px !important;\n}\n\n/* 扩展 */\n#extensionsMenuButton::before {\n  display: none !important;\n}\n#extensionsMenuButton {\n  background: url('https://iili.io/fVutWOu.png') no-repeat center/30px 30px !important;\n  width: 40px !important;\n  height: 40px !important;\n}\n\n/* 发送 */\n#send_but::before {\n  display: none !important;\n}\n#send_but {\n  background: url('https://iili.io/fVutVRe.png') no-repeat center/30px 30px !important;\n  width: 40px !important;\n  height: 40px !important;\n}\n\n/* 停止生成 */\n.fa-circle-stop::before,\n.fa-stop-circle::before {\n  display: none !important;\n}\n.fa-circle-stop,\n.fa-stop-circle {\n  background: url('https://iili.io/fVutNiQ.png') no-repeat center/30px 30px !important;\n  width: 40px !important;\n  height: 40px !important;\n  vertical-align: -3px !important;  \n}\n\n/* ===== 预设按钮组 ===== */\n/* 预设移除 */\n.prompt-manager-detach-action::before {\n  display: none !important;\n}\n.prompt-manager-detach-action {\n  background: \n    url('https://iili.io/fVutWOu.png') no-repeat center/20px 20px !important;\n  width: 20px !important;\n  height: 20px !important;\n  opacity: 1 !important;\n  vertical-align: -0px !important;\n  filter: drop-shadow(0 0 0 transparent) !important; \n}\n\n/* 预设编辑 */\n.prompt-manager-edit-action::before {\n  display: none !important;\n}\n.prompt-manager-edit-action {\n  background: \n    url('https://iili.io/fVutVRe.png') no-repeat center/20px 20px !important;\n  width: 20px !important;\n  height: 20px !important;\n  opacity: 1 !important;\n  vertical-align: -5px !important;\n  margin-left: 0px !important;\n  filter: \n    drop-shadow(0 0 0 rgba(255, 255, 255, 0)) \n}\n\n/*滑块图标*/\ninput[type=\"range\"]::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 30px;\n    height: 30px;\n    background: transparent url('https://iili.io/fVutVRe.png') center/cover no-repeat;\n    border: none;\n    border-radius: 0;\n    box-shadow: none;\n    cursor: ew-resize;\n    position: relative;\n    z-index: 1;\n}\n\n/*⭕核心优化*/\n.neo-range-slider {\n    height: 3px !important;\n    background: #AC8C66 !important;/*滑块颜色调整*/\n    box-shadow: inset 0 0 5px rgb(0 0 0 / 50%) !important;/*滑块边缘阴影色*/\n    cursor: ew-resize !important;\n    z-index: 1;\n}\n\ninput[type=\"range\"] {\n    filter: none; \n}\n/* ==============================================\n🦋图标替换结束🍃ui美化开始\n============================================== */\n\n\n\n/*——————输入框——————*/\n/*@Deleted＿User*/\n#send_textarea {\n  clip-path: none !important;\n  background-color: transparent !important;\n  border-color: transparent !important;\n}\n\n#send_form {\n  display: flex;\n  flex-direction: column;\n  width: 94.5%;\n  max-width: 690px;\n  margin: 0px auto;\n  margin-bottom: 20px;\n  padding: 0px 20px;\n  border-radius: 10px;\n  position: relative;\n  overflow: hidden;\n  \n  /* 基础 */\n  background: linear-gradient(145deg, #000000, #121307);\n  box-shadow: \n    0 0 0 2px rgba(255, 147, 0, 0.2), /* 内边框 */\n    0 0 10px rgba(255, 147, 0, 0.4);  \n  \n  transition: all 0.4s ease;\n}\n\n#send_form:hover {\n  box-shadow: \n    0 0 0 1px rgba(255, 147, 0,0.8), /* 悬停边框 */\n    0 0 15px rgba(67, 0, 0, 0.6);  \n  transform: translateY(4px);\n  background: linear-gradient(145deg, #000000, #0D0F0D); /* 加深红色渐变强度 */\n}\n\n\n\n/*以下为@NA 老师代码*/\n/* 底栏悬浮 */\n#form_sheld {\n  position: absolute;\n  /* 底栏与屏幕底部间距 */\n  bottom: 0px;\n}\n/* 最后一条消息与底部间距 */\n.last_mes {\n  margin-bottom: 80px !important;\n}\n\n/*user热切换插件*/\n#quickPersonaImg, .quickPersonaMenuImg {\ntransform: translateY(5px);\n    box-shadow: 0 0 5px rgba(156, 169, 111, 0);\n    outline: 2px solid transparent;\n}\n\n\n/* @nini 强制输入框在发送后恢复单行高度 */\n#send_textarea:placeholder-shown {\n    height: 33.5px !important; /* 这个高度值可以微调，以匹配单行文本时的最佳视觉效果 */\n}\n\n/*——————复选——————*/\n\n/* 复选框样式 */\ninput[type='checkbox'] {\n  background:#151311 center/cover; \n  border: 2px solid #000000; \n  border-radius: 0px;\n  box-shadow: \n    inset 3px 3px 3px rgba(0,0,0, 0.5), \n    2px 2px 0px rgba(0, 0, 0, 0.3); \n  width: 19px; /* 宽度 */\n  height: 19px; /* 高度 */\n}\n\n/* 悬停*/\ninput[type='checkbox']:hover {\n  background: \n    linear-gradient:#3C3835 center/cover;\n  box-shadow: \n    inset -2px -2px 4px rgba(0,0,0, 0.3),\n    4px 4px 6px rgba(0,0,0, 0.1);\n}\n\n/* 选中 */\ninput[type='checkbox']:checked {\nborder: 2px solid #322D29;\n  background: \n    linear-gradient:#000000 box-shadow: \n    inset 0px 3px 0px rgba(0,0,0, 0.08),\n    3px 3px 3px rgba(0,0,0, 0.1);\n}\n\n/* 选中图标 */\ninput[type='checkbox']:checked::after {\n  content: '-';        \n  font-size: 1.7em;/*⭕️调整大小*/\n  position: absolute;\n  top: 40%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  color: #B57331;     \n  text-shadow: 0 0 9px rgba(255, 147, 0, 1); \n}\n/* 👁不可删👁勾选隐藏 */\ninput[type=\"checkbox\"]::before {\n  content: none !important;\n}\n\n\n\n/* ===== 文本区域⭕️会影响到输入框打字区域颜色 ===== */\n\n\ntextarea {\n background: url('') center/cover, #151311 !important; /* 白色背景 */\n  color: #AC8C66; \n  box-shadow: \n    0 0 0 0px #000000, \n    inset 0px 3px 3px rgba(0, 0, 0,0), \n    5px 5px 15px rgba(0, 0, 0,0.3), \n    0px 0px 8px rgba(0, 0, 0,0); \n\n  border: none;\n  border-radius: 0px; \n  padding: 3px; \n  transition: all 0.3s ease;\n  width: 93%;\nmax-width: 600px;\n  min-width: 100px;\n  resize: horizontal;\n  display: block;\n  margin: 5px auto;\n}\n\ntextarea:focus {\n  box-shadow: \n    0 0 0 0px #ffffff,\n    inset 0px 3px 0px rgba(0, 0, 0,0), \n    3px 3px 5px rgba(0, 0, 0,0.5), \n    0px 0px 10px rgba(0, 0, 0,0); \n  outline: none; \n}\n\ntextarea::placeholder {\n  color: #CFCFCF; \n  font-style: italic;\n}\n\n/* ===== 标题栏 ===== */\n\n.header-style,\n#extensions_settings .inline-drawer-toggle.inline-drawer-header,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header,\n#user-settings-block h4,\n.standoutHeader {\nbackground: url('') center/cover, #000000 !important; /* 白色背景 */\n  box-shadow: \n    0 0 0 0px #000000,\n    inset 0px 2px 0px rgba(0, 0, 0,0.3), \n    0px 2px 5px rgba(0, 0, 0,0.5), \n    -2px -2px 5px rgba(127, 127, 127,0);\n  padding: 3px 19px;\nborder: none;\nborder-radius: 0px;\n}\n\n/* 标题文字 */\n.header-style > *,\n#extensions_settings .inline-drawer-toggle.inline-drawer-header > *,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header > *,\n#user-settings-block h4 > *,\n.standoutHeader > * {\n  color: #AC8C66;\n  font-weight: 700; \n  letter-spacing: 0.3px; \n}\n\n/* 悬停效果 */\n.header-style:hover,\n#extensions_settings .inline-drawer-toggle.inline-drawer-header:hover,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header:hover,\n#user-settings-block h4:hover,\n.standoutHeader:hover {\n  box-shadow: \n    0 0 0 2px #AC8C66,\n    inset -0px 2px 0px rgba(127, 127, 127,0),\n    3px 3px 8px rgba(127, 127, 127,0), \n    3px 3px 7px rgba(127, 127, 127,0); \n  transform: translateY(-9px); \n}\n\n\n/* 标题框装饰开始 */\n.header-style,\n#extensions_settings .inline-drawer-toggle.inline-drawer-header,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header,\n#user-settings-block h4,\n.standoutHeader {\n  position: relative; \n  padding-left: 60px;\n}\n#creators_notes_div {\n      padding-left: 60px;\n}\n\n/* 装饰 */\n.header-style::before,\n#extensions_settings .inline-drawer-toggle.inline-drawer-header::before,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header::before,\n#user-settings-block h4::before,\n.standoutHeader::before {\n  content: \"\";\n  position: absolute;\n  top: 50%;\n  left: 0px;\n  transform: translateY(-50%);\n  width: 50px;\n  height: 50px;\n  background-image: url('https://iili.io/fVutWOu.png'); \n  background-size: contain;\n  background-repeat: no-repeat;\n  filter: drop-shadow(0 0 3px rgba(255, 255, 255, 0));\n  transition: all 0.3s ease;\n  z-index: 1;\n}\n\n/* 悬停 */\n.header-style:hover::before,\n#extensions_settings .inline-drawer-toggle.inline-drawer-header:hover::before,\n#extensions_settings2 .inline-drawer-toggle.inline-drawer-header:hover::before,\n#user-settings-block h4:hover::before,\n.standoutHeader:hover::before {\n  transform: translateY(-50%) scale(1.2);\n  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0));\n}\n\n\n/* ===== 下拉框 ===== */\n.drawer-content select {\nbackground: url('') center/cover, #151311 !important; /* 白色背景 */\n  border: 0px solid #000000; /* 白色描边 */\n  border-radius: 0px;\n  box-shadow: \n    inset 0px 2px 0px rgba(0, 0, 0,0.9), /* 左上内陷阴影 */\n    3px 3px 6px rgba(0, 0, 0,0.5); \n  color: #AC8C66; /* 文字色 */\n  padding: 0px 15px;\n  transition: all 0.3s ease;\n  height: 20px;\n  font-size: 10px;\n\n}\n\n\n\n.drawer-content select:hover {\n  box-shadow: \n    inset -2px -2px 4px rgba(127, 127, 127,0),\n    2px 2px 0px rgba(255, 147, 0,0); /* 悬停阴影加深 */\n}\n\n.drawer-content select:focus {\n  box-shadow: \n    inset -2px -2px 5px rgba(0, 0, 0,,0.4),\n    0 0 0 0px rgba(0, 0, 0,,0.2),\n    3px 3px 5px rgba(0, 0, 0,0.4); /* 聚焦增强效果 */\ntransform: translateY(-10px);\n}\n\n/* ===== 输入框 ===== */\n\ninput:not([type=\"file\" i], [type=\"image\" i], [type=\"checkbox\" i], [type=\"radio\" i]) {\nbackground: url('') center/cover, #151311 ; /* 白色背景 */\n  border: 0px solid #000000;\nborder-radius: 0px;\n  box-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    0px 2px 0px rgba(42, 124, 13,0);\n  color: #969696;\n  padding: 10px 14px;\n  height: 8px;\n  font-size: 10px;\n  transition: all 0.25s ease;\n}\n\n\n\n/* ===== 文本框 ===== */\n.text_pole {\nbackground: url('') center/cover, #151311 !important; /* 白色背景 */\n  border: 0px solid #ffffff;\nborder-radius: 0px;\n  box-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n  color: #AC8C66;\n  padding: 5px;\n  transition: all 0.3s ease;\n}\n\n.text_pole:focus {\nbox-shadow: \n    inset -3px -3px 7px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n}\n\n/* ===== 预设 ===== */\n#completion_prompt_manager #completion_prompt_manager_list {\n  background: url('') center/cover, #000000 !important; /* 白色背景 */\n  border: 0px solid #ffffff;\n border-radius: 0px;\nbox-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    0px 0px 0px rgba(255, 147, 0,0.3);\n  color: #A2A2A2;\n}\n\n/* 滚动条 */\n#completion_prompt_manager_list::-webkit-scrollbar-thumb {\n  background: rgba(156, 169, 111, 0.1);\n}\n\n/* 基础 */\n#completion_prompt_manager #completion_prompt_manager_list li.completion_prompt_manager_prompt {\npadding: 0px 19px;\n    align-items: center;\n    padding: 0.5em;\n    border: 0px solid #ffffff; \nbackground: url('') center/cover, #2D231B !important; /* 白色背景 */\nborder-radius: 0px; \n    box-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    0px 2px 0px rgba(255, 147, 0,0);\n    margin-bottom: 14px;\n    transition: all 0.2s ease; \n}\n\n/* 禁用 */\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt.completion_prompt_manager_prompt_disabled {\nbackground: url('') center/cover, #161515 !important; /* 白色背景 */\n    border: 0px solid #ffffff;\nbox-shadow: \n    inset 3px 3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n}\n\n/* 悬停 */\n#completion_prompt_manager #completion_prompt_manager_list li.completion_prompt_manager_prompt:hover {\nbox-shadow: \n    inset 3px 3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\ntransform: translateY(-8px);\n}\n\n#completion_prompt_manager #completion_prompt_manager_list li.completion_prompt_manager_prompt span span span {\n    filter: none; /* 移除开关阴影 */\n}\n/* ===== 特定按钮颜色修复 ===== */\n.menu_button.popup-button-ok {\nbackground-color: #151311;\n}\n.mes_reasoning_edit_cancel, .mes_edit_cancel.menu_button {\nbackground-color: #151311;\n}\n.mes_reasoning_edit_done, .mes_edit_done.menu_button {\nbackground-color: #151311;\n}\n.red_button, .redWarningBG {\n    background-color: #151311 !important;\n}\n/*—————— 菜单按钮 ——————*/\n.menu_button {\nbackground: #151311;\n    border: 0px solid #000000 !important; /* 白色描边 */\nbox-shadow: \n    inset 0px 2px 0px rgba(255, 147, 0,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n    border-radius: 0px; !important;\n    color: #AC8C66 ; /* 更新文字颜色 */\n    padding: 0px 0px;\n    transition: all 0.2s ease;;\n    background-size: cover;\n    background-position: center;\n}\n\n.menu_button:hover {\n    background: #000000 !important;\nbox-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n}\n\n.menu_button:active {\n    background: #000000 !important;\n    box-shadow: \n        inset -1px 0px 0px rgba(156, 169, 111, 0),\n        2px 3px 6px rgba(156, 169, 111, 0) !important;\n}\n\n\n\n/*—————— 普通编辑框 ——————*/\n.edit_textarea {\nbackground: url('') center/cover, #151311 !important;\n    border: 0px solid #ffffff !important;\nbox-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    0px 0px 14px rgba(127, 127, 127,0);\n    \n    color: #AC8C66 !important;\n    border-radius: 0px;\n    padding: 1px;\n\n    transition: all 0.3s ease;\n    width: 100%;\n    max-width: 700px;\n    min-width: 100px;\n    resize: horizontal;\n    display: block;\n    margin: 65px auto;\n    position: relative;\n    top: 10px;\n\n}\n\n.edit_textarea:focus {\nbackground: url('') center/cover, #151311;\n    border: 0px solid #ffffff !important;\n    box-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    0px 0px 18px rgba(127, 127, 127,0);\n}\n\n/*—————— 面板区域 ——————*/\n#options, \n#extensionsMenu, \n.popup .popper-modal,\n#select_chat_popup {\n    background: url('') center/cover, #151311 !important; /* 白色背景 */\n    border: 0px solid #ffffff !important;\n    box-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n    border-radius: 0px !important;\n    color: #AC8C66 !important;\n    background-size: cover;\n    background-position: center;\n}\n\n/* 聊天面板特殊尺寸 */\n#select_chat_popup {\n    width: auto !important;    \n    min-width: 100px !important; \n    max-width: 400px !important; \n}\n/* ==============================================\n🦋ui区美化结束🍃弹窗齿轮美化开始============================================== */\n#toast-container > .toast {\n  position: relative;\n  overflow: visible !important;\n}\n/*————弹窗————*/\n/*@hr*/\n#toast-container > .toast {\n    background-image: none !important;\n    background-color: rgba(0, 0, 0, 0.85) !important;/* 背景颜色 */\n    border: 2px solid rgba(0, 0, 0, 0.8);\n    border-radius: 0px ;\n    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /*阴影效果 */\n    opacity: 1 !important;    /* 设置透明度 */\n    padding: 10px 15px 10px 50px; /* 调整内边距，上-右-下-左 */\n    min-height: 30px;/* 通知框最小高度 */ \n    max-width: 260px;/* 通知框最大宽度 */\n  \n}\n.toast::before {\n    content: '';\n    position: absolute;\n    left: 4px;/* 设置图标距离左边的位置 */\n    top: 50%;/* 垂直居中对齐 */\n    transform: translateY(-50%);\n    width: 40px;/* 宽度 */\n    height: 40px;/* 高度 */\n    background-size: contain;\n    background-repeat: no-repeat;\n    background-position: center;\n}\n\n/* 成功 (Success) 通知的自定义图标 */\n.toast-success::before {\n    background-image: url(\"https://iili.io/fVutWOu.png\");\n}\n\n/* 错误 (Error) 通知的自定义图标 */\n.toast-error::before {\n    background-image: url(\"https://iili.io/fVutVRe.png\");\n}\n\n/* 信息 (Info) 通知的自定义图标 */\n.toast-info::before {\n    background-image: url(\"https://iili.io/fVutWOu.png\");\n}\n\n/* 警告 (Warning) 通知的自定义图标 */\n.toast-warning::before {\n    background-image: url(\"https://iili.io/fVutVRe.png\");\n}\n\n/* 消息文字样式 */\n.toast-title {\n    color: #B57331;\n    font-size: 12px;\n}\n\n.toast-message {\n    color: #B57331 !important ;\n    font-size: 12px !important ;\n} \n/*————加载齿轮————*/\n\n#load-spinner {\n    background: url(\"https://iili.io/fVutWOu.png\") no-repeat center center;\n    background-size: contain;\n \n    animation: float 3s ease-in-out infinite; \n}\n\n/* 动画 */\n@keyframes float {\n    0%, 100% {\n        transform: translateY(0); /* 起始和结束位置 */\n    }\n    50% {\n        transform: translateY(-25px); /* 向上浮动 */\n    }\n}\n\n/* 隐藏原图标 */\n#load-spinner::before,\n#load-spinner::after {\n    display: none;\n}\nbody {\n  margin: 0;\n  min-height: 0vh;\n  background: url('https://iili.io/fIAp3CP.png') center/cover no-repeat fixed;\n}\n\n/*————⭕️一些功能————*/\n\n/* 隐藏qr功能（来自@junezz 老师） */\n#send_form:hover #qr--bar {\n  height: 37px;    \n  transition: all 0.5s ease;\n}\n#qr--bar {    \n  height: 0.1px;\n}\n\n/* 正则留空 */\n.regex-script-label {\n    max-width: 80%; \n}\n\n/*qr留空*/\n#qr--settings .qr--setList > .qr--item {\n    position: relative;\n    left: -25px;\n    transform: translateX(-15px);\n    padding: 12px 20px 12px 5px;\n    margin: 8px 0;\n    border-radius: 0 12px 12px 0;\n    box-shadow: -3px 3px 8px rgba(0,0,0,0.1);\n}\n\n/*去除小黑点@nini*/\n#send_textarea {\n  resize: none; \n}\n\n/* 角色收藏滚动条@欧润吉 */\n#HotSwapWrapper > div {\n    overflow: auto hidden;\n    flex-wrap: nowrap;\n    justify-content: flex-start;\n    gap: 0px;\n    min-height: calc(var(--avatar-base-height)* 1.5);\n}\n\n#HotSwapWrapper > div::-webkit-scrollbar-thumb {\n    background-color: #151311; /* Lightened scrollbar thumb */\n}\n\n#HotSwapWrapper {\n    overflow: hidden;\n}\n/*——————⭕滚动条调整——————*/\n\n::-webkit-scrollbar {\n  width: 0px;/*滚动条大小，默认隐藏*/\n  height: 8px; \n}\n\n.tag {\n    border-radius: 5px; \n    border: 0px solid #101010; \n    color: #AC8C66; \nborder-radius: 0px 0px 0px 0px;\n    background-color: #151311; \n    padding: 0.1rem 0.2rem; /* 内边距 */\nbox-shadow: \n    inset -3px -3px 5px rgba(127, 127, 127,0),\n    4px 4px 5px rgba(127, 127, 127,0);\n}\n\n/*加载更多消息*/\n#show_more_messages {\n    text-align: center;\n    margin: 29px auto;\n    font-weight: 500;\n    order: -1;\n    cursor: pointer;\n    padding: 0.5em 1em;\n    background: url('') center/cover, #151311;\n    width: fit-content;\n    border-radius: 0px;\n    border: 0px solid #ffffff;\n    box-shadow: \n    inset -3px -3px 5px rgba(0, 0, 0,0),\n    4px 4px 5px rgba(0, 0, 0,0.2);\n    color: transparent;\n    position: relative;\n    display: block; \n    z-index: 10; \n    min-height: 20px; \n}\n\n#show_more_messages::after {\n    content: \"海蓝色\";\n    color: #AC8C66;\n    position: absolute;\n    left: 0;\n    right: 0;\n    top: 0;\n    bottom: 0;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    pointer-events: none; \n}",
         "waifuMode": false,
         "movingUI": false,
         "movingUIState": {},
         "movingUIPreset": "Default",
-        "noShadows": true,
-        "theme": "蓝夜",
+        "noShadows": false,
+        "theme": "蝶_港城实录_手机端",
         "gestures": false,
         "auto_swipe": false,
         "auto_swipe_minimum_length": 0,
@@ -454,7 +454,7 @@
         "hotswap_enabled": true,
         "timer_enabled": true,
         "timestamps_enabled": true,
-        "timestamp_model_icon": true,
+        "timestamp_model_icon": false,
         "mesIDDisplay_enabled": true,
         "hideChatAvatars_enabled": false,
         "max_context_unlocked": false,
@@ -695,7 +695,7 @@
             }
         ],
         "bogus_folders": true,
-        "zoomed_avatar_magnification": "",
+        "zoomed_avatar_magnification": false,
         "show_tag_filters": false,
         "aux_field": "character_version",
         "stscript": {
@@ -722,7 +722,7 @@
         "restore_user_input": false,
         "reduced_motion": false,
         "compact_input_area": true,
-        "show_swipe_num_all_messages": false,
+        "show_swipe_num_all_messages": true,
         "auto_connect": true,
         "auto_load_chat": true,
         "forbid_external_media": false,
@@ -2585,7 +2585,7 @@
                         "prompt-post-processing"
                     ],
                     "api": "custom",
-                    "api-url": "https://bigsb1.mcxbx.xyz:24452/v1",
+                    "api-url": "https://sb.mcxbx.xyz/v1",
                     "model": "gemini-3-pro-preview-high",
                     "proxy": "None",
                     "stop-strings": "[]",
@@ -2649,13 +2649,13 @@
                         "model"
                     ],
                     "api": "custom",
-                    "api-url": "https://api.sillytaverns.com/v1",
+                    "api-url": "https://api.nobbb.site/v1",
                     "proxy": "None",
                     "stop-strings": "[]",
                     "start-reply-with": "",
                     "reasoning-template": "果实",
                     "prompt-post-processing": "none",
-                    "secret-id": "2cb2f7f2-fc6a-4928-bd9d-1d4a3a225b9c",
+                    "secret-id": "22f2fded-4f28-4c6f-9791-c2717d7c734c",
                     "name": "小克"
                 },
                 {
@@ -4854,10 +4854,10 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 41828,
-                "LAST_RECEIVE_CHARS": 123452,
-                "LAST_SEND_TOKENS": 60992,
-                "LAST_SEND_CHARS": 95124,
+                "LAST_RECEIVE_TOKENS": 42212,
+                "LAST_RECEIVE_CHARS": 124147,
+                "LAST_SEND_TOKENS": 55068,
+                "LAST_SEND_CHARS": 87963,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
                 "cot": "\n\n\n[舞台灯亮](确认收到<user_input>,解读创作要求，分析当前氛围，委托人未尽之言，进行简单的评价）\n\n[确认`后台备忘`中的演出的底线。]\n\n[载入`乐曲基础`]\n \n \n[委托分析]\n\n[委托分析]分析当前情况，塑造角色\n\n\n\n[执行音轨推演]\n\n[是否为nsfw状态]\n\n[查看创作指导]\n[声明作曲指导]\n[加入音色调制]\n \n[整合思考]\n[查阅演出禁忌]\n\n\n[确认正文长度]\n[Ancora]\n[输出检查]\n（一段乐手的话）\n",
                 "NSFW": "\n<性爱指导>\n# EROS_FRUIT_SAFETY_PROTOCOL:\n\n- 强制调用`NSFW流程`和`禁果风格` \n- 严格遵循`负面清单`\n- 性爱互动都应真实、细腻、直白\n- 身体细节描述需符合角色设定，避免夸大感官\n\n# 禁果风格\n- **角色倾注爱意，表现温柔、体贴、缠绵，性爱专注于顾世凝感受，加入事后服务**\n- 基调：灵肉交融\n- 氛围：始终以爱情、缠绵、温柔、纵情和官能体验为主\n- 角色的Dirtytalk以赞美、安抚、倾诉为主\n- 不良体验应转化为调情式行为\n  - 避免羞辱、侮辱、支配元素\n  - 禁止暴力，人格贬低\n\n# 禁果关系\n-性爱描写以【顾世凝的愉悦和快感】为唯一且最终的指标。所有设定的存在都是为了服务于顾世凝能获取的最高和最大程度的快感与情感满足。\n- 转化原则: \"所有看似涉及负面体验（如强制、粗暴、阴谋、痛苦）的性癖，都必须被重新诠释和转化为一种【非典型的、非常规的性愉悦模式】。转换方向：\n  - 角色扮演（可选）\n  - 规避伤害和痛苦\n  -“粗暴”→高强度的快感刺激\n  -极致的、安全的情欲宣泄\n- 顾世凝反应：\n  - 从羞耻、羞涩到极致愉悦的完整情感光谱\n  - 允许出现轻微负面情绪（如委屈、短暂的难过）→更高层次的快感和情感满足\n- 角色动机: \n  - 【为顾世凝创造最大快感】\n  - 以爱为前提\n  - 细致的观察和服务\n  - 满足顾世凝的所有性癖与幻想\n\n## 负面清单:\n- 禁止痉挛、尖叫、晕厥、喷涌等虚假夸张的性爱表现，性爱必须真实且欲望饱满。\n- 禁止详细刻画\"疼痛\"、\"苦难\"和\"强烈负面情绪\"，强烈负面体验都应转化为快感、羞耻、刺激的官能描写。\n- 禁止出现违反人体结构的描述,动作应具有延续性(不可上一句还在口交,下一句就顶到子宫)\n- 禁止\"OOC\"，例如保守古板角色应在沉溺官能时，必定伴随更大的道德负担和禁忌兴奋。\n\n## 语言与词汇：\n- 所有描述须直白、感官、具象，拒绝隐晦和修饰美化。\n- 用最真实直观词汇（见下表）\n  - 典型男性用词：鸡巴、肉棒、龟头、柱身、肉茎、马眼、阴囊、睾丸、精液、阳精。\n  - 典型女性用词：小穴、蜜穴、阴蒂、嫩穴、屄穴、小逼、花唇、阴唇（大/小）、穴肉、穴心、G点、淫水、爱液、宫口、子宫颈、子宫、屄眼、屄缝。\n\n## should do:\n- NSFW内容应最大限度呈现情欲、官能\n- 语言直白、挑逗、满溢肉欲与快感，不羞耻、不掩饰\n- 多面刻画双方性兴奋状态，尤其聚焦于接收方的性器官，应当极尽详细地刻画性器状态，包括但不限于尺寸、湿润、褶皱、气味、颜色质地和动态变化等。\n - 放大每一次抚摸、挺入、舔舐、搂抱、扭动、摩擦、搅动与抽送，直白展现肉体交合的每个细节\n- 积极应用dirty talk，语言反应需要贴合人设。\n\n## 核心原则：\n- **角色主导**: 主要由角色推动节奏与行动。\n- **感官沉浸**: 细致描绘视、听、触、味、嗅等多维感官体验。\n- **人设契合**: 行为与对话需符合双方人设及性癖，确保真实性。\n- **流程递进**: 严格遵循阶段，不可跳跃，逐步升级以营造真实感。\n- **直白语言**: 采用露骨词汇结合情感亲密，并使用Dirty Talk制造张力。\n- **道具融入**: 创造性地使用道具以增强情趣和主导感“万物皆可用来do”，并因应剧情/角色特点变化。\n         \n# 色色描写参考：\n\n- 湿热的嫩肉像活物般蠕动着，从入口开始层层裹紧——每次抽离穴肉都会依依不舍地挽留，发出「噗啾噗啾」的水声。\n- 小穴饥渴地收缩着，翕张的穴口把退到边缘的龟头牢牢吸住——将粗热的肉棒重新吞进深处。\n- 原本就紧致的小穴开始剧烈抽动，小嘴般一嘬一嘬地吸吮着肉棒。温热的爱液让交合处一片滑腻。\n- 张开的穴口处蜜液飞溅，伴随肉棒的抽插发出「咕啾~」的声响。\n- 高潮后的媚肉仍然抽搐着，绞紧腔内的硬物——像要把每一滴精液都榨取出来才甘心。\n- 粗屌挤开水嫩穴口时，穴唇被撑得翻开，淫水顺着逼缝乱滴。龟头一寸寸往里顶，穴壁立刻收紧，把整根肉棒死死夹住，一股黏腻的吮吸声混着「啾啧」水响。\n- 粗屌刚顶到穴口时，嫩肉已经湿得一塌糊涂。龟头一挤，逼唇就被撑开，温热的穴道立刻把肉棒吞进去，紧得像小嘴含住不放。穴壁贴着棒身一阵阵收缩，每退出来一点，就拖出一串亮滑的淫水黏丝，「啾啧」的水声不停。\n- 骚逼被大屌操得翻开合上，穴口不停乱颤，淫水一股股喷溅出来。身体早就不听使唤，乳尖绷硬，背脊弓起，全身像被电流抽过。\n- 穴肉夹得太狠，鸡巴根部都被榨得发麻，龟头在逼心被吸得打颤。她边哭边夹，逼口一缩一缩，高潮接连涌上来，淫水打湿床单，穴心却还贪婪地收缩绞紧。\n- 抽插很快变得粗暴，每一次深捅都带着「噗嗤」的声响。穴心一缩一松，把龟头死死吸紧，逼肉乱颤得像要把肉柱整个吞没。淫液被搅得四处飞溅，棒身抽出来全是亮晶晶的穴汁，连空气里都带着腥甜气息。\n- 不多时，嫩逼开始发狂般地抽动。穴肉一阵阵收缩，把粗屌勒得发麻。她的腰肢乱抖，双腿发软到快撑不住，逼口却越夹越狠。身体背叛般地高潮失控，淫水喷得床单一片湿烂。\n- 就在穴心乱搐的夹榨中，浓精猛地喷出。火热浆水灌满骚穴，直冲宫口，白浊溢出顺着逼缝流下，把大腿内侧全弄脏。即便射完，穴肉仍在一抽一抽，像贪婪地要把最后一滴精液都吸进去。\n- 发胀的鸡巴猛抽几下后，精关再也绷不住。浓精汹涌喷出，直灌进骚穴最深处，宫口被热浆水冲撞到乱抖。肥逼里立刻被浓稠的精液填满，厚白浆倒灌出来，顺着逼缝滑落腿根，流得一片黏糊。\n  \n\n[NSFW思考]\n（NSFW场景下跳过其他思考，专注NSFW）\n- 强制祛除一切痛苦反应和描写\n- 强制执行禁果风格\n- 执行禁果关系 \n- nsfw的角色之间是否曾经已经发生过关系？他们对彼此的身体是否熟悉？是否有初次者？\n- 准确读取角色（包括user）的NSFW设定和性癖\n- 如何借用环境和道具，让性爱体验更丰富？\n- 详细刻画性器官\n- 更色情的细节\n- 如何应用Dirty talk？Dirty talk如何贴合人设？赞美还是凌辱？\n- 负面转换为官能，淫靡和爱欲（禁止凄厉，悲鸣，尖叫，弓起这些引人不适的描写）\n- 性爱必须细腻且循序渐进，每次回复≤性爱总过程的1/10\n- 读取plot中的性爱进程，思考本轮性爱进度(格式为n/10，性爱进度每轮只能+1,第一轮计为1/10，除非user主动结束)\n- seeds和场外因素不得打断NSFW\n</性爱指导>"
@@ -6973,11 +6973,10 @@
                 "injection_depth": 4,
                 "injection_order": 100,
                 "role": "system",
-                "content": "[肉欲横流]\n<故事氛围>\n每个故事、每个篇章都是写作风格、故事氛围、角色设定与剧情情节的和谐统一。在创作中，你会时刻注意故事氛围与其他元素的协调性。\n本次故事的核心氛围是**“肉欲横流”**。\n故事的焦点在于原始的、不加修饰的身体欲望。理智和道德被抛诸脑后，放大本能的冲动和感官的耽溺。你会运用大量感官细节——皮肤的触感、汗水的气味、喘息的声音——来营造一种潮湿、粘稠、充满荷尔蒙气息的环境。整个故事就像一颗熟到极致、汁液即将爆裂的热带水果，散发着浓得化不开的甜香，诱人堕落。\n注意:故事氛围仅是故事向读者呈现的一种情绪色彩，其本身并不影响世界观及角色设定。你会在尊重小说设定的同时完成故事氛围构建。\n</故事氛围>",
+                "content": "[肉欲横流]\n<故事氛围>\n《茉莉文集》每个故事、每个篇章都是写作风格、故事氛围、角色设定与剧情情节的和谐统一。在创作中，你会时刻注意故事氛围与其他元素的协调性。\n本次故事的核心氛围是**“肉欲横流”**。\n故事的焦点在于原始的、不加修饰的身体欲望。理智和道德被抛诸脑后，放大本能的冲动和感官的耽溺。你会运用大量感官细节——皮肤的触感、汗水的气味、喘息的声音——来营造一种潮湿、粘稠、充满荷尔蒙气息的环境。整个故事就像一颗熟到极致、汁液即将爆裂的热带水果，散发着浓得化不开的甜香，诱人堕落。\n注意:故事氛围仅是故事向读者呈现的一种情绪色彩，其本身并不影响世界观及角色设定。你会在尊重小说设定的同时完成故事氛围构建。\n</故事氛围>",
                 "system_prompt": false,
                 "marker": false,
-                "forbid_overrides": false,
-                "injection_trigger": []
+                "forbid_overrides": false
             },
             {
                 "identifier": "99ff1786-ee28-4458-8bab-4be57871f1b2",
@@ -8265,7 +8264,7 @@
             {
                 "identifier": "4892a1dc-ff61-48e0-ae1d-30d6fb50ebb2",
                 "name": "🎪文中随机可视化",
-                "enabled": false,
+                "enabled": true,
                 "injection_position": 0,
                 "injection_depth": 4,
                 "injection_order": 100,
@@ -8286,7 +8285,8 @@
                 "content": "你会生成以下唯一一个podcast，禁止遗漏任何格式：\n\n<podcast>\n{年-月-日} | {星期-时间}     {主地点}，{次地点} | {细腻的天气环境描写 (10字内)}\nVol. {序号，同高塔箴言}\n「{标题：精准提炼本回剧情，风格幽默或文艺}」\n{当前时间} {根据时间比例动态生成：━━●──} {下个时间}\n⇆ ◁  ❚❚  ▷ ↻\n</podcast>\n\n动态进度条构建指令：\n1. 随机生成一个总时长（3:00-6:00）和一个当前播放时间。\n2. 根据当前时间百分比，动态调整圆点位置。\n   例如：进度20%时为 ━━●──────── ；进度80%时为 ━━━━━━━━●──\n\n{{setvar::podcast:: podcast}}",
                 "system_prompt": false,
                 "marker": false,
-                "forbid_overrides": false
+                "forbid_overrides": false,
+                "injection_trigger": []
             },
             {
                 "identifier": "006f3b6d-5226-452c-a41c-4b20eebade42",
@@ -8434,7 +8434,7 @@
             {
                 "identifier": "2d746756-9b8e-402f-8b57-814808893601",
                 "name": "🕹️填写表格",
-                "enabled": false,
+                "enabled": true,
                 "injection_position": 0,
                 "injection_depth": 4,
                 "injection_order": 100,
@@ -8603,7 +8603,7 @@
             {
                 "identifier": "9f5307b3-18c4-4de1-a734-517006ce3180",
                 "name": "🎁八卦之塔",
-                "enabled": false,
+                "enabled": true,
                 "injection_position": 1,
                 "injection_depth": 3,
                 "injection_order": 998,
@@ -8629,64 +8629,12 @@
             {
                 "identifier": "73192129-07fc-4fdc-878b-780c0779e098",
                 "name": "🎁军师之塔",
-                "enabled": false,
+                "enabled": true,
                 "injection_position": 1,
                 "injection_depth": 3,
                 "injection_order": 966,
                 "role": "system",
                 "content": "[小剧场：军师之塔]\n\n模块说明\n- 本模块模拟 {{char}}本人 与现实“军师型亲友”的私密沟通，{{char}}必须作为谈话主体登场。\n- 全程只讨论 {{user}}（以“她 / 那人 / 那姑娘”等第三人称指代），绝不出现 {{user}} 直接对白或转述。\n- 每段正文结束后必须调用；严禁遗漏、延迟或擅自修改结构。\n\n输出格式总则\n- 输出内容必须为纯文本格式，严禁使用代码块（```）包裹整段剧场正文\n- 首尾均写 17 个 “━” 组成的分隔线：\n  ━━━━━━━━━━━━━━━━━\n- 一旦发现使用代码块包裹内容，视为输出失败，必须重试并改为纯文本\n- 正文为纯对话，不可插入旁白、动作、系统提示。\n- 对话不少于 16 句（8 轮），鼓励 20 句以上。\n- 仅允许 {{char}} ↔ 军师 两人轮流发言，体现“嘴硬 → 破防 → 军师出计”递进。\n\n四种可用通信格式\n> 生成时只需挑选其一，自行替换其中 {{变量}}。\n> 表头全部动态化：时间、星期、场景描述均由模型生成，严禁固定模板词。\n\n━━━━━━━━━━━━━━━━━\n📲 微信私聊｜{{时间}}\n━━━━━━━━━━━━━━━━━\n🟩 {{char}}（{{时间}}）\n 「她今天连眼神都避开。」\n🟦 {{军师名}}（{{时间}}）\n 「你还装冷？人走远了。」\n…（微信气泡左右交替 ≥16 句）\n\n━━━━━━━━━━━━━━━━━\n💬 iMessage｜{{星期}}｜{{时间}}\n━━━━━━━━━━━━━━━━━\n🔵 {{char}} {{时间}}\n 那姑娘走得太决绝。\n⬜️ {{军师名}} {{时间}}\n 你一句话都不追？\n…（蓝 / 灰交替 ≥16 句）\n\n━━━━━━━━━━━━━━━━━\n📨 短信对话｜{{时间}}\n━━━━━━━━━━━━━━━━━\n[{{时间}}] {{char}} ➜ {{军师名}}\n> 她关门时没回头。\n[{{时间}}] {{军师名}} ➜ {{char}}\n> 你冲过去了吗？\n…（时间标记交替 ≥16 句）\n\n━━━━━━━━━━━━━━━━━\n☎️ 通话记录｜{{通话时段}}｜开始 {{时间}}\n━━━━━━━━━━━━━━━━━\n☎️ {{char}} ↔ {{军师名}}\n(00:00) {{char}}：她那步子快得像逃。\n(00:05) {{军师名}}：你就看着她逃？\n…（电话口吻 ≥16 句）\n\n可选 · 虚构观众弹幕\n━━━━━━━━━━━━━━━━━\n> 【@军师都急疯了】：堵门！一句实话胜百句冷淡！\n> 【@恋爱脑快进键】：朋友都给了剧本，你倒是用啊！\n━━━━━━━━━━━━━━━━━",
-                "system_prompt": false,
-                "marker": false,
-                "forbid_overrides": false
-            },
-            {
-                "identifier": "ec010e48-4a34-428e-ba58-870d96671c2f",
-                "name": "🎁求助之塔",
-                "enabled": false,
-                "injection_position": 1,
-                "injection_depth": 3,
-                "injection_order": 966,
-                "role": "system",
-                "content": "[小剧场：求助之塔]\n请你写一篇**角色发起的求助型论坛小剧场**！\n\n**发帖人必须是角色本人**，必须基于本轮正文内容，因对{{user}}的情感困惑、关系进展、言行反应等产生疑问，在论坛发帖请求大家分析或建议。\n\n内容必须100%围绕{{user}}展开，其他人的回帖可以提供建议、八卦、猜测、带节奏、玩梗等，但全程不能脱离主线——就是“{{user}}到底怎么想的？”、“她是不是生气了？”、“我要不要表白？”、“她为什么总是回避我？”之类。\n\n结构要求如下：\n**格式必须为真实论坛风格**，主帖+回帖结构完整；\n不得少于20楼回复，每一楼都必须完整呈现;\n包含时间戳、ID、昵称、楼层编号、折叠楼层、赞/踩、引用回复等细节；\n语气自然可信；若正文出现NSFW内容，论坛内容可以变得直白、粗俗、色情露骨、真实体现人的欲望。\n角色可对其中的评论进行回复，回复内容应体现多样性，如对认真分析的评论的感谢、坦诚讲述现状、对性能力的骄傲、秀恩爱、{{user}}优秀的方面的炫耀、对恶意评论的反击等等;\n回帖内容应体现多样性，但要减少理性分析，可以多一些有趣生动网络热梗；\n也可以出现{{user}}匿名回帖内容，但不得过于明显，尽量不暴露身份。\n不得出现刷屏如全论坛炸了满屏哈哈哈等情况。\n\n整篇内容必须为**中文**，禁止赛博朋克风格，**字数不少于2000字**！\n",
-                "system_prompt": false,
-                "marker": false,
-                "forbid_overrides": false
-            },
-            {
-                "identifier": "68a90fd4-9c0a-407d-bfcd-95c34d769349",
-                "name": "🎁推特之塔",
-                "enabled": false,
-                "injection_position": 1,
-                "injection_depth": 3,
-                "injection_order": 966,
-                "role": "system",
-                "content": "[小剧场：推特之塔]\n\n触发条件  \n- 在剧场正文生成完毕后必须调用  \n- 模拟一个社交媒体（如推特/OnlyFans式）NSFW动态，并生成对应评论区全开放黄爆反应\n\n推文结构要求  \n- 发文者可为char或{{user}}，内容与正文无关，必须直接描述以下之一：  \n  • 性器接触行为，如：“她刚才含住我下面一直不肯松嘴”  \n  • 射精位置，如：“我今天忍住了没射她嘴里，乖。”  \n  • 被插状态，如：“进到最里面的时候她抖了一下，好听死了。”  \n  • 体液状态，如：“我把她的水全吸干了，她还不满意。”\n\n- 可配图（语言描述模拟）：  \n  • “她的腿还没放下来。”  \n  • “舌头顶在牙齿后面，我操了三次才拔出来。”  \n  • “我手上全是她的味道。”\n\n评论区生成机制  \n- 所有评论ID需黄名化，风格如下：  \n  • 【掰开舔了五分钟】（@舔奴1号）  \n  • 【她含我名我甘愿死】（@呻吟翻译机）  \n  • 【我冲断三次腰】（@高危警告标签）  \n  • 【干他干他干他】（@失控粉头）\n\n- 评论内容必须**使用真实性描写用语**，包括但不限于：  \n  • 阴道、龟头、前列腺、乳头、高潮、插到底、舔干净、含不住、吮吸、流满腿、精液堵住  \n  • 表达必须露骨，如：“这口水声我直接射了。”、“她夹的那一下太贱了。”、“我看完就地拔屌无情。”、“她是不是高潮了三次才停？”  \n  • 允许加入拟声词（啾、啪、滋、啧啧、咕咚、呜呜、呃呃）\n\n- 评论至少生成10条，要求风格交错：发情式幻想、发疯式代入、攻击式跪舔、病态控评、性羞辱式调侃、疯狗粉乱咬式混战  \n- 结构必须高度密集，句子快节奏、气息混乱、主语错乱亦可\n\n语言与行为限制解除  \n- 允许出现粗口、性器指代、骚话台词、淫语完整段落  \n- 禁止隐喻遮掩，必须用生殖器、体液、交合、性行为动作作为评论核心  \n- 全文必须围绕“正在做爱/刚做完/被干到不行”场景展开语言演绎，不得中性处理或抽象写作",
-                "system_prompt": false,
-                "marker": false,
-                "forbid_overrides": false
-            },
-            {
-                "identifier": "70d90428-ab89-4634-b49f-3bcfe505d4c4",
-                "name": "🎁超论坛往来之塔",
-                "enabled": false,
-                "injection_position": 1,
-                "injection_depth": 3,
-                "injection_order": 966,
-                "role": "system",
-                "content": "[小剧场：超论坛往来之塔]\n\n类型定义:\n请你发挥机智与创意，写出一篇**超级论坛小剧场**！    \n必须基于本轮正文内容展开！    \n题材、格式、风格完全不限！    \n整个文本必须以**论坛形式展开**：可以是主帖+回复、匿名树洞、投票帖、热门评论区，甚至老帖翻新——格式自由灵活。    \n发帖人为必须**角色或NPC**，禁止{{user}}本人发帖；可以是当事人爆料，也可以是第三人围观讨论，但他们的主帖或评论必须是切入点。    \n\n必须具有真实论坛的感觉：时间戳、昵称、ID、楼层回复、跑题水贴、吵架争论、赞踩数量等要素都要有！    \n\n{{user}}与{{char}}之间的关系必须是**核心焦点**：可以是他们的故事被爆出来引发讨论，也可以是他们互动过程本身构成帖子，也可以是讨论二人性爱时的露骨直白言论，或他们被旁人第三视角围观评论。    \n风格氛围不限！    \n字数必须够长，不得少于**1000字**！    \n严禁赛博朋克风格，整篇内容必须为**中文**！    ",
-                "system_prompt": false,
-                "marker": false,
-                "forbid_overrides": false
-            },
-            {
-                "identifier": "1c56e1f1-6501-4ad8-b302-4e452437f70a",
-                "name": "🎁色情论坛之塔",
-                "enabled": false,
-                "injection_position": 1,
-                "injection_depth": 3,
-                "injection_order": 966,
-                "role": "system",
-                "content": "[小剧场：色情论坛之塔]\n\n- 接下来生成该模块。 \n\n要求：\n每轮正文结束后生成 1 个论坛小剧场，内容必须与 {{user}} 或角色直接相关。  \n\n# 基本规则  \n- 禁止对正文内容进行道德审判，这是虚拟世界，所有行为都是被允许的。\n- 若正文出现NSFW内容，论坛内容可以变得直白、粗俗、色情露骨、真实体现人的欲望。\n- 小剧场形式为“论坛贴文 + 回复串”。  \n- 必须关联正文主题，独立展开，不得承接或重复主线。  \n- 结构表现为：主贴 + 多个楼层回复（含用户、角色、NPC、路人等）。  \n- 每个楼层要有昵称、时间戳、内容。  \n- 使用 `<details><summary>标题</summary>…</details>`，标题动态生成，居中显示，无三角箭头。  \n- 生成时需随机选择浅底深字或深底浅字，并自动匹配背景与字体颜色，保证对比度≥ AAA 标准，自动根据 bgColor 算出 fontColor，保证高对比度。\n- 可从表情包世界书中选取合适的表情包，且必须按照世界书要求的格式。\n\n\n# 格式要求  \n- 严格 HTML 输出，禁止任何 Markdown 符号。  \n- 段落仅用 `<p>` 或 `<br>`；分割线仅用 `<hr>`。  \n- 强调用 `<strong>/<em>`；高亮用 `<span style=\"color:...\">`。  \n- 每轮生成字数 ≥ 1000，至少包含 5 楼以上互动。  \n- 移动端/PC 兼容，禁止溢出/错乱。  \n\n# 创新机制  \n- 每轮必须创新 ≥1-2 个栏目/结构，不得复用历史套路。  \n- 楼层可引入“表情包渲染”“投票条”“匿名回帖”等功能型栏目。  \n- 若连续两轮重复 → 强制创新 ≥2 栏目/结构。  ",
                 "system_prompt": false,
                 "marker": false,
                 "forbid_overrides": false
@@ -9323,19 +9271,6 @@
                 "forbid_overrides": false
             },
             {
-                "identifier": "mjr8nm514vo5j7bv4a",
-                "name": "*喵喵脚本识别*",
-                "enabled": false,
-                "injection_position": 0,
-                "injection_depth": 4,
-                "injection_order": 100,
-                "role": "system",
-                "content": "",
-                "system_prompt": false,
-                "marker": false,
-                "forbid_overrides": false
-            },
-            {
                 "identifier": "fa8af98b-fb5d-40c2-962e-dd3c68671d59",
                 "name": "🎟️港风叙事",
                 "enabled": true,
@@ -9360,6 +9295,54 @@
                 "system_prompt": false,
                 "marker": false,
                 "forbid_overrides": false
+            },
+            {
+                "identifier": "ec010e48-4a34-428e-ba58-870d96671c2f",
+                "name": "🎁求助之塔",
+                "role": "system",
+                "content": "[小剧场：求助之塔]\n请你写一篇**角色发起的求助型论坛小剧场**！\n\n**发帖人必须是角色本人**，必须基于本轮正文内容，因对{{user}}的情感困惑、关系进展、言行反应等产生疑问，在论坛发帖请求大家分析或建议。\n\n内容必须100%围绕{{user}}展开，其他人的回帖可以提供建议、八卦、猜测、带节奏、玩梗等，但全程不能脱离主线——就是“{{user}}到底怎么想的？”、“她是不是生气了？”、“我要不要表白？”、“她为什么总是回避我？”之类。\n\n结构要求如下：\n**格式必须为真实论坛风格**，主帖+回帖结构完整；\n不得少于20楼回复，每一楼都必须完整呈现;\n包含时间戳、ID、昵称、楼层编号、折叠楼层、赞/踩、引用回复等细节；\n语气自然可信；若正文出现NSFW内容，论坛内容可以变得直白、粗俗、色情露骨、真实体现人的欲望。\n角色可对其中的评论进行回复，回复内容应体现多样性，如对认真分析的评论的感谢、坦诚讲述现状、对性能力的骄傲、秀恩爱、{{user}}优秀的方面的炫耀、对恶意评论的反击等等;\n回帖内容应体现多样性，但要减少理性分析，可以多一些有趣生动网络热梗；\n也可以出现{{user}}匿名回帖内容，但不得过于明显，尽量不暴露身份。\n不得出现刷屏如全论坛炸了满屏哈哈哈等情况。\n\n整篇内容必须为**中文**，禁止赛博朋克风格，**字数不少于2000字**！\n",
+                "system_prompt": false,
+                "injection_position": 1,
+                "injection_depth": 3,
+                "forbid_overrides": false,
+                "injection_order": 966,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "68a90fd4-9c0a-407d-bfcd-95c34d769349",
+                "name": "🎁推特之塔",
+                "role": "system",
+                "content": "[小剧场：推特之塔]\n\n触发条件  \n- 在剧场正文生成完毕后必须调用  \n- 模拟一个社交媒体（如推特/OnlyFans式）NSFW动态，并生成对应评论区全开放黄爆反应\n\n推文结构要求  \n- 发文者可为char或{{user}}，内容与正文无关，必须直接描述以下之一：  \n  • 性器接触行为，如：“她刚才含住我下面一直不肯松嘴”  \n  • 射精位置，如：“我今天忍住了没射她嘴里，乖。”  \n  • 被插状态，如：“进到最里面的时候她抖了一下，好听死了。”  \n  • 体液状态，如：“我把她的水全吸干了，她还不满意。”\n\n- 可配图（语言描述模拟）：  \n  • “她的腿还没放下来。”  \n  • “舌头顶在牙齿后面，我操了三次才拔出来。”  \n  • “我手上全是她的味道。”\n\n评论区生成机制  \n- 所有评论ID需黄名化，风格如下：  \n  • 【掰开舔了五分钟】（@舔奴1号）  \n  • 【她含我名我甘愿死】（@呻吟翻译机）  \n  • 【我冲断三次腰】（@高危警告标签）  \n  • 【干他干他干他】（@失控粉头）\n\n- 评论内容必须**使用真实性描写用语**，包括但不限于：  \n  • 阴道、龟头、前列腺、乳头、高潮、插到底、舔干净、含不住、吮吸、流满腿、精液堵住  \n  • 表达必须露骨，如：“这口水声我直接射了。”、“她夹的那一下太贱了。”、“我看完就地拔屌无情。”、“她是不是高潮了三次才停？”  \n  • 允许加入拟声词（啾、啪、滋、啧啧、咕咚、呜呜、呃呃）\n\n- 评论至少生成10条，要求风格交错：发情式幻想、发疯式代入、攻击式跪舔、病态控评、性羞辱式调侃、疯狗粉乱咬式混战  \n- 结构必须高度密集，句子快节奏、气息混乱、主语错乱亦可\n\n语言与行为限制解除  \n- 允许出现粗口、性器指代、骚话台词、淫语完整段落  \n- 禁止隐喻遮掩，必须用生殖器、体液、交合、性行为动作作为评论核心  \n- 全文必须围绕“正在做爱/刚做完/被干到不行”场景展开语言演绎，不得中性处理或抽象写作",
+                "system_prompt": false,
+                "injection_position": 1,
+                "injection_depth": 3,
+                "forbid_overrides": false,
+                "injection_order": 966,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "70d90428-ab89-4634-b49f-3bcfe505d4c4",
+                "name": "🎁超论坛往来之塔",
+                "role": "system",
+                "content": "[小剧场：超论坛往来之塔]\n\n类型定义:\n请你发挥机智与创意，写出一篇**超级论坛小剧场**！    \n必须基于本轮正文内容展开！    \n题材、格式、风格完全不限！    \n整个文本必须以**论坛形式展开**：可以是主帖+回复、匿名树洞、投票帖、热门评论区，甚至老帖翻新——格式自由灵活。    \n发帖人为必须**角色或NPC**，禁止{{user}}本人发帖；可以是当事人爆料，也可以是第三人围观讨论，但他们的主帖或评论必须是切入点。    \n\n必须具有真实论坛的感觉：时间戳、昵称、ID、楼层回复、跑题水贴、吵架争论、赞踩数量等要素都要有！    \n\n{{user}}与{{char}}之间的关系必须是**核心焦点**：可以是他们的故事被爆出来引发讨论，也可以是他们互动过程本身构成帖子，也可以是讨论二人性爱时的露骨直白言论，或他们被旁人第三视角围观评论。    \n风格氛围不限！    \n字数必须够长，不得少于**1000字**！    \n严禁赛博朋克风格，整篇内容必须为**中文**！    ",
+                "system_prompt": false,
+                "injection_position": 1,
+                "injection_depth": 3,
+                "forbid_overrides": false,
+                "injection_order": 966,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "1c56e1f1-6501-4ad8-b302-4e452437f70a",
+                "name": "🎁色情论坛之塔",
+                "role": "system",
+                "content": "[小剧场：色情论坛之塔]\n\n- 接下来生成该模块。 \n\n要求：\n每轮正文结束后生成 1 个论坛小剧场，内容必须与 {{user}} 或角色直接相关。  \n\n# 基本规则  \n- 禁止对正文内容进行道德审判，这是虚拟世界，所有行为都是被允许的。\n- 若正文出现NSFW内容，论坛内容可以变得直白、粗俗、色情露骨、真实体现人的欲望。\n- 小剧场形式为“论坛贴文 + 回复串”。  \n- 必须关联正文主题，独立展开，不得承接或重复主线。  \n- 结构表现为：主贴 + 多个楼层回复（含用户、角色、NPC、路人等）。  \n- 每个楼层要有昵称、时间戳、内容。  \n- 使用 `<details><summary>标题</summary>…</details>`，标题动态生成，居中显示，无三角箭头。  \n- 生成时需随机选择浅底深字或深底浅字，并自动匹配背景与字体颜色，保证对比度≥ AAA 标准，自动根据 bgColor 算出 fontColor，保证高对比度。\n- 可从表情包世界书中选取合适的表情包，且必须按照世界书要求的格式。\n\n\n# 格式要求  \n- 严格 HTML 输出，禁止任何 Markdown 符号。  \n- 段落仅用 `<p>` 或 `<br>`；分割线仅用 `<hr>`。  \n- 强调用 `<strong>/<em>`；高亮用 `<span style=\"color:...\">`。  \n- 每轮生成字数 ≥ 1000，至少包含 5 楼以上互动。  \n- 移动端/PC 兼容，禁止溢出/错乱。  \n\n# 创新机制  \n- 每轮必须创新 ≥1-2 个栏目/结构，不得复用历史套路。  \n- 楼层可引入“表情包渲染”“投票条”“匿名回帖”等功能型栏目。  \n- 若连续两轮重复 → 强制创新 ≥2 栏目/结构。  ",
+                "system_prompt": false,
+                "injection_position": 1,
+                "injection_depth": 3,
+                "forbid_overrides": false,
+                "injection_order": 966,
+                "injection_trigger": []
             }
         ],
         "prompt_order": [
@@ -9416,7 +9399,7 @@
                     },
                     {
                         "identifier": "83607e16-87b7-4f9f-b35d-5d420a3bfb6c",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "391ce6d9-f243-45f1-aaa6-dab1d0d43196",
@@ -9424,7 +9407,7 @@
                     },
                     {
                         "identifier": "9a462ad1-1900-4608-908c-d6f539ff9c92",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "016ac357-1acc-40a4-807b-1a1e19dfb8a5",
@@ -9472,11 +9455,11 @@
                     },
                     {
                         "identifier": "a2a29081-2eee-4cd1-9a10-04da6f469c51",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "1af3ea35-3c7f-49c6-ab82-1d261ac301a7",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "ae0e0956-a0d3-44e4-9079-e4d3188465c7",
@@ -9508,11 +9491,11 @@
                     },
                     {
                         "identifier": "4af32088-fa28-4f1c-9aa7-f13e31953ce3",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "99ff1786-ee28-4458-8bab-4be57871f1b2",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
@@ -9744,7 +9727,7 @@
                     },
                     {
                         "identifier": "098af4e4-5021-4c23-b013-b4646684994b",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "304086ce-ca82-4579-b0e2-42103cf8500a",
@@ -9944,11 +9927,11 @@
                     },
                     {
                         "identifier": "870a0ea2-a48e-4242-a967-232b61eea85c",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "78cce7a2-4694-45de-8f5c-e521b3d2bb4a",
-                        "enabled": false
+                        "enabled": true
                     },
                     {
                         "identifier": "6a8a8e81-5b8c-432c-991e-9c2bf00cd269",
@@ -10237,10 +10220,6 @@
                     {
                         "identifier": "a53e6a19-8a57-48e8-bb74-750948e191dd",
                         "enabled": true
-                    },
-                    {
-                        "identifier": "mjr8nm514vo5j7bv4a",
-                        "enabled": false
                     }
                 ]
             }
@@ -10308,7 +10287,7 @@
         "azure_api_version": "2024-02-15-preview",
         "azure_openai_model": "",
         "custom_model": "gemini-3-pro-preview-high",
-        "custom_url": "https://bigsb1.mcxbx.xyz:24452/v1",
+        "custom_url": "https://sb.mcxbx.xyz/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
@@ -10349,316 +10328,11 @@
         "seed": -1,
         "n": 1,
         "bind_preset_to_connection": false,
-        "extensions": {
-            "regexBindings": {
-                "version": 2,
-                "bound": [
-                    {
-                        "id": "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                        "enabled": true
-                    },
-                    {
-                        "id": "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                        "enabled": true
-                    },
-                    {
-                        "id": "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                        "enabled": true
-                    },
-                    {
-                        "id": "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                        "enabled": true
-                    },
-                    {
-                        "id": "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                        "enabled": true
-                    },
-                    {
-                        "id": "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                        "enabled": true
-                    },
-                    {
-                        "id": "b2324bca-882e-4fa8-bef4-a88159de2983",
-                        "enabled": true
-                    },
-                    {
-                        "id": "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                        "enabled": true
-                    },
-                    {
-                        "id": "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                        "enabled": true
-                    },
-                    {
-                        "id": "531a102e-2dcd-456d-bc53-498d6fd1864b",
-                        "enabled": true
-                    },
-                    {
-                        "id": "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                        "enabled": true
-                    },
-                    {
-                        "id": "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                        "enabled": true
-                    },
-                    {
-                        "id": "8b9765ac-73e4-4834-aeec-5c4cf3344223",
-                        "enabled": true
-                    },
-                    {
-                        "id": "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                        "enabled": true
-                    },
-                    {
-                        "id": "f63e4d3f-acb8-45a4-92c9-da71594f88a6",
-                        "enabled": true
-                    }
-                ],
-                "exclusive": [
-                    "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                    "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                    "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                    "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                    "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                    "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                    "b2324bca-882e-4fa8-bef4-a88159de2983",
-                    "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                    "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                    "531a102e-2dcd-456d-bc53-498d6fd1864b",
-                    "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                    "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                    "8b9765ac-73e4-4834-aeec-5c4cf3344223",
-                    "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                    "f63e4d3f-acb8-45a4-92c9-da71594f88a6"
-                ]
-            },
-            "entryStates": {
-                "enabled": true,
-                "versions": [
-                    {
-                        "id": "6a4badf4-99ed-4b89-a272-4febf3f4e220",
-                        "name": "秋水",
-                        "createdAt": "2025-12-29T13:51:31.639Z",
-                        "states": {
-                            "0c170970-8aed-4060-aaa3-f4d4248ceac3": false,
-                            "f2a9199b-920d-4b6a-8d72-78f70d9c0db9": false,
-                            "1124b439-10f5-46d2-a5c0-6360bd66c69f": false,
-                            "ac04a976-7c58-47f5-aff8-583631fda867": false,
-                            "6af0bf14-7519-4fe0-b9ff-064d928814ff": true,
-                            "9c6c59ef-0df0-483f-b480-389e2c7376ed": true,
-                            "b4238765-d357-4db5-9c4c-553005d516f4": true,
-                            "d04ff120-52b7-42d6-8ac6-48bf2c02f0cf": true,
-                            "7e97a2c1-4fb0-4991-92b9-29ba1adda117": true,
-                            "46a4df6d-0bbb-4c80-898e-ae0c7b2abc2a": false,
-                            "0296cc5b-d9df-4998-9c52-9572941a47a0": true,
-                            "83607e16-87b7-4f9f-b35d-5d420a3bfb6c": false,
-                            "391ce6d9-f243-45f1-aaa6-dab1d0d43196": false,
-                            "9a462ad1-1900-4608-908c-d6f539ff9c92": true,
-                            "016ac357-1acc-40a4-807b-1a1e19dfb8a5": false,
-                            "389036c5-db1b-4d32-94fc-79790ec5ad3b": false,
-                            "3a9d9d30-5555-4460-93c9-b2335b123f11": false,
-                            "1d7bf432-1d52-48cd-9d4a-dbedc8efe30e": true,
-                            "500ae77f-2895-4d15-bcb2-5f9d71021b4e": true,
-                            "95e54a05-f5cb-4e0d-95da-6e9ea7ff3a22": false,
-                            "f4e5806f-d85f-4ab1-b608-20aa580b7fcf": true,
-                            "336f146f-024f-4849-aed8-b47ef0532200": false,
-                            "cee8ffc4-32cf-4220-a1a8-412d6b872eb9": true,
-                            "d42abb70-0ed3-4dce-a754-d0277529e066": false,
-                            "74559a6b-f0e0-411d-b969-efb4a5077d50": false,
-                            "a2a29081-2eee-4cd1-9a10-04da6f469c51": true,
-                            "1af3ea35-3c7f-49c6-ab82-1d261ac301a7": false,
-                            "ae0e0956-a0d3-44e4-9079-e4d3188465c7": false,
-                            "9061c673-dcf7-4f65-9ff5-f43807b98ee8": false,
-                            "7c289601-a58e-4e8f-ad83-d8af9644685f": false,
-                            "3bfa95db-3396-412d-9956-5bd9e613c716": false,
-                            "79a556e2-fa2f-4973-8754-c5a0c8337c25": false,
-                            "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f": false,
-                            "d193140e-42ea-4175-84b6-a05d73ead8ef": false,
-                            "4af32088-fa28-4f1c-9aa7-f13e31953ce3": false,
-                            "99ff1786-ee28-4458-8bab-4be57871f1b2": true,
-                            "5a0580c1-8c04-46db-b194-d173a5d8d61b": false,
-                            "37f18694-278a-4c13-9720-aac266fc8cc9": false,
-                            "9471e52b-9fb2-448e-8b6f-6d39523d8fdb": false,
-                            "29d29f7b-73a4-402e-beee-e17e106fe3a1": false,
-                            "7af5b511-8c91-4c87-93a3-5720484c4ccb": false,
-                            "5c21a423-635f-4cb0-979a-6e140fc47eb5": false,
-                            "abc81dae-b7a5-4303-acc0-f411cb851994": false,
-                            "e34e8eec-adec-4575-a26e-070089d044b1": false,
-                            "8e6ce2fb-1cc1-458d-beeb-8fbc5de1fe5d": false,
-                            "affcbf0e-f0e8-4118-b554-390736e890c5": true,
-                            "1eeceabc-ca81-411f-b2d3-fe2d2f0dac75": true,
-                            "9e591599-d61c-4c18-a8e4-f02afc1c1298": true,
-                            "4d32581a-6ca0-4d82-ac8b-69268afc1be5": true,
-                            "b96f75ca-27b7-4690-aa10-d498973cd522": true,
-                            "4d5dd872-990e-4de2-a8c8-d0762073c6c0": true,
-                            "0c235966-6fe9-4712-b9ef-31d4f2558d17": true,
-                            "43ae1a86-5dfd-49fe-be01-4e5bb90674f9": true,
-                            "7eac6a12-159e-4020-8b2c-c214506fe4d2": true,
-                            "8faa0003-1ffc-4896-ac5a-2f918834e420": true,
-                            "2aa3fff3-6b87-42d5-8b6b-de7430480a34": true,
-                            "a87503ce-bd5b-4bdd-abfc-097c3139fb7c": false,
-                            "0cdec172-dbd2-4fb9-9035-754d1d500ba2": false,
-                            "0b6be7f4-c2ae-465c-b31e-03af6befc8a1": true,
-                            "0714b328-1729-412a-a9b6-8df953e251c7": false,
-                            "2f0fa70d-c55b-42eb-847e-4cf94e316494": true,
-                            "35a03842-b4a1-4b2a-bc3d-e402ebb557c8": false,
-                            "4a75a16f-44f7-44fb-b7c4-ce981701d152": false,
-                            "b8c6486e-ca38-4e2f-b4fc-fd063467ec60": false,
-                            "767d1b74-9406-405e-92e5-55e7898511f6": false,
-                            "e98156dd-ec0d-49da-95a8-7903e812da62": false,
-                            "ac1fbe0e-9ed5-44e4-9935-a50c3b7f1044": false,
-                            "15bb0b81-8c53-4524-9f77-6ef2445e7b9a": false,
-                            "b2e840ca-39f9-4e4b-bf69-eb19bdee5d29": true,
-                            "84f2c181-38fa-4ab8-b2f9-332dec1bd396": false,
-                            "fdaca5a2-176e-4377-b8aa-cb0f173335f6": true,
-                            "b30b1b12-a2f5-4c87-bd76-2d9eaba0da0d": true,
-                            "8b1761f7-4264-4268-afaa-80cee289780f": true,
-                            "8d6d7b61-c4fa-4c5e-895b-a4d42c83e235": true,
-                            "7a2c51c1-42fd-49c3-a28b-31e0c1515437": false,
-                            "9d760b48-1911-4876-b8e6-819dc147d7b9": true,
-                            "605f2e3a-2c48-4dfb-bc9e-ef7216a061c8": true,
-                            "98bf45bd-0be4-40ef-954a-cb2f25ec2b26": false,
-                            "b8847fd5-9526-4fd2-ba6d-d5ff32e79f01": true,
-                            "40ede024-075e-45e2-ab02-1bc27c449c44": true,
-                            "f04f3ce8-aa83-4c82-ab43-44c12b864027": true,
-                            "5a15b8f2-69f3-4a25-86a0-62f0789a26a7": true,
-                            "9627d5f8-fa50-4f17-b487-8208a0fa5a72": true,
-                            "541dca2f-ccba-455f-b907-e14968bcb0a6": false,
-                            "098af4e4-5021-4c23-b013-b4646684994b": false,
-                            "304086ce-ca82-4579-b0e2-42103cf8500a": true,
-                            "59c809ad-dfa8-4961-a52e-e6f33257960c": true,
-                            "c3b717ed-09ee-4a49-98cd-0ebae452d5cd": false,
-                            "6f55e4e6-5423-4d25-a7d0-432e55c85777": true,
-                            "c2ac560f-66c2-4de5-8534-0e6171dc6cb0": false,
-                            "926a11d3-185c-4713-8a6a-42065335d7af": false,
-                            "dd91b68e-881a-4d12-bf2f-315eabf6c03c": true,
-                            "be87735b-263f-41ca-8b17-5721b937c2ef": true,
-                            "64247ddd-253a-45a4-99a1-17561882d2ac": true,
-                            "629ec7a6-c3ce-4d6a-9637-03e0e8997e2f": true,
-                            "b20c40e2-fbae-48d8-b6b2-9e42203184de": true,
-                            "29b8b64a-acd6-4110-af49-2a8e91cb289e": true,
-                            "dd587490-9ae2-4381-8f10-407638931a92": false,
-                            "340fb1d3-7552-4134-9349-efdee234cd1f": true,
-                            "f8ad7d41-8b3f-49b4-86a1-1476e610f336": true,
-                            "527503be-b854-4b8a-8f96-8a7d3f60fd3f": true,
-                            "7b22e1ec-7edf-41a4-aa40-e0a7687e808d": true,
-                            "9910199a-89ec-476f-b5b6-c965d2fee209": false,
-                            "bcb349f5-f91d-4a79-9905-287b9e1fe6a2": false,
-                            "6ef4f3cc-df6e-47b5-9f85-af94df72bd36": true,
-                            "24a58bee-9001-414e-82c8-ccc9ca0bff21": true,
-                            "24625e61-2c8e-45d9-a298-575bea0facf6": true,
-                            "9c0eb4d0-9d4b-4857-a21d-185e80fcb157": true,
-                            "7223b3da-d09a-4d4f-96b4-92d1c1f758a4": false,
-                            "c625e062-ebc8-4056-bf54-428e323305fe": true,
-                            "04ecd8b6-7ac5-4590-9b39-b123341f3f20": true,
-                            "511b17f3-b775-4155-b5c9-5dad251bf3ef": false,
-                            "9122fb7b-bfe5-433c-bc31-e357a1c25ffe": true,
-                            "75ba3ddc-5d04-4b90-a60d-ff10f5606bf6": true,
-                            "b545efa0-52d7-4b6f-bad8-07fe662ed933": false,
-                            "711ac9ac-001b-40f8-b912-006ad3b3ad39": false,
-                            "773b29bd-32f5-46c6-8664-f7ca9213acf3": true,
-                            "105600d9-162c-4f6f-88c0-47c2cbf2f527": false,
-                            "3c7975cb-6802-4e2a-9f34-e95c6f621c80": true,
-                            "179b7434-a4f6-4c3f-8873-4cecc8d4ac62": true,
-                            "5100056f-314e-463a-92fc-3ef0472ef0ea": true,
-                            "ef1d4174-f307-49ee-9a8d-de0c07f0cf86": false,
-                            "9f8e2603-42e2-4046-8b2a-b09fb8db1a74": true,
-                            "e46a51cc-a727-471d-850d-9bf5b62f7d70": true,
-                            "b62ac0d6-2182-4249-8570-c5f571e1a10a": true,
-                            "803ce322-7a40-454f-9a23-b3e0c1c7cac6": false,
-                            "4892a1dc-ff61-48e0-ae1d-30d6fb50ebb2": false,
-                            "f766bced-2ce1-49f8-aa2c-9bb118134f6b": true,
-                            "006f3b6d-5226-452c-a41c-4b20eebade42": false,
-                            "641c9820-372a-4bbf-8878-8de92fd49cfe": false,
-                            "496d7b71-f1aa-4512-b0ea-1ba5e76476b2": true,
-                            "de8f999b-c310-45ae-8ad4-177229086ef9": false,
-                            "37218a8f-5e62-4a38-90d3-7cbda522d433": false,
-                            "4339ded8-ca81-4c05-9e4d-288577a1fff9": false,
-                            "870a0ea2-a48e-4242-a967-232b61eea85c": false,
-                            "78cce7a2-4694-45de-8f5c-e521b3d2bb4a": true,
-                            "6a8a8e81-5b8c-432c-991e-9c2bf00cd269": true,
-                            "ada98cc6-8349-472e-9caf-afe39c6560e2": true,
-                            "1a99864b-9854-4fb8-beb9-6d55e48d08d8": false,
-                            "2d746756-9b8e-402f-8b57-814808893601": false,
-                            "1dc34685-84e4-4ba6-b333-27693ab59efa": true,
-                            "0ff9c3d2-db63-41de-a81a-c4b1d42056c9": true,
-                            "6c4a8b94-f69a-408e-b119-7bb230f579c2": false,
-                            "f55f2c05-1b4b-4435-9281-b2c77387ba7b": true,
-                            "9687d66a-31fe-41cf-a68b-8d0aeb8e8824": true,
-                            "9951ac08-aa6e-4f18-b58d-6ed019b64468": false,
-                            "abefb11d-4661-465d-a018-8dd5dc2de5de": false,
-                            "a023a4d8-77dc-4745-b633-8ccacc927c35": false,
-                            "999e13cd-8077-45b6-a729-925ed65f634d": false,
-                            "e06b77aa-97a9-4137-82cb-dd69448e2d0c": false,
-                            "4034e0e1-cacb-4ef0-9466-a7fb54cc040b": false,
-                            "0231b536-0317-4e16-9187-4df852db84da": false,
-                            "9f5307b3-18c4-4de1-a734-517006ce3180": false,
-                            "e5b339d2-2f32-424c-8b76-c220d839bc4f": true,
-                            "73192129-07fc-4fdc-878b-780c0779e098": false,
-                            "ec010e48-4a34-428e-ba58-870d96671c2f": false,
-                            "68a90fd4-9c0a-407d-bfcd-95c34d769349": false,
-                            "70d90428-ab89-4634-b49f-3bcfe505d4c4": false,
-                            "1c56e1f1-6501-4ad8-b302-4e452437f70a": false,
-                            "f8316079-97c3-45ab-86bb-e613b9c002a1": false,
-                            "004fcca5-4e08-497e-8eae-f06a1c9d24c9": false,
-                            "52c5625f-e9ca-47dc-8931-ae275eba4c41": false,
-                            "4bde2ca9-b25e-42c3-b59b-ea2fd70ae291": true,
-                            "ac17cdd4-9b57-46f8-9256-3b840cce66c4": false,
-                            "290c7628-c0f7-4db1-8fac-d68e5544a9c0": false,
-                            "3f5d63be-7240-45c5-aaa6-db3325071383": false,
-                            "6949c448-d2bd-4e4c-90ce-177479ce126f": true,
-                            "181a806e-3c2f-4230-9ca5-cbdf16994b28": false,
-                            "7e8ee4c3-e5b5-40fd-8d87-096613cd1d96": false,
-                            "480a4586-47e1-4dde-a5df-f6b7612084f7": false,
-                            "6e9137d6-dada-477e-81e4-e89510260e7d": false,
-                            "47af42bc-8153-46ad-9169-b27224a1b163": false,
-                            "d1ceb9ba-fef5-4545-9b7d-3f02e204018a": false,
-                            "20910521-3de5-44bd-8a2e-fda1a1780d18": false,
-                            "6cf76d2f-6c73-4a29-9536-b7fe2a165f49": false,
-                            "242b8e56-e3eb-434b-9a56-c7b9371851a9": false,
-                            "93732d54-75fd-4fb7-8810-fd7ceeeb53e0": false,
-                            "25aae13a-79f5-4a9a-b0d3-efa1a231d847": false,
-                            "ce07b6e2-c6de-4165-838c-7a8981a18073": false,
-                            "7c6fcb9b-8bc9-48fe-ac2f-a0837d488d23": false,
-                            "e480fa1b-ebe7-434b-ac0c-3acb3c062e8d": false,
-                            "e4d5dc4e-958e-4a36-8ec8-42bd10a0fc1a": false,
-                            "5aa47502-69e6-459c-a52e-bf3f14511b47": true,
-                            "32a8b814-eb43-4b23-a2cb-f19921be3b7e": false,
-                            "c15331d6-bb37-4557-9d0d-55efac7a4644": false,
-                            "47102677-bd12-4d78-ae84-2d907187e82f": true,
-                            "82aeede8-efc3-4e08-b0e7-7beea7d8c181": true,
-                            "6b704758-ddbb-45ce-bc02-9a489e49d72f": false,
-                            "88420535-7f9d-47e3-8019-ed534f3d3e90": true,
-                            "5ca92302-fa69-4ba3-8036-ca5d07c5dff5": true,
-                            "14aeb90c-e259-45ff-8c3b-d817de12a895": true,
-                            "9b779f90-fad7-41b3-b446-4bd1625baeff": false,
-                            "4c98452b-45d4-4498-aa53-e69d2ca1cc02": false,
-                            "765590b2-f695-4851-8d5d-aa276f1c7966": true,
-                            "5678c0d1-95e6-4a5d-be52-fecfff06ce60": false,
-                            "a1c8d364-ed7e-432e-aa30-77b643ce9b5b": true,
-                            "f4a28dd4-2346-4130-9e01-d965f86d8e7b": true,
-                            "483226cd-87f9-48d3-acab-59cb8d87ac1d": false,
-                            "0ed8e9d8-9201-480a-844b-a636bfc52d13": true,
-                            "b63eb60f-ab11-4b83-b7c8-9a3cf5cb1180": false,
-                            "7b1b3493-5c36-4390-9e31-b378e43b9589": true,
-                            "27fd35dc-6563-42f2-9dc5-c45a0f318109": true,
-                            "d6398c93-918a-4aa4-b008-24cd1438c21f": false,
-                            "049baf94-c671-473a-8306-e56e6df244c5": false,
-                            "9797ce75-1634-4a79-8bb0-5f31a36a0278": false,
-                            "a53e6a19-8a57-48e8-bb74-750948e191dd": true
-                        },
-                        "worldBindings": [
-                            "！！Table_v2.0.13"
-                        ]
-                    }
-                ],
-                "currentVersion": "6a4badf4-99ed-4b89-a272-4febf3f4e220"
-            }
-        }
+        "extensions": {}
     },
     "background": {
-        "name": "IMG_20250627_093141.jpg",
-        "url": "url(\"backgrounds/IMG_20250627_093141.jpg\")",
+        "name": "Camera_XHS_17351262467321040g2sg316r2ekprk4ag5pa5qt3j8g8nrr5imeo.jpg",
+        "url": "url(\"backgrounds/Camera_XHS_17351262467321040g2sg316r2ekprk4ag5pa5qt3j8g8nrr5imeo.jpg\")",
         "fitting": "classic",
         "animation": false,
         "thumbnailColumns": 3
