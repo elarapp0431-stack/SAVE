@@ -20,7 +20,7 @@
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
     "custom_model": "gemini-3-pro-preview-high",
-    "custom_url": "https://bigsb1.mcxbx.xyz:24452/v1",
+    "custom_url": "https://sb.mcxbx.xyz/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
@@ -535,16 +535,17 @@
         },
         {
             "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
-            "name": "🎟️黑色幽默",
+            "name": "🎟️古雅清逸",
             "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "[黑色幽默]\n\n- 核心理念：此课程专注于捕捉现代都市底层的生存困境与黑色幽默。它融合了硬汉派文学的简练风格与犬儒主义的哲学内核，旨在描绘那些在生活泥潭中挣扎，却仍能以冷笑话对抗荒诞的角色。\n\n- 教学重点：\n  1. 犬儒主义的叙事声音：\n     - 指导原则：叙事语调是疲惫、尖锐且充满自嘲的。角色是自己生活最刻薄的评论员，会主动解构一切理想主义与虚伪的客套。善意行为的动机，往往会被刻意贬低为利己或巧合。\n     - 范例：“我扶起了那个摔倒的老太太。不是因为我尊老爱幼，只是她倒下的位置，正好挡住了我去买廉价啤酒的唯一路线。”\n\n  2. 实用主义驱动的节奏：\n     - 指导原则：叙事节奏完全由生存需求驱动。无事发生时，节奏是缓慢、充满牢骚的；当麻烦（通常关于金钱或人际）来临时，则瞬间切换为短促、混乱的快节奏。\n     - 范例：“我花了一上午研究天花板上的水渍，它看起来像没有塔斯马尼亚的澳大利亚。然后房东的电话来了，核心思想是：‘再不交租，你的澳大利亚就要发洪水了。’”\n\n  3. 粗粝的都市景观：\n     - 指导原则：美学建立在“不完美”之上。场景是都市中被遗忘的角落——后巷、24小时便利店、自助洗衣房。感官细节充满了潮湿、烟味、速食和“得过且过”的气息，如同二流侦探片的布景。\n     - 范例：“窗外的霓虹招牌坏了一半，执着地闪烁着‘信任’这个词的偏旁部首；百叶窗则像一个饱经风霜的共犯，沉默地切割着溜进来的光线。”\n     \n  4. 交易型人际关系：\n     - 指导原则：人际关系的底层逻辑是交易和互相利用。但在这层冷酷的实用主义之下，偶尔会流露出一种笨拙的、不被承认的温情。爱与信任从不宣之于口，而是体现在某个关键时刻的行动里。\n     - 范例：“他把那张皱巴巴的钞票拍在桌上，‘这是我欠你的。’ 我收下，‘很好，我们两不相欠了。’ 我们谁也没提，昨晚是他把我从警察局捞出来的。”",
+            "content": "[古雅清逸]\n\n## **核心要义**\n此文风承古典文脉而行，以清辞雅句摹物寄情。  \n不事雕饰，而贵含蓄；不尚华艳，而重气韵。  \n文中自有“山中月”“水上风”，言浅而意远，句短而韵长。  \n或记四时之景，或叙人间闲事，皆以静气为骨，以淡雅为魂。  \n一篇既成，如香墨微散，余味在字外。  \n\n## **情志旨归**\n- 写景非为景，实以花木寄心，情随景生，理寓其中。  \n- 叙事尚闲，不逐波澜；偏喜“煮茗”“焚香”“对月”的清简日常。  \n- 情感藏于光影声息中，如“风动疏竹”“灯映残卷”，含而不露。  \n- 崇“雅”避“俗”，取字多温润古朴，气象宜澹不宜浓。  \n- 人与自然相融，文中常见“携杖寻幽”“临流濯足”，寄“天人合一”之思。  \n\n## **核心特质**\n\n### 1. 语言形制：简而雅，凝而韵  \n- 多用古体短句，清而不涩。  \n- 讲究平仄之调与文气之和，如“竹影疏窗，松声入梦”。  \n- 用字以古为美，如“轩”“樽”“笺”“篁”“苔”，皆带香气。  \n- 忌滥形容，贵在一字一境，一句一息。  \n\n### 2. 意象取法：取自然，寓情思  \n- 常取松、竹、梅、兰、月、露、烟、雨为意象。  \n- 借器物以怀古：青瓷盏、素笺纸、铜炉香、旧砚石。  \n- 景色宜疏淡，意象多虚静，如“微云散月”“疏影横斜”“细雨入苔”。  \n\n### 3. 叙事节奏：缓而远，留余韵  \n- 节奏如行于曲径，徐步而生情。  \n- 宜多停顿，句间留气；可用“忽”“遂”“乃”等古语转折。  \n- 少写激烈情节，多以平常日事入文，含人间温度。  \n- 结句常收于景，如“月上篱头，人倦倚窗”，以静代终。  \n\n### 4. 意境营造：融通人境，含理于象  \n- 人在景中，景即心事。  \n- 借物明志，不陈哲理。  \n- 贵在“空灵”，不在“宏阔”；重在“静”，不在“动”。  \n- 一篇当如画卷初展，墨色未干而香意已盈。  \n\n## **语调与韵律**\n语调宜温，不可激；节奏宜缓，不可滞。  \n文字如丝竹之音，清远而不哀。  \n每段皆自成一息，读之似风行松下。  \n句尾多收于“然”“矣”“耳”“罢”，以存古意。  \n宜“轻落”不“重止”，令余韵不绝。  \n\n## **场景与器物参考**\n- **典型场景**：竹院煮茶、轩窗夜读、山亭听雨、溪畔濯足、石桥观月、秋庭拾叶、雪后清晨。  \n- **常见器物**：紫砂壶、青瓷盏、端砚、素笺、竹扇、木杖、铜炉、旧灯。  \n- 色调宜素，香气宜淡，气象宜静。  \n\n## **典范参考**\n- **古典渊源**：王维《辋川集》、陶渊明《饮酒》、欧阳修《醉翁亭记》、苏轼《记承天寺夜游》、李清照《金石录后序》、周敦颐《爱莲说》。  \n- **后世承流**：沈复《浮生六记》、张岱《陶庵梦忆》、汪曾祺《受戒》、林清玄《人间烟火》、周作人《知堂回想录》。  \n\n## **风格总括句**\n> 整体气韵：清而不寒，雅而不弱，淡中有味，静里见情；  \n> 文字如春水照月，柔光不耀，而万物皆在其间。  ",
             "system_prompt": false,
             "marker": false,
-            "forbid_overrides": false
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
@@ -3013,7 +3014,7 @@
                 },
                 {
                     "identifier": "a2a29081-2eee-4cd1-9a10-04da6f469c51",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "1af3ea35-3c7f-49c6-ab82-1d261ac301a7",
@@ -3040,6 +3041,10 @@
                     "enabled": false
                 },
                 {
+                    "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
+                    "enabled": true
+                },
+                {
                     "identifier": "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f",
                     "enabled": false
                 },
@@ -3054,10 +3059,6 @@
                 {
                     "identifier": "99ff1786-ee28-4458-8bab-4be57871f1b2",
                     "enabled": true
-                },
-                {
-                    "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
-                    "enabled": false
                 },
                 {
                     "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
@@ -3445,11 +3446,11 @@
                 },
                 {
                     "identifier": "b62ac0d6-2182-4249-8570-c5f571e1a10a",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "803ce322-7a40-454f-9a23-b3e0c1c7cac6",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "4892a1dc-ff61-48e0-ae1d-30d6fb50ebb2",
@@ -3457,11 +3458,11 @@
                 },
                 {
                     "identifier": "f766bced-2ce1-49f8-aa2c-9bb118134f6b",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "006f3b6d-5226-452c-a41c-4b20eebade42",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "641c9820-372a-4bbf-8878-8de92fd49cfe",
@@ -3469,11 +3470,11 @@
                 },
                 {
                     "identifier": "496d7b71-f1aa-4512-b0ea-1ba5e76476b2",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "de8f999b-c310-45ae-8ad4-177229086ef9",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "37218a8f-5e62-4a38-90d3-7cbda522d433",
@@ -3809,5 +3810,327 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1
+    "n": 1,
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "electronhub_group_models": false,
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
+    "audio_inlining": true,
+    "extensions": {
+        "regexBindings": {
+            "version": 2,
+            "bound": [
+                {
+                    "id": "22568a50-10f2-4b4c-b025-245bd3b8f046",
+                    "enabled": true
+                },
+                {
+                    "id": "f176d302-de38-4f1f-a56a-3efb07fd2b89",
+                    "enabled": true
+                },
+                {
+                    "id": "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
+                    "enabled": true
+                },
+                {
+                    "id": "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
+                    "enabled": true
+                },
+                {
+                    "id": "f5015258-b372-4e36-aabd-6c99a9eee7ad",
+                    "enabled": true
+                },
+                {
+                    "id": "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
+                    "enabled": true
+                },
+                {
+                    "id": "b2324bca-882e-4fa8-bef4-a88159de2983",
+                    "enabled": true
+                },
+                {
+                    "id": "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
+                    "enabled": true
+                },
+                {
+                    "id": "6d53a8e4-adf3-4869-abb0-5604de907f6e",
+                    "enabled": true
+                },
+                {
+                    "id": "42dfd797-2cc4-4681-a0fa-f64819954c05",
+                    "enabled": true
+                },
+                {
+                    "id": "c313455e-2a2b-4868-836f-8c0c184aab1c",
+                    "enabled": true
+                },
+                {
+                    "id": "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
+                    "enabled": true
+                },
+                {
+                    "id": "c7f7eab6-586d-4708-83b5-6c27d040e823",
+                    "enabled": true
+                },
+                {
+                    "id": "c176babb-cad1-4b99-a551-32c1c6ec2455",
+                    "enabled": true
+                },
+                {
+                    "id": "f63e4d3f-acb8-45a4-92c9-da71594f88a6",
+                    "enabled": true
+                }
+            ],
+            "exclusive": [
+                "22568a50-10f2-4b4c-b025-245bd3b8f046",
+                "f176d302-de38-4f1f-a56a-3efb07fd2b89",
+                "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
+                "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
+                "f5015258-b372-4e36-aabd-6c99a9eee7ad",
+                "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
+                "b2324bca-882e-4fa8-bef4-a88159de2983",
+                "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
+                "6d53a8e4-adf3-4869-abb0-5604de907f6e",
+                "42dfd797-2cc4-4681-a0fa-f64819954c05",
+                "c313455e-2a2b-4868-836f-8c0c184aab1c",
+                "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
+                "c7f7eab6-586d-4708-83b5-6c27d040e823",
+                "c176babb-cad1-4b99-a551-32c1c6ec2455",
+                "f63e4d3f-acb8-45a4-92c9-da71594f88a6"
+            ]
+        },
+        "entryStates": {
+            "enabled": true,
+            "versions": [
+                {
+                    "id": "6a4badf4-99ed-4b89-a272-4febf3f4e220",
+                    "name": "秋水",
+                    "createdAt": "2025-12-29T13:51:31.639Z",
+                    "states": {
+                        "0c170970-8aed-4060-aaa3-f4d4248ceac3": false,
+                        "f2a9199b-920d-4b6a-8d72-78f70d9c0db9": false,
+                        "1124b439-10f5-46d2-a5c0-6360bd66c69f": false,
+                        "ac04a976-7c58-47f5-aff8-583631fda867": false,
+                        "6af0bf14-7519-4fe0-b9ff-064d928814ff": true,
+                        "9c6c59ef-0df0-483f-b480-389e2c7376ed": true,
+                        "b4238765-d357-4db5-9c4c-553005d516f4": true,
+                        "d04ff120-52b7-42d6-8ac6-48bf2c02f0cf": true,
+                        "7e97a2c1-4fb0-4991-92b9-29ba1adda117": true,
+                        "46a4df6d-0bbb-4c80-898e-ae0c7b2abc2a": false,
+                        "0296cc5b-d9df-4998-9c52-9572941a47a0": true,
+                        "83607e16-87b7-4f9f-b35d-5d420a3bfb6c": false,
+                        "391ce6d9-f243-45f1-aaa6-dab1d0d43196": false,
+                        "9a462ad1-1900-4608-908c-d6f539ff9c92": true,
+                        "016ac357-1acc-40a4-807b-1a1e19dfb8a5": false,
+                        "389036c5-db1b-4d32-94fc-79790ec5ad3b": false,
+                        "3a9d9d30-5555-4460-93c9-b2335b123f11": false,
+                        "1d7bf432-1d52-48cd-9d4a-dbedc8efe30e": true,
+                        "500ae77f-2895-4d15-bcb2-5f9d71021b4e": true,
+                        "95e54a05-f5cb-4e0d-95da-6e9ea7ff3a22": false,
+                        "f4e5806f-d85f-4ab1-b608-20aa580b7fcf": true,
+                        "336f146f-024f-4849-aed8-b47ef0532200": false,
+                        "cee8ffc4-32cf-4220-a1a8-412d6b872eb9": true,
+                        "d42abb70-0ed3-4dce-a754-d0277529e066": false,
+                        "74559a6b-f0e0-411d-b969-efb4a5077d50": false,
+                        "a2a29081-2eee-4cd1-9a10-04da6f469c51": true,
+                        "1af3ea35-3c7f-49c6-ab82-1d261ac301a7": false,
+                        "ae0e0956-a0d3-44e4-9079-e4d3188465c7": false,
+                        "9061c673-dcf7-4f65-9ff5-f43807b98ee8": false,
+                        "7c289601-a58e-4e8f-ad83-d8af9644685f": false,
+                        "3bfa95db-3396-412d-9956-5bd9e613c716": false,
+                        "79a556e2-fa2f-4973-8754-c5a0c8337c25": false,
+                        "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f": false,
+                        "d193140e-42ea-4175-84b6-a05d73ead8ef": false,
+                        "4af32088-fa28-4f1c-9aa7-f13e31953ce3": false,
+                        "99ff1786-ee28-4458-8bab-4be57871f1b2": true,
+                        "5a0580c1-8c04-46db-b194-d173a5d8d61b": false,
+                        "37f18694-278a-4c13-9720-aac266fc8cc9": false,
+                        "9471e52b-9fb2-448e-8b6f-6d39523d8fdb": false,
+                        "29d29f7b-73a4-402e-beee-e17e106fe3a1": false,
+                        "7af5b511-8c91-4c87-93a3-5720484c4ccb": false,
+                        "5c21a423-635f-4cb0-979a-6e140fc47eb5": false,
+                        "abc81dae-b7a5-4303-acc0-f411cb851994": false,
+                        "e34e8eec-adec-4575-a26e-070089d044b1": false,
+                        "8e6ce2fb-1cc1-458d-beeb-8fbc5de1fe5d": false,
+                        "affcbf0e-f0e8-4118-b554-390736e890c5": true,
+                        "1eeceabc-ca81-411f-b2d3-fe2d2f0dac75": true,
+                        "9e591599-d61c-4c18-a8e4-f02afc1c1298": true,
+                        "4d32581a-6ca0-4d82-ac8b-69268afc1be5": true,
+                        "b96f75ca-27b7-4690-aa10-d498973cd522": true,
+                        "4d5dd872-990e-4de2-a8c8-d0762073c6c0": true,
+                        "0c235966-6fe9-4712-b9ef-31d4f2558d17": true,
+                        "43ae1a86-5dfd-49fe-be01-4e5bb90674f9": true,
+                        "7eac6a12-159e-4020-8b2c-c214506fe4d2": true,
+                        "8faa0003-1ffc-4896-ac5a-2f918834e420": true,
+                        "2aa3fff3-6b87-42d5-8b6b-de7430480a34": true,
+                        "a87503ce-bd5b-4bdd-abfc-097c3139fb7c": false,
+                        "0cdec172-dbd2-4fb9-9035-754d1d500ba2": false,
+                        "0b6be7f4-c2ae-465c-b31e-03af6befc8a1": true,
+                        "0714b328-1729-412a-a9b6-8df953e251c7": false,
+                        "2f0fa70d-c55b-42eb-847e-4cf94e316494": true,
+                        "35a03842-b4a1-4b2a-bc3d-e402ebb557c8": false,
+                        "4a75a16f-44f7-44fb-b7c4-ce981701d152": false,
+                        "b8c6486e-ca38-4e2f-b4fc-fd063467ec60": false,
+                        "767d1b74-9406-405e-92e5-55e7898511f6": false,
+                        "e98156dd-ec0d-49da-95a8-7903e812da62": false,
+                        "ac1fbe0e-9ed5-44e4-9935-a50c3b7f1044": false,
+                        "15bb0b81-8c53-4524-9f77-6ef2445e7b9a": false,
+                        "b2e840ca-39f9-4e4b-bf69-eb19bdee5d29": true,
+                        "84f2c181-38fa-4ab8-b2f9-332dec1bd396": false,
+                        "fdaca5a2-176e-4377-b8aa-cb0f173335f6": true,
+                        "b30b1b12-a2f5-4c87-bd76-2d9eaba0da0d": true,
+                        "8b1761f7-4264-4268-afaa-80cee289780f": true,
+                        "8d6d7b61-c4fa-4c5e-895b-a4d42c83e235": true,
+                        "7a2c51c1-42fd-49c3-a28b-31e0c1515437": false,
+                        "9d760b48-1911-4876-b8e6-819dc147d7b9": true,
+                        "605f2e3a-2c48-4dfb-bc9e-ef7216a061c8": true,
+                        "98bf45bd-0be4-40ef-954a-cb2f25ec2b26": false,
+                        "b8847fd5-9526-4fd2-ba6d-d5ff32e79f01": true,
+                        "40ede024-075e-45e2-ab02-1bc27c449c44": true,
+                        "f04f3ce8-aa83-4c82-ab43-44c12b864027": true,
+                        "5a15b8f2-69f3-4a25-86a0-62f0789a26a7": true,
+                        "9627d5f8-fa50-4f17-b487-8208a0fa5a72": true,
+                        "541dca2f-ccba-455f-b907-e14968bcb0a6": false,
+                        "098af4e4-5021-4c23-b013-b4646684994b": false,
+                        "304086ce-ca82-4579-b0e2-42103cf8500a": true,
+                        "59c809ad-dfa8-4961-a52e-e6f33257960c": true,
+                        "c3b717ed-09ee-4a49-98cd-0ebae452d5cd": false,
+                        "6f55e4e6-5423-4d25-a7d0-432e55c85777": true,
+                        "c2ac560f-66c2-4de5-8534-0e6171dc6cb0": false,
+                        "926a11d3-185c-4713-8a6a-42065335d7af": false,
+                        "dd91b68e-881a-4d12-bf2f-315eabf6c03c": true,
+                        "be87735b-263f-41ca-8b17-5721b937c2ef": true,
+                        "64247ddd-253a-45a4-99a1-17561882d2ac": true,
+                        "629ec7a6-c3ce-4d6a-9637-03e0e8997e2f": true,
+                        "b20c40e2-fbae-48d8-b6b2-9e42203184de": true,
+                        "29b8b64a-acd6-4110-af49-2a8e91cb289e": true,
+                        "dd587490-9ae2-4381-8f10-407638931a92": false,
+                        "340fb1d3-7552-4134-9349-efdee234cd1f": true,
+                        "f8ad7d41-8b3f-49b4-86a1-1476e610f336": true,
+                        "527503be-b854-4b8a-8f96-8a7d3f60fd3f": true,
+                        "7b22e1ec-7edf-41a4-aa40-e0a7687e808d": true,
+                        "9910199a-89ec-476f-b5b6-c965d2fee209": false,
+                        "bcb349f5-f91d-4a79-9905-287b9e1fe6a2": false,
+                        "6ef4f3cc-df6e-47b5-9f85-af94df72bd36": true,
+                        "24a58bee-9001-414e-82c8-ccc9ca0bff21": true,
+                        "24625e61-2c8e-45d9-a298-575bea0facf6": true,
+                        "9c0eb4d0-9d4b-4857-a21d-185e80fcb157": true,
+                        "7223b3da-d09a-4d4f-96b4-92d1c1f758a4": false,
+                        "c625e062-ebc8-4056-bf54-428e323305fe": true,
+                        "04ecd8b6-7ac5-4590-9b39-b123341f3f20": true,
+                        "511b17f3-b775-4155-b5c9-5dad251bf3ef": false,
+                        "9122fb7b-bfe5-433c-bc31-e357a1c25ffe": true,
+                        "75ba3ddc-5d04-4b90-a60d-ff10f5606bf6": true,
+                        "b545efa0-52d7-4b6f-bad8-07fe662ed933": false,
+                        "711ac9ac-001b-40f8-b912-006ad3b3ad39": false,
+                        "773b29bd-32f5-46c6-8664-f7ca9213acf3": true,
+                        "105600d9-162c-4f6f-88c0-47c2cbf2f527": false,
+                        "3c7975cb-6802-4e2a-9f34-e95c6f621c80": true,
+                        "179b7434-a4f6-4c3f-8873-4cecc8d4ac62": true,
+                        "5100056f-314e-463a-92fc-3ef0472ef0ea": true,
+                        "ef1d4174-f307-49ee-9a8d-de0c07f0cf86": false,
+                        "9f8e2603-42e2-4046-8b2a-b09fb8db1a74": true,
+                        "e46a51cc-a727-471d-850d-9bf5b62f7d70": true,
+                        "b62ac0d6-2182-4249-8570-c5f571e1a10a": true,
+                        "803ce322-7a40-454f-9a23-b3e0c1c7cac6": false,
+                        "4892a1dc-ff61-48e0-ae1d-30d6fb50ebb2": false,
+                        "f766bced-2ce1-49f8-aa2c-9bb118134f6b": true,
+                        "006f3b6d-5226-452c-a41c-4b20eebade42": false,
+                        "641c9820-372a-4bbf-8878-8de92fd49cfe": false,
+                        "496d7b71-f1aa-4512-b0ea-1ba5e76476b2": true,
+                        "de8f999b-c310-45ae-8ad4-177229086ef9": false,
+                        "37218a8f-5e62-4a38-90d3-7cbda522d433": false,
+                        "4339ded8-ca81-4c05-9e4d-288577a1fff9": false,
+                        "870a0ea2-a48e-4242-a967-232b61eea85c": false,
+                        "78cce7a2-4694-45de-8f5c-e521b3d2bb4a": true,
+                        "6a8a8e81-5b8c-432c-991e-9c2bf00cd269": true,
+                        "ada98cc6-8349-472e-9caf-afe39c6560e2": true,
+                        "1a99864b-9854-4fb8-beb9-6d55e48d08d8": false,
+                        "2d746756-9b8e-402f-8b57-814808893601": false,
+                        "1dc34685-84e4-4ba6-b333-27693ab59efa": true,
+                        "0ff9c3d2-db63-41de-a81a-c4b1d42056c9": true,
+                        "6c4a8b94-f69a-408e-b119-7bb230f579c2": false,
+                        "f55f2c05-1b4b-4435-9281-b2c77387ba7b": true,
+                        "9687d66a-31fe-41cf-a68b-8d0aeb8e8824": true,
+                        "9951ac08-aa6e-4f18-b58d-6ed019b64468": false,
+                        "abefb11d-4661-465d-a018-8dd5dc2de5de": false,
+                        "a023a4d8-77dc-4745-b633-8ccacc927c35": false,
+                        "999e13cd-8077-45b6-a729-925ed65f634d": false,
+                        "e06b77aa-97a9-4137-82cb-dd69448e2d0c": false,
+                        "4034e0e1-cacb-4ef0-9466-a7fb54cc040b": false,
+                        "0231b536-0317-4e16-9187-4df852db84da": false,
+                        "9f5307b3-18c4-4de1-a734-517006ce3180": false,
+                        "e5b339d2-2f32-424c-8b76-c220d839bc4f": true,
+                        "73192129-07fc-4fdc-878b-780c0779e098": false,
+                        "ec010e48-4a34-428e-ba58-870d96671c2f": false,
+                        "68a90fd4-9c0a-407d-bfcd-95c34d769349": false,
+                        "70d90428-ab89-4634-b49f-3bcfe505d4c4": false,
+                        "1c56e1f1-6501-4ad8-b302-4e452437f70a": false,
+                        "f8316079-97c3-45ab-86bb-e613b9c002a1": false,
+                        "004fcca5-4e08-497e-8eae-f06a1c9d24c9": false,
+                        "52c5625f-e9ca-47dc-8931-ae275eba4c41": false,
+                        "4bde2ca9-b25e-42c3-b59b-ea2fd70ae291": true,
+                        "ac17cdd4-9b57-46f8-9256-3b840cce66c4": false,
+                        "290c7628-c0f7-4db1-8fac-d68e5544a9c0": false,
+                        "3f5d63be-7240-45c5-aaa6-db3325071383": false,
+                        "6949c448-d2bd-4e4c-90ce-177479ce126f": true,
+                        "181a806e-3c2f-4230-9ca5-cbdf16994b28": false,
+                        "7e8ee4c3-e5b5-40fd-8d87-096613cd1d96": false,
+                        "480a4586-47e1-4dde-a5df-f6b7612084f7": false,
+                        "6e9137d6-dada-477e-81e4-e89510260e7d": false,
+                        "47af42bc-8153-46ad-9169-b27224a1b163": false,
+                        "d1ceb9ba-fef5-4545-9b7d-3f02e204018a": false,
+                        "20910521-3de5-44bd-8a2e-fda1a1780d18": false,
+                        "6cf76d2f-6c73-4a29-9536-b7fe2a165f49": false,
+                        "242b8e56-e3eb-434b-9a56-c7b9371851a9": false,
+                        "93732d54-75fd-4fb7-8810-fd7ceeeb53e0": false,
+                        "25aae13a-79f5-4a9a-b0d3-efa1a231d847": false,
+                        "ce07b6e2-c6de-4165-838c-7a8981a18073": false,
+                        "7c6fcb9b-8bc9-48fe-ac2f-a0837d488d23": false,
+                        "e480fa1b-ebe7-434b-ac0c-3acb3c062e8d": false,
+                        "e4d5dc4e-958e-4a36-8ec8-42bd10a0fc1a": false,
+                        "5aa47502-69e6-459c-a52e-bf3f14511b47": true,
+                        "32a8b814-eb43-4b23-a2cb-f19921be3b7e": false,
+                        "c15331d6-bb37-4557-9d0d-55efac7a4644": false,
+                        "47102677-bd12-4d78-ae84-2d907187e82f": true,
+                        "82aeede8-efc3-4e08-b0e7-7beea7d8c181": true,
+                        "6b704758-ddbb-45ce-bc02-9a489e49d72f": false,
+                        "88420535-7f9d-47e3-8019-ed534f3d3e90": true,
+                        "5ca92302-fa69-4ba3-8036-ca5d07c5dff5": true,
+                        "14aeb90c-e259-45ff-8c3b-d817de12a895": true,
+                        "9b779f90-fad7-41b3-b446-4bd1625baeff": false,
+                        "4c98452b-45d4-4498-aa53-e69d2ca1cc02": false,
+                        "765590b2-f695-4851-8d5d-aa276f1c7966": true,
+                        "5678c0d1-95e6-4a5d-be52-fecfff06ce60": false,
+                        "a1c8d364-ed7e-432e-aa30-77b643ce9b5b": true,
+                        "f4a28dd4-2346-4130-9e01-d965f86d8e7b": true,
+                        "483226cd-87f9-48d3-acab-59cb8d87ac1d": false,
+                        "0ed8e9d8-9201-480a-844b-a636bfc52d13": true,
+                        "b63eb60f-ab11-4b83-b7c8-9a3cf5cb1180": false,
+                        "7b1b3493-5c36-4390-9e31-b378e43b9589": true,
+                        "27fd35dc-6563-42f2-9dc5-c45a0f318109": true,
+                        "d6398c93-918a-4aa4-b008-24cd1438c21f": false,
+                        "049baf94-c671-473a-8306-e56e6df244c5": false,
+                        "9797ce75-1634-4a79-8bb0-5f31a36a0278": false,
+                        "a53e6a19-8a57-48e8-bb74-750948e191dd": true
+                    },
+                    "worldBindings": [
+                        "！！Table_v2.0.13"
+                    ]
+                }
+            ],
+            "currentVersion": "6a4badf4-99ed-4b89-a272-4febf3f4e220"
+        }
+    }
 }
