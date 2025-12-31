@@ -150,12 +150,7 @@
             },
             "ignoreBudget": false,
             "outletName": "",
-            "triggers": [],
-            "characterFilter": {
-                "isExclude": false,
-                "names": [],
-                "tags": []
-            }
+            "triggers": []
         },
         "2": {
             "key": [],
@@ -388,12 +383,7 @@
             },
             "ignoreBudget": false,
             "outletName": "",
-            "triggers": [],
-            "characterFilter": {
-                "isExclude": false,
-                "names": [],
-                "tags": []
-            }
+            "triggers": []
         },
         "5": {
             "key": [],
