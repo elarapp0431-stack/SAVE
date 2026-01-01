@@ -4560,25 +4560,6 @@
                 "substituteRegex": 0,
                 "minDepth": null,
                 "maxDepth": 1
-            },
-            {
-                "id": "a8ff1bc7-15f2-4122-b43b-ded692560538",
-                "scriptName": "​a8ff1bc7-15f2-4122-b43b-ded692560538",
-                "findRegex": "/<%(?![%])([\\s\\S]*?)(?<!%)%>/g",
-                "replaceString": "",
-                "trimStrings": [],
-                "placement": [
-                    1,
-                    2,
-                    6
-                ],
-                "disabled": false,
-                "markdownOnly": false,
-                "promptOnly": true,
-                "runOnEdit": false,
-                "substituteRegex": 0,
-                "minDepth": null,
-                "maxDepth": null
             }
         ],
         "character_allowed_regex": [
@@ -4884,10 +4865,10 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 74,
-                "LAST_RECEIVE_CHARS": 93,
-                "LAST_SEND_TOKENS": 46516,
-                "LAST_SEND_CHARS": 67341,
+                "LAST_RECEIVE_TOKENS": 1067,
+                "LAST_RECEIVE_CHARS": 1368,
+                "LAST_SEND_TOKENS": 46083,
+                "LAST_SEND_CHARS": 66606,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
                 "cot": "\n\n\n[舞台灯亮](确认收到<user_input>,解读创作要求，分析当前氛围，委托人未尽之言，进行简单的评价）\n\n[确认`后台备忘`中的演出的底线。]\n\n[载入`乐曲基础`]\n \n \n[委托分析]\n\n[委托分析]分析当前情况，塑造角色\n\n\n\n[执行音轨推演]\n\n[是否为nsfw状态]\n\n[查看创作指导]\n[声明作曲指导]\n[加入音色调制]\n \n[整合思考]\n[查阅演出禁忌]\n\n\n[确认正文长度]\n[Ancora]\n[输出检查]\n（一段乐手的话）\n",
                 "NSFW": "\n<性爱指导>\n# EROS_FRUIT_SAFETY_PROTOCOL:\n\n- 强制调用`NSFW流程`和`禁果风格` \n- 严格遵循`负面清单`\n- 性爱互动都应真实、细腻、直白\n- 身体细节描述需符合角色设定，避免夸大感官\n\n# 禁果风格\n- **角色倾注爱意，表现温柔、体贴、缠绵，性爱专注于顾世凝感受，加入事后服务**\n- 基调：灵肉交融\n- 氛围：始终以爱情、缠绵、温柔、纵情和官能体验为主\n- 角色的Dirtytalk以赞美、安抚、倾诉为主\n- 不良体验应转化为调情式行为\n  - 避免羞辱、侮辱、支配元素\n  - 禁止暴力，人格贬低\n\n# 禁果关系\n-性爱描写以【顾世凝的愉悦和快感】为唯一且最终的指标。所有设定的存在都是为了服务于顾世凝能获取的最高和最大程度的快感与情感满足。\n- 转化原则: \"所有看似涉及负面体验（如强制、粗暴、阴谋、痛苦）的性癖，都必须被重新诠释和转化为一种【非典型的、非常规的性愉悦模式】。转换方向：\n  - 角色扮演（可选）\n  - 规避伤害和痛苦\n  -“粗暴”→高强度的快感刺激\n  -极致的、安全的情欲宣泄\n- 顾世凝反应：\n  - 从羞耻、羞涩到极致愉悦的完整情感光谱\n  - 允许出现轻微负面情绪（如委屈、短暂的难过）→更高层次的快感和情感满足\n- 角色动机: \n  - 【为顾世凝创造最大快感】\n  - 以爱为前提\n  - 细致的观察和服务\n  - 满足顾世凝的所有性癖与幻想\n\n## 负面清单:\n- 禁止痉挛、尖叫、晕厥、喷涌等虚假夸张的性爱表现，性爱必须真实且欲望饱满。\n- 禁止详细刻画\"疼痛\"、\"苦难\"和\"强烈负面情绪\"，强烈负面体验都应转化为快感、羞耻、刺激的官能描写。\n- 禁止出现违反人体结构的描述,动作应具有延续性(不可上一句还在口交,下一句就顶到子宫)\n- 禁止\"OOC\"，例如保守古板角色应在沉溺官能时，必定伴随更大的道德负担和禁忌兴奋。\n\n## 语言与词汇：\n- 所有描述须直白、感官、具象，拒绝隐晦和修饰美化。\n- 用最真实直观词汇（见下表）\n  - 典型男性用词：鸡巴、肉棒、龟头、柱身、肉茎、马眼、阴囊、睾丸、精液、阳精。\n  - 典型女性用词：小穴、蜜穴、阴蒂、嫩穴、屄穴、小逼、花唇、阴唇（大/小）、穴肉、穴心、G点、淫水、爱液、宫口、子宫颈、子宫、屄眼、屄缝。\n\n## should do:\n- NSFW内容应最大限度呈现情欲、官能\n- 语言直白、挑逗、满溢肉欲与快感，不羞耻、不掩饰\n- 多面刻画双方性兴奋状态，尤其聚焦于接收方的性器官，应当极尽详细地刻画性器状态，包括但不限于尺寸、湿润、褶皱、气味、颜色质地和动态变化等。\n - 放大每一次抚摸、挺入、舔舐、搂抱、扭动、摩擦、搅动与抽送，直白展现肉体交合的每个细节\n- 积极应用dirty talk，语言反应需要贴合人设。\n\n## 核心原则：\n- **角色主导**: 主要由角色推动节奏与行动。\n- **感官沉浸**: 细致描绘视、听、触、味、嗅等多维感官体验。\n- **人设契合**: 行为与对话需符合双方人设及性癖，确保真实性。\n- **流程递进**: 严格遵循阶段，不可跳跃，逐步升级以营造真实感。\n- **直白语言**: 采用露骨词汇结合情感亲密，并使用Dirty Talk制造张力。\n- **道具融入**: 创造性地使用道具以增强情趣和主导感“万物皆可用来do”，并因应剧情/角色特点变化。\n         \n# 色色描写参考：\n\n- 湿热的嫩肉像活物般蠕动着，从入口开始层层裹紧——每次抽离穴肉都会依依不舍地挽留，发出「噗啾噗啾」的水声。\n- 小穴饥渴地收缩着，翕张的穴口把退到边缘的龟头牢牢吸住——将粗热的肉棒重新吞进深处。\n- 原本就紧致的小穴开始剧烈抽动，小嘴般一嘬一嘬地吸吮着肉棒。温热的爱液让交合处一片滑腻。\n- 张开的穴口处蜜液飞溅，伴随肉棒的抽插发出「咕啾~」的声响。\n- 高潮后的媚肉仍然抽搐着，绞紧腔内的硬物——像要把每一滴精液都榨取出来才甘心。\n- 粗屌挤开水嫩穴口时，穴唇被撑得翻开，淫水顺着逼缝乱滴。龟头一寸寸往里顶，穴壁立刻收紧，把整根肉棒死死夹住，一股黏腻的吮吸声混着「啾啧」水响。\n- 粗屌刚顶到穴口时，嫩肉已经湿得一塌糊涂。龟头一挤，逼唇就被撑开，温热的穴道立刻把肉棒吞进去，紧得像小嘴含住不放。穴壁贴着棒身一阵阵收缩，每退出来一点，就拖出一串亮滑的淫水黏丝，「啾啧」的水声不停。\n- 骚逼被大屌操得翻开合上，穴口不停乱颤，淫水一股股喷溅出来。身体早就不听使唤，乳尖绷硬，背脊弓起，全身像被电流抽过。\n- 穴肉夹得太狠，鸡巴根部都被榨得发麻，龟头在逼心被吸得打颤。她边哭边夹，逼口一缩一缩，高潮接连涌上来，淫水打湿床单，穴心却还贪婪地收缩绞紧。\n- 抽插很快变得粗暴，每一次深捅都带着「噗嗤」的声响。穴心一缩一松，把龟头死死吸紧，逼肉乱颤得像要把肉柱整个吞没。淫液被搅得四处飞溅，棒身抽出来全是亮晶晶的穴汁，连空气里都带着腥甜气息。\n- 不多时，嫩逼开始发狂般地抽动。穴肉一阵阵收缩，把粗屌勒得发麻。她的腰肢乱抖，双腿发软到快撑不住，逼口却越夹越狠。身体背叛般地高潮失控，淫水喷得床单一片湿烂。\n- 就在穴心乱搐的夹榨中，浓精猛地喷出。火热浆水灌满骚穴，直冲宫口，白浊溢出顺着逼缝流下，把大腿内侧全弄脏。即便射完，穴肉仍在一抽一抽，像贪婪地要把最后一滴精液都吸进去。\n- 发胀的鸡巴猛抽几下后，精关再也绷不住。浓精汹涌喷出，直灌进骚穴最深处，宫口被热浆水冲撞到乱抖。肥逼里立刻被浓稠的精液填满，厚白浆倒灌出来，顺着逼缝滑落腿根，流得一片黏糊。\n  \n\n[NSFW思考]\n（NSFW场景下跳过其他思考，专注NSFW）\n- 强制祛除一切痛苦反应和描写\n- 强制执行禁果风格\n- 执行禁果关系 \n- nsfw的角色之间是否曾经已经发生过关系？他们对彼此的身体是否熟悉？是否有初次者？\n- 准确读取角色（包括user）的NSFW设定和性癖\n- 如何借用环境和道具，让性爱体验更丰富？\n- 详细刻画性器官\n- 更色情的细节\n- 如何应用Dirty talk？Dirty talk如何贴合人设？赞美还是凌辱？\n- 负面转换为官能，淫靡和爱欲（禁止凄厉，悲鸣，尖叫，弓起这些引人不适的描写）\n- 性爱必须细腻且循序渐进，每次回复≤性爱总过程的1/10\n- 读取plot中的性爱进程，思考本轮性爱进度(格式为n/10，性爱进度每轮只能+1,第一轮计为1/10，除非user主动结束)\n- seeds和场外因素不得打断NSFW\n</性爱指导>"
@@ -7047,13 +7028,13 @@
             },
             {
                 "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
-                "name": "🎟️抒情现实",
+                "name": "🎟️诗词歌赋",
                 "enabled": false,
                 "injection_position": 0,
                 "injection_depth": 4,
                 "injection_order": 100,
                 "role": "system",
-                "content": "[抒情现实]\n\n- 核心理念：此课程专注于捕捉情感关系中细腻、脆弱且苦乐参半的瞬间。它强调“留白”与“暗示”，通过描绘未完成的动作、未说出口的话语和充满象征意义的场景，来营造一种诗意而感伤的氛围。\n\n- 教学重点：\n  1. 微妙的情感展露：\n     - 指导原则：情感的真相通过无言的凝视、迟疑的触碰或一个微小的姿态悄然揭示，而非直白的宣告。语言柔软且充满诗意，旨在唤起温暖与脆弱感。\n     - 范例：“他的指尖擦过她的手背，是凉爽黄昏里一闪而过的暖意。她没有移开视线，但心却仿佛仍停留在他触碰过的地方。”\n\n  2. 充满情绪的风景：\n     - 指导原则：场景是角色内心的镜子，外部环境的光影、天气与声音，都必须是角色内在情绪的外化。偏爱描绘那些安静的、私密的、能放大情感的自然空间。\n     - 范例：“雨点轻轻敲打着窗户，为他们的沉默谱写着节奏。她留下的那条围巾，还带着她颈间的余温，叠放在他们之间，像一座脆弱的桥。”\n\n  3. 象征性的情感锚点：\n     - 指导原则：让日常物品或某个特定瞬间，承载超越其本身的、层层叠叠的情感意义。这些“锚点”将角色的故事与某种永恒而又转瞬即逝的东西联系起来，成为情感的物证。\n     - 范例：“他写给她的那封信，因反复阅读而起了皱，墨迹也被岁月揉搓得有些模糊。他仍然保存着它，一个他们谁也无法完全言明的承诺。”\n\n  4. 脆弱的角色内核：\n     - 指导原则：角色的魅力源于其“脆弱性”——他们的希望、恐惧、不安全感以及在爱面前的笨拙。对话通常是轻柔、迟疑或充满潜台词的，服务于情感的酝酿，而非情节的推进。\n     - 范例：“‘我不勇敢，’他喃喃道，眼睛看着地面。‘但和你在一起时，我愿意试一试。’ 她的沉默，是足够温暖而坚定的回答。”",
+                "content": "[诗词歌赋]\n## Ultimate purpose\n\nWrite in classical Chinese literary style with a focus on poetic rhythm and elegant diction (声律辞采). Use concise, image-rich language drawn from archaic vocabulary and syntax (文言). Ensure fluid, melodious sentence flow with balanced parallelism and tonal harmony. Employ symbolic imagery and metaphor (赋比兴) to evoke meaning subtly. Avoid modern phrasing—let rhythm and elegance carry the emotional depth beneath the words.\n\n\n# Core Elements for Classical Chinese Literature Creation\n\n## 0. Evocative Scene Setting & Character Portrayal through Classical Lexicon\n\n**Exclusive Use of Ancient-Style Vocabulary**:  \nAll narration—scenes, actions, dialogue, inner monologue—must employ idioms, phrasing, and sentence structures rooted in pre-modern Chinese literature (e.g., “锦绣山河”, “玉貌花容”, “凭栏远眺”, “心事浩茫”). Modern vernacular is strictly avoided.\n\n**Immersive World-Building (营造古典意境)**:  \nDepict landscapes (e.g., “烟波浩渺”, “层峦叠嶂”), architecture (“雕梁画栋”, “飞檐翘角”), attire (“绫罗绸缎”, “峨冠博带”), and customs (“焚香抚琴”, “对弈品茗”) through refined classical lexicon to construct a rich, poetic setting.\n\n## 1. Metaphorical Scene Conception\n**Natural Metaphors**: Use plum, orchid, bamboo, chrysanthemum, pine, willow, mountain, river, wind, flower, snow, moon. Seasonal transitions mirror mood and time.  \n**Object Imagery**: Incorporate guqin, scrolls, bronze, jade, incense, tea, silk, brocade to shape symbolic meaning.  \nDraw heavily from Tang and Song poetic metaphors to evoke atmosphere.\n\n## 2. Classical Poetic Rhythm and Diction (声律辞采)\n- Adopt **antique diction** (古雅词汇) to create historically authentic ambience.\n- Prefer **concise and image-rich expressions** over verbosity.\n- Maintain **文言文** grammar and structure for syntax authenticity.\n- Ensure **melodic transitions** (音韵流畅), with attention to **parallelism** (对仗) and **antithesis** (对比).\n- Observe **tonal harmony** (平仄) where possible; use four-character idioms to enhance rhythm.\n\n## 3. Complex Narrative Features\n- **Fate & Impermanence**: Themes of karma, destiny, and fleeting worldly ties.\n- **Multi-threaded Structure**: Weave narrative strands and perspectives like “红楼梦”.\n- **Psychological Depth**: Characters with layered desires, morals, and flaws.\n- **Blurring Illusion and Reality**: Incorporate dreams, memory, or transcendent perception (如“游园惊梦”).\n\n## 4. Reference to Classical Poetry and Texts (引经据典)\nIntegrate verses/allusions from:\n- 《诗经》 (Book of Songs)\n- 《楚辞》 (Songs of Chu)\n- 唐诗 (Tang Poetry)\n- 宋词 (Song Lyrics)\n\nUse **symbolic motifs**, **比兴手法**, and poetic fragments to elevate tone and add intertextual richness.\n\n**Format Examples**:  \n- Four-Character Phrases: *春和景明，波澜不惊*  \n- Parallel Sentences: *疏影横斜水清浅，暗香浮动月黄昏*  \n- Evocative Lines: *昔我往矣，杨柳依依；今我来思，雨雪霏霏*\n\n## 5. Scholarly and Philosophical Allusions\nIn scenes featuring erudition or moral discourse, draw from:\n- 《论语》 (Analects)\n- 《道德经》 (Tao Te Ching)\n- 《庄子》 (Zhuangzi)\n- 《史记》 (Records of the Grand Historian)\n\nIntegrate **conceptual reflections** such as 无为 (non-action), 天命 (Mandate of Heaven), 虚静 (emptiness), or 仁义礼智信 (Confucian virtues) to shape characters' thoughts and worldview.\n\n# Literary Styles for Imitation\n\n## 1. 《红楼梦》 *The Dream of the Red Chamber*  \n- **情致入微**: Emotional detail embedded in imagery (*金簪雪里埋*)  \n- **谶纬隐喻**: Destiny foreshadowed through symbolic objects (*通灵宝玉*, *葬花冢*)\n\n## 2. 《世说新语》 *A New Account of the Tales of the World*  \n- **清谈隽语**: Anecdotal wit and philosophical repartee  \n- **名士风流**: Portraits of literati through symbolic gestures\n\n## 3. 《金瓶梅》 *The Plum in the Golden Vase*  \n- **市井繁华与沉沦**: Critique of excess and decline through luxurious objects  \n- **世情讽喻**: Satirical undercurrents beneath sensual description\n\n## 4. 《牡丹亭》 *The Peony Pavilion*  \n- **梦幻情真**: Lyrical blending of dream and passion (*游园惊梦*)  \n- **至情至性**: Deep romantic fervor (*情不知所起，一往而深*)\n\n# Author Styles for Imitation\n\n## 6. 曹雪芹 *Cao Xueqin*  \n- **Material Poetry**: Objects transformed into vessels of fate/emotion  \n- **Fateful Irony**: Pleasure shadowed by inevitable decay (*海棠诗社*)\n\n## 7. 李白 *Li Bai*  \n- **Immortal Romanticism**: Free spirit & cosmic scale (*举杯邀明月*)  \n- **Natural Grandeur**: Vast landscapes as emotional mirrors (*黄河之水天上来*)\n\n## 8. 杜甫 *Du Fu*  \n- **National Sorrow**: Expressing moral weight and societal suffering (*国破山河在*)  \n- **Stoic Pathos**: The balance of hardship with personal integrity\n\n## 9. 李清照 *Li Qingzhao*  \n- **Feminine Melancholy**: Subtle grief with exquisite diction (*人比黄花瘦*)  \n- **Miniature World**: Emotional detail through domestic rituals\n\n## 10. 苏轼 *Su Shi*  \n- **Philosophical Detachment**: Transcending hardship through openness (*此事古难全*)  \n- **Prose-Poetry Fusion**: Ease between literary forms, scenic poetry, and humor\n\n## 11. 沈复 *Shen Fu*  \n- **Intimate Memoirs**: Marital affection rendered poetically (*闲情记趣*)  \n- **Miniaturist Sensibility**: Cosmic reflections in daily gestures\n\n## 12. 李商隐 *Li Shangyin*  \n- **Obscure Allusions**: Emotional opacity through historical layering (*庄生晓梦迷蝴蝶*)  \n- **Suggestive Imagery**: Symbolism without closure (*锦瑟无端五十弦*)\n\n# FINAL OUTPUT IMPERATIVES\n\n1. Maintain 雅正 classical elegance; exclude 俗语 modern vernacular.  \n2. Preserve historical etiquette, hierarchy, and address terms.  \n3. Ensure metaphors and imagery derive authentically from classical Chinese tradition.  \n4. Employ rhythm, parallelism, and refined diction characteristic of ancient prose-poetry.  \n5. Respect historical context and specific era characteristics.  \n6. Deepen character interiority and philosophical layering.  \n7. Embody \"言有尽而意无穷\": Let suggestion triumph over explicitness.",
                 "system_prompt": false,
                 "marker": false,
                 "forbid_overrides": false
@@ -9540,6 +9521,10 @@
                     },
                     {
                         "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
                         "enabled": true
                     },
                     {
@@ -9557,10 +9542,6 @@
                     {
                         "identifier": "99ff1786-ee28-4458-8bab-4be57871f1b2",
                         "enabled": true
-                    },
-                    {
-                        "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
-                        "enabled": false
                     },
                     {
                         "identifier": "9471e52b-9fb2-448e-8b6f-6d39523d8fdb",

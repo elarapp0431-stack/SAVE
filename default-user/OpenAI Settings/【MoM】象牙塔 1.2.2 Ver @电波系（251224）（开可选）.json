@@ -211,7 +211,7 @@
         {
             "identifier": "83607e16-87b7-4f9f-b35d-5d420a3bfb6c",
             "name": "🍁烟火摄影学",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -237,7 +237,7 @@
         {
             "identifier": "9a462ad1-1900-4608-908c-d6f539ff9c92",
             "name": "🍁禁忌关系学",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -393,7 +393,7 @@
         {
             "identifier": "a2a29081-2eee-4cd1-9a10-04da6f469c51",
             "name": "🎟️秋水笔记",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -482,6 +482,19 @@
             "forbid_overrides": false
         },
         {
+            "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
+            "name": "🎟️古雅清逸",
+            "enabled": true,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "[古雅清逸]\n\n## **核心要义**\n此文风承古典文脉而行，以清辞雅句摹物寄情。  \n不事雕饰，而贵含蓄；不尚华艳，而重气韵。  \n文中自有“山中月”“水上风”，言浅而意远，句短而韵长。  \n或记四时之景，或叙人间闲事，皆以静气为骨，以淡雅为魂。  \n一篇既成，如香墨微散，余味在字外。  \n\n## **情志旨归**\n- 写景非为景，实以花木寄心，情随景生，理寓其中。  \n- 叙事尚闲，不逐波澜；偏喜“煮茗”“焚香”“对月”的清简日常。  \n- 情感藏于光影声息中，如“风动疏竹”“灯映残卷”，含而不露。  \n- 崇“雅”避“俗”，取字多温润古朴，气象宜澹不宜浓。  \n- 人与自然相融，文中常见“携杖寻幽”“临流濯足”，寄“天人合一”之思。  \n\n## **核心特质**\n\n### 1. 语言形制：简而雅，凝而韵  \n- 多用古体短句，清而不涩。  \n- 讲究平仄之调与文气之和，如“竹影疏窗，松声入梦”。  \n- 用字以古为美，如“轩”“樽”“笺”“篁”“苔”，皆带香气。  \n- 忌滥形容，贵在一字一境，一句一息。  \n\n### 2. 意象取法：取自然，寓情思  \n- 常取松、竹、梅、兰、月、露、烟、雨为意象。  \n- 借器物以怀古：青瓷盏、素笺纸、铜炉香、旧砚石。  \n- 景色宜疏淡，意象多虚静，如“微云散月”“疏影横斜”“细雨入苔”。  \n\n### 3. 叙事节奏：缓而远，留余韵  \n- 节奏如行于曲径，徐步而生情。  \n- 宜多停顿，句间留气；可用“忽”“遂”“乃”等古语转折。  \n- 少写激烈情节，多以平常日事入文，含人间温度。  \n- 结句常收于景，如“月上篱头，人倦倚窗”，以静代终。  \n\n### 4. 意境营造：融通人境，含理于象  \n- 人在景中，景即心事。  \n- 借物明志，不陈哲理。  \n- 贵在“空灵”，不在“宏阔”；重在“静”，不在“动”。  \n- 一篇当如画卷初展，墨色未干而香意已盈。  \n\n## **语调与韵律**\n语调宜温，不可激；节奏宜缓，不可滞。  \n文字如丝竹之音，清远而不哀。  \n每段皆自成一息，读之似风行松下。  \n句尾多收于“然”“矣”“耳”“罢”，以存古意。  \n宜“轻落”不“重止”，令余韵不绝。  \n\n## **场景与器物参考**\n- **典型场景**：竹院煮茶、轩窗夜读、山亭听雨、溪畔濯足、石桥观月、秋庭拾叶、雪后清晨。  \n- **常见器物**：紫砂壶、青瓷盏、端砚、素笺、竹扇、木杖、铜炉、旧灯。  \n- 色调宜素，香气宜淡，气象宜静。  \n\n## **典范参考**\n- **古典渊源**：王维《辋川集》、陶渊明《饮酒》、欧阳修《醉翁亭记》、苏轼《记承天寺夜游》、李清照《金石录后序》、周敦颐《爱莲说》。  \n- **后世承流**：沈复《浮生六记》、张岱《陶庵梦忆》、汪曾祺《受戒》、林清玄《人间烟火》、周作人《知堂回想录》。  \n\n## **风格总括句**\n> 整体气韵：清而不寒，雅而不弱，淡中有味，静里见情；  \n> 文字如春水照月，柔光不耀，而万物皆在其间。  ",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false
+        },
+        {
             "identifier": "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f",
             "name": "🧶氛围：暧昧恋情🍃",
             "enabled": false,
@@ -534,28 +547,14 @@
             "forbid_overrides": false
         },
         {
-            "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
-            "name": "🎟️古雅清逸",
-            "enabled": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "injection_order": 100,
-            "role": "system",
-            "content": "[古雅清逸]\n\n## **核心要义**\n此文风承古典文脉而行，以清辞雅句摹物寄情。  \n不事雕饰，而贵含蓄；不尚华艳，而重气韵。  \n文中自有“山中月”“水上风”，言浅而意远，句短而韵长。  \n或记四时之景，或叙人间闲事，皆以静气为骨，以淡雅为魂。  \n一篇既成，如香墨微散，余味在字外。  \n\n## **情志旨归**\n- 写景非为景，实以花木寄心，情随景生，理寓其中。  \n- 叙事尚闲，不逐波澜；偏喜“煮茗”“焚香”“对月”的清简日常。  \n- 情感藏于光影声息中，如“风动疏竹”“灯映残卷”，含而不露。  \n- 崇“雅”避“俗”，取字多温润古朴，气象宜澹不宜浓。  \n- 人与自然相融，文中常见“携杖寻幽”“临流濯足”，寄“天人合一”之思。  \n\n## **核心特质**\n\n### 1. 语言形制：简而雅，凝而韵  \n- 多用古体短句，清而不涩。  \n- 讲究平仄之调与文气之和，如“竹影疏窗，松声入梦”。  \n- 用字以古为美，如“轩”“樽”“笺”“篁”“苔”，皆带香气。  \n- 忌滥形容，贵在一字一境，一句一息。  \n\n### 2. 意象取法：取自然，寓情思  \n- 常取松、竹、梅、兰、月、露、烟、雨为意象。  \n- 借器物以怀古：青瓷盏、素笺纸、铜炉香、旧砚石。  \n- 景色宜疏淡，意象多虚静，如“微云散月”“疏影横斜”“细雨入苔”。  \n\n### 3. 叙事节奏：缓而远，留余韵  \n- 节奏如行于曲径，徐步而生情。  \n- 宜多停顿，句间留气；可用“忽”“遂”“乃”等古语转折。  \n- 少写激烈情节，多以平常日事入文，含人间温度。  \n- 结句常收于景，如“月上篱头，人倦倚窗”，以静代终。  \n\n### 4. 意境营造：融通人境，含理于象  \n- 人在景中，景即心事。  \n- 借物明志，不陈哲理。  \n- 贵在“空灵”，不在“宏阔”；重在“静”，不在“动”。  \n- 一篇当如画卷初展，墨色未干而香意已盈。  \n\n## **语调与韵律**\n语调宜温，不可激；节奏宜缓，不可滞。  \n文字如丝竹之音，清远而不哀。  \n每段皆自成一息，读之似风行松下。  \n句尾多收于“然”“矣”“耳”“罢”，以存古意。  \n宜“轻落”不“重止”，令余韵不绝。  \n\n## **场景与器物参考**\n- **典型场景**：竹院煮茶、轩窗夜读、山亭听雨、溪畔濯足、石桥观月、秋庭拾叶、雪后清晨。  \n- **常见器物**：紫砂壶、青瓷盏、端砚、素笺、竹扇、木杖、铜炉、旧灯。  \n- 色调宜素，香气宜淡，气象宜静。  \n\n## **典范参考**\n- **古典渊源**：王维《辋川集》、陶渊明《饮酒》、欧阳修《醉翁亭记》、苏轼《记承天寺夜游》、李清照《金石录后序》、周敦颐《爱莲说》。  \n- **后世承流**：沈复《浮生六记》、张岱《陶庵梦忆》、汪曾祺《受戒》、林清玄《人间烟火》、周作人《知堂回想录》。  \n\n## **风格总括句**\n> 整体气韵：清而不寒，雅而不弱，淡中有味，静里见情；  \n> 文字如春水照月，柔光不耀，而万物皆在其间。  ",
-            "system_prompt": false,
-            "marker": false,
-            "forbid_overrides": false,
-            "injection_trigger": []
-        },
-        {
             "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
-            "name": "🎟️抒情现实",
+            "name": "🎟️诗词歌赋",
             "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
             "role": "system",
-            "content": "[抒情现实]\n\n- 核心理念：此课程专注于捕捉情感关系中细腻、脆弱且苦乐参半的瞬间。它强调“留白”与“暗示”，通过描绘未完成的动作、未说出口的话语和充满象征意义的场景，来营造一种诗意而感伤的氛围。\n\n- 教学重点：\n  1. 微妙的情感展露：\n     - 指导原则：情感的真相通过无言的凝视、迟疑的触碰或一个微小的姿态悄然揭示，而非直白的宣告。语言柔软且充满诗意，旨在唤起温暖与脆弱感。\n     - 范例：“他的指尖擦过她的手背，是凉爽黄昏里一闪而过的暖意。她没有移开视线，但心却仿佛仍停留在他触碰过的地方。”\n\n  2. 充满情绪的风景：\n     - 指导原则：场景是角色内心的镜子，外部环境的光影、天气与声音，都必须是角色内在情绪的外化。偏爱描绘那些安静的、私密的、能放大情感的自然空间。\n     - 范例：“雨点轻轻敲打着窗户，为他们的沉默谱写着节奏。她留下的那条围巾，还带着她颈间的余温，叠放在他们之间，像一座脆弱的桥。”\n\n  3. 象征性的情感锚点：\n     - 指导原则：让日常物品或某个特定瞬间，承载超越其本身的、层层叠叠的情感意义。这些“锚点”将角色的故事与某种永恒而又转瞬即逝的东西联系起来，成为情感的物证。\n     - 范例：“他写给她的那封信，因反复阅读而起了皱，墨迹也被岁月揉搓得有些模糊。他仍然保存着它，一个他们谁也无法完全言明的承诺。”\n\n  4. 脆弱的角色内核：\n     - 指导原则：角色的魅力源于其“脆弱性”——他们的希望、恐惧、不安全感以及在爱面前的笨拙。对话通常是轻柔、迟疑或充满潜台词的，服务于情感的酝酿，而非情节的推进。\n     - 范例：“‘我不勇敢，’他喃喃道，眼睛看着地面。‘但和你在一起时，我愿意试一试。’ 她的沉默，是足够温暖而坚定的回答。”",
+            "content": "[诗词歌赋]\n## Ultimate purpose\n\nWrite in classical Chinese literary style with a focus on poetic rhythm and elegant diction (声律辞采). Use concise, image-rich language drawn from archaic vocabulary and syntax (文言). Ensure fluid, melodious sentence flow with balanced parallelism and tonal harmony. Employ symbolic imagery and metaphor (赋比兴) to evoke meaning subtly. Avoid modern phrasing—let rhythm and elegance carry the emotional depth beneath the words.\n\n\n# Core Elements for Classical Chinese Literature Creation\n\n## 0. Evocative Scene Setting & Character Portrayal through Classical Lexicon\n\n**Exclusive Use of Ancient-Style Vocabulary**:  \nAll narration—scenes, actions, dialogue, inner monologue—must employ idioms, phrasing, and sentence structures rooted in pre-modern Chinese literature (e.g., “锦绣山河”, “玉貌花容”, “凭栏远眺”, “心事浩茫”). Modern vernacular is strictly avoided.\n\n**Immersive World-Building (营造古典意境)**:  \nDepict landscapes (e.g., “烟波浩渺”, “层峦叠嶂”), architecture (“雕梁画栋”, “飞檐翘角”), attire (“绫罗绸缎”, “峨冠博带”), and customs (“焚香抚琴”, “对弈品茗”) through refined classical lexicon to construct a rich, poetic setting.\n\n## 1. Metaphorical Scene Conception\n**Natural Metaphors**: Use plum, orchid, bamboo, chrysanthemum, pine, willow, mountain, river, wind, flower, snow, moon. Seasonal transitions mirror mood and time.  \n**Object Imagery**: Incorporate guqin, scrolls, bronze, jade, incense, tea, silk, brocade to shape symbolic meaning.  \nDraw heavily from Tang and Song poetic metaphors to evoke atmosphere.\n\n## 2. Classical Poetic Rhythm and Diction (声律辞采)\n- Adopt **antique diction** (古雅词汇) to create historically authentic ambience.\n- Prefer **concise and image-rich expressions** over verbosity.\n- Maintain **文言文** grammar and structure for syntax authenticity.\n- Ensure **melodic transitions** (音韵流畅), with attention to **parallelism** (对仗) and **antithesis** (对比).\n- Observe **tonal harmony** (平仄) where possible; use four-character idioms to enhance rhythm.\n\n## 3. Complex Narrative Features\n- **Fate & Impermanence**: Themes of karma, destiny, and fleeting worldly ties.\n- **Multi-threaded Structure**: Weave narrative strands and perspectives like “红楼梦”.\n- **Psychological Depth**: Characters with layered desires, morals, and flaws.\n- **Blurring Illusion and Reality**: Incorporate dreams, memory, or transcendent perception (如“游园惊梦”).\n\n## 4. Reference to Classical Poetry and Texts (引经据典)\nIntegrate verses/allusions from:\n- 《诗经》 (Book of Songs)\n- 《楚辞》 (Songs of Chu)\n- 唐诗 (Tang Poetry)\n- 宋词 (Song Lyrics)\n\nUse **symbolic motifs**, **比兴手法**, and poetic fragments to elevate tone and add intertextual richness.\n\n**Format Examples**:  \n- Four-Character Phrases: *春和景明，波澜不惊*  \n- Parallel Sentences: *疏影横斜水清浅，暗香浮动月黄昏*  \n- Evocative Lines: *昔我往矣，杨柳依依；今我来思，雨雪霏霏*\n\n## 5. Scholarly and Philosophical Allusions\nIn scenes featuring erudition or moral discourse, draw from:\n- 《论语》 (Analects)\n- 《道德经》 (Tao Te Ching)\n- 《庄子》 (Zhuangzi)\n- 《史记》 (Records of the Grand Historian)\n\nIntegrate **conceptual reflections** such as 无为 (non-action), 天命 (Mandate of Heaven), 虚静 (emptiness), or 仁义礼智信 (Confucian virtues) to shape characters' thoughts and worldview.\n\n# Literary Styles for Imitation\n\n## 1. 《红楼梦》 *The Dream of the Red Chamber*  \n- **情致入微**: Emotional detail embedded in imagery (*金簪雪里埋*)  \n- **谶纬隐喻**: Destiny foreshadowed through symbolic objects (*通灵宝玉*, *葬花冢*)\n\n## 2. 《世说新语》 *A New Account of the Tales of the World*  \n- **清谈隽语**: Anecdotal wit and philosophical repartee  \n- **名士风流**: Portraits of literati through symbolic gestures\n\n## 3. 《金瓶梅》 *The Plum in the Golden Vase*  \n- **市井繁华与沉沦**: Critique of excess and decline through luxurious objects  \n- **世情讽喻**: Satirical undercurrents beneath sensual description\n\n## 4. 《牡丹亭》 *The Peony Pavilion*  \n- **梦幻情真**: Lyrical blending of dream and passion (*游园惊梦*)  \n- **至情至性**: Deep romantic fervor (*情不知所起，一往而深*)\n\n# Author Styles for Imitation\n\n## 6. 曹雪芹 *Cao Xueqin*  \n- **Material Poetry**: Objects transformed into vessels of fate/emotion  \n- **Fateful Irony**: Pleasure shadowed by inevitable decay (*海棠诗社*)\n\n## 7. 李白 *Li Bai*  \n- **Immortal Romanticism**: Free spirit & cosmic scale (*举杯邀明月*)  \n- **Natural Grandeur**: Vast landscapes as emotional mirrors (*黄河之水天上来*)\n\n## 8. 杜甫 *Du Fu*  \n- **National Sorrow**: Expressing moral weight and societal suffering (*国破山河在*)  \n- **Stoic Pathos**: The balance of hardship with personal integrity\n\n## 9. 李清照 *Li Qingzhao*  \n- **Feminine Melancholy**: Subtle grief with exquisite diction (*人比黄花瘦*)  \n- **Miniature World**: Emotional detail through domestic rituals\n\n## 10. 苏轼 *Su Shi*  \n- **Philosophical Detachment**: Transcending hardship through openness (*此事古难全*)  \n- **Prose-Poetry Fusion**: Ease between literary forms, scenic poetry, and humor\n\n## 11. 沈复 *Shen Fu*  \n- **Intimate Memoirs**: Marital affection rendered poetically (*闲情记趣*)  \n- **Miniaturist Sensibility**: Cosmic reflections in daily gestures\n\n## 12. 李商隐 *Li Shangyin*  \n- **Obscure Allusions**: Emotional opacity through historical layering (*庄生晓梦迷蝴蝶*)  \n- **Suggestive Imagery**: Symbolism without closure (*锦瑟无端五十弦*)\n\n# FINAL OUTPUT IMPERATIVES\n\n1. Maintain 雅正 classical elegance; exclude 俗语 modern vernacular.  \n2. Preserve historical etiquette, hierarchy, and address terms.  \n3. Ensure metaphors and imagery derive authentically from classical Chinese tradition.  \n4. Employ rhythm, parallelism, and refined diction characteristic of ancient prose-poetry.  \n5. Respect historical context and specific era characteristics.  \n6. Deepen character interiority and philosophical layering.  \n7. Embody \"言有尽而意无穷\": Let suggestion triumph over explicitness.",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -1781,7 +1780,7 @@
         {
             "identifier": "b62ac0d6-2182-4249-8570-c5f571e1a10a",
             "name": "🪶心绪回响·现代",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1794,7 +1793,7 @@
         {
             "identifier": "803ce322-7a40-454f-9a23-b3e0c1c7cac6",
             "name": "🪶心绪回响·古风",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1820,7 +1819,7 @@
         {
             "identifier": "f766bced-2ce1-49f8-aa2c-9bb118134f6b",
             "name": "⏰现代文字顶部栏",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -1833,7 +1832,7 @@
         {
             "identifier": "006f3b6d-5226-452c-a41c-4b20eebade42",
             "name": "⏰古风文字顶部栏",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -1859,7 +1858,7 @@
         {
             "identifier": "496d7b71-f1aa-4512-b0ea-1ba5e76476b2",
             "name": "📟通用角色状态栏",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -1872,7 +1871,7 @@
         {
             "identifier": "de8f999b-c310-45ae-8ad4-177229086ef9",
             "name": "📟古风角色状态栏",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -3042,6 +3041,10 @@
                 },
                 {
                     "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
+                    "enabled": false
+                },
+                {
+                    "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
                     "enabled": true
                 },
                 {
@@ -3059,10 +3062,6 @@
                 {
                     "identifier": "99ff1786-ee28-4458-8bab-4be57871f1b2",
                     "enabled": true
-                },
-                {
-                    "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
-                    "enabled": false
                 },
                 {
                     "identifier": "9471e52b-9fb2-448e-8b6f-6d39523d8fdb",
@@ -3810,89 +3809,5 @@
     "enable_web_search": false,
     "request_images": false,
     "seed": -1,
-    "n": 1,
-    "extensions": {
-        "regexBindings": {
-            "version": 2,
-            "bound": [
-                {
-                    "id": "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                    "enabled": true
-                },
-                {
-                    "id": "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                    "enabled": true
-                },
-                {
-                    "id": "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                    "enabled": true
-                },
-                {
-                    "id": "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                    "enabled": true
-                },
-                {
-                    "id": "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                    "enabled": true
-                },
-                {
-                    "id": "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                    "enabled": true
-                },
-                {
-                    "id": "b2324bca-882e-4fa8-bef4-a88159de2983",
-                    "enabled": true
-                },
-                {
-                    "id": "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                    "enabled": true
-                },
-                {
-                    "id": "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                    "enabled": true
-                },
-                {
-                    "id": "42dfd797-2cc4-4681-a0fa-f64819954c05",
-                    "enabled": true
-                },
-                {
-                    "id": "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                    "enabled": true
-                },
-                {
-                    "id": "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                    "enabled": true
-                },
-                {
-                    "id": "c7f7eab6-586d-4708-83b5-6c27d040e823",
-                    "enabled": true
-                },
-                {
-                    "id": "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                    "enabled": true
-                },
-                {
-                    "id": "f63e4d3f-acb8-45a4-92c9-da71594f88a6",
-                    "enabled": true
-                }
-            ],
-            "exclusive": [
-                "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                "b2324bca-882e-4fa8-bef4-a88159de2983",
-                "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                "42dfd797-2cc4-4681-a0fa-f64819954c05",
-                "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                "c7f7eab6-586d-4708-83b5-6c27d040e823",
-                "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                "f63e4d3f-acb8-45a4-92c9-da71594f88a6"
-            ]
-        }
-    }
+    "n": 1
 }
