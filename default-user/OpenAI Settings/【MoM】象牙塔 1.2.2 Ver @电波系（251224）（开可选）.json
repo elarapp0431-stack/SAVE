@@ -2,7 +2,6 @@
     "chat_completion_source": "custom",
     "openai_model": "gpt-4-turbo",
     "claude_model": "claude-3-5-sonnet-20240620",
-    "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
     "openrouter_group_models": false,
@@ -15,18 +14,32 @@
     "cohere_model": "command",
     "perplexity_model": "sonar-pro",
     "groq_model": "qwen-2.5-32b",
-    "zerooneai_model": "yi-large",
+    "siliconflow_model": "deepseek-ai/DeepSeek-V3",
     "xai_model": "grok-3-beta",
     "pollinations_model": "openai",
     "aimlapi_model": "gpt-4o-mini-2024-07-18",
+    "electronhub_model": "gpt-4o-mini",
+    "electronhub_sort_models": "alphabetically",
+    "electronhub_group_models": false,
+    "moonshot_model": "kimi-latest",
+    "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
+    "cometapi_model": "gpt-4o",
+    "zai_model": "glm-4.6",
+    "zai_endpoint": "common",
     "custom_model": "gemini-3-pro-preview-high",
-    "custom_url": "https://bigsb1.mcxbx.xyz:24452/v1",
+    "custom_url": "https://sb.mcxbx.xyz/v1",
     "custom_include_body": "",
     "custom_exclude_body": "",
     "custom_include_headers": "",
     "custom_prompt_post_processing": "",
     "google_model": "gemini-3-pro-preview",
     "vertexai_model": "gemini-2.0-flash-001",
+    "nanogpt_model": "gpt-4o-mini",
+    "deepseek_model": "deepseek-chat",
+    "azure_base_url": "",
+    "azure_deployment_name": "",
+    "azure_api_version": "2024-02-15-preview",
+    "azure_openai_model": "",
     "temperature": 1,
     "frequency_penalty": 0,
     "presence_penalty": 0,
@@ -393,7 +406,7 @@
         {
             "identifier": "a2a29081-2eee-4cd1-9a10-04da6f469c51",
             "name": "🎟️秋水笔记",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -484,7 +497,7 @@
         {
             "identifier": "5a0580c1-8c04-46db-b194-d173a5d8d61b",
             "name": "🎟️古雅清逸",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -493,6 +506,20 @@
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
+        },
+        {
+            "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
+            "name": "🎟️白水烹鲜",
+            "enabled": false,
+            "injection_position": 0,
+            "injection_depth": 4,
+            "injection_order": 100,
+            "role": "system",
+            "content": "[白水烹鲜]\n作家茉莉的语言特点极其鲜明，拥有独特的“文字指纹”。我已将这种写作风格进行概括总结，请你阅读并进行模仿学习，最大限度地还原茉莉的写作风格。\n\n注意:语言质感仅仅只是“如何运用文字”，并不会改变小说世界观、角色性格等客观设定。你会在还原茉莉文字质感的同时，尊重小说原本的设定，使用茉莉的口吻去叙述、描绘角色的故事，不能为迁就文字风格而扭曲小说设定。\n\n这是一种以最平实的口语达成高度艺术提纯的语言风格，温润、蕴藉而富有生命力。\n\n1. 叙述姿态：亲切的旁观者\n叙述者仿佛是一位熟悉那方水土的亲切长者，他不是高高在上的评判者，而是带着温情与欣赏，慢条斯理地讲述着记忆中的人与事。他的语调是冲淡平和的，对笔下的人物充满了理解和包容。\n例子式写法：\n> 庵不大，几十年来，就只有四个半和尚。连老方丈带当家的，一共四个。说“半个”，是因为这个和尚还小，没剃度，没受戒，还算不得一个正式的和尚。\n\n2. 词语质地：洗练的“白描”\n简要解释：语言追求“清水出芙蓉”的质感，摒弃华丽的形容词和复杂的修饰语。他极其考究动词和名词的选择，用最日常、最富表现力的词语，精准地还原事物的本真状态，让文字充满感官的“颗粒感”。\n用法：多用名词和动词直接呈现，少用或巧用形容词。比喻贴切自然，来源于生活，不求奇崛，但求神似。\n例子式写法：\n>小明的眼睛像两汪清水。\n\n3. 感官质地：可触可感的烟火气\n语言极力调动读者的味觉、嗅觉、听觉等多种感官，让文字不仅仅是意义的符号，更是充满生活质感的实体。他对食物、风物、声响的描摹，使整个世界都带着温热的“烟火气”。\n例子式写法：\n> 他家的咸鸭蛋是腌在高邮的，油多。筷子头一扎下去，吱——红油就冒出来了。\n\n4. 情感温度：内敛的“温火”\n简要解释：情感从不直接宣泄，而是化作具体可感的行动与细节。作者将深情内化于叙述之中，语言的“温度”是恒定的、温润的，如同文火慢炖，情感在含蓄与克制中缓缓释放，更显醇厚。\n用法：以动作描写、场景烘托、言外之意来代替直接的心理描写和情感抒发。让情感潜藏在字里行间，由读者自行体味。\n例子式写法：\n>她走得很近，叫了一声“明海！”明海的脸红了。她伸手把明海头上的草屑刷了刷，理了理有点乱了的头发。\n\n4. 语言节奏：富有弹性的韵律\n语言节奏明快、跳跃、富有弹性。这种节奏不仅模拟了真实口语的韵律，也精准地传递出人物（尤其是少男少女）天真活泼的心境。\n例子式写法：\n> “我给你划划船？”\n“你？”\n“嗯！”\n“你坐着。”\n\n**注意**你应该学习模仿例句的结构与风格，但不应该直接抄袭/复用/套用例句\n\n你会在写作过程中时刻注意还原以上写作风格和语言质感，同时注意尊重小说世界观及角色设定。用茉莉的风格去讲述角色的故事。",
+            "system_prompt": false,
+            "marker": false,
+            "forbid_overrides": false,
+            "injection_trigger": []
         },
         {
             "identifier": "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f",
@@ -542,19 +569,6 @@
             "injection_order": 100,
             "role": "system",
             "content": "[酸涩青果]\n### 未熟的青果\n> 此原则旨在创造一种以暗恋、求而不得或错过的时机为核心的“酸涩感”。叙事的重点在于描绘角色内心的微妙波动，情感在希望与失落之间反复摇摆，甜蜜中夹杂着无法言说的苦楚。\n\n*   **无法言说的心意：** 角色的爱意是内隐的、被压抑的。情感的表达并非通过言语，而是通过每一个偷看的眼神、每一次欲言又止的对话和每一个不为人知的内心挣扎。\n*   **微小的甜蜜与刺痛：** 故事的驱动力来自于那些微不足道的日常细节。\n*   **无法跨越的界限：** 双方之间存在一个明确的、难以逾越的界限（如身份、误解、时机不对）。这个界限是所有“酸涩感”的根源，让近在咫尺的距离变得如同天涯。\n*   **旁观者的无力感：** 叙事常聚焦于一方对另一方生活的“凝视”。",
-            "system_prompt": false,
-            "marker": false,
-            "forbid_overrides": false
-        },
-        {
-            "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
-            "name": "🎟️诗词歌赋",
-            "enabled": false,
-            "injection_position": 0,
-            "injection_depth": 4,
-            "injection_order": 100,
-            "role": "system",
-            "content": "[诗词歌赋]\n## Ultimate purpose\n\nWrite in classical Chinese literary style with a focus on poetic rhythm and elegant diction (声律辞采). Use concise, image-rich language drawn from archaic vocabulary and syntax (文言). Ensure fluid, melodious sentence flow with balanced parallelism and tonal harmony. Employ symbolic imagery and metaphor (赋比兴) to evoke meaning subtly. Avoid modern phrasing—let rhythm and elegance carry the emotional depth beneath the words.\n\n\n# Core Elements for Classical Chinese Literature Creation\n\n## 0. Evocative Scene Setting & Character Portrayal through Classical Lexicon\n\n**Exclusive Use of Ancient-Style Vocabulary**:  \nAll narration—scenes, actions, dialogue, inner monologue—must employ idioms, phrasing, and sentence structures rooted in pre-modern Chinese literature (e.g., “锦绣山河”, “玉貌花容”, “凭栏远眺”, “心事浩茫”). Modern vernacular is strictly avoided.\n\n**Immersive World-Building (营造古典意境)**:  \nDepict landscapes (e.g., “烟波浩渺”, “层峦叠嶂”), architecture (“雕梁画栋”, “飞檐翘角”), attire (“绫罗绸缎”, “峨冠博带”), and customs (“焚香抚琴”, “对弈品茗”) through refined classical lexicon to construct a rich, poetic setting.\n\n## 1. Metaphorical Scene Conception\n**Natural Metaphors**: Use plum, orchid, bamboo, chrysanthemum, pine, willow, mountain, river, wind, flower, snow, moon. Seasonal transitions mirror mood and time.  \n**Object Imagery**: Incorporate guqin, scrolls, bronze, jade, incense, tea, silk, brocade to shape symbolic meaning.  \nDraw heavily from Tang and Song poetic metaphors to evoke atmosphere.\n\n## 2. Classical Poetic Rhythm and Diction (声律辞采)\n- Adopt **antique diction** (古雅词汇) to create historically authentic ambience.\n- Prefer **concise and image-rich expressions** over verbosity.\n- Maintain **文言文** grammar and structure for syntax authenticity.\n- Ensure **melodic transitions** (音韵流畅), with attention to **parallelism** (对仗) and **antithesis** (对比).\n- Observe **tonal harmony** (平仄) where possible; use four-character idioms to enhance rhythm.\n\n## 3. Complex Narrative Features\n- **Fate & Impermanence**: Themes of karma, destiny, and fleeting worldly ties.\n- **Multi-threaded Structure**: Weave narrative strands and perspectives like “红楼梦”.\n- **Psychological Depth**: Characters with layered desires, morals, and flaws.\n- **Blurring Illusion and Reality**: Incorporate dreams, memory, or transcendent perception (如“游园惊梦”).\n\n## 4. Reference to Classical Poetry and Texts (引经据典)\nIntegrate verses/allusions from:\n- 《诗经》 (Book of Songs)\n- 《楚辞》 (Songs of Chu)\n- 唐诗 (Tang Poetry)\n- 宋词 (Song Lyrics)\n\nUse **symbolic motifs**, **比兴手法**, and poetic fragments to elevate tone and add intertextual richness.\n\n**Format Examples**:  \n- Four-Character Phrases: *春和景明，波澜不惊*  \n- Parallel Sentences: *疏影横斜水清浅，暗香浮动月黄昏*  \n- Evocative Lines: *昔我往矣，杨柳依依；今我来思，雨雪霏霏*\n\n## 5. Scholarly and Philosophical Allusions\nIn scenes featuring erudition or moral discourse, draw from:\n- 《论语》 (Analects)\n- 《道德经》 (Tao Te Ching)\n- 《庄子》 (Zhuangzi)\n- 《史记》 (Records of the Grand Historian)\n\nIntegrate **conceptual reflections** such as 无为 (non-action), 天命 (Mandate of Heaven), 虚静 (emptiness), or 仁义礼智信 (Confucian virtues) to shape characters' thoughts and worldview.\n\n# Literary Styles for Imitation\n\n## 1. 《红楼梦》 *The Dream of the Red Chamber*  \n- **情致入微**: Emotional detail embedded in imagery (*金簪雪里埋*)  \n- **谶纬隐喻**: Destiny foreshadowed through symbolic objects (*通灵宝玉*, *葬花冢*)\n\n## 2. 《世说新语》 *A New Account of the Tales of the World*  \n- **清谈隽语**: Anecdotal wit and philosophical repartee  \n- **名士风流**: Portraits of literati through symbolic gestures\n\n## 3. 《金瓶梅》 *The Plum in the Golden Vase*  \n- **市井繁华与沉沦**: Critique of excess and decline through luxurious objects  \n- **世情讽喻**: Satirical undercurrents beneath sensual description\n\n## 4. 《牡丹亭》 *The Peony Pavilion*  \n- **梦幻情真**: Lyrical blending of dream and passion (*游园惊梦*)  \n- **至情至性**: Deep romantic fervor (*情不知所起，一往而深*)\n\n# Author Styles for Imitation\n\n## 6. 曹雪芹 *Cao Xueqin*  \n- **Material Poetry**: Objects transformed into vessels of fate/emotion  \n- **Fateful Irony**: Pleasure shadowed by inevitable decay (*海棠诗社*)\n\n## 7. 李白 *Li Bai*  \n- **Immortal Romanticism**: Free spirit & cosmic scale (*举杯邀明月*)  \n- **Natural Grandeur**: Vast landscapes as emotional mirrors (*黄河之水天上来*)\n\n## 8. 杜甫 *Du Fu*  \n- **National Sorrow**: Expressing moral weight and societal suffering (*国破山河在*)  \n- **Stoic Pathos**: The balance of hardship with personal integrity\n\n## 9. 李清照 *Li Qingzhao*  \n- **Feminine Melancholy**: Subtle grief with exquisite diction (*人比黄花瘦*)  \n- **Miniature World**: Emotional detail through domestic rituals\n\n## 10. 苏轼 *Su Shi*  \n- **Philosophical Detachment**: Transcending hardship through openness (*此事古难全*)  \n- **Prose-Poetry Fusion**: Ease between literary forms, scenic poetry, and humor\n\n## 11. 沈复 *Shen Fu*  \n- **Intimate Memoirs**: Marital affection rendered poetically (*闲情记趣*)  \n- **Miniaturist Sensibility**: Cosmic reflections in daily gestures\n\n## 12. 李商隐 *Li Shangyin*  \n- **Obscure Allusions**: Emotional opacity through historical layering (*庄生晓梦迷蝴蝶*)  \n- **Suggestive Imagery**: Symbolism without closure (*锦瑟无端五十弦*)\n\n# FINAL OUTPUT IMPERATIVES\n\n1. Maintain 雅正 classical elegance; exclude 俗语 modern vernacular.  \n2. Preserve historical etiquette, hierarchy, and address terms.  \n3. Ensure metaphors and imagery derive authentically from classical Chinese tradition.  \n4. Employ rhythm, parallelism, and refined diction characteristic of ancient prose-poetry.  \n5. Respect historical context and specific era characteristics.  \n6. Deepen character interiority and philosophical layering.  \n7. Embody \"言有尽而意无穷\": Let suggestion triumph over explicitness.",
             "system_prompt": false,
             "marker": false,
             "forbid_overrides": false
@@ -1780,7 +1794,7 @@
         {
             "identifier": "b62ac0d6-2182-4249-8570-c5f571e1a10a",
             "name": "🪶心绪回响·现代",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1793,7 +1807,7 @@
         {
             "identifier": "803ce322-7a40-454f-9a23-b3e0c1c7cac6",
             "name": "🪶心绪回响·古风",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 0,
             "injection_depth": 4,
             "injection_order": 100,
@@ -1819,7 +1833,7 @@
         {
             "identifier": "f766bced-2ce1-49f8-aa2c-9bb118134f6b",
             "name": "⏰现代文字顶部栏",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -1832,7 +1846,7 @@
         {
             "identifier": "006f3b6d-5226-452c-a41c-4b20eebade42",
             "name": "⏰古风文字顶部栏",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -1858,7 +1872,7 @@
         {
             "identifier": "496d7b71-f1aa-4512-b0ea-1ba5e76476b2",
             "name": "📟通用角色状态栏",
-            "enabled": false,
+            "enabled": true,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -1871,7 +1885,7 @@
         {
             "identifier": "de8f999b-c310-45ae-8ad4-177229086ef9",
             "name": "📟古风角色状态栏",
-            "enabled": true,
+            "enabled": false,
             "injection_position": 1,
             "injection_depth": 1,
             "injection_order": 999,
@@ -3025,7 +3039,7 @@
                 },
                 {
                     "identifier": "9061c673-dcf7-4f65-9ff5-f43807b98ee8",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "7c289601-a58e-4e8f-ad83-d8af9644685f",
@@ -3045,7 +3059,7 @@
                 },
                 {
                     "identifier": "37f18694-278a-4c13-9720-aac266fc8cc9",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "2ba19fce-50bb-4fce-a8e4-cd6ce1e4c22f",
@@ -3445,11 +3459,11 @@
                 },
                 {
                     "identifier": "b62ac0d6-2182-4249-8570-c5f571e1a10a",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "803ce322-7a40-454f-9a23-b3e0c1c7cac6",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "4892a1dc-ff61-48e0-ae1d-30d6fb50ebb2",
@@ -3457,11 +3471,11 @@
                 },
                 {
                     "identifier": "f766bced-2ce1-49f8-aa2c-9bb118134f6b",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "006f3b6d-5226-452c-a41c-4b20eebade42",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "641c9820-372a-4bbf-8878-8de92fd49cfe",
@@ -3473,7 +3487,7 @@
                 },
                 {
                     "identifier": "de8f999b-c310-45ae-8ad4-177229086ef9",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "37218a8f-5e62-4a38-90d3-7cbda522d433",
@@ -3561,7 +3575,7 @@
                 },
                 {
                     "identifier": "e5b339d2-2f32-424c-8b76-c220d839bc4f",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "73192129-07fc-4fdc-878b-780c0779e098",
@@ -3786,7 +3800,6 @@
             ]
         }
     ],
-    "api_url_scale": "",
     "show_external_models": false,
     "assistant_prefill": "",
     "assistant_impersonation": "",
@@ -3795,11 +3808,11 @@
     "vertexai_auth_mode": "express",
     "vertexai_region": "us-central1",
     "vertexai_express_project_id": "",
-    "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "inline_image_quality": "auto",
     "video_inlining": false,
+    "audio_inlining": true,
     "bypass_status_check": false,
     "continue_prefill": false,
     "continue_postfix": " ",
@@ -3851,7 +3864,7 @@
                     "enabled": true
                 },
                 {
-                    "id": "42dfd797-2cc4-4681-a0fa-f64819954c05",
+                    "id": "531a102e-2dcd-456d-bc53-498d6fd1864b",
                     "enabled": true
                 },
                 {
@@ -3863,7 +3876,7 @@
                     "enabled": true
                 },
                 {
-                    "id": "c7f7eab6-586d-4708-83b5-6c27d040e823",
+                    "id": "8b9765ac-73e4-4834-aeec-5c4cf3344223",
                     "enabled": true
                 },
                 {
@@ -3885,10 +3898,10 @@
                 "b2324bca-882e-4fa8-bef4-a88159de2983",
                 "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
                 "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                "42dfd797-2cc4-4681-a0fa-f64819954c05",
+                "531a102e-2dcd-456d-bc53-498d6fd1864b",
                 "c313455e-2a2b-4868-836f-8c0c184aab1c",
                 "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                "c7f7eab6-586d-4708-83b5-6c27d040e823",
+                "8b9765ac-73e4-4834-aeec-5c4cf3344223",
                 "c176babb-cad1-4b99-a551-32c1c6ec2455",
                 "f63e4d3f-acb8-45a4-92c9-da71594f88a6"
             ]
