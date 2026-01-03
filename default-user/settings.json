@@ -9,7 +9,7 @@
         "SelectedNavTab": "rm_button_characters",
         "AlertWI_暗恋我的同班同学好像有点奇怪？！.png": "true",
         "Characters_PerPage": "100",
-        "extension_update_nag": "Sat Jan 03 2026",
+        "extension_update_nag": "Sun Jan 04 2026",
         "AlertWI_许今闻.png": "true",
         "AlertRegex_许今闻.png": "true",
         "AlertWI_黎栖庭.png": "true",
@@ -144,10 +144,11 @@
         "AlertWI_蔚轶.png": "true",
         "AlertRegex_蔚轶.png": "true"
     },
-    "currentVersion": "1.14.0",
+    "currentVersion": "1.13.1",
     "username": "颜世凝",
     "active_character": "蔚轶.png",
     "active_group": null,
+    "preset_settings": "gui",
     "user_avatar": "1763786879785-user.png",
     "amount_gen": 150,
     "max_context": 7808,
@@ -286,7 +287,6 @@
         "negative_prompt": "",
         "grammar_string": "",
         "json_schema": {},
-        "json_schema_allow_empty": false,
         "banned_tokens": "",
         "global_banned_tokens": "",
         "send_banned_tokens": true,
@@ -378,6 +378,7 @@
         "min_keep": 0,
         "featherless_model": "",
         "generic_model": "",
+        "json_schema_allow_empty": false,
         "extensions": {},
         "rep_pen_size": 0
     },
@@ -409,7 +410,6 @@
         "streaming_fps": 30,
         "smooth_streaming": true,
         "smooth_streaming_speed": 80,
-        "stream_fade_in": false,
         "fast_ui_mode": true,
         "avatar_style": 2,
         "chat_display": 1,
@@ -479,7 +479,6 @@
         "enable_auto_select_input": false,
         "enable_md_hotkeys": false,
         "tag_import_setting": 3,
-        "tag_sort_mode": "manual",
         "disable_group_trimming": false,
         "single_line": false,
         "instruct": {
@@ -506,7 +505,8 @@
             "last_input_sequence": "",
             "sequences_as_stop_strings": true,
             "story_string_prefix": "",
-            "story_string_suffix": ""
+            "story_string_suffix": "",
+            "names_force_groups": true
         },
         "context": {
             "preset": "Default",
@@ -520,11 +520,8 @@
             "story_string_depth": 1,
             "story_string_role": 0
         },
-        "instruct_derived": false,
         "context_derived": false,
         "context_size_derived": false,
-        "model_templates_mappings": {},
-        "chat_template_hash": "",
         "sysprompt": {
             "enabled": true,
             "name": "Neutral - Chat",
@@ -736,6 +733,11 @@
         "external_media_forbidden_overrides": [],
         "pin_styles": true,
         "click_to_edit": false,
+        "stream_fade_in": false,
+        "tag_sort_mode": "manual",
+        "instruct_derived": false,
+        "model_templates_mappings": {},
+        "chat_template_hash": "",
         "media_display": "list",
         "image_overswipe": "generate",
         "ui_mode": 1,
@@ -2581,7 +2583,7 @@
             "promptType": "raw"
         },
         "connectionManager": {
-            "selectedProfile": "ddf58923-a93b-495a-bbb3-8ed1291a566a",
+            "selectedProfile": "34882955-5b44-48fb-ac45-3288c47ef09b",
             "profiles": [
                 {
                     "id": "34882955-5b44-48fb-ac45-3288c47ef09b",
@@ -4378,7 +4380,6 @@
                 "promptOnly": true
             }
         ],
-        "regex_presets": [],
         "character_allowed_regex": [
             "快穿攻略系统.png",
             "快穿系统06.png",
@@ -4447,14 +4448,6 @@
             "江见殊.png",
             "蔚轶.png"
         ],
-        "preset_allowed_regex": {
-            "openai": [
-                "【过境】独立记者-v1.7",
-                "【MoM】象牙塔 1.2.2 Ver @电波系（251224）（开可选）",
-                "【过境】独立记者-claude-v1.1",
-                "【LENI】1.5 (1)"
-            ]
-        },
         "tts": {
             "voiceMap": "",
             "ttsEnabled": false,
@@ -4709,6 +4702,15 @@
         "gallery": {
             "folders": {},
             "sort": "dateAsc"
+        },
+        "regex_presets": [],
+        "preset_allowed_regex": {
+            "openai": [
+                "【过境】独立记者-v1.7",
+                "【MoM】象牙塔 1.2.2 Ver @电波系（251224）（开可选）",
+                "【过境】独立记者-claude-v1.1",
+                "【LENI】1.5 (1)"
+            ]
         },
         "cfg": {
             "global": {
@@ -22793,7 +22795,6 @@
             4
         ],
         "logit_bias": [],
-        "extensions": {},
         "phrase_rep_pen": "very_light"
     },
     "kai_settings": {
@@ -22822,9 +22823,7 @@
         "mirostat_eta": 0.1,
         "use_default_badwordsids": false,
         "grammar": "",
-        "seed": -1,
-        "preset_settings": "gui",
-        "extensions": {}
+        "seed": -1
     },
     "oai_settings": {
         "preset_settings_openai": "【MoM】象牙塔 1.2.2 Ver @电波系（251224）（开可选）",
@@ -26617,29 +26616,18 @@
         "cohere_model": "command",
         "perplexity_model": "sonar-pro",
         "groq_model": "qwen-2.5-32b",
-        "siliconflow_model": "deepseek-ai/DeepSeek-V3",
-        "electronhub_model": "gpt-4o-mini",
-        "electronhub_sort_models": "alphabetically",
-        "electronhub_group_models": false,
         "nanogpt_model": "gpt-4o-mini",
+        "zerooneai_model": "yi-large",
         "deepseek_model": "deepseek-chat",
         "aimlapi_model": "gpt-4o-mini-2024-07-18",
         "xai_model": "grok-3-beta",
         "pollinations_model": "openai",
-        "cometapi_model": "gpt-4o",
-        "moonshot_model": "kimi-latest",
-        "fireworks_model": "accounts/fireworks/models/kimi-k2-instruct",
-        "zai_model": "glm-4.6",
-        "zai_endpoint": "common",
-        "azure_base_url": "",
-        "azure_deployment_name": "",
-        "azure_api_version": "2024-02-15-preview",
-        "azure_openai_model": "",
         "custom_model": "gemini-3-pro-preview-high",
-        "custom_url": "https://sb.mcxbx.xyz/v1",
+        "custom_url": "https://bigsb1.mcxbx.xyz:24452/v1",
         "custom_include_body": "",
         "custom_exclude_body": "",
         "custom_include_headers": "",
+        "windowai_model": "",
         "openrouter_model": "OR_Website",
         "openrouter_use_fallback": false,
         "openrouter_group_models": false,
@@ -26650,6 +26638,7 @@
         "reverse_proxy": "",
         "chat_completion_source": "custom",
         "max_context_unlocked": true,
+        "api_url_scale": "",
         "show_external_models": false,
         "proxy_password": "",
         "assistant_prefill": "",
@@ -26659,11 +26648,11 @@
         "vertexai_auth_mode": "express",
         "vertexai_region": "us-central1",
         "vertexai_express_project_id": "",
+        "use_alt_scale": false,
         "squash_system_messages": false,
         "image_inlining": false,
         "inline_image_quality": "auto",
         "video_inlining": false,
-        "audio_inlining": true,
         "bypass_status_check": false,
         "continue_prefill": false,
         "function_calling": false,
@@ -26676,98 +26665,13 @@
         "request_images": false,
         "seed": -1,
         "n": 1,
-        "bind_preset_to_connection": false,
-        "extensions": {
-            "regexBindings": {
-                "version": 2,
-                "bound": [
-                    {
-                        "id": "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                        "enabled": true
-                    },
-                    {
-                        "id": "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                        "enabled": true
-                    },
-                    {
-                        "id": "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                        "enabled": true
-                    },
-                    {
-                        "id": "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                        "enabled": true
-                    },
-                    {
-                        "id": "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                        "enabled": true
-                    },
-                    {
-                        "id": "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                        "enabled": true
-                    },
-                    {
-                        "id": "b2324bca-882e-4fa8-bef4-a88159de2983",
-                        "enabled": true
-                    },
-                    {
-                        "id": "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                        "enabled": true
-                    },
-                    {
-                        "id": "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                        "enabled": true
-                    },
-                    {
-                        "id": "531a102e-2dcd-456d-bc53-498d6fd1864b",
-                        "enabled": true
-                    },
-                    {
-                        "id": "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                        "enabled": true
-                    },
-                    {
-                        "id": "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                        "enabled": true
-                    },
-                    {
-                        "id": "8b9765ac-73e4-4834-aeec-5c4cf3344223",
-                        "enabled": true
-                    },
-                    {
-                        "id": "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                        "enabled": true
-                    },
-                    {
-                        "id": "f63e4d3f-acb8-45a4-92c9-da71594f88a6",
-                        "enabled": true
-                    }
-                ],
-                "exclusive": [
-                    "22568a50-10f2-4b4c-b025-245bd3b8f046",
-                    "f176d302-de38-4f1f-a56a-3efb07fd2b89",
-                    "940431d5-dca0-44d2-9843-3ac4d9c6eadb",
-                    "00d5ce4c-985d-479b-9b7e-299a82f2fd41",
-                    "f5015258-b372-4e36-aabd-6c99a9eee7ad",
-                    "266fa3c5-8730-4cdc-8ad4-eeb5397aff07",
-                    "b2324bca-882e-4fa8-bef4-a88159de2983",
-                    "e8f9c922-4115-45cf-a084-5d39bd2a1f4a",
-                    "6d53a8e4-adf3-4869-abb0-5604de907f6e",
-                    "531a102e-2dcd-456d-bc53-498d6fd1864b",
-                    "c313455e-2a2b-4868-836f-8c0c184aab1c",
-                    "c440cafc-58c7-4b2b-a153-0f17c92c25d7",
-                    "8b9765ac-73e4-4834-aeec-5c4cf3344223",
-                    "c176babb-cad1-4b99-a551-32c1c6ec2455",
-                    "f63e4d3f-acb8-45a4-92c9-da71594f88a6"
-                ]
-            }
-        }
+        "bind_preset_to_connection": false
     },
     "background": {
         "name": "0ac5d4ecc5edfb92.jpg",
         "url": "url(\"backgrounds/0ac5d4ecc5edfb92.jpg\")",
         "fitting": "classic",
-        "animation": false,
-        "thumbnailColumns": 5
+        "animation": false
     },
     "proxies": [
         {
