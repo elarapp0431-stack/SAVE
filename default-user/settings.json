@@ -3,7 +3,7 @@
     "accountStorage": {
         "__migrated": "1",
         "LNavOpened": "true",
-        "NavOpened": "false",
+        "NavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}},\"3090278210222208\":{\"fieldsWarned\":{}}}}",
         "SelectedNavTab": "rm_button_characters",
@@ -15,7 +15,7 @@
         "AlertWI_快穿系统06.png": "true",
         "AlertRegex_快穿系统06.png": "true",
         "AlertWI_我同时跟四个男的结婚但不领证，我犯法吗.png": "true",
-        "extension_update_nag": "Sat Apr 04 2026",
+        "extension_update_nag": "Wed Apr 08 2026",
         "AlertWI_◆伊洛梵德序曲◆.png": "true",
         "AlertRegex_◆伊洛梵德序曲◆.png": "true",
         "AlertWI_无限逃离.png": "true",
@@ -138,9 +138,7 @@
     "main_api": "openai",
     "world_info_settings": {
         "world_info": {
-            "globalSelect": [
-                "！！Table_v2.0.13"
-            ],
+            "globalSelect": [],
             "charLore": [
                 {
                     "name": "default_Seraphina",
@@ -5061,8 +5059,8 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 5003,
-                "LAST_RECEIVE_CHARS": 11093,
+                "LAST_RECEIVE_TOKENS": 8676,
+                "LAST_RECEIVE_CHARS": 18983,
                 "LAST_SEND_TOKENS": 81517,
                 "LAST_SEND_CHARS": 120039,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
