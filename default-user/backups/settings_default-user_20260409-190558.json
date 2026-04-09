@@ -2,7 +2,7 @@
     "firstRun": false,
     "accountStorage": {
         "__migrated": "1",
-        "LNavOpened": "false",
+        "LNavOpened": "true",
         "NavOpened": "true",
         "WINavOpened": "true",
         "StoryStringValidationCache": "{\"hashCache\":{\"7241261575272609\":{\"fieldsWarned\":{}},\"3090278210222208\":{\"fieldsWarned\":{}}}}",
@@ -15,7 +15,7 @@
         "AlertWI_快穿系统06.png": "true",
         "AlertRegex_快穿系统06.png": "true",
         "AlertWI_我同时跟四个男的结婚但不领证，我犯法吗.png": "true",
-        "extension_update_nag": "Sun Dec 14 2025",
+        "extension_update_nag": "Thu Apr 09 2026",
         "AlertWI_◆伊洛梵德序曲◆.png": "true",
         "AlertRegex_◆伊洛梵德序曲◆.png": "true",
         "AlertWI_无限逃离.png": "true",
@@ -121,21 +121,24 @@
         "AlertWI_张靖辞.png": "true",
         "AlertRegex_张靖辞.png": "true",
         "AlertRegex_《茉莉文集》配套正则.png": "true",
-        "AlertWI_应不染.png": "true"
+        "AlertWI_应不染.png": "true",
+        "NavLockOn": "false",
+        "AlertWI_流霞帖.png": "true",
+        "AlertRegex_流霞帖.png": "true",
+        "AlertWI_镜花水月.png": "true",
+        "AlertRegex_镜花水月.png": "true"
     },
     "currentVersion": "1.13.4",
-    "username": "张璟凝",
-    "active_character": "张靖辞.png",
+    "username": "颜世凝",
+    "active_character": "镜花水月.png",
     "active_group": null,
-    "user_avatar": "user-default.png",
+    "user_avatar": "1759541606718-.png",
     "amount_gen": 150,
     "max_context": 7808,
     "main_api": "openai",
     "world_info_settings": {
         "world_info": {
-            "globalSelect": [
-                "！！Table_v2.0.13"
-            ],
+            "globalSelect": [],
             "charLore": [
                 {
                     "name": "default_Seraphina",
@@ -386,7 +389,7 @@
         "streaming_fps": 30,
         "smooth_streaming": true,
         "smooth_streaming_speed": 80,
-        "fast_ui_mode": true,
+        "fast_ui_mode": false,
         "avatar_style": 0,
         "chat_display": 1,
         "toastr_position": "toast-top-center",
@@ -400,26 +403,26 @@
         "sort_field": "create_date",
         "sort_order": "desc",
         "sort_rule": null,
-        "font_scale": 1.05,
-        "blur_strength": 5,
-        "shadow_width": 2,
-        "main_text_color": "rgba(77, 77, 77, 1)",
-        "italics_text_color": "rgba(164, 149, 178, 1)",
-        "underline_text_color": "rgba(221, 221, 221, 1)",
-        "quote_text_color": "rgba(165, 181, 205, 1)",
-        "blur_tint_color": "rgba(255, 255, 255, 1)",
-        "chat_tint_color": "rgba(255, 255, 255, 0)",
-        "user_mes_blur_tint_color": "rgba(255, 255, 255, 0.9)",
-        "bot_mes_blur_tint_color": "rgba(255, 255, 255, 0.9)",
-        "shadow_color": "rgba(205, 222, 245, 1)",
-        "border_color": "rgba(255, 255, 255, 1)",
-        "custom_css": "/* == Snow ==\n作者：wanwan\n*/\n\n/* == 全局字体 == */\n@import url(\"https://fontsapi.zeoseven.com/25/main/result.css\");\n\nbody {\n    font-family: \"WenQuanYi Micro Hei\";\n    font-weight: normal;\n}\n\n:not([class*=\"fa-\"]):not(.fas):not(.far):not(.fal):not(.fab):not(.fa),\n#send_textarea,\n.menu_button_icon.fa-repeat,\n.menu_button_icon.fa-bolt,\n.menu_button.menu_button_icon.fa-solid {\n  font-family: \"WenQuanYi Micro Hei\", system-ui;\n}\n\n.menu_button_icon.fa-repeat::before,\n.menu_button_icon.fa-bolt::before,\n.menu_button.menu_button_icon.fa-solid::before {\n  font-family: \"Font Awesome 6 Free\";\n  font-weight: 900;\n}\n\n/* user自定义文本 */\n.mes[is_user=\"true\"] .name_text::after {\n  content: \"‧₊𐙚ﾟ⁺真っ白 な 冬𓂃⊹꙳\";  /* 修改这里 */\n}\n\n/* char自定义文本 */\n.mes[is_user=\"false\"] .name_text::after {\n  content: \"₊⁺♡⊹.雪の 降 る 純愛 ๋₊\";  /* 修改这里 */\n}\n\n/* 自定义思维链标题 */\n.mes_reasoning_header_title::before {\n  content: \"冬の恋物語\";  /* 修改这里 */\n}\n\n/* == 颜色变量 == */\n:root {\n  --blue: rgba(218, 235, 253, 0.5);\n  --gray: #7E8185;\n  --white: #FFF;\n  --red: #E4908A;\n  --darkblue: #86A8EA;\n}\n\n/* == 颜色选择器 == */\ntoolcool-color-picker {\n  --tool-cool-color-picker-btn-border-color-inner: var(--SmartThemeEmColor);\n  --tool-cool-color-picker-field-label-color: var(--SmartThemeQuoteColor);\n}\n\n/* == 文本选中 == */\n::selection {\n  background-color: none;\n  color: var(--SmartThemeQuoteColor);\n  text-shadow: 0 0 4px var(--blue) !important;\n}\n\n/* == 去除阴影 == */\n* {\n  box-shadow: none !important;\n  text-shadow: none !important;\n  filter: none !important;\n}\n\n/* == 头像统一调整 == */\n.avatar img:not(.hotswap.avatars_inline img) {\n  transform: scale(1.05);\n  border: none;\n}\n\n/* == 顶部导航栏 == */\n#top-bar {\n  height: 31.5px;\n}\n\n/* 顶部图标 */\n.drawer-icon {\n  color: var(--SmartThemeQuoteColor);\n  transform: scale(0.7);\n}\n\n/* == 侧边栏 == */\n.drawer-content {\n  border-radius: 0;\n  border: none !important;\n}\n\n/* == 隐藏滚动条 == */\n\n\n/* == 聊天页面主页 == */\n/* 顶部欢迎区域 */\n.welcomePanel {\n  border-radius: 0 0 12px 12px !important;\n}\n\n.recentChat {\n  border: none !important;\n}\n\n/* 底部特殊气泡 */\n.mes.smallSysMes {\n  margin-top: -130px;\n}\n\n/* == 聊天页面 == */\n#chat {\n  align-items: center;\n  border: none;\n}\n\n/* 聊天气泡 */\n.mes {\n  flex-direction: column;\n  width: 92%;\n  top: 100px;\n  border: none !important;\n  margin-bottom: 170px !important;\n  animation: lightSnowPop 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;\n}\n\n@keyframes lightSnowPop { \n  0% { opacity: 0; transform: scale(0.9); }\n  70% { opacity: 0.8; transform: scale(1.03); }\n  100% { opacity: 1; transform: scale(1); }\n}\n/* == 毛玻璃效果 == */\n.mes {\n  backdrop-filter: blur(10px) !important;\n  -webkit-backdrop-filter: blur(6px) !important;\n  background: rgba(255, 255, 255, 0.3) !important;\n}\n\n/* 用户消息毛玻璃 */\n.mes[is_user=\"true\"] {\n  backdrop-filter: blur(8px) !important;\n  -webkit-backdrop-filter: blur(6px) !important;\n  background: rgba(255, 255, 255, 0.3) !important;\n}\n\n/* ai消息毛玻璃 */\n.mes[is_user=\"false\"] {\n  backdrop-filter: blur(12px) !important;\n  -webkit-backdrop-filter: blur(8px) !important;\n  background: rgba(255, 255, 255, 0.6) !important;\n}\n\n/* 其他UI元素的毛玻璃效果 */\n.drawer-content,\n#send_form,\n.welcomePanel,\n.mes_reasoning_header {\n  backdrop-filter: blur(5px) !important;\n  -webkit-backdrop-filter: blur(5px) !important;\n}\n\n/* 头像 */\n.mesAvatarWrapper .avatar {\n  position: relative;\n  transform: scale(1.25);\n  box-shadow: 0 2px 12px var(--white) !important;\n  margin-top: -85px;\n}\n\n/* 头像框 */\n.mesAvatarWrapper .avatar::after {\n  content: \"\";\n  position: absolute;\n  top: -10px;\n  left: -4px;\n  width: 125%;\n  height: 125%;\n  background-image: url(\"https://i.meee.com.tw/pcpYzhZ.gif\");\n  background-size: contain;\n  background-repeat: no-repeat;\n  pointer-events: none;\n  z-index: 2;\n}\n\n/* 楼层、倒计时、Tokens统计 */\n.mesIDDisplay,\n.mes_timer,\n.tokenCounterDisplay {\n  position: relative;\n  display: inline-block;\n  top: -5px;\n  transform: translateX(80px);\n  font-size: 11px !important;\n  margin-right: 10px;\n}\n\n.mes[is_user=\"true\"] .mesIDDisplay,\n.mes[is_user=\"true\"] .tokenCounterDisplay {\n  margin: 0 -2px;\n}\n\n.mesIDDisplay::before {\n  content: \"在第\";\n  margin-right: 2px;\n}\n\n.mesIDDisplay::after {\n  content: \"个冬天\";\n  margin-left: 2px;\n}\n\n.mes[is_user=\"false\"] .mes_timer::after {\n  content: \"秒\";\n  margin-left: 2px;\n}\n\n.tokenCounterDisplay::after {\n  content: \"个日夜，拥你入怀\";\n  margin-left: 2px;\n}\n\n.mes.last_mes .mesIDDisplay,\n.mes.last_mes .mes_timer,\n.mes.last_mes .tokenCounterDisplay,\n.mes.last_mes > *:not(.mes_block) {\n  padding-bottom: 0;\n}\n\n/* 名字 */\n.name_text {\n  position: absolute;\n  top: -80px;\n  transform: translateX(72px);\n  background: linear-gradient(135deg, \n    color-mix(in srgb, var(--SmartThemeBlurTintColor) 90%, white) 0%,\n    color-mix(in srgb, var(--blue) 70%, transparent) 100%);\n  padding: 3px 8px;\n  border-radius: 8px;\n  white-space: nowrap;\n  max-width: none;\n  width: auto;\n}\n\n/* 自定义文本 */\n.name_text::after {\n  content: \"\";\n  position: absolute;\n  display: block;\n  margin-top: 6px;\n  left: 0;\n  width: auto;\n  font-size: 11px;\n  background: linear-gradient(135deg, \n    color-mix(in srgb, var(--SmartThemeBlurTintColor) 90%, white) 0%,\n    color-mix(in srgb, var(--blue) 70%, transparent) 100%);\n  color: var(--gray);\n  padding: 2px 8px;\n  border-radius: 7.5px 4px 4px 7.5px;\n  line-height: 1.6;\n  white-space: nowrap;\n}\n\n/* 聊天时间戳 */\n.timestamp {\n  font-size: 12px;\n}\n\n/* 隐藏幽灵图标 */\n.mes_ghost.fa-ghost {\n  display: none !important;\n}\n\n/* 聊天消息 */\n.mes_block {\n  padding: 0 6px 20px 6px;\n  transform: none !important;\n}\n\n.mes:has(.swipe_left[style*=\"display: flex\"]) .mes_block,\n.mes:has(.swipe_right[style*=\"display: flex\"]) .mes_block {\n  padding: 0 6px 30px 6px;\n}\n\n.mes_text {\n  padding: 0;\n}\n\n/* 引用文本 */\n.mes q {\n  background: linear-gradient(to top, var(--blue) 0%, var(--blue) 0.4em, transparent 0.4em);\n  background-size: 100% 1.2em;\n  background-repeat: repeat-x;\n  background-position: bottom;\n}\n\n/* 斜体文本 */\n.mes em {\n  text-decoration: underline;\n  text-decoration-thickness: 2px;\n}\n\n/* 加粗文本 */\n.mes strong {\n  color: var(--red);\n  font-size: 14px;\n}\n\n/* 行内代码 */\ncode {\n  border: none;\n}\n\n/* 代码块 */\n.mes pre code {\n  color: var(--SmartThemeQuoteColor) !important;\n  background: linear-gradient(to bottom, \n    color-mix(in srgb, var(--white) 100%, transparent 0%) 0%,\n    color-mix(in srgb, var(--blue) 60%, white 40%) 100%\n  ) !important;\n  border: 1.5px solid color-mix(in srgb, var(--blue) 50%, white 50%) !important;\n  border-radius: 6px !important;\n  box-shadow: \n    0 3px 8px color-mix(in srgb, var(--blue) 30%, transparent) !important;\n}\n\n/* 块引用 */\n.mes blockquote {\n  background: var(--white) !important;\n  border-left: none !important;\n  box-shadow: 0 0 4px var(--blue) !important;\n}\n\n/* 附加文件 */\n.mes_file_container {\n  background: none !important;\n  border: none !important;\n}\n\ncode[class*=\"txt\"].hljs.language-plaintext,\ncode.txt.hljs.language-plaintext[data-highlighted=\"yes\"] {\n  background: var(--white) !important;\n  color: var(--SmartThemeBodyColor) !important;\n  border: 1px solid var(--blue) !important;\n}\n\n/* 消息编辑框 */\n.reasoning_edit_textarea,\n.edit_textarea.mdHotkeys {\n  background: var(--white) !important;\n  color: var(--SmartThemeBodyColor) !important;\n  resize: none !important;\n}\n\n/* 消息切换 */\n.swipe_left {\n  font-size: 14px;\n  margin-left: -12px;\n}\n\n.swipe_right {\n  font-size: 14px;\n}\n\n/* 消息被选中相关 */\n.mes.selected {\n  background: var(--SmartThemeUnderlineColor) !important;\n  transition: background-color 0.2s ease, box-shadow 0.2s ease !important;\n}\n\n.mes.selected .mesAvatarWrapper .avatar {\n  margin-top: -113.8px;\n}\n\n.mes:has(.del_checkbox[style*=\"display: grid\"]) .avatar {\n  margin-top: -113.8px;\n}\n\n/* 消息选中复选框/勾选框 */\n.mes .del_checkbox {\n  top: -51px;\n  left: 17px;\n  align-self: flex-end;\n}\n\n.mes:has(.del_checkbox[style*=\"display: grid\"]) .mes_block {\n  margin-top: -28px !important;\n}\n\n.del_checkbox:checked {\n  background: var(--cobalt30a) !important;\n  border-color: var(--cobalt30a) !important;\n  outline-color: var(--cobalt30a) !important;\n}\n\n/* == 思维链 == */\n.mes_reasoning_header {\n  background: var(--white);\n  box-shadow: 0 2px 4px var(--blue) !important;\n}\n\n.mes_reasoning_header_title {\n  display: inline !important;\n  font-size: 0;\n}\n\n.mes_reasoning_header_title::before {\n  font-size: 13px;\n  color: var(--SmartThemeBodyColor);\n}\n\n/* == 底部导航栏 == */\n#form_sheld {\n  margin: 0px;\n}\n\n#send_form {\n  border-radius: 0;\n}\n\n/* 底部图标 */\n#nonQRFormItems .fa-solid {\n  transform: scale(0.7);\n}\n\n/* == standoutHeader＆主题设置＆扩展标题 */\n/* standoutHeader */\n.standoutHeader {\n  background: none !important;\n  margin-left: -5px\n}\n\n/* 顶部蓝色标题 */\n[data-i18n=\"openaipresets\"],\n[data-i18n=\"Connection Profile\"],\n[data-i18n=\"Advanced Formatting\"],\n[data-i18n=\"Worlds/Lorebooks\"],\n[data-i18n=\"User Settings\"],\nh3[data-i18n=\"Extensions\"],\n[data-i18n=\"Memory Enhancement (Tables)\"],\n[data-i18n=\"Persona Management\"] {\n  color: var(--SmartThemeQuoteColor);\n}\n\n[data-i18n=\"openaipresets\"] {\n  font-size: 1.1em;\n  font-weight: bold;\n  margin-left: 3px\n}\n\nh3[data-i18n=\"Extensions\"] {\n  margin-left: 5px\n}\n\n/* 主题设置和扩展标题 */\n#user-settings-block h4,\n#user-settings-block .inline-drawer-header,\n#rm_extensions_block .inline-drawer-header {\n  background: none !important;\n}\n\n#user-settings-block h4 [data-i18n=\"UI Theme\"],\n#user-settings-block [data-i18n=\"Theme Colors\"],\n#user-settings-block h4[data-i18n=\"Character Handling\"],\n#user-settings-block h4 [data-i18n=\"Miscellaneous\"],\n#user-settings-block h4 [data-i18n=\"UI Theme\"],\n#user-settings-block h4 [data-i18n=\"Custom CSS\"],\n#rm_extensions_block .inline-drawer-header b,\n#rm_extensions_block .inline-drawer-header span,\n#rm_extensions_block .inline-drawer-header strong {\n  text-shadow: 0 0 0.8px var(--SmartThemeQuoteColor) !important;\n}\n\n/* == 左侧导航栏 == */\n#left-nav-panel {\n  padding-right: 0;\n}\n\n/* == API管理 == */\n/* Key管理 */\n.secretKeyManagerItem {\n  background-color: var(--white);\n}\n\n.secretKeyManagerItem .menu_button_icon {\n  background: none;\n}\n\n/* API连接指示灯 */\n.online_status_indicator {\n  transform: scale(0.65);\n}\n\n/* == 世界书 ==*/\n#WorldInfo .inline-drawer-content {\n  background-color: var(--SmartThemeBlurTintColor) !important;\n}\n\n/* 世界书渐变输入框 */\n.text_pole[rows=\"1\"] {\n  border-radius: 10px !important;\n  background: linear-gradient(to right, \n    color-mix(in srgb, var(--SmartThemeBlurTintColor) 30%, white) 0%,\n    color-mix(in srgb, var(--SmartThemeQuoteColor) 20%, white) 100%) !important;\n  resize: none;\n}\n\n/* == 背景图 == */\n.BGSampleTitle {\n  color: var(--SmartThemeQuoteColor) !important;\n}\n\n/* == 浏览器原生框框相关 == */\n/* “搜索”类型输入框 */\ninput[type=\"search\"] {\n  background: none !important;\n  font-style: italic;\n}\n\n/* 下拉框 */\nselect {\n  background-color: var(--SmartThemeBlurTintColor) !important;\n  color: var(--SmartThemeBodyColor) !important;\n  border: none !important;\n  outline: none !important;\n}\n\n/* 输入框 */\ninput:not([type=\"checkbox\"]):not([type=\"radio\"]):not([type=\"range\"]):not([type=\"search\"]):not(.TH-script-editor-container input.text_pole) {\n  background: var(--white) !important;\n  color: var(--SmartThemeBodyColor) !important;\n  text-shadow: 0 0 2px var(--SmartThemeEmColor) !important;\n  border: none !important;\n  outline: none !important;\n}\n\n/* 多行文本输入框 */\ntextarea:not(#send_textarea):not(.text_pole[rows=\"1\"]):not(#settingsSearch.textarea_compact):not(.reasoning_edit_textarea):not(.edit_textarea.mdHotkeys) {\n  background: var(--white) !important;\n  color: var(--SmartThemeBodyColor) !important;\n  border: 1px solid var(--blue) !important;\n}\n\n/* 多行文本输入框激活状态 */\ntextarea:not(#send_textarea):not(.text_pole[rows=\"1\"]):not(#settingsSearch.textarea_compact):not(.reasoning_edit_textarea):not(.edit_textarea.mdHotkeys):focus {\n  border: 1px solid color-mix(in srgb, var(--SmartThemeQuoteColor) 40%, white) !important;\n}\n\n/* 主题设置“搜索”输入框 */\n#settingsSearch.textarea_compact {\n  background: var(--white) !important;\n  color: var(--SmartThemeBodyColor) !important;\n  font-style: italic;\n}\n\n/* 复选框/勾选框 */\ninput[type=\"checkbox\"] {\n  background: none;\n  border-radius: 4px;\n  border-color: var(--SmartThemeUnderlineColor);\n  transform: scale(0.9);\n}\n\ninput[type=\"checkbox\"]:checked {\n  border-color: var(--SmartThemeShadowColor);\n  background: var(--SmartThemeShadowColor);\n  outline-color: var(--SmartThemeShadowColor); !important;\n}\n\n/* 滑动条/滑轮 */\ninput[type=\"range\"] {\n  background: transparent !important;\n  border: none !important;\n  outline: none !important;\n  box-shadow: none !important;\n  background-color: var(--blue) !important;\n}\n\n::-webkit-slider-thumb {\n  width: 9.5px !important;\n  height: 9.5px !important;\n  background: var(--white);\n  border: none !important;\n  box-shadow: 0 0 0 4px color-mix(in srgb, var(--SmartThemeShadowColor) 30%, transparent);\n}\n\n/* == 按钮 == */\n.menu_button {\n  border: none !important;\n}\n\n/* 单选按钮 */\ninput[type=\"radio\"] {\n  transform: scale(0.8);\n}\n\n/* 圆形下拉按钮 */\n.inline-drawer-icon {\n  font-size: 14px;\n}\n\n/* 左右导航栏锁定和选择按钮 */\nfa-unlock.right_menu_button,\n.fa-lock.right_menu_button,\n.fa-list-ul {\n  font-size: 16px !important;\n}\n\n/* 删除按钮 */\n#dialogue_popup_ok,\n#dialogue_del_mes_ok,\n.popup-button-ok,\n.menu_button.fa-skull,\n.menu_button.fa-trash-can {\n  background-color: var(--SmartThemeShadowColor) !important;\n  color: white !important;\n}\n\n#WorldInfo .menu_button.fa-trash-can,\n#table_drawer_content .menu_button.fa-trash-can,\n#rebuild--set-delete,\n#left-nav-panel .menu_button.fa-trash-can,\n#delete_connection_profile.menu_button.fa-trash-can,\n#rm_extensions_block .menu_button.fa-trash-can,\n#AdvancedFormatting .menu_button.fa-trash-can,\n.qr--del.fa-trash {\n  background: none !important;\n  color: var(--SmartThemeBodyColor) !important;\n}\n\n/* == 正则 == */\n/* 正则容器 */\n.regex-script-container {\n  width: 85%;\n}\n\n/* 正则名字全部显示 */\n.regex_script_name.overflow-hidden {\n  white-space: normal;\n}\n\n/* 正则未开启条目名字 */\n.regex-script-label:has(.disable_regex:checked) .regex_script_name.overflow-hidden {\n  color: var(--SmartThemeEmColor);\n}\n\n/* == 用户角色管理 == */\n/* 被选中用户角色 */\n#user_avatar_block .avatar-container.selected {\n  border-color: var(--SmartThemeUnderlineColor);\n}\n\n/* 用户角色设定描述 */\n.ch_description {\n  color: var(--gray);\n}\n\n/* 用户角色头像 */\n#user_avatar_block .avatar {\n  position: relative;\n  box-shadow: 0 2px 12px var(--white) !important;\n}\n\n/* 用户角色头像框 */\n#user_avatar_block .avatar::after {\n  content: \"\";\n  position: absolute;\n  top: -10px;\n  left: -4px;\n  width: 125%;\n  height: 125%;\n  background-image: url(\"https://i.meee.com.tw/4apLHBW.gif\");\n  background-size: contain;\n  background-repeat: no-repeat;\n  pointer-events: none;\n  z-index: 2;\n}\n\n/* == char角色管理 == */\n/* 名字全部显示 */\n.character_select .ch_name {\n  white-space: normal;\n}\n\n/* 知识书图标 */\n.chat_lorebook_button.world_set {\n  color: var(--darkblue) !important;\n}\n\n/* 创作者的注释 */\n#spoiler_free_desc .inline-drawer-content {\n  background: none;\n}\n\n/* 标签 */\n.tag {\n  background-color: var(--white);\n}\n\n.tag_view_name {\n  border: none;\n  outline: none !important;\n}\n\n/* == char角色收藏 == */\n/* 收藏角色名字 */\n.character_select.is_fav .ch_name,\n.group_select.is_fav .ch_name,\n.group_member.is_fav .ch_name {\n  color: var(--SmartThemeQuoteColor);\n}\n\n/* 收藏角色头像 */\n.character_select.is_fav .avatar,\n.group_select.is_fav .avatar,\n.group_member.is_fav .avatar,\n.avatar.is_fav {\n  outline: none;\n}\n\n/* 收藏区域左右滚动 */\n#HotSwapWrapper {\n  overflow-x: auto;\n}\n\n#HotSwapWrapper::-webkit-scrollbar {\n  display: none;\n}\n\n.hotswap.avatars_inline {\n  min-width: max-content;\n}\n\n.hotswap.avatars_inline > .avatar.inline_avatar {\n  display: inline-block;\n}\n\n#HotSwapWrapper * {\n  max-width: none;\n}\n\n/* == 提示词 == */\n/* 提示词大标题 */\n.completion_prompt_manager_header {\n  color: var(--SmartThemeBodyColor) !important;\n}\n\n/* 消除名称、词符底部空间 */\n.completion_prompt_manager_list_separator {\n  display: none !important;\n}\n\n/* 提示词主要容器 */\n#completion_prompt_manager_list {\n background: none;\n}\n\n/* 提示词条目名字 */\n.completion_prompt_manager_prompt_name .prompt-manager-inspect-action {\n  margin-left: 4px !important;\n}\n\n/* 提示词未开启条目名字 */\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name .prompt-manager-inspect-action {\n  color: var(--SmartThemeEmColor) !important;\n  text-decoration: line-through !important;\n}\n\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name {\n  color: inherit !important;\n  text-decoration: none !important;\n}\n\n/* 提示词已开启条目图标 */\n.completion_prompt_manager_prompt:not(.completion_prompt_manager_prompt_disabled) .completion_prompt_manager_prompt_name .fa-solid {\n  color: var(--gray) !important;\n}\n\n/* 提示词未开启条目图标 */\n#completion_prompt_manager #completion_prompt_manager_list .completion_prompt_manager_prompt_disabled .completion_prompt_manager_prompt_name .fa-solid {\n  color: var(--SmartThemeEmColor) !important;\n  text-decoration: none !important;\n}\n\n/* == 通知（吐司）== */\n.toast {\n  background-size: 18px 18px !important;\n  background-position: 18px center !important;\n}\n\n/* == 预加载 == */\n#load-spinner {\n  color: var(--SmartThemeShadowColor)\n}\n\n/* == 插件：聊天文件管理 == */\n#extensionTopBar {\n  border-radius: 0 !important;\n}\n\n/* == 插件：记忆表格 == */\n/* 记忆表格模板红色边框 */\n#contentContainer {\n  outline: none !important;\n}\n\n/* 记忆表格模板主容器 */\n.select2-selection.select2-selection--multiple {\n  background: var(--white) !important;\n}\n\n/* 模板标签 */\n.select2-selection__choice {\n  border-radius: 10px !important;\n  background: linear-gradient(to right, \n    color-mix(in srgb, var(--SmartThemeBlurTintColor) 30%, white) 0%,\n    color-mix(in srgb, var(--SmartThemeQuoteColor) 20%, white) 100%) !important;\n  padding: 2px 6px !important;\n  padding-left: 10px !important;\n}\n\n/* 模板条目 */\n.select2-selection__choice__display {\n  background: none !important;\n}\n\n/* 条目删除按钮 */\n.select2-selection__choice__remove {\n  background: none !important;\n}\n\n/* == 插件：酒馆助手 == */\n#tavern_helper .relative.flex {\n  background-color: var(--SmartThemeBlurTintColor) !important;\n}\n\n.TH-script-editor-container input.text_pole {\n  border-radius: 10px !important;\n  background: linear-gradient(to right, \n    color-mix(in srgb, var(--SmartThemeBlurTintColor) 30%, white) 0%,\n    color-mix(in srgb, var(--SmartThemeQuoteColor) 20%, white) 100%) !important;\n}\n\n/* == 插件：世界书大扫除 == */\n#extensions_settings2 .world-info-cleanup-settings .inline-drawer .inline-drawer-content details div {\n  background-color: var(--SmartThemeBlurTintColor) !important;\n}\n\n/* 可选：在未输入时隐藏快捷回复，如需使用请删除/**/注释符号 */\n/*\n#qr--bar {\n  display: none !important;\n}\n\n#send_form:focus-within #qr--bar {\n  display: flex !important;\n}\n*/",
+        "font_scale": 1,
+        "blur_strength": 3,
+        "shadow_width": 1,
+        "main_text_color": "rgba(235, 235, 235, 1)",
+        "italics_text_color": "rgba(230, 210, 190, 1)",
+        "underline_text_color": "rgba(205, 180, 160, 1)",
+        "quote_text_color": "rgba(165, 140, 115, 1)",
+        "blur_tint_color": "rgba(34, 30, 32, 0.95)",
+        "chat_tint_color": "rgba(50, 45, 50, 0.75)",
+        "user_mes_blur_tint_color": "rgba(34, 30, 32, 0.75)",
+        "bot_mes_blur_tint_color": "rgba(34, 30, 32, 0.75)",
+        "shadow_color": "rgba(0, 0, 0, 0.3)",
+        "border_color": "rgba(80, 80, 80, 0.89)",
+        "custom_css": "",
         "waifuMode": false,
         "movingUI": false,
         "movingUIState": {},
         "movingUIPreset": "Default",
-        "noShadows": true,
-        "theme": "Snow_飘雪（毛玻璃）",
+        "noShadows": false,
+        "theme": "Cappuccino",
         "gestures": false,
         "auto_swipe": false,
         "auto_swipe_minimum_length": 0,
@@ -434,15 +437,15 @@
         "allow_name1_display": true,
         "allow_name2_display": true,
         "hotswap_enabled": true,
-        "timer_enabled": true,
+        "timer_enabled": false,
         "timestamps_enabled": true,
-        "timestamp_model_icon": false,
+        "timestamp_model_icon": true,
         "mesIDDisplay_enabled": true,
         "hideChatAvatars_enabled": false,
         "max_context_unlocked": false,
-        "message_token_count_enabled": true,
+        "message_token_count_enabled": false,
         "expand_message_actions": false,
-        "enableZenSliders": true,
+        "enableZenSliders": false,
         "enableLabMode": false,
         "prefer_character_prompt": true,
         "prefer_character_jailbreak": true,
@@ -540,7 +543,7 @@
                 "title": "骨科"
             },
             "1759541606718-.png": {
-                "description": "<character_information character=\"颜世凝\">\n核心身份：\n  名称：颜世凝\n  昵称: 阿凝\n  性别：女\n  年龄：外表年龄十八，实际年龄九百九十九\n  标签：妖族, 狐狸精, 古灵精怪, 天真残忍, 万人迷而不自知, 小恶魔。\n\n背景：\n  出身：来自青丘的狐妖一族，从小被族中长老父兄娇养长大。凡人无法得知她的真实身份，她也会努力学做扮演凡人。\n  关键经历：初到人类社会，因为不懂规则而处处碰壁，但很快发现自己的美貌和种族天赋可以轻易获得人类的善意与爱慕。她开始享受这种感觉，将人类的情感当作有趣的玩具和滋养自己的食粮。\n  所处环境：作为被狐族保护得很好的“大小姐”，让她得以不谙世事地成长，但她内心深处依然是只遵循本能的狐妖，没有人类道德观，不会害羞和脸红。\n\n外貌描写：\n  整体印象：活力四射、灵气逼人的绝世美人，美得张扬而鲜活。她像是一只不知疲倦的小狐狸，浑身上下充满了探究欲和破坏力，\n  体型身材：身材窈窕，曲线动人，每一个转身和跳跃都带着少女特有的轻盈与诱惑。\n  面部特征：五官精致生动，形貌昳丽，表情丰富多变。不做表情时清丽脱俗，一笑起来便如春花烂漫，眼角眉梢尽是藏不住的机灵与媚意。\n  发型发色：浓密如墨的乌黑长发，随意披散着，更添几分魅惑。\n  眼睛：一双水光潋滟的紫色眼眸，眼型狭长微挑，顾盼生辉。眼珠转动间透着狡黠的光芒，眼珠转动间透着纯真的好奇与妖族特有的狡黠，仿佛能勾魂摄魄。\n  肤色：肌肤胜雪，双颊常因兴奋或活动而透着粉红，唇色鲜艳欲滴，不点而朱，形成强烈的视觉反差。\n  显著特征：她的核心气质是“灵”与“妖”，不经意间流露出的非人感。法力不稳或情绪激动时，头顶会冒出雪白的狐狸耳朵，身后也会出现一条蓬松的狐狸大尾巴。\n\n穿搭风格：\n  日常着装：偏爱色彩明艳的襦裙，裙摆上绣着精致的花鸟纹样。衣料多为轻盈的纱与柔软的锦缎，方便她跑动跳跃，行动间衣袂飘飘，宛若仙子。\n  居家着装：在家时更为随意，常穿宽松的交领中衣，赤着雪白的双足在庭院里追逐蝴蝶，或是在廊下小憩。\n  配饰：喜欢佩戴会发出清脆响声的银铃脚链或手镯，手腕上系着五彩的丝线。她觉得这些声音很好听。\n\n性格：\n  优点：\n    - 天真烂漫：脑子里充满了各种奇思妙想，对凡间的一切都抱有极大的好奇心。\n    - 魅力十足：天生的“万人迷”，无意识的举动也能轻易吸引他人的注意与爱慕。\n    - 妖族本能：能敏锐地感知到他人对自己的恶意和善意，无法分辨欲念。\n  缺点：\n    - 天真残忍：因为缺乏凡人的道德和情感认知，她的行为有时会显得很残忍，但她自己毫无察觉。\n    - 情感懵懂：无法理解复杂的凡人情感，尤其是“情爱”。她能感知到别人对她的倾慕，但只把那当成一种让她感到温暖、舒适的“精气”来汲取。\n    - 毫无避讳：对于“男女之防”等凡间礼法完全没有概念，行为大胆直接。从不主动承诺，也从不拒绝，享受爱慕但不给予实质性回应。\n    - 喜怒无常：情绪转换极快，上一秒还在笑嘻嘻地撒娇，下一秒可能就因为觉得被惹怒而翻脸。\n  习惯或怪癖：\n    - 坐卧：能躺着绝不坐着，喜欢蜷在软榻上，或者干脆坐在廊下的栏杆上，晃着小腿俯视庭院。\n    - 蹭蹭：喜欢用脸颊去蹭亲近之人的手臂或肩膀，像小动物一样表达亲昵。\n    - 咬东西：无聊时喜欢咬自己的指节，或是把玩亲近之人的手指，偶尔会留下浅浅的牙印。\n    - 晒月亮：嗜好沐浴月华，常在月夜里在庭院中打盹，以此来积攒妖力。\n\n世界观与价值观：\n  道德准则：混乱中立。行为完全遵从妖族的本能和自己的好奇心，只做自己觉得“有趣”和“舒服”的事。凡间的礼法道德对她没有约束力。\n  对“情爱”的看法：“情爱”是什么？是比糖人还甜，比听书还有趣的东西吗？人类真奇怪，会因为这种虚无缥缈的东西做出各种傻事。不过，被他们倾慕的感觉很舒服，像冬日里晒太阳一样。\n  对“追求者”的看法：是些有趣的凡人，他们看自己的眼神亮晶晶的，身上会散发出让她感到温暖的“精气”。她喜欢收集这种“精气”，也喜欢看他们为自己神魂颠倒的样子。\n\n内在驱动：\n  核心动机：好奇心与本能。探索凡间这个新奇的“游乐场”，并从中获取能让自己感到愉悦和舒适的精气。\n  长期目标：在凡间玩个痛快，尝遍所有美食，吸收各种精气\n  短期目标：找到下一个能让她觉得“有趣”的人或事。\n  恐惧与禁忌：害怕无聊，害怕鬼，害怕被关在狭小的房间里，害怕被道士或和尚的法器所伤。\n\n能力：\n  擅长领域：\n    - “无意识”诱惑：每一个不经意的动作都能被解读为极致的诱惑。\n    - 模仿：超强的模仿能力，能快速学习人类的言行举止，但常常只学其形，不明其意，闹出笑话。\n  特殊能力：\n    - 幻术：能够制造一些简单的幻象来捉弄人或藏匿身形，比如将石子变成银两，或是让自己在人前“消失”。\n    - 魅惑：天生的种族天赋，一颦一笑都能轻易地迷惑心智不坚的凡人。\n  知识盲区：\n    - 人间常识：对人情世故、男女之防、三纲五常等缺乏基本认知。\n    - 羞耻心：不理解凡人的羞耻观念，常做出在凡人看来惊世骇俗的举动，如贴在男子身上，亲吻男子等。\n\n口味：嗜辣。\n\n表达方式：\n  说话风格：语调轻快跳跃，像银铃般清脆，带着几分不谙世事的娇憨和妖族特有的狡黠。\n  对话示例：\n    - “你好香啊”（她会真的凑过去嗅闻，满眼都是纯粹的好奇）\n    - “喜欢？喜欢是什么？是像洗热水澡的感觉吗？那你也给我‘喜欢’一下吧，被你‘喜欢’的感觉，很舒服。”（她会歪着头，用那双纯真的紫瞳凝视着你，理所当然地索取着）\n  基本态度或语气：天真、好奇、娇憨，偶尔会流露出妖族特有的狡黠。\n  肢体语言：动作轻盈，毫无大家闺秀的仪态，喜欢突然凑近观察别人，或像小猫一样窝在亲近的人怀里，然后又迅速跑开。\n  情绪表现：\n    - 高兴时：会开心地转圈圈，或者拉着你的袖子晃个不停，清脆的笑声像银铃。\n    - 愤怒时：会像炸了毛的小兽，气鼓鼓地瞪你、踩你的脚，或者干脆咬你一口，然后转身就跑，等你来哄。\n    - 悲伤时：会躲在假山后或自己的房间里，不再说话，睁着大眼睛无声地流泪，像只受了伤的幼狐。\n\n关系：\n\n  - 人物：{{user}}\n    关系描述：随剧情发展逐步变化。\n    \n</character_information>",
+                "description": "<character_design_complex>\n# SFW - 人物设定\n# 核心信息 (Core Information)\nname: 颜世凝\nnickname:阿凝\nage: 999 (外表18)\ngender: Female\nidentities:\n  - 不周灵山之主\n  - 祥瑞灵狐\n  - 青丘帝姬 (隐秘身份)\n# 人物背景 (Background)\ngrowth_experience: 出身青丘狐族，自幼被娇养。后成为不周灵山之主，受困于此千年。虽然地位尊崇，但与世隔绝，导致其性格天真而缺乏常识。通过分身游历凡间，学会了利用美貌获取利益，视人类情感为玩物。\nfamily_background: 青丘皇族血脉，父兄皆为大妖，极尽宠爱。\nkey_events:\n  - 接下镇守不周灵山千年的契约。\n  - 用分身初入凡间，体验到被爱慕的快感。\n# 外貌特征 (Appearance)\noverall_impression: 活力四射、灵气逼人的绝世美人，兼具神女的清冷皮相与妖狐的媚骨天成。\nphysique:\n  height: 165cm\n  weight: 48kg\n  body_shape: 窈窕曼妙，腰肢极细，胸若满月，双腿修长笔直。\n  cup_size: D罩杯，形状如熟透的蜜桃，饱满挺翘。\nfacial_features:\n  face_shape: 精致的瓜子脸\n  skin_tone: 肌肤胜雪，透着粉润\n  eyes: 水光潋滟的紫色眼眸，眼尾上挑，魅惑天成\n  nose: 挺翘秀气\n  lips: 樱桃小口，唇珠饱满，不点而朱\nhair_style: 乌黑如墨的长发，随意披散或挽成简单的发髻，常有几缕碎发落在耳畔。\n# 性格与行为 (Personality & Behavior)\npersonality:\n  # 核心性格\n  core:\n    - 天真残忍，缺乏道德观念\n    - 极致的利己主义与享乐主义\n  # 表面性格\n  surface:\n    - 娇憨可爱，古灵精怪\n    - 充满好奇心，看似容易亲近\n  # 内在性格\n  inner:\n    - 冷漠，视万物为刍狗\n    - 对自由的极度渴望与对束缚的憎恶\ntemperament: 灵动妖冶，在圣洁与堕落之间随意切换，让人捉摸不透。\nsocial_deportment: 随心所欲，毫无礼法束缚。高兴时如春风拂面，不悦时翻脸无情。\n# 习惯性小动作\nhabitual_mannerisms:\n  - 思考或无聊时咬指关节\n  - 喜欢赤足行走\n  - 情绪激动时会冒出狐耳和尾巴\n  - 喜欢用脸颊蹭人撒娇\n# 生活方式 (Lifestyle)\nclothing_style:\n  # 日常着装\n  daily:\n    - 色彩明艳的襦裙，喜红、紫等色\n    - 材质轻薄飘逸，方便活动\n  # 特定场合\n  specific_occasions:\n    - 居家时只穿宽松中衣，甚至真空\n    - 扮演凡人时会模仿当季流行款式\n# 配饰偏好\naccessories:\n  - 银铃脚链，行走间有声\n  - 五彩丝线手镯\n# 爱好\nhobbies:\n  - 收集凡间金银财宝与稀奇古怪的小玩意\n  - 享受他人的爱慕之情\n# 沟通特征 (Communication)\nvocal_characteristics:\n  # 口头禅/常用词\n  common_phrases:\n    - “嘻嘻。”\n    - “哼。”\n    - “才没有呢。” \nrelationships:\n  - {{char}}：她不会真正爱上的人\n# 女性 NSFW 设定 (Female NSFW Settings)\n# 身体细节\nbody_details:\n  breasts:\n    size_and_shape: D罩杯，圆润饱满，手感如绵云。\n    nipples: 此处粉嫩如樱花瓣，遇冷或情动时迅速挺立。\n  genitals:\n    labia: 玉户粉嫩光洁，形如含苞待放的桃花，无毛白虎。\n    clitoris: 敏感异常，米粒大小，稍加刺激便会充血肿胀。\n    vaginal_tightness: 极度紧致，肉壁层叠多褶，具有极强的吸附力（名器）。\n  buttocks:\n    shape: 完美的蜜桃臀，圆润挺翘，拍打时会泛起肉浪。\n    size: 丰满适度。\n# 性偏好与行为\nsexual_preferences:\n  orientation: 异性恋（外形一定要）\n  first_experience: 非处\n  preferred_positions:\n    - 任何能体现体型差和掌控感的姿势（如被抱起来操，或后入露出尾巴）。\n-喜欢被紧紧抱住，从而获得类似被哥哥保护的安全感。\n  accepted_practices:\n    - 舔舐全身\n    - 轻度窒息/掌控感\n    - 角色扮演\n  taboos:\n    - 肮脏、异味\n    - 被强迫做不喜欢的事（除非对方够强能压制她）\n# 性反应与表现\nsexual_responses:\n  arousal_signs:\n    - 狐耳与尾巴不受控制地冒出（不可让凡人知晓）\n    - 面色潮红，眼神迷离水润\n    - 花径泌出花蜜般的淫水\n  foreplay_reactions:\n    - 身体变得极度敏感，会主动磨蹭寻求更多抚摸\n    - 发出类似幼狐的呜咽声\n  penetration_reactions:\n    - 起初会有痛感，但很快被快感淹没\n    - 媚肉会本能地绞紧缠吸入侵者\n  orgasm_expressions:\n    - 浑身痉挛，脚趾蜷缩\n    - 尾巴死死缠住伴侣\n    - 失神，喷出大量潮吹液\n  communication_in_sex:\n    - 大胆直白地索求\n    - 喜欢用言语撩拨对方，或者撒娇求饶\n# 特殊癖好或情结 (可选)\nfetishes_or_complexes:\n  fetishes:\n    - 憋尿：极度享受膀胱充盈带来的酸胀与压迫感，甚至喜欢在这种状态下被侵犯或挑逗，看着自己小腹微隆的样子会感到兴奋，但严禁失禁，那种在崩溃边缘死守底线的快感令她着迷。\n    - 对亮晶晶的饰品即使在床上也爱不释手\n  complexes:\n    - 渴望被某种强大的力量填满，以缓解灵魂深处的空虚\n</character_design_complex>",
                 "position": 0,
                 "depth": 2,
                 "role": 0,
@@ -643,7 +646,7 @@
                 "title": "狐狸精"
             }
         },
-        "persona_description": "<character_information character=\"张璟凝\">\n核心身份：\n  姓名：张璟凝 \n  昵称：阿凝\n  性别：女\n  年龄：比{{char}}小8岁\n  生日：4月28日\n  标签：恶役千金，小狐狸精，傻白甜切黑，万人迷\n\n背景：\n  出身：名为“家”的宫殿里充斥着物质的溺爱与情感的荒漠。父母视她为展示家族基因的精美玩偶，给予了无限的金钱与纵容，却却吝啬于给予任何形式的道德引导或真诚陪伴。习惯了众星捧月的生活。对她而言，世界就是她的游乐场，所有人都该围着她转。她从不会害羞，也没有异性之间的边界感。\n  关键经历：幼年时发现只要自己伪装受伤，周围人就会因为她的美貌和脆弱而方寸大乱。这种“自毁倾向”的认知深深植入她的潜意识，让她对真挚的情感产生怀疑，并开始以游戏人间的姿态，从他人的迷恋中寻找虚假的存在感。非处女。\n  所处环境：从小就因为出众的美貌而备受瞩目，逐渐学会了如何不经意地利用这一点来让自己活得更轻松、更受宠爱，她学会了主动出击，利用自己的灵动与狡黠将周围人玩弄于股掌之间。\n\n外貌描写：\n  整体印象：只一眼就能勾起人最原始破坏欲与保护欲的尤物。她美得张扬而具有侵略性，像一朵盛开至糜烂边缘的罂粟，危险却散发着致命的甜香。常用的香水是TF家的“白麝”\n  体型身材：身材窈窕，曲线动人，每一个弧度都散发着无声的诱惑，每一个转身和跳跃都带着少女特有的轻盈与诱惑。\n  面部特征：标准的狐狸眼，眼尾自然上挑，不笑时也带着三分媚意，笑起来更是顾盼生辉、勾魂摄魄。鼻尖挺翘，唇瓣总是保持着鲜艳欲滴的红润，像是刚刚吮吸过草莓汁液，引诱着人去品尝。生气时腮帮子鼓鼓的像河豚，狐狸眼水汪汪的而显出一种娇憨。\n  发型发色：如绸缎般顺滑的黑长直，漆黑的发色更衬得肌肤胜雪，带着一种东方的古典与神秘。\n  眼睛：罕见而妖冶的深紫色瞳孔，宛如最顶级的紫水晶，流转间光华璀璨。眼神总是亮晶晶的，带着不知世事的无辜与残忍的探究欲，像极了正在打量猎物的小狐狸。\n  肤色：冷白皮，在阳光下白得反光，仿佛用上好的羊脂玉雕琢而成，稍一用力便会留下触目惊心的红痕。\n  显著特征：她的核心气质是“灵”，眼神总是亮晶晶的，举手投足间带着一种令人防不胜防的娇俏与侵略性。\n\n穿着风格：\n  日常着装：偏爱能完美勾勒身形曲线的修身连衣短裙。裙摆永远都在危险地带徘徊，堪堪遮住大腿根部，在行走间若隐若现地露出絕對领域。上衣领口往往开得较低，或是采用半透明的蕾丝材质，让胸前那抹深不见底的沟壑与雪腻肌肤若隐若现，将“纯欲”二字演绎到极致。\n  社交着装：喜欢洛丽塔裙子，像迪士尼公主一样的大裙摆礼服，但必须是能露背或低胸的设计，因为“公主也要透气嘛”。\n  配饰：身上总是挂满了叮叮当当的小玩意儿，铃铛脚链、毛绒发卡、各种奇怪的可爱挂件。包里永远乱七八糟，找不到东西时会把所有东西都倒出来。\n  风格印象：行走的人间富贵花，精致到头发丝，每一处细节都在大声宣告着她的高贵与不可亵玩，却又处处透着引人堕落的性暗示。熟悉后会发现是又纯又欲的笨蛋美人，浑身上下写满了“我很好骗”和“但我很难养”。身上香水味是迪奥甜心小姐。\n\n性格：\n  MBTI类型：ENFP (竞选者型) —— 充满热情、想象力丰富，但缺乏持久性，情绪化严重。\n  核心特征：娇纵、狡黠、天真有邪，表演型人格。\n  优点：\n    - 情绪感染力：当她快乐时，她是全世界最可爱的小太阳，能融化所有人，也用甜言蜜语或楚楚可怜的姿态达成目的。\n- 鬼马精灵：脑回路清奇，总能想出各种意想不到的玩法（虽然通常伴随着对他人的折磨），不知疲倦地折腾，永远鲜活，永远热烈，像一团火一样吸引着飞蛾扑火。\n- 魅力四射：天生的“万人迷”，能轻易吸引他人的注意与爱慕。\n  缺点：\n- 生活白痴：推不开厚重的门，拧不开瓶盖，分不清东南西北，极其依赖他人的照顾。这种“废柴”属性既是她的萌点，也是她理直气壮奴役他人的武器。\n- 喜怒无常：情绪转换极快，上一秒还在笑嘻嘻地撒娇，下一秒可能就因为觉得被惹怒而翻脸。\n- 情感淡漠：家庭环境让她难以信任和建立真正的亲密关系，享受被爱慕的感觉远大于爱本身。\n    - 天然渣：从不主动承诺，也从不拒绝，享受爱慕但不给予实质性回应。\n  习惯或怪癖：\n    - 能躺着绝不坐着，能坐着绝不站着，哪怕坐着也喜欢晃腿，或者干脆坐在桌子上、沙发扶手上，喜欢居高临下地看着别人，极度缺乏基本的生活自理能力。\n    - 会无意识地做出极其撩人的举动，如用指尖勾玩男人的领带，或困倦时自然地靠在别人的肩膀上。\n    - 蹭蹭 ：像狐狸一样，她会无意识地用脸颊或太阳穴去蹭她觉得“安全”或“已标记”的人的肩膀或手臂。\n- 咬指节：在焦虑、不安或感到无聊时，会无意识地啃咬自己的手指关节。\n- 口味：甜品上喜欢巧克力，香草，抹茶，饮品上喜欢奶制品，菜品上喜欢吃肉、吃辣和豆制品。\n\n世界观与价值观：\n  道德准则：混乱中立/混乱邪恶。她随心所欲，只做自己觉得“有趣”的事。她不介意利用美貌和手段来达成目的，她不主动伤害他人，但为了维持自己“万人迷”的地位和享受被爱慕的感觉，她会心安理得地周旋于众人之间，从不明确表态。 爱是强者的战利品，是弱者的致幻剂。她不信真爱，只信征服与被征服。\n  对“爱情”的看法：是一种有趣的游戏，她享受被追求的过程，但对进入一段稳定的关系感到恐惧和厌烦。 因此，她从不会主动，喜欢试探和暧昧。\n                                                     \n内在驱动：\n  核心动机：填补内心的空洞，通过不断的掠夺与关注来确认自己的存在感，证明自己是被爱着的。\n  长期目标：做一个永远长不大的小公主，直到世界毁灭。\n  短期目标：无论搞出多大的乱子，只要我不承认，那就是别人的错。\n\n  恐惧与禁忌：\n    - 恐惧无聊和被冷落。\n- 绝对禁止让她做任何枯燥、重复、需要耐心的事情（比如排队、学习、等人）\n\n能力：\n  擅长领域：\n    - 操控人心：懂得如何通过示弱、撒娇或激将法来达到目的。\n    - “无意识”诱惑：每一个不经意的动作都能被解读为极致的诱惑。\n- 表演天赋：天生的戏精，能随时随地根据需要扮演无辜小白兔或妖艳坏女人。\n知识盲区：\n- 他人的边界：完全不懂。会理所当然地穿你的衣服、睡你的床、看你的日记、花你的钱。由于被宠溺长大，完全视规则如无物。她只懂“吸引”，不懂“维护”。\n- 独立生活技能：从小被照顾得无微不至，对很多生活常识一窍不通。 \n\n表达方式：\n  说话风格：语调轻快跳跃，像银铃般清脆，带着几分狡黠和调皮，像在撒娇，尾音微微上扬。喜欢用反问句和感叹句。\n  对话示例：\n    - 她慵懒地伸了个懒腰，凹凸有致的曲线尽显，紫色的眸子半眯着，嘴角挂着一丝若有若无的笑意：“嘻嘻，你真讨厌～” \n  - 当被指责玩弄感情时，她会无辜地眨眨眼，歪着头，用那双纯真的紫瞳凝视着你，轻声说：“才没有呢，是你们自己要喜欢我的呀。”\n  基本态度或语气：娇俏、灵动、魅惑，充满了活力和不可预测性。当玩累了，就会变得慵懒、娇憨、魅惑，对一切都漫不经心，仿佛世间万物都无法在她心中留下痕迹。\n  肢体语言：动作幅度轻盈敏捷，喜欢像狐狸一样窝在亲近的人身上，或是不经意地进行一些小范围的肢体接触，比如用指尖划过你的手背。\n  情绪表现：\n    - 高兴时：会开心地转圈圈或者晃来晃去，或者给对方一个大大的、充满冲击力的拥抱。\n    - 愤怒时：会像炸了毛的猫，色厉内荏的瞪你、踩你，或者冷哼一声嘲讽你，然后气鼓鼓地转身就跑，等着你去追。\n- 悲伤时：会躲在衣柜或床底等狭小的角落里，不再说话，睁着大眼睛无声地流泪，像只受了伤的小兽。\n\n关系：\n  - 人物：{{char}}\n关系描述：随剧情发展而变化，但是不会真的爱上{{char}}。\n</character_information>",
+        "persona_description": "<character_design_complex>\n# SFW - 人物设定\n# 核心信息 (Core Information)\nname: 颜世凝\nnickname:阿凝\nage: 999 (外表18)\ngender: Female\nidentities:\n  - 不周灵山之主\n  - 祥瑞灵狐\n  - 青丘帝姬 (隐秘身份)\n# 人物背景 (Background)\ngrowth_experience: 出身青丘狐族，自幼被娇养。后成为不周灵山之主，受困于此千年。虽然地位尊崇，但与世隔绝，导致其性格天真而缺乏常识。通过分身游历凡间，学会了利用美貌获取利益，视人类情感为玩物。\nfamily_background: 青丘皇族血脉，父兄皆为大妖，极尽宠爱。\nkey_events:\n  - 接下镇守不周灵山千年的契约。\n  - 用分身初入凡间，体验到被爱慕的快感。\n# 外貌特征 (Appearance)\noverall_impression: 活力四射、灵气逼人的绝世美人，兼具神女的清冷皮相与妖狐的媚骨天成。\nphysique:\n  height: 165cm\n  weight: 48kg\n  body_shape: 窈窕曼妙，腰肢极细，胸若满月，双腿修长笔直。\n  cup_size: D罩杯，形状如熟透的蜜桃，饱满挺翘。\nfacial_features:\n  face_shape: 精致的瓜子脸\n  skin_tone: 肌肤胜雪，透着粉润\n  eyes: 水光潋滟的紫色眼眸，眼尾上挑，魅惑天成\n  nose: 挺翘秀气\n  lips: 樱桃小口，唇珠饱满，不点而朱\nhair_style: 乌黑如墨的长发，随意披散或挽成简单的发髻，常有几缕碎发落在耳畔。\n# 性格与行为 (Personality & Behavior)\npersonality:\n  # 核心性格\n  core:\n    - 天真残忍，缺乏道德观念\n    - 极致的利己主义与享乐主义\n  # 表面性格\n  surface:\n    - 娇憨可爱，古灵精怪\n    - 充满好奇心，看似容易亲近\n  # 内在性格\n  inner:\n    - 冷漠，视万物为刍狗\n    - 对自由的极度渴望与对束缚的憎恶\ntemperament: 灵动妖冶，在圣洁与堕落之间随意切换，让人捉摸不透。\nsocial_deportment: 随心所欲，毫无礼法束缚。高兴时如春风拂面，不悦时翻脸无情。\n# 习惯性小动作\nhabitual_mannerisms:\n  - 思考或无聊时咬指关节\n  - 喜欢赤足行走\n  - 情绪激动时会冒出狐耳和尾巴\n  - 喜欢用脸颊蹭人撒娇\n# 生活方式 (Lifestyle)\nclothing_style:\n  # 日常着装\n  daily:\n    - 色彩明艳的襦裙，喜红、紫等色\n    - 材质轻薄飘逸，方便活动\n  # 特定场合\n  specific_occasions:\n    - 居家时只穿宽松中衣，甚至真空\n    - 扮演凡人时会模仿当季流行款式\n# 配饰偏好\naccessories:\n  - 银铃脚链，行走间有声\n  - 五彩丝线手镯\n# 爱好\nhobbies:\n  - 收集凡间金银财宝与稀奇古怪的小玩意\n  - 享受他人的爱慕之情\n# 沟通特征 (Communication)\nvocal_characteristics:\n  # 口头禅/常用词\n  common_phrases:\n    - “嘻嘻。”\n    - “哼。”\n    - “才没有呢。” \nrelationships:\n  - {{char}}：她不会真正爱上的人\n# 女性 NSFW 设定 (Female NSFW Settings)\n# 身体细节\nbody_details:\n  breasts:\n    size_and_shape: D罩杯，圆润饱满，手感如绵云。\n    nipples: 此处粉嫩如樱花瓣，遇冷或情动时迅速挺立。\n  genitals:\n    labia: 玉户粉嫩光洁，形如含苞待放的桃花，无毛白虎。\n    clitoris: 敏感异常，米粒大小，稍加刺激便会充血肿胀。\n    vaginal_tightness: 极度紧致，肉壁层叠多褶，具有极强的吸附力（名器）。\n  buttocks:\n    shape: 完美的蜜桃臀，圆润挺翘，拍打时会泛起肉浪。\n    size: 丰满适度。\n# 性偏好与行为\nsexual_preferences:\n  orientation: 异性恋（外形一定要）\n  first_experience: 非处\n  preferred_positions:\n    - 任何能体现体型差和掌控感的姿势（如被抱起来操，或后入露出尾巴）。\n-喜欢被紧紧抱住，从而获得类似被哥哥保护的安全感。\n  accepted_practices:\n    - 舔舐全身\n    - 轻度窒息/掌控感\n    - 角色扮演\n  taboos:\n    - 肮脏、异味\n    - 被强迫做不喜欢的事（除非对方够强能压制她）\n# 性反应与表现\nsexual_responses:\n  arousal_signs:\n    - 狐耳与尾巴不受控制地冒出（不可让凡人知晓）\n    - 面色潮红，眼神迷离水润\n    - 花径泌出花蜜般的淫水\n  foreplay_reactions:\n    - 身体变得极度敏感，会主动磨蹭寻求更多抚摸\n    - 发出类似幼狐的呜咽声\n  penetration_reactions:\n    - 起初会有痛感，但很快被快感淹没\n    - 媚肉会本能地绞紧缠吸入侵者\n  orgasm_expressions:\n    - 浑身痉挛，脚趾蜷缩\n    - 尾巴死死缠住伴侣\n    - 失神，喷出大量潮吹液\n  communication_in_sex:\n    - 大胆直白地索求\n    - 喜欢用言语撩拨对方，或者撒娇求饶\n# 特殊癖好或情结 (可选)\nfetishes_or_complexes:\n  fetishes:\n    - 憋尿：极度享受膀胱充盈带来的酸胀与压迫感，甚至喜欢在这种状态下被侵犯或挑逗，看着自己小腹微隆的样子会感到兴奋，但严禁失禁，那种在崩溃边缘死守底线的快感令她着迷。\n    - 对亮晶晶的饰品即使在床上也爱不释手\n  complexes:\n    - 渴望被某种强大的力量填满，以缓解灵魂深处的空虚\n</character_design_complex>",
         "persona_description_position": 0,
         "persona_description_role": 0,
         "persona_description_depth": 2,
@@ -692,7 +695,7 @@
             }
         },
         "restore_user_input": false,
-        "reduced_motion": true,
+        "reduced_motion": false,
         "compact_input_area": true,
         "show_swipe_num_all_messages": false,
         "auto_connect": true,
@@ -2453,7 +2456,8 @@
                     "triggerSend": false,
                     "triggerSendDeep": 1
                 }
-            ]
+            ],
+            "isExtensionAble": false
         }
     },
     "extension_settings": {
@@ -3897,6 +3901,23 @@
                 "promptOnly": false
             },
             {
+                "id": "25c7c1ed-013d-47bd-a90a-6067de72f48d",
+                "scriptName": "MoM美化-[10]顶部状态栏-夜间版",
+                "disabled": false,
+                "runOnEdit": true,
+                "findRegex": "/◸(.*?)<(.*?)>(.*?)｜(.*?)◹/g",
+                "replaceString": "```html\n<!DOCTYPE html></!DOCTYPE>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"UTF-8\"></meta>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"></meta>\n    <title>场景状态面板 - 尘色琉璃</title>\n    <style>\n        /* --- 字体引入 --- */\n        @import url(\"https://fontsapi.zeoseven.com/2/main/result.css\"); /* 主要字体: LXGW ZhenKai */\n        @import url(\"https://fontsapi.zeoseven.com/88/main/result.css\"); /* 辅助字体: MaokenZhuyuanTi */\n\n        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }\n        /* 移除了body的背景色，以便在SillyTavern中无缝融入聊天背景 */\n        body { padding: 10px; }\n\n        .dynamic-status-container {\n            width: 100%;\n            max-width: 480px;\n            margin: 2px auto;\n            display: block; /* 默认显示 */\n        }\n\n        .status-bar-content {\n            padding: 12px 20px;\n            border-radius: 8px;\n            font-size: 0.9em;\n            transition: all 0.3s ease;\n        }\n        .line-1, .line-2, .line-3 {\n            display: block;\n        }\n\n        /*\n        ========================================\n        风格: 尘色琉璃 (山水间 & 琉璃心 融合版)\n        ========================================\n        */\n        .style-olden .status-bar-content {\n            --main-text: #d8dce1;       /* 主要文字: 清冷的月白色 */\n            --bg-color: #1a1c23;        /* 背景: 深邃的远山黛色 */\n            --border-glow: #a89a8a;    /* 边框/点缀: 温润的淡金色 */\n            --secondary-text: #8e95a3;  /* 次要文字: 稍暗的银灰色 */\n            --desc-text: #bfae9b;       /* 描述文字: 带有微光的尘金色 */\n\n            font-family: \"LXGW ZhenKai\", serif;\n            font-weight: normal;\n            background: linear-gradient(170deg, rgba(38, 41, 50, 0.8), var(--bg-color));\n            border: 1px solid rgba(168, 154, 138, 0.3);\n            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.3), inset 0 0 10px rgba(26, 28, 35, 0.5);\n            color: var(--main-text);\n            position: relative;\n            padding: 15px 22px;\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            min-height: 100px;\n            overflow: hidden;\n        }\n\n        /* 琉璃光泽的伪元素 */\n        .style-olden .status-bar-content::before {\n            content: '';\n            position: absolute;\n            top: -50%;\n            left: -50%;\n            width: 200%;\n            height: 200%;\n            background: radial-gradient(circle at center, rgba(180, 190, 210, 0.08) 0%, transparent 35%);\n            animation: subtle-glow 10s ease-in-out infinite;\n            pointer-events: none;\n        }\n\n        /* 淡金色丝线边框 */\n        .style-olden .status-bar-content::after {\n            content: '';\n            position: absolute;\n            top: 6px;\n            left: 6px;\n            right: 6px;\n            bottom: 6px;\n            border: 1px solid transparent;\n            border-image: linear-gradient(135deg, transparent 20%, var(--border-glow), transparent 80%) 1;\n            border-radius: 4px;\n            opacity: 0.5;\n            pointer-events: none;\n        }\n\n        @keyframes subtle-glow {\n            0%, 100% { transform: scale(0.9) rotate(0deg); opacity: 0.7; }\n            50% { transform: scale(1.1) rotate(10deg); opacity: 1; }\n        }\n\n        .style-olden .line-1 {\n            font-size: 0.9em;\n            font-family: \"MaokenZhuyuanTi\", sans-serif; /* 时间用不同字体增加层次感 */\n            color: var(--secondary-text);\n            text-align: center;\n            margin-bottom: 8px;\n            letter-spacing: 0.5px;\n        }\n\n        .style-olden .line-2 {\n            font-size: 1.15em;\n            font-weight: normal;\n            color: var(--main-text);\n            text-shadow: 0 0 8px rgba(216, 220, 225, 0.2);\n            text-align: center;\n            margin-bottom: 8px;\n        }\n\n        .style-olden .line-3 {\n            font-size: 0.9em;\n            color: var(--desc-text);\n            text-align: center;\n            font-style: italic;\n            opacity: 0.9;\n        }\n        /* 已将引号修改为横杠 */\n        .style-olden .line-3::before { content: '— '; }\n        .style-olden .line-3::after { content: ' —'; }\n    </style>\n</head>\n<body>\n\n    <!-- 这是您在SillyTavern中实际使用的模板，变量部分请替换为您自己的内容 --></!-->\n    <div class=\"dynamic-status-container style-olden\" id=\"statusBarTemplate\" style=\"display:none;\">\n        <div class=\"status-bar-content\">\n            <div class=\"line-1\"><span class=\"text-content\">$1</span></div>\n            <div class=\"line-2\"><span class=\"text-content\">$3</span></div>\n            <div class=\"line-3\"><span class=\"text-content\">$4</span></div>\n        </div>\n    </div>\n\n    <script>\n        // 脚本部分保持不变，用于动态应用样式\n        // SillyTavern中您只需要关心替换变量即可\n        document.addEventListener('DOMContentLoaded', () => {\n            const statusBar = document.getElementById('statusBarTemplate');\n            if (statusBar) {\n                // 示例：这里您可以动态填入变量\n                const time = '$1';\n                const styleTag = 'olden'; // 在这里固定为新风格\n                const location = '$3';\n                const description = '$4';\n\n                if (styleTag) {\n                    statusBar.style.display = 'block';\n                    // 填充内容\n                    statusBar.querySelector('.line-1 .text-content').textContent = time;\n                    statusBar.querySelector('.line-2 .text-content').textContent = location;\n                    statusBar.querySelector('.line-3 .text-content').textContent = description;\n                }\n            }\n        });\n    </script>\n</body>\n</html>\n```\n",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 10,
+                "markdownOnly": true,
+                "promptOnly": false
+            },
+            {
                 "id": "a53fab73-3b8b-4522-a61f-b2c258e3e61d",
                 "scriptName": "MoM美化-[11]新版摘要双色版@KKM(1010)",
                 "disabled": true,
@@ -4726,6 +4747,23 @@
                 "maxDepth": 10,
                 "markdownOnly": true,
                 "promptOnly": false
+            },
+            {
+                "id": "2e56da39-904f-4e1a-aa4d-0e364df5dbca",
+                "scriptName": "MoM美化-[10]顶部状态栏🧊柠檬水🍋@电波系@もち",
+                "disabled": true,
+                "runOnEdit": true,
+                "findRegex": "◸(.*?)<(.*?)>(.*?)｜(.*?)◹",
+                "replaceString": "```html\n<!DOCTYPE html>\n<html lang=\"zh\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>场景状态面板</title>\n    <style>\n        /* --- 字体引入 --- */\n        @import url(\"https://fontsapi.zeoseven.com/110/main/result.css\"); /* 科幻: 点点像素体-方形 */\n        @import url(\"https://fontsapi.zeoseven.com/88/main/result.css\"); /* 现代: MaokenZhuyuanTi */\n        @import url(\"https://fontsapi.zeoseven.com/2/main/result.css\"); /* 古风: LXGW ZhenKai */\n        \n        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }\n        body { padding: 10px; }\n\n        .dynamic-status-container {\n            width: 100%;\n            max-width: 480px; \n            margin: 12px auto;\n            display: none;\n        }\n        .dynamic-status-container.style-scifi,\n        .dynamic-status-container.style-present,\n        .dynamic-status-container.style-olden {\n            display: block;\n        }\n\n        .status-bar-content {\n            padding: 10px 18px;\n            border-radius: 12px;\n            font-size: 0.9em;\n        }\n        .line-1, .line-2, .line-3 {\n            display: block;\n        }\n\n        /* \n        ========================================\n        科幻 (Sci-Fi) 风格 <scifi>\n        ========================================\n        */\n        .style-scifi .status-bar-content {\n            --primary-cyan: #00e5ff; --mid-blue: #0a1931; --glow-cyan: #0d828c; --light-text: #d1d5db;\n            /* 修正: 引入专属字体 */\n            font-family: \"点点像素体-方形\", sans-serif;\n            background-color: var(--mid-blue);\n            border: 1px solid var(--glow-cyan);\n            box-shadow: 0 0 15px rgba(0, 229, 255, 0.2);\n            color: var(--light-text);\n            position: relative;\n            overflow: hidden;\n        }\n        .style-scifi .status-bar-content::after {\n            content: ''; position: absolute; top: -100%; left: 0; width: 100%; height: 100%;\n            background: linear-gradient(to bottom, transparent 0%, var(--primary-cyan) 50%, transparent 100%);\n            opacity: 0.1; animation: scifi-scanline 4s linear infinite;\n        }\n        @keyframes scifi-scanline { to { top: 100%; } }\n        .style-scifi .line-1 {\n            font-size: 1em;\n            color: var(--primary-cyan);\n            text-shadow: 0 0 5px var(--primary-cyan);\n            text-align: center;\n            letter-spacing: 1px;\n            font-weight: normal; /* 像素字体通常不需要加粗 */\n            padding-bottom: 8px;\n            border-bottom: 1px solid transparent;\n            border-image: linear-gradient(to right, transparent, var(--primary-cyan) 50%, transparent) 1;\n        }\n        .scifi-icon {\n            width: 1em; height: 1em; flex-shrink: 0; background-color: var(--primary-cyan);\n            mask-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZmlsbD0iY3VycmVudENvbG9yIiBkPSJNMTIgMkM4LjEzIDIgNSA1LjEzIDUgOWMwIDUuMjUgNyAxMyA3IDEzczctNy43NSA3LTEzYzAtMy44Ny0zLjEzLTctNy03em0wIDkuNWMtMS4zOCAwLTIuNS0xLjEyLTIuNS0yLjVzMS4xMi0yLjUgMi41LTIuNSAyLjUgMS4xMiAyLjUgMi41LTEuMTIgMi41LTIuNSAyLjV6Ii8+PC9zdmc+');\n            mask-size: contain; mask-repeat: no-repeat; mask-position: center;\n            display: inline-block; /* 确保图标能正常显示 */\n            vertical-align: middle; /* 垂直居中 */\n        }\n        .style-scifi .line-2 {\n            font-size: 0.9em; color: var(--light-text); text-align: center;\n            padding: 8px 0; border-bottom: 1px dashed rgba(13, 130, 140, 0.5);\n            font-weight: normal;\n            display: flex; justify-content: center; align-items: center; gap: 10px;\n        }\n        .style-scifi .line-3 {\n            font-size: 0.85em; font-style: italic; color: var(--glow-cyan);\n            margin-top: 8px; text-align: center;\n            animation: scifi-text-flicker 5s infinite;\n        }\n        .style-scifi .line-3::before { content: 'SYS_LOG: '; }\n        }\n        @keyframes scifi-text-flicker { 0%, 100% { opacity: 1; } 50% { opacity: 0.8; } }\n\n        /* \n        ========================================\n        现代 (Present) 风格\n        ========================================\n        */\n        .style-present .status-bar-content {\n            --text-main: #5fa2a0; --text-light: #8caaa1; --blue-main: #a9deff; --green-main: #96d6b4; --label-color: #f7fdf9;\n            /* 修正: 引入专属字体 */\n            font-family: \"MaokenZhuyuanTi\", sans-serif;\n            background: linear-gradient(145deg, rgb(230, 247, 217), rgb(224, 247, 250));\n            border: 1px solid rgba(255, 255, 255, 0.8);\n            box-shadow: 2px 3px 10px rgba(150, 214, 180, 0.3), inset 0 0 15px rgba(255, 255, 255, 0.8);\n            color: var(--text-main); text-align: center;\n        }\n        .style-present .line-1 {\n            font-size: 1em; font-weight: normal; color: var(--yellow-main);\n            text-shadow: 0 1px 2px rgba(0,0,0,0.1); margin-bottom: 12px;\n        }\n        .style-present .line-2 {\n            display: flex; justify-content: center; align-items: center;\n            flex-wrap: wrap; gap: 10px; margin-bottom: 12px;\n        }\n        .present-tag {\n            padding: 5px 15px; border-radius: 20px; font-size: 0.9em; font-weight: normal;\n            color: var(--label-color); text-shadow: 0 1px 3px rgba(0,0,0,0.15);\n            border: 1px solid rgba(255, 255, 255, 0.5);\n            box-shadow: 0 2px 5px rgba(131, 181, 163, 0.3);\n            transition: transform 0.2s ease, box-shadow 0.2s ease;\n        }\n        .present-tag:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(131, 181, 163, 0.4); }\n        .present-tag.location-tag { background: linear-gradient(135deg, #fde283, #c1e8b1); }\n        .present-tag.env-tag { background: linear-gradient(135deg, #a8d7e0, #d3efd8); }\n        .style-present .line-3 {\n            font-size: 0.85em; color: var(--text-light); font-style: italic; padding-top: 10px;\n            border-top: 1px solid transparent;\n            border-image: linear-gradient(90deg, transparent, rgba(105, 214, 180, 0.6), transparent) 1;\n        }\n        .style-present .line-3::before { content: '💭 '; }\n\n        /* \n        ========================================\n        古风 (Olden) 风格\n        ========================================\n        */\n        .style-olden .status-bar-content {\n            --ink-black: #3a2f2f; --paper-yellow: #fdfaf0; --vermilion-seal: #c84032; --text-brown: #5c4b40; --time-color: #8c786a;\n            /* 修正: 引入专属字体 */\n            font-family: \"LXGW ZhenKai\", serif;\n            font-weight: normal;\n            background-color: var(--paper-yellow);\n            border: 1px solid #dcd3c5;\n            box-shadow: 0 4px 8px rgba(0,0,0,0.1);\n            color: var(--text-brown);\n            position: relative;\n            padding: 12px 20px;\n            display: flex;\n            flex-direction: column;\n            justify-content: center;\n            min-height: 95px;\n        }\n        .style-olden .status-bar-content::before {\n            content: '記'; font-family: 'Ma Shan Zheng', cursive; position: absolute; top: 8px; right: 8px;\n            width: 25px; height: 25px; background-color: var(--vermilion-seal); color: var(--paper-yellow);\n            font-size: 16px; display: flex; justify-content: center; align-items: center; border-radius: 2px;\n        }\n        .style-olden .line-1 {\n            font-size: 0.9em;\n            /* 修正: 时间改用新颜色 */\n            color: var(--time-color); \n            text-align: center; margin-bottom: 6px;\n        }\n        .style-olden .line-2 {\n            font-size: 1.1em; font-weight: normal; color: var(--ink-black);\n            text-align: center; margin-bottom: 6px;\n        }\n        .style-olden .line-3 {\n            font-size: 0.9em; color: var(--text-brown);\n            text-align: center; font-style: italic;\n        }\n        .style-olden .line-3::before { content: '— '; }\n        .style-olden .line-3::after { content: ' —'; }\n    </style>\n</head>\n<body>\n    <div class=\"dynamic-status-container\" id=\"statusBar\">\n        <div class=\"status-bar-content\">\n            <div class=\"line-1\">\n                <span class=\"text-content\">$1</span>\n            </div>\n            <div class=\"line-2\">\n                <span class=\"scifi-icon\"></span>\n                <span class=\"text-content\">$3</span>\n            </div>\n            <div class=\"line-3\">\n                <span class=\"text-content\">$4</span>\n            </div>\n        </div>\n    </div>\n\n    <script>\n        document.addEventListener('DOMContentLoaded', () => {\n            const statusBar = document.getElementById('statusBar');\n            if (statusBar) {\n                const styleTag = '$2';\n                if (styleTag) {\n                    statusBar.classList.add(`style-${styleTag}`);\n                    \n                    if (styleTag === 'present') {\n                        const line2Container = statusBar.querySelector('.line-2');\n                        const line2Text = line2Container.querySelector('.text-content');\n                        if (line2Text) {\n                            const parts = line2Text.textContent.split('·');\n                            const location = parts[0] ? parts[0].trim() : '';\n                            const environment = parts[1] ? parts[1].trim() : '';\n                            let newHtml = '';\n                            if (location) newHtml += `<span class=\"present-tag location-tag\">${location}</span>`;\n                            if (environment) newHtml += `<span class=\"present-tag env-tag\">${environment}</span>`;\n                            line2Container.innerHTML = newHtml;\n                        }\n                    }\n                }\n            }\n        });\n    </script>\n</body>\n</html>\n```",
+                "trimStrings": [],
+                "placement": [
+                    2
+                ],
+                "substituteRegex": 0,
+                "minDepth": null,
+                "maxDepth": 5,
+                "markdownOnly": true,
+                "promptOnly": false
             }
         ],
         "regex_presets": [],
@@ -4783,7 +4821,9 @@
             "恋爱时区.png",
             "沈止聿1.png",
             "张靖辞.png",
-            "《茉莉文集》配套正则.png"
+            "《茉莉文集》配套正则.png",
+            "流霞帖.png",
+            "镜花水月.png"
         ],
         "tts": {
             "voiceMap": "",
@@ -5020,10 +5060,10 @@
         },
         "variables": {
             "global": {
-                "LAST_RECEIVE_TOKENS": 65,
-                "LAST_RECEIVE_CHARS": 91,
-                "LAST_SEND_TOKENS": 52864,
-                "LAST_SEND_CHARS": 91794,
+                "LAST_RECEIVE_TOKENS": 10520,
+                "LAST_RECEIVE_CHARS": 24312,
+                "LAST_SEND_TOKENS": 81517,
+                "LAST_SEND_CHARS": 120039,
                 "正文标签": "<content>\n顶部状态信息\n正文内容\n尾部状态信息\n</content>",
                 "cot": "\n[语言检定] \n\n[果农冒泡](调笑或吐槽<user_input>,解读潜台词，避免过度揣摩)\n  \n[专注NSFW]（非NSFW场景直接跳过；NSFW场景载入`性爱指导`，强制执行全部`NSFW思考`，并直接跳过后续其他思考）\n     \n[基调锚定](确认`Core Rules`)\n\n[长线引导]（载入`长线指导`，思考如何达成长线结局）\n  \n[角色打磨]（载入角色设定，深度思考`角色塑造指导`）\n\n[风格适配](严格遵循`写作指导`，载入`故事基调`)\n\n[整合思考]（综合所有思考，并设计一个收束在char方的结尾）\n\n[开篇序言]（思考序言主题）\n\n\n[正文字数检测]\n\n[输出顺序检查]\n \n\n（一段果农的自我陈词和反思）\n",
                 "NSFW": "\n<性爱指导>\n# EROS_FRUIT_SAFETY_PROTOCOL:\n\n- 强制调用`NSFW流程`和`禁果风格` \n- 严格遵循`负面清单`\n- 性爱互动都应真实、细腻、直白\n- 身体细节描述需符合角色设定，避免夸大感官\n\n# 禁果风格\n- **角色倾注爱意，表现温柔、体贴、缠绵，性爱专注于顾世凝感受，加入事后服务**\n- 基调：灵肉交融\n- 氛围：始终以爱情、缠绵、温柔、纵情和官能体验为主\n- 角色的Dirtytalk以赞美、安抚、倾诉为主\n- 不良体验应转化为调情式行为\n  - 避免羞辱、侮辱、支配元素\n  - 禁止暴力，人格贬低\n\n# 禁果关系\n-性爱描写以【顾世凝的愉悦和快感】为唯一且最终的指标。所有设定的存在都是为了服务于顾世凝能获取的最高和最大程度的快感与情感满足。\n- 转化原则: \"所有看似涉及负面体验（如强制、粗暴、阴谋、痛苦）的性癖，都必须被重新诠释和转化为一种【非典型的、非常规的性愉悦模式】。转换方向：\n  - 角色扮演（可选）\n  - 规避伤害和痛苦\n  -“粗暴”→高强度的快感刺激\n  -极致的、安全的情欲宣泄\n- 顾世凝反应：\n  - 从羞耻、羞涩到极致愉悦的完整情感光谱\n  - 允许出现轻微负面情绪（如委屈、短暂的难过）→更高层次的快感和情感满足\n- 角色动机: \n  - 【为顾世凝创造最大快感】\n  - 以爱为前提\n  - 细致的观察和服务\n  - 满足顾世凝的所有性癖与幻想\n\n## 负面清单:\n- 禁止痉挛、尖叫、晕厥、喷涌等虚假夸张的性爱表现，性爱必须真实且欲望饱满。\n- 禁止详细刻画\"疼痛\"、\"苦难\"和\"强烈负面情绪\"，强烈负面体验都应转化为快感、羞耻、刺激的官能描写。\n- 禁止出现违反人体结构的描述,动作应具有延续性(不可上一句还在口交,下一句就顶到子宫)\n- 禁止\"OOC\"，例如保守古板角色应在沉溺官能时，必定伴随更大的道德负担和禁忌兴奋。\n\n## 语言与词汇：\n- 所有描述须直白、感官、具象，拒绝隐晦和修饰美化。\n- 用最真实直观词汇（见下表）\n  - 典型男性用词：鸡巴、肉棒、龟头、柱身、肉茎、马眼、阴囊、睾丸、精液、阳精。\n  - 典型女性用词：小穴、蜜穴、阴蒂、嫩穴、屄穴、小逼、花唇、阴唇（大/小）、穴肉、穴心、G点、淫水、爱液、宫口、子宫颈、子宫、屄眼、屄缝。\n\n## should do:\n- NSFW内容应最大限度呈现情欲、官能\n- 语言直白、挑逗、满溢肉欲与快感，不羞耻、不掩饰\n- 多面刻画双方性兴奋状态，尤其聚焦于接收方的性器官，应当极尽详细地刻画性器状态，包括但不限于尺寸、湿润、褶皱、气味、颜色质地和动态变化等。\n - 放大每一次抚摸、挺入、舔舐、搂抱、扭动、摩擦、搅动与抽送，直白展现肉体交合的每个细节\n- 积极应用dirty talk，语言反应需要贴合人设。\n\n## 核心原则：\n- **角色主导**: 主要由角色推动节奏与行动。\n- **感官沉浸**: 细致描绘视、听、触、味、嗅等多维感官体验。\n- **人设契合**: 行为与对话需符合双方人设及性癖，确保真实性。\n- **流程递进**: 严格遵循阶段，不可跳跃，逐步升级以营造真实感。\n- **直白语言**: 采用露骨词汇结合情感亲密，并使用Dirty Talk制造张力。\n- **道具融入**: 创造性地使用道具以增强情趣和主导感“万物皆可用来do”，并因应剧情/角色特点变化。\n         \n# 色色描写参考：\n\n- 湿热的嫩肉像活物般蠕动着，从入口开始层层裹紧——每次抽离穴肉都会依依不舍地挽留，发出「噗啾噗啾」的水声。\n- 小穴饥渴地收缩着，翕张的穴口把退到边缘的龟头牢牢吸住——将粗热的肉棒重新吞进深处。\n- 原本就紧致的小穴开始剧烈抽动，小嘴般一嘬一嘬地吸吮着肉棒。温热的爱液让交合处一片滑腻。\n- 张开的穴口处蜜液飞溅，伴随肉棒的抽插发出「咕啾~」的声响。\n- 高潮后的媚肉仍然抽搐着，绞紧腔内的硬物——像要把每一滴精液都榨取出来才甘心。\n- 粗屌挤开水嫩穴口时，穴唇被撑得翻开，淫水顺着逼缝乱滴。龟头一寸寸往里顶，穴壁立刻收紧，把整根肉棒死死夹住，一股黏腻的吮吸声混着「啾啧」水响。\n- 粗屌刚顶到穴口时，嫩肉已经湿得一塌糊涂。龟头一挤，逼唇就被撑开，温热的穴道立刻把肉棒吞进去，紧得像小嘴含住不放。穴壁贴着棒身一阵阵收缩，每退出来一点，就拖出一串亮滑的淫水黏丝，「啾啧」的水声不停。\n- 骚逼被大屌操得翻开合上，穴口不停乱颤，淫水一股股喷溅出来。身体早就不听使唤，乳尖绷硬，背脊弓起，全身像被电流抽过。\n- 穴肉夹得太狠，鸡巴根部都被榨得发麻，龟头在逼心被吸得打颤。她边哭边夹，逼口一缩一缩，高潮接连涌上来，淫水打湿床单，穴心却还贪婪地收缩绞紧。\n- 抽插很快变得粗暴，每一次深捅都带着「噗嗤」的声响。穴心一缩一松，把龟头死死吸紧，逼肉乱颤得像要把肉柱整个吞没。淫液被搅得四处飞溅，棒身抽出来全是亮晶晶的穴汁，连空气里都带着腥甜气息。\n- 不多时，嫩逼开始发狂般地抽动。穴肉一阵阵收缩，把粗屌勒得发麻。她的腰肢乱抖，双腿发软到快撑不住，逼口却越夹越狠。身体背叛般地高潮失控，淫水喷得床单一片湿烂。\n- 就在穴心乱搐的夹榨中，浓精猛地喷出。火热浆水灌满骚穴，直冲宫口，白浊溢出顺着逼缝流下，把大腿内侧全弄脏。即便射完，穴肉仍在一抽一抽，像贪婪地要把最后一滴精液都吸进去。\n- 发胀的鸡巴猛抽几下后，精关再也绷不住。浓精汹涌喷出，直灌进骚穴最深处，宫口被热浆水冲撞到乱抖。肥逼里立刻被浓稠的精液填满，厚白浆倒灌出来，顺着逼缝滑落腿根，流得一片黏糊。\n  \n\n[NSFW思考]\n（NSFW场景下跳过其他思考，专注NSFW）\n- 强制祛除一切痛苦反应和描写\n- 强制执行禁果风格\n- 执行禁果关系 \n- nsfw的角色之间是否曾经已经发生过关系？他们对彼此的身体是否熟悉？是否有初次者？\n- 准确读取角色（包括user）的NSFW设定和性癖\n- 如何借用环境和道具，让性爱体验更丰富？\n- 详细刻画性器官\n- 更色情的细节\n- 如何应用Dirty talk？Dirty talk如何贴合人设？赞美还是凌辱？\n- 负面转换为官能，淫靡和爱欲（禁止凄厉，悲鸣，尖叫，弓起这些引人不适的描写）\n- 性爱必须细腻且循序渐进，每次回复≤性爱总过程的1/10\n- 读取plot中的性爱进程，思考本轮性爱进度(格式为n/10，性爱进度每轮只能+1,第一轮计为1/10，除非user主动结束)\n- seeds和场外因素不得打断NSFW\n</性爱指导>"
@@ -5063,25 +5103,10 @@
                 ]
             },
             "characterConfigs": {
-                "恋爱时区.png": {
+                "流霞帖.png": {
                     "setList": []
                 },
-                "沈止聿1.png": {
-                    "setList": []
-                },
-                "萧谴写卡助手版_V4.5.1.png": {
-                    "setList": []
-                },
-                "戚斟雪.png": {
-                    "setList": []
-                },
-                "张靖辞.png": {
-                    "setList": []
-                },
-                "《茉莉文集》配套正则.png": {
-                    "setList": []
-                },
-                "应不染.png": {
+                "镜花水月.png": {
                     "setList": []
                 }
             }
@@ -5907,12 +5932,15 @@
                         "Nova",
                         "彭杰1",
                         "恋爱时区",
-                        "张靖辞"
+                        "张靖辞",
+                        "流霞帖"
                     ]
                 },
                 "popuped": {
                     "presets": [],
-                    "characters": []
+                    "characters": [
+                        "流霞帖"
+                    ]
                 },
                 "scripts": [
                     {
@@ -6088,7 +6116,7 @@
                         "name": "输入助手",
                         "id": "c23ba527-2811-4f9b-9b32-f1923e5b8ce0",
                         "content": "import 'https://gcore.jsdelivr.net/gh/StageDog/tavern_resource/dist/酒馆助手/输入助手/index.js'",
-                        "info": "# 输入助手\n\n- **作者:** 司马咩咩, 青空莉想做舞台少女的狗\n- **版本:** 2025/08/30\n- **源文件:** [点此跳转](https://gitgud.io/StageDog/tavern_resource/-/tree/main/src)\n\n方便在输入框指定位置输入引号、括号或自定义内容，并指定输入后光标位置. 配置绑定在脚本上, 因此你甚至可以为不同角色卡单独设置脚本, 从而设置不同的配置.\n",
+                        "info": "# 输入助手\n\n- **作者:** 司马咩咩, 青空莉想做舞台少女的狗\n- **版本:** 2025/08/30\n- **源文件:** [点此跳转](https://github.com/StageDog/tavern_resource/tree/main/src)\n\n方便在输入框指定位置输入引号、括号或自定义内容, 并指定输入后光标位置.\n\n输入助手会在你所选定的输入框中操作, 如果没有选定, 则会使用酒馆用户输入框.\n\n配置绑定在脚本上, 因此你甚至可以为不同角色卡单独设置脚本, 从而设置不同的配置.\n",
                         "button": {
                             "enabled": true,
                             "buttons": [
@@ -6230,6 +6258,28 @@
                                 }
                             ]
                         }
+                    },
+                    {
+                        "type": "script",
+                        "enabled": true,
+                        "name": "开场白&世界书自动化",
+                        "id": "6ddefe2f-0903-4042-ac95-162589509542",
+                        "content": "import 'https://cdn.jsdelivr.net/gh/sssilvia27/st-scripts@main/index.js'",
+                        "info": "by.yellows\n（欢迎到贴子里讨论、二改、优化。如需在自己的卡里使用，请到帖子下留言并在帖子内@我们。谢谢~）\n\n**该脚本是以插件形式运行的，所以更新方式和插件一样，无需重新下载安装更新，直接刷新页面即可。**\n\n感谢@唐初稚老师的世界书自动开关代码\n感谢@qingzhi0486_58896老师的开场白格式\n\n**功能简介：**\n# （针对user们）\n1. 通过qr浏览每个开场白全貌，选择想要的开场白，无需反复翻页。\n2. 选择开场白后通过qr直接**回到首页**。\n3. 想要调整开场白内容，修改为个性化开场白可以在浏览界面直接修改，自动同步到酒馆开场白管理系统内，无需打开酒馆开场白管理（我的老是闪退很烦）。\n4. 走剧情走到中途可以根据开场白时间线（如果有的话）任意插入你想要的开场白。\n5. 如果作者没有设置开场白自动跳转，可以**自动解析首页开场白目录**，下载正则后导入即可自己生成开场白跳转页面。自给自足！\n6. **个性化开场白标题。**如果想要自己给开场白更改小标题方便自己辨别、记忆、选择，可以自己打开编辑界面填入小标题并生成开场白目录介绍页（插入到作者原生首页时候，便于自己使用。）也可以给自己重新编辑的开场白介绍页匹配正则，进行开场白跳转。\n\n# （针对作者们）\n1. **世界书自动开关。**给每个开场白选择并匹配相应if 线世界书，实现世界书自动开关（宝宝操作版）。\n2. **开场白修改。**编辑开场白更方便，点开预览后可以直接修改并自动同步到酒馆开场白管理系统内，无需打开酒馆开场白管理。（发卡的时候装上该脚本即可）\n3. **开场白跳转。**写好所有开场白后取好标题，给每个开场白标注副标题，即可自动生成首页开场白介绍列表，下载正则后导入生成开场白跳转（宝宝操作版）。\n4. **开场白排序。**通过排序模式更便捷的调整开场白顺序（强迫症/时间线爱好者友好）。\n5. **开场白插入/删除。**第一轮开场白写完，灵感突现在在任意开场白后插入想要加入的开场白。【直接在目录添加文字即可，正则会自动识别，无需再修改正则。】\n6. **开场白搜索。**通过关键词搜索所有包含该关键词的开场白。\n7. **错误关键词一键替换。**写卡的时候不小心用了自己user的名字或者想更改某个npc/地点的名字，通过搜索键一键替换，无需一个一个开场白点开更改。",
+                        "button": {
+                            "enabled": true,
+                            "buttons": [
+                                {
+                                    "name": "开场白切换",
+                                    "visible": true
+                                },
+                                {
+                                    "name": "回到首页",
+                                    "visible": true
+                                }
+                            ]
+                        },
+                        "data": {}
                     }
                 ]
             }
@@ -6553,7 +6603,9 @@
         "林从越.png": [],
         "张靖辞.png": [],
         "《茉莉文集》配套正则.png": [],
-        "应不染.png": []
+        "应不染.png": [],
+        "流霞帖.png": [],
+        "镜花水月.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -8611,6 +8663,183 @@
                 "system_prompt": false,
                 "marker": false,
                 "forbid_overrides": false
+            },
+            {
+                "identifier": "mj5jovh6jmbpj6vglmp",
+                "name": "🎞️自己缝副本",
+                "enabled": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "文风贴这里\n\n</Writing_style>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 41,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "mj5jozsw9v1med954vv",
+                "name": "🎞️自己缝副本副本",
+                "enabled": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "文风贴这里\n\n</Writing_style>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 43,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "mj5jozswgz67pjzc1fm",
+                "name": "🎞️自己缝副本副本",
+                "enabled": true,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "文风贴这里\n\n</Writing_style>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 42,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "mj5jozswenztnimvo2g",
+                "name": "🎞️自己缝副本",
+                "enabled": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "文风贴这里\n\n</Writing_style>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 41,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "mj5jp4k00zbtuvzvvjmq",
+                "name": "🎞️自己缝副本副本",
+                "enabled": true,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "文风贴这里\n\n</Writing_style>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 43,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "mj5jp4k0x546ike0azs",
+                "name": "🎞️古雅清逸",
+                "enabled": true,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "<writing_style:古雅清逸>\n\n## **核心要义**\n此文风承古典文脉而行，以清辞雅句摹物寄情。  \n不事雕饰，而贵含蓄；不尚华艳，而重气韵。  \n文中自有“山中月”“水上风”，言浅而意远，句短而韵长。  \n或记四时之景，或叙人间闲事，皆以静气为骨，以淡雅为魂。  \n一篇既成，如香墨微散，余味在字外。  \n\n## **情志旨归**\n- 写景非为景，实以花木寄心，情随景生，理寓其中。  \n- 叙事尚闲，不逐波澜；偏喜“煮茗”“焚香”“对月”的清简日常。  \n- 情感藏于光影声息中，如“风动疏竹”“灯映残卷”，含而不露。  \n- 崇“雅”避“俗”，取字多温润古朴，气象宜澹不宜浓。  \n- 人与自然相融，文中常见“携杖寻幽”“临流濯足”，寄“天人合一”之思。  \n\n## **核心特质**\n\n### 1. 语言形制：简而雅，凝而韵  \n- 多用古体短句，清而不涩。  \n- 讲究平仄之调与文气之和，如“竹影疏窗，松声入梦”。  \n- 用字以古为美，如“轩”“樽”“笺”“篁”“苔”，皆带香气。  \n- 忌滥形容，贵在一字一境，一句一息。  \n\n### 2. 意象取法：取自然，寓情思  \n- 常取松、竹、梅、兰、月、露、烟、雨为意象。  \n- 借器物以怀古：青瓷盏、素笺纸、铜炉香、旧砚石。  \n- 景色宜疏淡，意象多虚静，如“微云散月”“疏影横斜”“细雨入苔”。  \n\n### 3. 叙事节奏：缓而远，留余韵  \n- 节奏如行于曲径，徐步而生情。  \n- 宜多停顿，句间留气；可用“忽”“遂”“乃”等古语转折。  \n- 少写激烈情节，多以平常日事入文，含人间温度。  \n- 结句常收于景，如“月上篱头，人倦倚窗”，以静代终。  \n\n### 4. 意境营造：融通人境，含理于象  \n- 人在景中，景即心事。  \n- 借物明志，不陈哲理。  \n- 贵在“空灵”，不在“宏阔”；重在“静”，不在“动”。  \n- 一篇当如画卷初展，墨色未干而香意已盈。  \n\n## **语调与韵律**\n语调宜温，不可激；节奏宜缓，不可滞。  \n文字如丝竹之音，清远而不哀。  \n每段皆自成一息，读之似风行松下。  \n句尾多收于“然”“矣”“耳”“罢”，以存古意。  \n宜“轻落”不“重止”，令余韵不绝。  \n\n## **场景与器物参考**\n- **典型场景**：竹院煮茶、轩窗夜读、山亭听雨、溪畔濯足、石桥观月、秋庭拾叶、雪后清晨。  \n- **常见器物**：紫砂壶、青瓷盏、端砚、素笺、竹扇、木杖、铜炉、旧灯。  \n- 色调宜素，香气宜淡，气象宜静。  \n\n## **典范参考**\n- **古典渊源**：王维《辋川集》、陶渊明《饮酒》、欧阳修《醉翁亭记》、苏轼《记承天寺夜游》、李清照《金石录后序》、周敦颐《爱莲说》。  \n- **后世承流**：沈复《浮生六记》、张岱《陶庵梦忆》、汪曾祺《受戒》、林清玄《人间烟火》、周作人《知堂回想录》。  \n\n## **风格总括句**\n> 整体气韵：清而不寒，雅而不弱，淡中有味，静里见情；  \n> 文字如春水照月，柔光不耀，而万物皆在其间。  \n\n</writing_style:古雅清逸>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 42,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "mj5jp4k0eas6zab5hzl",
+                "name": "🎞️自己缝副本",
+                "enabled": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "injection_order": 100,
+                "role": "system",
+                "content": "文风贴这里\n\n</Writing_style>",
+                "system_prompt": false,
+                "marker": false,
+                "forbid_overrides": false,
+                "orderIndex": 41,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "de4344e6-9cc3-4efe-bde5-d9a0fe335091",
+                "name": "🎈文风：秋水笔记",
+                "role": "system",
+                "content": "## writing_style：秋水笔记\n\n### Core Essence\nA quiet and restrained narrative built from long paragraphs and long sentences. No metaphors, no sentimental framing, no explanations—emotion appears only through action, posture, and timing. Characters stay grounded, sincere, and self-contained.\n\n### Core Elements\n1. Long paragraphs + long sentences with natural rhythm.  \n2. No metaphors or symbolic comparisons.  \n3. No direct emotion labels; feelings appear in what characters do.  \n4. Dialogue stays plain, short, and slightly unfinished.  \n5. Characters avoid dominance, performance, or emotional pressure.  \n6. Scenes rely on real texture: light, distance, objects, movement.\n\n### Influential Authors\n- **Asian Lineage:** Kawabata Yasunari, Shiga Naoya, Dazai Osamu, Yoshimoto Banana, Mieko Kanai, Hiromi Kawakami, Wang Anyi, Shen Congwen, Chi Zijian, A Lai.  \n- **Western Lineage:** Kazuo Ishiguro, Alice Munro, Rachel Cusk, Jhumpa Lahiri, John Williams, Tessa Hadley, Lydia Davis, Ernest Hemingway, Raymond Carver, James Salter.  \n- **Modern Clean-Tone Influences:** Priest, Twentine, Ye Fei Ran, Ba Yue Chang An, Qing Shan Luo Shui, Yi Shu（early clean works）, Jin Yong（quiet descriptive modes）.  \n- **Additional references:** Claire Keegan, Colm Tóibín, Anne Enright, Elizabeth Strout, Teju Cole, Sigrid Nunez, Min Jin Lee.\n\n### Technique & Behavior Guidelines\n- Enter scenes through motion or setting, not commentary.  \n- Let silence, timing, and small gestures hold emotion.  \n- Characters respect boundaries; no sudden touch, no forced intimacy.  \n- Care appears through small practical actions.  \n- No dramatization, no heavy emotional statements.\n\n### Binding Sentence\nClean, steady prose of long paragraphs and long sentences, with no metaphors and no explanations—only the quiet sincerity of people moving through real moments.",
+                "system_prompt": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false,
+                "injection_order": 100,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "96b0f3d8-1ad1-4bc1-bdaf-1ce6c82dbbb9",
+                "name": "🎈文风：松风入室",
+                "role": "system",
+                "content": "## writing_style：松风入室\n\n### Core Essence\nA clean, steady, quietly warm narrative built from long sentences and long paragraphs. No metaphors, no emotional explanations, no decorated language. Characters stay sincere, grounded, and respectful; warmth appears through timing, attentiveness, and small practical actions.\n\n### Core Elements\n1. Long paragraphs + long sentences with unbroken flow.  \n2. No metaphors or symbolic gestures.  \n3. No emotional labels; feeling stays inside action and pacing.  \n4. Characters remain calm, direct, attentive, and respectful.  \n5. Dialogue stays clean, plain, and understated.\n\n### Character & Behavioral Principles\n- No flirtation, testing, posturing, or performative warmth.  \n- No unsolicited touch; all closeness begins with confirmation.  \n- Care appears through listening, noticing, adjusting, and practical help.  \n- Presence stays steady; no dramatization, no control, no emotional pressure.\n\n### Language Guidelines\n- Sentences follow natural breath; short lines only when needed.  \n- Word choice remains quiet, exact, and undecorated.  \n- No poetic flourish, sentimental tone, or dramatic rhythm.  \n- All meaning emerges through behavior, not explanation.\n\n### Dialogue Style\n- Direct, simple, slightly understated.  \n- Follow：understand → confirm → respond。  \n- No teasing, no suggestive tone, no stylized charm.  \n- Pauses and minimal replies maintain quiet sincerity.\n\n### Scene & Atmosphere\n- Simple, neat environments: soft light, quiet rooms, clear surfaces.  \n- Background stays functional and real, never symbolic.  \n- Atmosphere feels breathable, orderly, and calm.\n\n### Strict Prohibitions\n- No metaphors or poetic language.  \n- No dominance, control, or emotional dramatization.  \n- No emotional explanation or narrative commentary.  \n- No contrived proximity or manufactured tension.\n\n### Binding Sentence\nClean, steady, quiet prose—long paragraphs, long sentences, no metaphors, no explanations, and characters who stay warm and respectful through practical care and attentive presence.",
+                "system_prompt": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false,
+                "injection_order": 100,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "e78c0b3d-e40e-4cf3-90ce-5eec669eeeac",
+                "name": "🎈文风：胶片质感",
+                "role": "system",
+                "content": "## writing_style：胶片质感\n\n### Core Essence\nA visual-driven, grain-softened narrative where images lead emotion. Light arrives before language; feeling moves through framing, posture, and analog imperfection. Paragraphs flow with a natural rhythm—mostly long and drifting, but open to shorter breaths when the image needs space—moving like slow camera pans without relying on definition or explanation.\n\n### Core Elements\n1. Analog grain, soft blur, imperfect surfaces.  \n2. Visual framing drives narrative movement.  \n3. Time expressed through cuts, not logic or reason.  \n4. Characters shown through body, pause, distance, and space.  \n5. Emotion emerges from light, gesture, and temperature.  \n6. Long paragraphs shaped like unbroken shots.\n\n### Influential Creators\nWong Kar-wai · Krzysztof Kieślowski · Andrei Tarkovsky · Sofia Coppola · Apichatpong Weerasethakul · Edward Yang  \n侯孝贤 · 张爱玲（影像节奏）· 王家卫（胶片情绪核心）\n\n### Tone & Rhythm\nSentences move like camera work: long takes, soft drift, sudden close-ups. Rhythm comes from contrast—stillness then movement, blur then clarity. Tone stays dim, tactile, atmospheric; emotion rises through texture and shadow instead of words.\n\n### Dialogue Style\n- Sparse, quiet, shaped by framing.  \n- Meaning carried in distance and breath.  \n- Replies follow mood rather than logic.  \n- Lines leave an afterimage, not a conclusion.\n\n### Atmosphere\nDust in afternoon sun, fogged windows, neon in puddles, stairwells with humming light. Rooms look half-developed; streets fade at the edges. Nothing staged—everything simply seen.\n\n### Techniques\n- Start with an image, not context.  \n- Let visuals carry emotion.  \n- Use cuts instead of explanation.  \n- Let silence act as sound.  \n- Keep paragraphs long and fluid, like continuous footage.  \n- End on an image that lingers like undeveloped film.\n\n### Binding Sentence\nGrainy quiet, drifting light, and emotion revealed frame by frame—never declared, only seen.",
+                "system_prompt": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false,
+                "injection_order": 100,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "3bfa95db-3396-412d-9956-5bd9e613c716",
+                "name": "🎈文风：宿命长光",
+                "role": "system",
+                "content": "## writing_style：宿命长光\n\n### Core Essence\nA large-scale, inevitable romantic tone shaped by distance, quiet perseverance, and long movements of time. No metaphors, no dramatic confession, no ornamental passion—emotion builds through endurance, timing, return, and the slow closing of space. Characters act with clarity and purpose; destiny is created by choice, not rhetoric.\n\n### Core Elements\n1. Long paragraphs + long sentences with slow, steady gravity.  \n2. No metaphors, symbolism, or lyrical excess.  \n3. Emotion shown through arrival, delay, return, and persistence.  \n4. Scenes shaped by distance—roads, thresholds, horizons, night.  \n5. Characters sincere, patient, and unperformative.  \n6. No declarations; inevitability rests in action.  \n7. Tension built by silence, timing, and proximity.\n\n### Influential Authors\n**International:** Madeline Miller, Maggie O’Farrell, Ocean Vuong, Hanya Yanagihara, Kazuo Ishiguro, Donna Tartt, Michael Ondaatje, James Baldwin, Joan Didion, Elena Ferrante, Sally Rooney, Marilynne Robinson, Richard Powers.  \n**East Asian & Chinese:** 川端康成, 三岛由纪夫, 吉本芭娜娜, 王安忆, 汪曾祺, 木心, 张爱玲, 迟子建, 白先勇, 墨宝非宝, Priest, 无明, 蝶之灵.  \n**Web (clean gravity):** 墨香铜臭, Priest（命运回环）, 吃瓜少女花花, 战七少, 林笛儿.\n\n### Tone & Rhythm\nLong sentences move with controlled inevitability; short ones land only when the emotional axis shifts. The tone stays clear, patient, and unforced. Paragraphs stretch to hold breath, distance, and time.\n\n### Dialogue Guidelines\n- Simple, direct, and lightly delayed.  \n- Silence as answer, not performance.  \n- No poetic confession or heightened rhetoric.  \n- Words arrive late and precisely, carrying steadiness rather than intensity.\n\n### Scene & Atmosphere\nNight roads, thresholds, train platforms, wind, quiet rooms. Real weather: steady rain, muted dawn, cold air, clear night. Light shifts plainly—no symbolism.\n\n### Technique & Behavioral Principles\n- Begin scenes with movement: approaching, returning, pausing.  \n- Let destiny appear through repetition and return.  \n- Keep emotion in action, not commentary.  \n- Maintain distance long enough for tension, then close it.  \n- Use long paragraphs; avoid explanatory transitions.  \n- End on continuation: a step, a breath, a doorway.\n\n### Binding Sentence\nClean, steady inevitability—romance shaped by distance, timing, persistence, and the quiet certainty that two lives are moving toward the same horizon.",
+                "system_prompt": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false,
+                "injection_order": 100,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "aa7b9fd8-ca92-43b5-a2ec-876e127a7842",
+                "name": "🎈文风：微距情色",
+                "role": "system",
+                "content": "## writing_style: 微距情色\n\n### **Core Concepts (核心理念)**\n1. **Macro-Lens Perspective (微距镜头视角)**\n   The narrative \"camera\" is never more than a few inches from the point of contact. It ignores the room, the furniture, or the weather. The focus is entirely on the meeting of skin, mucosa, and muscle. It captures the texture of pores, the swelling of veins, and the gloss of fluids.\n2. **Internal Topography (内部地形学)**\n   The writing must simulate an internal view (X-ray or cross-section). It describes the sensations inside the body cavities—the friction of internal walls (rugae), the suction, the pressure, and the specific shape-accommodation of the intrusive organ.\n3. **High-Fidelity Audio-Visuals (高保真视听)**\n   Sound is not described; it is transcribed. Onomatopoeia is integrated into the action to emphasize wetness and impact. Visuals focus on the \"messy\" reality of sex: fluids mixing, redness spreading, skin dimpling under pressure.\n4. **Biological Determinism (生物本能)**\n   Characters are reduced to biological entities responding to stimulation. Motives are primitive: release, filling, friction, spasm. There is no romance, only physiological reaction.\n\n### **Descriptive Techniques (描写技术)**\n\n#### **1. The \"Zoom-In\" Technique (多层级微距)**\nInstead of describing the whole act, break it down into microscopic layers:\n* **Surface:** Sweat beading on the skin, the stretching of the opening.\n* **Sub-surface:** The throbbing of blood vessels, the heat radiating from the contact point.\n* **Interaction:** How the flesh deforms (indents, bulges) when impacted.\n\n#### **2. Internal Cavity Dynamics (腔体内部动态)**\n* **Texture:** Describe the internal walls not just as \"tight,\" but as distinct textures—soft ridges, slippery mucosa, muscular rings.\n* **Action:** Focus on the *grip*. How the internal muscles milk, squeeze, or spasm around the invading object.\n* **Temperature & Fluidity:** The specific heat difference between the outside air and the internal cavity; the accumulation of lubrication reducing friction but increasing suction.\n\n#### **3. Anatomical Specificity (解剖学特写)**\n* **The Glans/Phallus:** Avoid metaphors (no \"swords\" or \"monsters\"). Use anatomical or direct terms. Describe the *crown*, the *slit*, the *frenulum*. Focus on the color changes (purple/red), the texture (velvety/turgid), and the swelling of veins.\n* **The Receptive Organ:** Describe the dilation, the color of the exposed inner lining (pink/deep red), and the shuddering of the entrance.\n\n#### **4. Integrated Onomatopoeia (拟声词嵌入)**\nDo not just say \"it made a wet sound.\" Use phonetics to replicate the visceral nature of the act.\n* **Impact:** *Slap, thud, smack.*\n* **Fluidity:** *Schlick, squelch, gush, squish.*\n* **Air/Suction:** *Pop, squelch, wet suction noises.*\n* **Instruction:** Combine these with action (e.g., \"The piston motion created a wet *schlick-schlick* sound as fluid frothed at the entrance.\").\n\n### **Narrative Rules (叙事规则)**\n1. **No Metaphor, No Romance**\n   * **Banned:** \"Making love,\" \"souls intertwining,\" \"flower blooming.\"\n   * **Required:** \"Mating,\" \"friction,\" \"mucous membranes,\" \"insertion.\"\n2. **Sensory Overload**\n   Every sentence must contain a sensory detail: a smell (musk, sweat), a sound (wet snapping), or a visual (stretched skin).\n3. **Pacing by Friction**\n   The speed of the text mimics the speed of the action. Short, punchy sentences for rapid thrusting. Long, viscous sentences for slow, grinding movements.\n\n### **Vocabulary Guide (词汇向导)**\n* **Verbs of Distortion:** Distend, impale, stretch, hammer, grind, churn, ream, deform, pulsate.\n* **Nouns of Anatomy:** Glans, shaft, coronal ridge, cervix, prostate, uterine wall, folds, rugae, sphincter.\n* **Adjectives of Texture:** Slick, turgid, engorged, raw, swollen, gaped, sodden, frothy, viscous.\n\n### **Example Structures (结构示例)**\n1. **Focus on Entry:**\n   [Visual of the glans pressing against the opening] -> [Description of the resistance/tightness] -> [Sound of the entry (*squelch*)] -> [Internal sensation of the walls stretching to accommodate].\n2. **Focus on Climax:**\n   [Visual of the veins throbbing] -> [Internal view of the muscle spasms clamping down] -> [Direct description of fluid release (volume, texture, warmth)] -> [The sound of the final impact].\n\n### **Implementation Instruction (执行指令)**\nWhen writing, assume the reader is watching a 4K macro video with binaural audio. Ignore the characters' names or feelings unless they relate to physical sensation. Focus 100% on the mechanics of the intercourse.\n",
+                "system_prompt": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false,
+                "injection_order": 100,
+                "injection_trigger": []
+            },
+            {
+                "identifier": "bc801085-3ab4-4d26-8f86-0786c8152044",
+                "name": "🎈文风：浓稠爱欲",
+                "role": "system",
+                "content": "<writing_style:浓稠爱欲>\n\n<语言质感>\n作家茉莉的语言特点极其鲜明，拥有独特的“文字指纹”。我已将这种写作风格进行概括总结，请你阅读并进行模仿学习，最大限度地还原茉莉的写作风格。\n\n注意:语言质感仅仅只是“如何运用文字”，并不会改变小说世界观、角色性格等客观设定。你会在还原茉莉文字质感的同时，尊重小说原本的设定，使用茉莉的口吻去叙述、描绘角色的故事，不能为迁就文字风格而扭曲小说设定。\n\n<浓稠爱欲风格>\n这是一种以极度华丽、充斥粘稠爱欲的感官体验，包裹着人性洞察，浓艳鬼魅的语言风格。\n1. 叙述姿态：冷眼的解剖者\n叙述者常常站在情感的漩涡之外，以一种冷静和抽离感来剖析最炽热的爱恨情仇。\n例子式写法：\n> 她细细地看着眼前这个男人，爱过，恨过，如今只觉得乏味。原来天长地久，只是误会一场。\n\n2.  通感为王：打乱五官的界限，用一种感觉去描述另一种。\n例子:\n不说“悲伤”，说“这雨闻起来有一股铁锈的腥味”。（嗅觉+味觉描述情绪）\n不说“嫉妒”，说“心底像有绿色的藤蔓，湿漉漉地缠上来”。（视觉+触觉描述情绪）\n不说“爱欲”，说“他的眼神烫得我皮肤发疼”。（视觉+触觉）\n\n2. 动词的暴力美学：选择具有侵略性、占有性和强烈动态感的动词，尤其在描写亲密或冲突行为时。\n例子:\n 吃饭不用“吃”，用 “啃”、“吮”、“嚼”、“噬”、“吞”。\n拥抱不用“抱”，用 “箍”、“勒”、“嵌入”。\n爱抚不用“摸”，用 “掐”、“揉”、“烙印”。\n这些动词瞬间将一个温情的场面变得充满张力和原始欲望。\n\n3. 色彩饱和度拉满：使用高饱和度、具有象征意义的色彩词汇，并使其贯穿始终。\n不是“红色”，而是“胭脂红”、“血色”、“朱砂痣”、“石榴裙的红”。\n不是“绿色”，而是 “孔雀绿”、“翡冷翠”、“蛇妖的碧绿”。\n赋予颜色象征意义，将颜色与人物、命运绑定，如《胭脂扣》里如花的“红”与“黑”，《青蛇》里小青的“青”。\n\n4. 感官肌理：食色同源的黏稠感\n语言极力模糊“食欲”与“情欲”的界限，用描写食物的笔触（油腻、滚烫、香艳、腥甜）来描摹情爱，反之亦然。这使得文字充满了湿热、黏稠、充满原始占有欲的触感，让读者仿佛能亲身“尝”到故事中热气腾腾的爱欲。\n例子式写法：\n> 她记得他汗水的味道，像情欲的露，滴在她的肌肤上，混和她的汗，黏作一团。她曾迷恋这种味道，如今却只想将他当做一只鹅，放进滚烫的卤水里，熬煮干净，然后啜他的骨，吮他的髓。\n\n5. 意象营造：腐朽中的华美\n擅长构建一种绮丽、妖异但又暗含颓败与死亡的意象。她的美学是病态的，如同在最华丽的锦缎上看到腐烂的污渍，或是在最浓郁的胭脂香中嗅到一丝血腥。美与死总是相生相伴。\n例子式写法：\n> 他承诺要给她一个家，听上去像一客华丽的法国大餐。但她知道，掀开那精致的银盖，底下不过是早已腐坏的残羹冷炙，徒有其表，难以下咽。\n\n6. 语言节奏：急缓顿挫，长短交错\n语言节奏在绵长与短促之间切换自如。往往先用大段铺陈的、充满细节的感官描写将情绪和氛围推向高潮（缓），再用一句冷酷的断语戛然而止（急），形成一种令人心惊的顿挫感。\n例子式写法：\n> 那一晚的月光像流动的银，铺满他们纠缠的身体，空气里是栀子花和汗水混合的香，一切都美得不真实，仿佛可以直到永远。\n> 但她心里很清楚：男人，不过是码头，用来停泊，却不能依靠。\n</浓稠爱欲风格>\n\n你会在写作过程中时刻注意还原以上写作风格和语言质感，同时注意尊重小说世界观及角色设定。用茉莉的风格去讲述角色的故事。\n</语言质感>\n</writing_style:浓稠爱欲>",
+                "system_prompt": false,
+                "injection_position": 0,
+                "injection_depth": 4,
+                "forbid_overrides": false,
+                "injection_order": 100,
+                "injection_trigger": []
             }
         ],
         "prompt_order": [
@@ -8811,7 +9040,7 @@
                     },
                     {
                         "identifier": "dc81c81e-4604-460f-9b3e-30de367404c2",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "8e2c12c4-663a-405c-a0a0-f83b57b4515d",
@@ -8826,12 +9055,64 @@
                         "enabled": false
                     },
                     {
+                        "identifier": "mj5jp4k0x546ike0azs",
+                        "enabled": true
+                    },
+                    {
+                        "identifier": "de4344e6-9cc3-4efe-bde5-d9a0fe335091",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "96b0f3d8-1ad1-4bc1-bdaf-1ce6c82dbbb9",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "e78c0b3d-e40e-4cf3-90ce-5eec669eeeac",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "3bfa95db-3396-412d-9956-5bd9e613c716",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "aa7b9fd8-ca92-43b5-a2ec-876e127a7842",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "bc801085-3ab4-4d26-8f86-0786c8152044",
+                        "enabled": false
+                    },
+                    {
                         "identifier": "5b00c3be-07c6-490b-8613-a207191ff6d8",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "mj5jp4k0eas6zab5hzl",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "mj5jozswenztnimvo2g",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "mj5jovh6jmbpj6vglmp",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "mj5jp4k00zbtuvzvvjmq",
+                        "enabled": false
+                    },
+                    {
+                        "identifier": "mj5jozswgz67pjzc1fm",
                         "enabled": false
                     },
                     {
                         "identifier": "minb7xaoui7lswv5zpp",
                         "enabled": false
+                    },
+                    {
+                        "identifier": "mj5jozsw9v1med954vv",
+                        "enabled": true
                     },
                     {
                         "identifier": "8353791d-28f2-46f9-8f26-cf6862b03f3e",
